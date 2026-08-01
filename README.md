@@ -14,24 +14,38 @@
 
 | パス | 内容 |
 |---|---|
-| `stickers/01.png` 〜 `16.png` | スタンプ画像 370×320px・背景透過PNG・白フチ入り（登録順） |
-| `stickers/main_240x240.png` | メイン画像 |
-| `stickers/tab_96x74.png` | トークルームタブ画像 |
-| `stickers/00_ファイル対応表.txt` | 番号と文言の対応表 |
-| `gen_stickers.py` | 画像生成スクリプト（Pillow） |
-| `docs/LINEスタンプ_コルセン界隈_16枚_Canva手順.txt` | 設計仕様＋Canva手作業手順＋2・3セット目の候補 |
+| `stickers/set1/01.png` 〜 `16.png` | 1セット目。370×320px・背景透過PNG・白フチ入り（登録順） |
+| `stickers/set2/01.png` 〜 `16.png` | 2セット目 |
+| `stickers/set*/main_240x240.png` | メイン画像 |
+| `stickers/set*/tab_96x74.png` | トークルームタブ画像 |
+| `stickers/set*/00_ファイル対応表.txt` | 番号と文言の対応表 |
+| `sticker_engine.py` | 描画エンジン（Pillow） |
+| `gen_set1.py` / `gen_set2.py` | 各セットの設計データ |
+| `docs/申請用_販売情報.txt` | タイトル・説明文・価格・審査の注意点 |
+| `docs/LINEスタンプ_コルセン界隈_16枚_Canva手順.txt` | 設計仕様＋Canva手作業手順＋3セット目の候補 |
+
+## セット構成
+
+| | テーマ | 向き |
+|---|---|---|
+| 1セット目 | 実況と連帯 | 外へ投げる黒さ。オープンチャットに放り込む言葉 |
+| 2セット目 | 壊れの実況 | 内向きの黒さ。自分が壊れるのを他人事として報告する |
 
 ## 画像の作り直し
 
 ```
 pip install Pillow
 apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra fonts-motoya-l-maruberi
-python3 gen_stickers.py
+python3 gen_set1.py
+python3 gen_set2.py
 ```
 
-`gen_stickers.py` 末尾の `S = [...]` が全16枚の設計データ。文言・フォント・サイズ・色・配置を
+`gen_set*.py` の `STICKERS = [...]` が全16枚の設計データ。文言・フォント・サイズ・色・配置を
 そこだけ書き換えれば全枚数を再生成できる。確認用のコンタクトシート
-（`stickers/_preview_light.png` / `_preview_dark.png`）も同時に出力される。
+（`stickers/set*/_preview_light.png` / `_preview_dark.png`）も同時に出力され、
+余白10px以上・透過・ファイルサイズが自動検証される。
+
+3セット目を作るときは `gen_set2.py` をコピーして `STICKERS` を差し替えるだけでよい。
 
 ## 使用フォント（Canvaの指定フォントの代替）
 
@@ -44,7 +58,9 @@ python3 gen_stickers.py
 
 ## LINE申請時の注意
 
-- スタンプは **8 / 16 / 24 / 32 / 40枚** 単位でしか申請できない（本セットは16枚）
+- スタンプは **8 / 16 / 24 / 32 / 40枚** 単位でしか申請できない（各セット16枚）
+- 申請時に **「LINEスタンプ プレミアムに提供する」を必ず選ぶ**
+  （使用回数に応じた分配が入る。このシリーズの収益設計の要）
 - ファイルは `01.png` 〜 `16.png` の番号順でアップロードする
 - LINEスタンプメーカー経由の場合、**フチの自動追加を「0／なし」にする**
   （画像側に白フチが入っているため二重になる）
