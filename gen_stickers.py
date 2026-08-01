@@ -78,7 +78,20 @@ def render_run(runs, fkey, size, spacing=0, jitter=0, seedbase=0):
     return _crop(canvas)
 
 
-def render_vertical(text, fkey, size, color, line=1.02):
+def render_vertical(text, fkey, size, color, line=1.02, col_gap=14):
+    """text が list の場合は縦書き複数列。日本語の縦組みなので右→左の順に並べる。"""
+    if isinstance(text, (list, tuple)):
+        cols = [render_vertical(t, fkey, size, color, line) for t in text]
+        w = sum(c.width for c in cols) + col_gap * (len(cols) - 1)
+        h = max(c.height for c in cols)
+        canvas = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        x = w
+        for c in cols:                      # 先頭の列を一番右へ
+            x -= c.width
+            canvas.alpha_composite(c, (x, 0))
+            x -= col_gap
+        return canvas
+
     font = F(fkey, size)
     sw = stroke_for(size)
     pad = size + sw * 3
@@ -211,10 +224,11 @@ S = [
     {"text":"人間の消耗品です","font":"min_l","size":40,"color":SUMI,"spacing":3},
  ], "dy":30}),
  ("14_同業しかわからない", {"blocks":[
-    {"type":"vertical","text":"同業しかわからない","font":"min_l","size":32,"color":SUMI,"line":1.0},
+    {"type":"vertical","text":["同業しか","わからない"],"font":"min_l","size":46,"color":SUMI,"line":1.0},
  ]}),
  ("15_これ読める人は仲間", {"blocks":[
-    {"text":"これ読める人は仲間","font":"sans_l","size":36,"color":SUMI,"spacing":2},
+    {"text":"これ読める人は","font":"sans_l","size":38,"color":SUMI,"spacing":2},
+    {"text":"仲間","font":"sans_l","size":58,"color":CHI,"gap":10},
  ]}),
  ("16_明日も生きてたら会おう", {"blocks":[
     {"text":"明日も生きてたら","font":"min_l","size":38,"color":SUMI},
@@ -223,7 +237,7 @@ S = [
 ]
 # 縦書き2枚は右に寄せる
 S[11][1]["blocks"][0]["dx"] = 58
-S[13][1]["blocks"][0]["dx"] = 52
+S[13][1]["blocks"][0]["dx"] = 30   # 2列になった分、寄せ幅を控えめに
 
 mapping = []
 for i, (name, spec) in enumerate(S, 1):
