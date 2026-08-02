@@ -1,0 +1,69 @@
+{
+  "_comment": [
+    "Amazon.com の和風レトロ塗り絵 候補15件。ASIN と URL は検索で実在確認済み。",
+    "isbn は商品タイトル行に含まれていた ISBN-13（979-8 始まりは KDP 発行）。",
+    "published は検索経由の値で、商品ページ実物では未確認。null は未取得。",
+    "reviews_total / star_dist は取得後に埋める。現時点では全て未取得。"
+  ],
+  "products": [
+    { "asin": "B0H665SDGD", "isbn": "9798182443074",
+      "title": "Japanese Retro Shops Coloring Book",
+      "author": "NR Coloring Atelier", "published": "2026-06-20" },
+
+    { "asin": "B0H1C2ZSRF", "isbn": "9798196175114",
+      "title": "Nostalgic Showa Japan",
+      "author": "Japan Art Studio", "published": "2026-05-09" },
+
+    { "asin": "B0H1X19MQ6", "isbn": "9798196750915",
+      "title": "Showa Retro Nostalgia Japan Coloring Book for Adults",
+      "author": "Yume K.", "published": "2026-05-13" },
+
+    { "asin": "B0H5WCZ3KJ", "isbn": "9798182119085",
+      "title": "Showa Retro Coloring Book: Everyday Life & Gentle Scenery",
+      "author": "Ryoko Imagami", "published": "2026-06-18" },
+
+    { "asin": "B0H6GL9HS3", "isbn": "9798181848344",
+      "title": "Cozy Retro Japan Coloring Book",
+      "author": "Cozy Sakura Atelier", "published": "2026-06-19" },
+
+    { "asin": "B0H4MQN54X", "isbn": "9798198130593",
+      "title": "VINTAGE KIMONO COLORING BOOK",
+      "author": "yocco", "published": null },
+
+    { "asin": "B0FKGMQTL1", "isbn": "9798294366988",
+      "title": "Showa Memories: A Nostalgic Coloring Book for Adults",
+      "author": "Masayoshi Matsumae", "published": null },
+
+    { "asin": "B0H6GBFD61", "isbn": "9798181892897",
+      "title": "Showa Retro Shopping Street Coloring Book",
+      "author": "NOBUKOART", "published": null },
+
+    { "asin": "B0GYFM2VPC", "isbn": "9798258463784",
+      "title": "Nostalgic Japanese Shopping Street",
+      "author": "Atelier Yamazaki", "published": null },
+
+    { "asin": "B0GT4KK1KQ", "isbn": "9798252524337",
+      "title": "Cute Retro Japan Coloring Book Showa Daily Life",
+      "author": "KAJU", "published": null },
+
+    { "asin": "B0GL7BMKRS", "isbn": "9798245627601",
+      "title": "Showa Life Coloring Book",
+      "author": "Miki Art Work", "published": null },
+
+    { "asin": "B0H2GQ2TJ8", "isbn": "9798197460141",
+      "title": "Showa Summer Coloring Book",
+      "author": "Rie Art stadio", "published": null },
+
+    { "asin": "B0H37H4HJ8", "isbn": "9798197610874",
+      "title": "Showa Autumn Coloring Book",
+      "author": "Rie Art stadio", "published": null },
+
+    { "asin": "B0GPDZ27GP", "isbn": "9798248878444",
+      "title": "Lost Japan - Meiji Era Coloring Book",
+      "author": "Kazuki K", "published": null },
+
+    { "asin": "B0FWC5N45T", "isbn": "9798269545905",
+      "title": "Coloring book - Japanese scenery: Nostalgic Japanese alleyway",
+      "author": "SSFFWW MFW", "published": null }
+  ]
+}
