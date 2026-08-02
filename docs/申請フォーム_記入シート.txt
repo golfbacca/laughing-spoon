@@ -65,18 +65,19 @@ Text stickers for phone operators who handle complaints and inquiries. The words
 ▼ クリエイター名
 ────────────────────
 [English]（必須）
-【 英字のクリエイター名 】
+Away from Desk
 
 [日本語]
-【 クリエイター名 】
+離席中
 
 ★1セット目と2セット目で必ず同一にすること。
 　別名義にするとシリーズとして並びません。
+★凍結中のシリーズA（諦念版）でも同じ名義を使います。
 
 ────────────────────
 ▼ コピーライト
 ────────────────────
-© 【 クリエイター名 】
+© Away from Desk
 
 ────────────────────
 ▼ その他の設定
@@ -139,8 +140,8 @@ Text stickers for phone operators who handle complaints and inquiries. The words
 
 □ タイトルの英語欄が埋まっている
 □ 説明文の英語欄が埋まっている
-□ クリエイター名の英語欄が埋まっている
-□ コピーライトにクリエイター名が入っている
+□ クリエイター名が English: Away from Desk ／ 日本語: 離席中 になっている
+□ コピーライトが © Away from Desk になっている
 □ メイン画像・タブ画像・スタンプ16枚がすべてアップ済み
 □ スタンプの並びが 01→16 の順になっている
 □ 販売価格が120円
@@ -179,7 +180,10 @@ The second set of Call Center Survival Report. If the first set was words thrown
 ────────────────────
 ▼ クリエイター名・コピーライト
 ────────────────────
-1セット目とまったく同じものを入れる
+English  : Away from Desk
+日本語　 : 離席中
+コピーライト : © Away from Desk
+（1セット目とまったく同じ。手で打ち直さずコピペすること）
 
 ────────────────────
 ▼ 画像
