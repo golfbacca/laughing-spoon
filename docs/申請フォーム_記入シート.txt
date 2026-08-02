@@ -74,12 +74,14 @@ Call Center Survival Report
 ▼ スタンプの説明
 ────────────────────
 [English]（必須）
-Text stickers for phone operators who handle complaints and inquiries. The words you swallow because you can't say them out loud. For open chats: live reports, damage reports, proof you are still alive. Japanese text only.
+Text stickers for call center operators. The words you swallow because you can't say them out loud. For live reports and survival checks in open chats.
 
 [日本語]
-問い合わせ・苦情対応の電話オペレーター専用。言えないから飲み込んでいる言葉だけを集めた文字スタンプ16枚。オープンチャットでの実況・被弾報告・生存確認に。コールセンター／コルセン／クレーム対応／カスハラ／テレアポの同業にしか通じません。絵はありません、言葉だけ。
+コールセンターの電話オペレーター専用。言えないから飲み込んでいる言葉だけの16枚。オープンチャットでの実況・被弾報告・生存確認に。同業にしか通じません。
 
 ※改行を入れず1行で貼ること
+※LINEのカウンタは全角を2文字として数えている模様。上の文面は
+　全角2換算でも160以内に収まるよう詰めてある（set1日本語=150）。
 
 ────────────────────
 ▼ クリエイター名
@@ -271,10 +273,10 @@ Call Center Survival Report 2
 ▼ スタンプの説明
 ────────────────────
 [English]
-The second set of Call Center Survival Report. If the first set was words thrown outward, this one reports your own insides breaking down. For phone operators dealing with complaints and customer harassment. Japanese text only.
+Call Center Survival Report 2. The first set threw words outward; this one reports your own insides breaking down. For operators handling complaints.
 
 [日本語]
-「コールセンター民の生存報告」第2弾。1作目が外へ投げる言葉なら、こちらは自分の内側が壊れていくのを実況する16枚。感情、在庫切れ／もう痛くない／私の声じゃない。問い合わせ・苦情対応のオペレーター、クレーム対応、カスハラ被弾中の同業へ。
+「コールセンター民の生存報告」第2弾。外へ投げる1作目に対し、内側が壊れていくのを実況する16枚。クレーム対応・カスハラ被弾中の同業へ。
 
 ────────────────────
 ▼ クリエイター名・コピーライト
