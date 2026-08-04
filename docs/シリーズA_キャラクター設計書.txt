@@ -1,0 +1,155 @@
+════════════════════════════════════════
+シリーズA「諦念版」キャラクター設計書
+════════════════════════════════════════
+
+画像生成モデルは半年後に同じものを出してくれない。
+確定した現物を記述として残し、以降のセットでも同じキャラを起こせるようにする。
+
+
+────────────────────────────────────────
+■ キャラクター
+────────────────────────────────────────
+
+コールセンターの生き物。名称は未定。
+
+・小さく丸い、卵型に近い体。首はない
+・短い腕と、ごく短い脚
+・顔は目と口のみ。鼻・眉・耳はない
+・目は濃いアーモンド型、上まぶたの線あり、白い丸ハイライトが各1つ
+　※星型のキラキラは使わない（「うれしい」の記号になり、諦念の音程と合わない）
+・頬に横長のローズ色の楕円
+・既定の表情は、静かで疲れていて少し困っている。泣くほどではない
+
+★決定的な要素：大きめの黒いヘッドセット
+　スリムなブームマイクが口元へ伸び、細いカールコードが後ろへ流れる。
+　頭に対して少し大きい。この一点でコールセンターの生き物になり、
+　既存のどのキャラとも別物になる。
+
+
+────────────────────────────────────────
+■ 配色（確定画像のピクセルから実測）
+────────────────────────────────────────
+
+  地（クリーム）        #F5EDDD
+  線（チャコール）      #37322B
+  ヘッドセット（スレート）#748584
+  マイク（テラコッタ）  #BB7963
+  頬（ローズ）          #CA9D94
+
+▼ なぜ純白ではなくクリームか
+  ストアのスタンプ一覧とトーク背景は白または白に近い。純白の体だと
+  塗りが背景に溶けて輪郭線だけの絵になり、丸いシルエットが失われる。
+  加えて、ダークモード対策の白フチと体が一体化してしまう。
+
+▼ 文字の配色
+  本文    チャコール #37322B（キャラの線と同色。画面が一体になる）
+  強調    テラコッタ #BB7963
+  弱め    スレート   #748584
+  シリーズBの墨#1A1A1A＋血#7B1E1E とは別の温度。
+
+
+────────────────────────────────────────
+■ 書体
+────────────────────────────────────────
+
+  MotoyaLMaru（丸ゴシック）
+  シリーズBの明朝／極太ゴシックに対して、丸ゴシックで別ラインにする。
+
+
+────────────────────────────────────────
+■ 生成に使ったプロンプト
+────────────────────────────────────────
+
+▼ 設定シート（最初の1枚）
+
+A character design reference sheet for an original mascot, drawn in a simple
+hand-drawn Japanese picture-book style.
+
+THE CHARACTER: a small, round, pale cream-colored creature, about the size of
+a coffee mug. Its body is one soft bean shape with no visible neck. Tiny stubby
+arms and very short legs. Its face has only two small black dot eyes set fairly
+far apart, and a very small mouth — no nose, no eyebrows, no ears. Its default
+expression is quiet, tired and slightly worried, but not sad enough to cry.
+
+ITS DEFINING FEATURE: it wears an oversized black call-center headset with a
+slim boom microphone curving toward its mouth. The headset is slightly too big
+for its head. A thin coiled cable trails away from it.
+
+ART STYLE: thin, uneven, hand-drawn black ink outline with visible line-weight
+variation, as if drawn with a soft pen. Flat fill colors only — no gradients,
+no shading, no highlights, no 3D. Gentle and quiet. Generous empty space.
+
+COLORS: body cream #F5EDDD, outline warm charcoal #37322B, headset muted slate
+#748584, terracotta #BB7963 accent on the microphone tip.
+
+No text, no letters, no logos, no watermark anywhere in the image.
+
+
+▼ 個別ポーズ（設定シートから1体だけ切り抜いた画像を添付して使う）
+
+The attached image is a STYLE REFERENCE ONLY.
+Do not edit it. Do not modify it. Do not reproduce its layout.
+
+TASK: Create ONE new, separate illustration of this same character.
+
+OUTPUT FORMAT (strict):
+- exactly ONE character in the image
+- ONE pose only
+- NO turnaround, NO multiple views, NO expression row, NO panels, NO grid
+- plain white background, character centered with generous margin
+- no text, no letters, no speech bubbles
+
+POSE: 〈ポーズ指示〉
+
+EYES (must be identical in every image): two dark almond-shaped eyes with a
+thin upper eyelid line and ONE small round white highlight dot in each eye.
+No star-shaped sparkles, no glitter, no eyelashes, no gradients in the eyes.
+
+Keep exactly the same proportions, line style and colors as the reference image.
+
+
+────────────────────────────────────────
+■ 生成時にはまった落とし穴
+────────────────────────────────────────
+
+1. 設定シートをそのまま添付すると、モデルはシートを「編集対象」と解釈し、
+   全パネルの表情を書き換えたシートを返してくる。
+   → 1体だけを切り抜いた画像を渡す。出力形式を禁止事項として明示する。
+
+2. 星型のキラキラが目に入ることがある。「うれしい」の記号なので
+   「謝る係、今日も」などに付くと浮く。
+   → EYES ブロックを毎回入れて固定する。
+
+3. ポーズごとに寄り方（拡大率）がばらつく。
+   → 気にしなくてよい。合成時に面積で正規化している（sticker_engine.render_char）。
+      高さで揃えると寝そべりポーズだけ小さく見えるため、面積で揃えている。
+
+4. 出力は白背景の不透明PNGになる。
+   → tools/cutout.py で透過にする。地の色が白に近いので明度のしきい値では
+      体まで消える。四隅から連結領域を塗りつぶして外側の白だけを背景と判定し、
+      さらにヘッドバンドと頭の隙間のような閉じた白領域を面積で判別して抜く
+      （目のハイライトは小さいので残る）。
+
+
+────────────────────────────────────────
+■ ポーズ一覧（16枚）
+────────────────────────────────────────
+
+01 私は悪くない、たぶん   小さく両手を広げた、説得力のない弁解。目線をそらす
+02 声だけ元気だった       口は明るく開いているのに、目は半目で疲れている
+03 息、してた？私         片手を自分の体に当てて確認。焦点の合わない顔
+04 謝る係、今日も         腰から前に深く礼。目を閉じ、腕は体の脇
+05 保留で深呼吸してる     目を閉じ、小さく息を吐く。肩が落ちている
+06 トイレが一番静か       小さくうずくまり、膝を抱える
+07 上を出せ、出しました   片腕を画面外へ伸ばして指す。完全に無表情
+08 ガチャ切り、ありがとう 外したヘッドセットを両手で持ち、見下ろす
+09 三十分、同じ話         頬杖をつき、目が半分閉じて虚ろ
+10 電話、鳴らないで       両手を合わせて祈る。目をぎゅっと閉じる
+11 笑顔で話せ、だって     指で自分の口角を持ち上げた作り笑い。目は笑っていない
+12 切った瞬間また鳴る     驚いて跳ね上がる。コードが揺れ、汗
+13 家でも着信音がする     毛布にくるまり、顔とヘッドセットだけ出す
+14 まだ声が出る           胸の高さで控えめに小さく拳。かすかな笑み
+15 今日のぶん、終わった   仰向けに倒れ、手足を投げ出して目を閉じる
+16 お茶が冷めてる         湯呑みを両手で持ち、中を見下ろす
+
+════════════════════════════════════════

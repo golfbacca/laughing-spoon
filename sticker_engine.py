@@ -5,7 +5,7 @@ LINEエモ文字スタンプ 生成エンジン
 セット定義（gen_set1.py / gen_set2.py）から呼ばれる共通部分。
 370x320px・背景透過PNG・全文字に白フチ（ダークモードのトーク背景対策）。
 """
-import os
+import os, math
 from PIL import Image, ImageDraw, ImageFont
 
 NOTO = "/usr/share/fonts/opentype/noto/"
@@ -104,6 +104,21 @@ def render_vertical(text, fkey, size, color, line=1.02, col_gap=14):
     return _crop(canvas)
 
 
+def render_char(path, area=None, height=None):
+    """キャラ画像を読み込んで拡縮する。
+    ポーズごとに縦横比が違う（寝そべりは横長）ので、既定では面積で正規化する。
+    高さで揃えると寝そべりだけ小さく見えてしまうため。"""
+    im = Image.open(path).convert("RGBA")
+    bb = im.getchannel("A").getbbox()
+    if bb:
+        im = im.crop(bb)
+    if height:
+        s = height / im.height
+    else:
+        s = math.sqrt((area or 34000) / (im.width * im.height))
+    return im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
+
+
 def render_rule(width, thick, color):
     sw = 3
     img = Image.new("RGBA", (width + sw * 2, thick + sw * 2), (0, 0, 0, 0))
@@ -120,7 +135,9 @@ def build(spec, size=(W, H), margin=None):
     layers = []
     for b in spec["blocks"]:
         t = b.get("type", "text")
-        if t == "vertical":
+        if t == "char":
+            img = render_char(b["path"], b.get("area"), b.get("height"))
+        elif t == "vertical":
             img = render_vertical(b["text"], b["font"], b["size"], b.get("color", SUMI), b.get("line", 1.02))
         elif t == "rule":
             img = render_rule(b["width"], b.get("thick", 3), b.get("color", SUMI))

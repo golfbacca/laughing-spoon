@@ -34,6 +34,9 @@
 |---|---|
 | `stickers/set1/01.png` 〜 `16.png` | 1セット目。370×320px・背景透過PNG・白フチ入り（登録順） |
 | `stickers/set2/01.png` 〜 `16.png` | 2セット目 |
+| `stickers/setA/01.png` 〜 `16.png` | シリーズA「諦念版」（キャラクター入り） |
+| `assets_charA/` | キャラクター素材（透過済み・16ポーズ＋確定シート） |
+| `docs/シリーズA_キャラクター設計書.txt` | 配色の実測値、生成プロンプト、はまった落とし穴 |
 | `stickers/set*/main_240x240.png` | メイン画像 |
 | `stickers/set*/tab_96x74.png` | トークルームタブ画像 |
 | `stickers/set*/00_ファイル対応表.txt` | 番号と文言の対応表 |
@@ -61,6 +64,7 @@ pip install Pillow
 apt-get install -y fonts-noto-cjk fonts-noto-cjk-extra fonts-motoya-l-maruberi
 python3 gen_set1.py
 python3 gen_set2.py
+python3 gen_setA.py
 ```
 
 `gen_set*.py` の `STICKERS = [...]` が全16枚の設計データ。文言・フォント・サイズ・色・配置を
