@@ -39,10 +39,16 @@ def cut(path):
     # 上げずに「外周の孤立した点」だけを落とす。
     bg[:3, :] = True; bg[-3:, :] = True; bg[:, :3] = True; bg[:, -3:] = True
 
-    # ヘッドバンドと頭の隙間など、外側から辿れない閉じた白領域が残る。
-    # 純白(距離14以内)に限れば地のクリーム(距離31)は巻き込まない。
-    # ただし目のハイライトも純白なので、面積で判別して大きいものだけ抜く。
+    # 外側から辿れない閉じた白領域が3種類できる。扱いを分ける必要がある。
+    #   (a) ヘッドバンドと頭の隙間 … 抜く。画像面積の約1.7%と大きい
+    #   (b) コードの巻きの内側     … 抜く。背景が透けるべき場所
+    #   (c) 歯・目のハイライト     … 残す。白いままでないと不気味になる
+    # (b)と(c)は面積が重なる（どちらも0.03%前後）ので大きさでは分けられない。
+    # (b)は細いコードで囲まれているだけなので、少し膨らませると背景に接する。
+    # (c)は顔の内側にあるので接しない。これで判別する。
     strict = (dist <= 14) & ~bg
+    AREA_BIG = 0.008 * h * w      # (a)の判定。画像の大きさに比例させる
+    R = 8                          # 膨張させる画素数
     seen = np.zeros((h, w), dtype=bool)
     ys, xs = np.nonzero(strict)
     for sy, sx in zip(ys, xs):
@@ -54,7 +60,18 @@ def cut(path):
                 ny, nx = y+dy, x+dx
                 if 0 <= ny < h and 0 <= nx < w and strict[ny, nx] and not seen[ny, nx]:
                     seen[ny, nx] = True; q.append((ny, nx))
-        if len(comp) >= 200:                      # 目のハイライトはこれより小さい
+        drop = len(comp) >= AREA_BIG
+        if not drop:
+            ay = [p[0] for p in comp]; ax = [p[1] for p in comp]
+            y0, y1 = max(0, min(ay)-R-1), min(h, max(ay)+R+2)
+            x0, x1 = max(0, min(ax)-R-1), min(w, max(ax)+R+2)
+            m = np.zeros((y1-y0, x1-x0), dtype=bool)
+            for y, x in comp: m[y-y0, x-x0] = True
+            for _ in range(R):                       # 4近傍で膨張
+                m[1:, :] |= m[:-1, :]; m[:-1, :] |= m[1:, :]
+                m[:, 1:] |= m[:, :-1]; m[:, :-1] |= m[:, 1:]
+            drop = bool((m & bg[y0:y1, x0:x1]).any())  # 背景に接したら(b)
+        if drop:
             for y, x in comp: bg[y, x] = True
 
     alpha = np.where(bg, 0, 255).astype(np.uint8)
