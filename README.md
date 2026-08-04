@@ -36,6 +36,7 @@
 | `stickers/set2/01.png` 〜 `16.png` | 2セット目 |
 | `stickers/setA/01.png` 〜 `16.png` | シリーズA「諦念版」（キャラクター入り） |
 | `assets_charA/` | キャラクター素材（透過済み・16ポーズ＋確定シート） |
+| `docs/シリーズA_申請一式.txt` | シリーズAのタイトル・説明文・タグ・補足事項 |
 | `docs/シリーズA_キャラクター設計書.txt` | 配色の実測値、生成プロンプト、はまった落とし穴 |
 | `stickers/set*/main_240x240.png` | メイン画像 |
 | `stickers/set*/tab_96x74.png` | トークルームタブ画像 |
