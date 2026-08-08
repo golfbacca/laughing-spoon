@@ -9,20 +9,30 @@ import os, math
 from PIL import Image, ImageDraw, ImageFont
 
 NOTO = "/usr/share/fonts/opentype/noto/"
+# 値は候補パスのリスト。fonts-motoya-l-maruberi は配布によって展開先が
+# motoya-mtlmr3m / motoya-l-maruberi のどちらにもなるため、順に探す。
 FONTS = {
-    "black":  (NOTO + "NotoSansCJK-Black.ttc", 0),    # 極太＝DELA Gothic One 代替
-    "sans_l": (NOTO + "NotoSansCJK-Light.ttc", 0),    # 細字＝Noto Sans JP Light 相当
-    "min_l":  (NOTO + "NotoSerifCJK-Light.ttc", 0),   # 明朝＝しっぽり明朝 代替
-    "min_r":  (NOTO + "NotoSerifCJK-Regular.ttc", 0),
-    "min_m":  (NOTO + "NotoSerifCJK-Medium.ttc", 0),
-    "maru":   ("/usr/share/fonts/truetype/motoya-mtlmr3m/MTLmr3m.ttf", 0),  # 丸ゴ＝手書き系代替
+    "black":  ([NOTO + "NotoSansCJK-Black.ttc"], 0),    # 極太＝DELA Gothic One 代替
+    "sans_l": ([NOTO + "NotoSansCJK-Light.ttc"], 0),    # 細字＝Noto Sans JP Light 相当
+    "min_l":  ([NOTO + "NotoSerifCJK-Light.ttc"], 0),   # 明朝＝しっぽり明朝 代替
+    "min_r":  ([NOTO + "NotoSerifCJK-Regular.ttc"], 0),
+    "min_m":  ([NOTO + "NotoSerifCJK-Medium.ttc"], 0),
+    "maru":   (["/usr/share/fonts/truetype/motoya-l-maruberi/MTLmr3m.ttf",
+                "/usr/share/fonts/truetype/motoya-mtlmr3m/MTLmr3m.ttf"], 0),  # 丸ゴ＝手書き系代替
 }
 _cache = {}
 def F(key, size):
     k = (key, size)
     if k not in _cache:
-        path, idx = FONTS[key]
-        _cache[k] = ImageFont.truetype(path, size, index=idx)
+        paths, idx = FONTS[key]
+        for p in paths:
+            if os.path.exists(p):
+                _cache[k] = ImageFont.truetype(p, size, index=idx)
+                break
+        else:
+            raise FileNotFoundError(
+                f"フォント '{key}' が見つかりません。候補: {paths}\n"
+                "READMEの apt-get 行を実行してください。")
     return _cache[k]
 
 SUMI  = (26, 26, 26, 255)     # 墨：基調
