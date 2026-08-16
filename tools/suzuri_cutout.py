@@ -69,6 +69,22 @@ def _dilate(mask, r):
     return m
 
 
+def _existing_alpha(path, min_ratio=0.05):
+    """すでに背景が透過されている画像なら、そのアルファを返す。そうでなければ None。
+
+    生成AIやダウンロード経路によっては、最初から透過PNGで手に入ることがある。
+    その場合に地の色を推定して切り直すと、透明画素のRGB（多くは0,0,0）を
+    地の色と誤認して、絵を巻き込んで壊す。先に判定して素通しする。"""
+    im = Image.open(path)
+    if im.mode not in ("RGBA", "LA", "P"):
+        return None
+    im = im.convert("RGBA")
+    al = np.asarray(im)[:, :, 3]
+    if (al == 0).mean() < min_ratio:
+        return None  # アルファはあるが実質不透明。切る対象として扱う
+    return im, al
+
+
 def cut(path, tol=14, strip_border=False, white_tol=30, border=0, square=False):
     im = Image.open(path).convert("RGB")
     # int16 だと (255-rgb)**2 の3チャンネル合計が最大195075で溢れて負になる。
@@ -137,13 +153,38 @@ def main():
     p.add_argument("--white-tol", type=int, default=30, help="白フチと見なす色距離（既定30）")
     p.add_argument("--border", type=int, default=0, help="この画素数で白フチを引き直す")
     p.add_argument("--square", action="store_true", help="透明余白で正方形に整える")
+    p.add_argument("--pad", type=int, default=0, help="切り詰めたあと足す透明余白の画素数")
+    p.add_argument("--scale", type=float, default=1.0, help="最後に拡大する倍率")
     a = p.parse_args()
 
     src = Image.open(a.src)
     print(f"入力: {a.src}  {src.width}x{src.height}  {src.mode}")
     out_path = a.out or os.path.splitext(a.src)[0] + "_cut.png"
 
-    im = cut(a.src, a.tol, a.strip_border, a.white_tol, a.border, a.square)
+    pre = _existing_alpha(a.src)
+    if pre is not None:
+        im, al = pre
+        print(f"  すでに透過済み（透明 {(al == 0).mean() * 100:.1f}%）。地の切り抜きは行わない。")
+        bb = im.getchannel("A").getbbox()
+        if bb:
+            im = im.crop(bb)
+        if a.square:
+            side = max(im.width, im.height)
+            pad = Image.new("RGBA", (side, side), (0, 0, 0, 0))
+            pad.paste(im, ((side - im.width) // 2, (side - im.height) // 2), im)
+            im = pad
+    else:
+        im = cut(a.src, a.tol, a.strip_border, a.white_tol, a.border, a.square)
+
+    if a.pad > 0:
+        # 縁のアンチエイリアスが断ち切られないよう、透明の余白を少しだけ残す
+        pad = Image.new("RGBA", (im.width + a.pad * 2, im.height + a.pad * 2), (0, 0, 0, 0))
+        pad.paste(im, (a.pad, a.pad), im)
+        im = pad
+
+    if a.scale != 1.0:
+        im = im.resize((round(im.width * a.scale), round(im.height * a.scale)), Image.LANCZOS)
+
     im.save(out_path)
 
     # 透明率は事故検知に使う。0%なら地が抜けていない＝失敗。

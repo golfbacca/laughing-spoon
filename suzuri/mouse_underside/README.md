@@ -6,16 +6,22 @@
 
 | ファイル | 内容 |
 |---|---|
-| `raw.png` | 生成AIが出した元画像（**ここに保存する**） |
-| `sticker.png` | 入稿用の透過PNG（スクリプトが生成） |
+| `raw.png` | 生成AIが出した元画像。1024x1024・**すでに背景が透過済み** |
+| `sticker.png` | 入稿用。558x816。余白を切り詰め、8pxの透明マージンを残したもの |
+| `sticker_2x.png` | 上を2倍にした保険。1116x1632。解像度の警告が出たときだけ使う |
 
-`raw.png` はまだ置かれていません。生成画像をこの名前で保存してください。
+## 確認済みのこと
 
-## 手順
+- 背景は完全に透明（透明64.7%）。地の切り抜きは不要だった
+- 白いダイカット風のフチが一周きれいに残っている
+- 拡大しても文字・ロゴ・署名・透かしの写り込みはない
+- 4辺とも透明で終わっており、絵が断ち切られていない
+
+## 手順（作り直したときはこれを実行）
 
 ```
 python3 tools/suzuri_cutout.py suzuri/mouse_underside/raw.png \
-    -o suzuri/mouse_underside/sticker.png
+    --pad 8 -o suzuri/mouse_underside/sticker.png
 ```
 
 詳細は `docs/SUZURI_マウス裏_入稿手順.txt`。
