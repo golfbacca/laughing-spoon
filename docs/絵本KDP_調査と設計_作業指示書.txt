@@ -14,7 +14,7 @@
 0. 進捗ステータス
 ----------------------------------------------------------------
 
-STEP1 棚の調査      : 中断（Amazonへの直接アクセスが遮断されたため）
+STEP1 棚の調査      : 中断継続（再実測でもAmazon遮断。利用者の貼り付け待ち）
 STEP2 逆質問        : 未着手
 STEP3 1冊の設計図   : 未着手
 STEP4 一括画像指示文: 未着手
@@ -43,6 +43,48 @@ egress proxy に 403 で拒否された。実測ログ:
 
       → 「Also include default list of common package managers」に
         必ずチェックを入れる（外すとnpm等の既定許可が消える）
+
+■ 再開時の実測ログ（2026-08-17 ／ 4章の手順1を実行）
+
+新しいセッションで再度アクセスを実測したが、結果は変わらなかった。
+
+  curl -sS -o /dev/null -w "%{http_code}\n" 実測（いずれも exit 56）:
+
+    https://www.amazon.co.jp/                                  → 000
+    https://www.amazon.co.jp/gp/bestsellers/books/466306        → 000
+    https://www.amazon.co.jp/gp/bestsellers/digital-text/2293383051 → 000
+    https://www.amazon.co.jp/gp/new-releases/digital-text/2293383051 → 000
+
+    エラー: curl: (56) CONNECT tunnel failed, response 403
+
+  egress proxy のステータス（$HTTPS_PROXY/__agentproxy/status）:
+
+    "selective": false,  "toolScoped": false
+    recentRelayFailures:
+      kind   : "connect_rejected"
+      detail : "gateway answered 403 to CONNECT
+                (policy denial or upstream failure)"
+      host   : "www.amazon.co.jp:443"
+
+  → プロキシ自身が「policy denial」と明示している。
+    TLSでもCAでも設定ミスでもなく、環境のネットワークポリシー拒否である。
+    ポリシーはセッション起動時に読まれるため、セッション内から解除できない。
+
+  WebFetchツール経由も同様に遮断:
+
+    {"error_type":"EGRESS_BLOCKED","domain":"www.amazon.co.jp",
+     "message":"Access to www.amazon.co.jp is blocked by the network egress proxy."}
+
+  → curl と WebFetch の両経路とも塞がっている。
+    Amazonのページを開く手段はこのセッションには無い。
+
+  一方、web検索（WebSearchツール）は動作する。ただしこれは
+  検索結果の記載を読むだけであり、Amazonの商品ページ・
+  ランキングページを直接確認したことにはならない。
+  3章と同じ「記載ベース」の情報しか増やせず、証拠主義の要求を満たさない。
+
+判定: 4章の手順2（実測で埋める）は不可。手順3（利用者に画面の数字を
+      貼ってもらう方式）に切り替える。利用者に依頼済み。
 
 注意1: 環境設定はセッション起動時に読まれるため、変更後は
        新しいセッションを立てる必要がある。実行中のセッションには効かない。
