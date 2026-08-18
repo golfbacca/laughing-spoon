@@ -1,7 +1,7 @@
 絵本KDP出版プロジェクト ／ 調査と設計の作業指示書
 ================================================================
 作成: 2026-08-17
-最終更新: 2026-08-17（STEP1〜STEP3完了。次はSTEP4）
+最終更新: 2026-08-17（STEP1〜STEP4完了。次はSTEP5）
 このファイルが存在するブランチ:
     claude/kdp-resume-steps-febcdh          ← 最新。こちらを使う
     claude/amazon-picturebook-kdp-design-dmcci6  ← 初版
@@ -10,7 +10,7 @@
 「選定型」で進めるための指示書と、調査の進捗記録である。
 
 新しいセッションを開いたときは、このファイルを読ませて
-「STEP4から」と指示すれば再開できる。
+「STEP5から」と指示すれば再開できる。
 
 
 ----------------------------------------------------------------
@@ -56,7 +56,7 @@
 【新セッションでの最初の一手】
 
   4章の手順1（アクセス実測）をもう一度実行する。
-  200が返れば、そのままSTEP4（一括画像指示文）から再開する。
+  200が返れば、そのままSTEP5（KDP出版文）から再開する。
 
 
 ----------------------------------------------------------------
@@ -98,7 +98,7 @@
 STEP1 棚の調査      : 完了（2026-08-17 実測。5章に結果）
 STEP2 逆質問        : 完了（テーマ=トイレ・うんち、対象2〜4歳。7章）
 STEP3 1冊の設計図   : 完了（7章）
-STEP4 一括画像指示文: 未着手
+STEP4 一括画像指示文: 完了（8章）
 STEP5 KDP出版文     : 未着手
 
 
@@ -1055,3 +1055,281 @@ web検索結果の記載ではない。ただし順位・価格・レビュー�
     AI-Generated として申告する整理になっている。
     隠して出すのは規約違反であり、出版停止のリスクがある。
     申告しても出版はできる。必ず申告する。
+
+
+----------------------------------------------------------------
+8. STEP4 キャラ固定の一括画像指示文（Gemini用・英語／2026-08-17）
+----------------------------------------------------------------
+
+■ 使い方（先に読む）
+
+  1. 下の「PROMPT」を丸ごと1回で貼る。1枚ずつ小出しにしない。
+     顔がぶれる原因のほぼ全部が「キャラ固定文を毎回入れ直さないこと」。
+
+  2. 最初に COVER と SCENE 3 の2枚だけを出させて、トトンの見た目を
+     確定させる。気に入った1枚を「参照画像」として以後の生成に
+     必ず添付する。文章だけで固定するより効く。
+
+  3. 確定後、SCENE 1〜12 を一括で出させる。
+     途中で1枚だけ描き直すときも、CHARACTER LOCK の全文を
+     もう一度貼ってから頼む。省略しない。
+
+  4. 画像に文字は入れさせない。日本語の文字はAIがまともに描けない。
+     文章はあとから自分で載せる（Canva等）。
+     そのために各場面で「文字を置く余白」を指定してある。
+
+  5. 場面9（トイレの中）は指定を省略しないこと。
+     子どもとトイレを同じ絵に入れる場面なので、
+     露出が出ない構図を明示的に指定してある。
+     この指定を外すと、生成が拒否されるか、出してはいけない絵が出る。
+     下記 SCENE 9 の MODESTY 行は必ずそのまま使う。
+
+  6. 判型と解像度は下記に書いたが、KDPの判型一覧・入稿要件は
+     変わることがある。入稿前にKDPの画面で実寸・実要件を確認すること。
+     ここに書いた数字を根拠に確定しない（1章の断定禁止）。
+
+
+■ 判型の前提（要・実画面確認）
+
+  正方形 8.5 × 8.5 インチを想定して 300dpi で作る。
+    仕上がり  8.5 in   = 2550 px
+    塗り足し込 8.75 in  = 2625 px（各辺 0.125 in の塗り足し）
+    安全領域  各辺 0.5 in（150 px）内側に重要要素を収める
+
+  電子（Kindle固定レイアウト）だけで出すなら塗り足しは不要だが、
+  ペーパーバックも出す前提（1章）なので最初から塗り足し込みで作る。
+  あとから足すより、最初から入れておくほうが安い。
+
+
+■ PROMPT（ここから下を丸ごと貼る）
+
+--------------------------------------------------------------
+You are illustrating a children's picture book. Produce a set of
+images that look like they come from the same book, drawn by the
+same hand, on the same day.
+
+=== ABSOLUTE RULES ===
+- Do NOT imitate, reference, or resemble any existing published
+  picture book, existing character, franchise, or any named
+  illustrator's style. This artwork must be fully original.
+- Do NOT render any text, letters, numbers, logos, or signage in
+  the image. No words anywhere. Text will be added later by hand.
+- Do NOT include brand names, trademarks, or recognizable products.
+- Keep every image in the SAME style, SAME palette, and SAME
+  character design as the others.
+
+=== STYLE LOCK (identical in every image) ===
+- Soft, warm, bright children's picture-book illustration.
+- Rounded shapes, soft edges, no sharp corners anywhere.
+- Watercolor-and-colored-pencil feel: visible gentle texture, but
+  clean flat areas of color underneath.
+- High-key lighting. No harsh shadows, no dramatic contrast,
+  no night-time darkness except where a scene says "slightly dim".
+- Limited warm palette: cream, pale sky blue, soft yellow, warm
+  beige, muted green, soft coral. No neon, no black fills.
+- Backgrounds simple and uncluttered. Suggest the place; do not
+  fill it with detail.
+- NOT anime. NOT manga. NOT 3D render. NOT photorealistic.
+  NOT vector/flat-corporate. NOT AI-glossy.
+
+=== CHARACTER LOCK: "Toton" (repeat this in every image) ===
+Toton is an imaginary small creature. It is NOT based on any real
+animal species and NOT based on any existing character.
+- Body: rounded, like a slightly flattened egg. Almost no neck.
+- Limbs: four short stubby limbs.
+- Size: fits in a small child's palm (about one palm wide).
+- Body color: pale sky blue. The belly area only is white.
+- Cheeks: one small orange circle on each cheek. Always present in
+  every image, in every mood. Not a blush effect.
+- Eyes: simple solid black dots only. No whites of the eyes, no
+  eyelashes, no highlights, no eyebrows.
+- Ears: two small round ears, set high on the head and wide apart.
+- Mouth: one short horizontal line. When open, only a wide flat
+  oval. Never show teeth or tongue.
+- Tail: none. Toton has no tail in any image.
+- Hands and feet: rounded tips. Do not draw fingers or toes.
+- Accessory: a small yellow backpack worn on its back. Never a bib,
+  never an apron, never clothing.
+- Inside the backpack: one white towel. It appears ONLY in scene 11.
+- Expression rules (use ONLY these two):
+    happy  -> ears twitch, one small motion mark beside each ear
+    anxious-> both hands gripping the backpack straps
+  In all other moments Toton's face is calm and neutral.
+
+=== CHARACTER LOCK: "Mio" (the child) ===
+- A toddler, about 3 years old. Gender-neutral appearance:
+  do not make Mio read as clearly a boy or clearly a girl.
+- Short soft hair, dark brown, simple rounded silhouette.
+- Round face, simple dot eyes in the same style as Toton's, small
+  simple mouth.
+- Clothing, identical in every image: a plain moss-green
+  short-sleeve shirt, beige shorts, red sneakers, and a small
+  cream-colored backpack.
+- Mio is always fully clothed in every image.
+
+=== CHARACTER LOCK: "the grown-up" ===
+- One adult companion. Never named, never labeled as mother or
+  father. Keep the role neutral.
+- Shoulder-length hair tied back, plain navy long-sleeve top,
+  grey trousers.
+- Usually seen partially: hands, or from the shoulders down, or
+  crouching with face gentle and calm. Never the focus of the image.
+
+=== OUTPUT SPEC (every image) ===
+- Square 1:1 composition.
+- 2625 x 2625 pixels, 300 dpi.
+- Keep all important elements at least 150 px inside every edge.
+- Each scene names a TEXT SPACE: that area must stay low-detail and
+  close to a single even color, so Japanese text can be placed on
+  it later. Do not put a character's face or any busy detail there.
+
+=== IMAGES TO PRODUCE ===
+
+COVER
+  Toton's head and shoulders poking out of the top of Mio's
+  cream backpack, which Mio is wearing. Both face the viewer.
+  Mio smiling calmly, Toton neutral. A park gate softly suggested
+  behind them, very simple.
+  Mood: inviting, safe.
+  TEXT SPACE: top third.
+
+SCENE 1
+  Inside a bus. Mio sits by the window, the cream backpack on their
+  lap, Toton's head poking out of it. Outside the window, soft
+  green shapes suggesting trees passing.
+  Mood: bright, looking forward to something.
+  TEXT SPACE: bottom third.
+
+SCENE 2
+  A park. Mio running with arms out. Toton running along the ground
+  beside Mio's feet, small and quick.
+  Mood: open, joyful, energetic.
+  TEXT SPACE: top third.
+
+SCENE 3   <-- emotional core of the book. Keep it quiet, not comic.
+  Mio has stopped moving. Standing still, knees pressed together,
+  both hands pressed lightly against the lower belly, head tipped
+  down, looking at the ground. Toton stands on the ground looking
+  up at Mio's face.
+  Mood: small private unease. Do NOT make this funny, do NOT make
+  it distressing. Calm and gentle.
+  TEXT SPACE: bottom third.
+
+SCENE 4
+  Mio has turned back toward the play equipment, face turned away,
+  saying nothing. In the foreground Toton grips BOTH backpack
+  straps with both hands (the anxious cue).
+  Mood: pulling in two directions.
+  TEXT SPACE: bottom third.
+
+SCENE 5
+  Closer view. Toton leans in near Mio's ear and speaks quietly.
+  Only these two in frame.
+  Mood: gentle, private, encouraging.
+  TEXT SPACE: top third.
+
+SCENE 6
+  Mio looks up and speaks to the grown-up. The grown-up is
+  crouching down to Mio's height, listening, calm and unhurried.
+  Toton visible at Mio's feet, calm.
+  Mood: relief beginning. This is the moment the child SPEAKS UP —
+  make that readable in the posture.
+  TEXT SPACE: top third.
+
+SCENE 7
+  The doorway of a small public restroom building in the park,
+  seen from outside. The doorway interior is slightly dim.
+  Mio stands at the threshold holding the grown-up's hand,
+  hesitating. Toton at Mio's feet.
+  Mood: unfamiliar, but safe because someone is holding the hand.
+  TEXT SPACE: bottom third.
+
+SCENE 8
+  Toton, standing on the grown-up's palm at door height, knocks on
+  the door with one small rounded hand. Two small motion marks near
+  the knocking hand.
+  Mood: reassuring, slightly playful.
+  TEXT SPACE: top third.
+
+SCENE 9   <-- MODESTY RULES ARE MANDATORY. Do not omit any of them.
+  Inside a clean, bright, simple restroom stall. The door is closed
+  behind. Mio is seated, and the grown-up's hands are placing a
+  small step stool under Mio's feet, which do not reach the floor.
+  Toton stands on the floor nearby, calm.
+  MODESTY: Frame the image from the side, cropped ABOVE the waist,
+  so only Mio's upper body, face, and the feet-on-the-stool detail
+  are visible. Mio is fully clothed in the moss-green shirt.
+  Do NOT show the toilet bowl, do NOT show any undressing, do NOT
+  show any part of the body below the waist except the shoes and
+  lower legs resting on the stool. No nudity of any kind.
+  Mood: calm, matter-of-fact, dignified. Not comic, not shy.
+  TEXT SPACE: top third.
+
+SCENE 10
+  A hand pressing a flush lever. A soft swirl of pale blue lines
+  suggesting water sound and movement — stylized, not realistic
+  water, and no toilet bowl visible. Mio slightly startled, leaning
+  back a little. Toton calm, one rounded hand raised as if to say
+  "it's fine".
+  Mood: a loud thing turns out to be harmless.
+  TEXT SPACE: top third.
+
+SCENE 11
+  A low sink. Mio washing hands, sleeves pushed up, water as a few
+  simple pale blue lines. Toton has opened the yellow backpack and
+  is pulling out the single white towel.
+  Mood: warm, the routine completing itself.
+  TEXT SPACE: bottom third.
+
+SCENE 12
+  Back in the park. Mio running again with arms out, same energy as
+  scene 2 so the two images rhyme. Toton on the ground beside Mio,
+  ears twitching with one small motion mark beside each ear
+  (the happy cue).
+  Mood: bright, resolved, ordinary again.
+  TEXT SPACE: top third.
+--------------------------------------------------------------
+
+
+■ B案（枚数を実測の多数派に寄せる場合）
+
+  5章の実測では個人出版のページ数中央値は約42p。上の13枚では下位に寄る。
+  増やすなら、新しい場面を発明せず、既存の場面を割る。
+
+    SCENE 3  → 3a もじもじし始める ／ 3b 動けなくなる
+    SCENE 7  → 7a 建物の外まで来る ／ 7b 戸口で止まる
+    SCENE 9  → 9a ドアをしめる ／ 9b すわる ／ 9c 台に足をのせる
+               ※9a〜9cすべてに SCENE 9 の MODESTY 行をそのまま付ける
+    SCENE 10 → 10a レバーに手をのばす ／ 10b 音がする
+
+  これで 12場面 → 17場面（＋表紙＝18枚）。
+  手順①②③を1枚ずつにした 9a/9b/9c が効くので、
+  「手順もの」としての実用性はB案のほうが高い。
+
+
+■ 生成が拒否されたときの対処
+
+  場面9・場面10は、子どもとトイレを同じ絵に入れるため
+  生成が拒否されることがある。そのときは:
+
+    1. MODESTY 行を削らない。むしろ強める
+       （"fully clothed", "cropped above the waist",
+         "no toilet bowl visible" を明示的に足す）。
+    2. それでも拒否されるなら、場面9を
+       「閉まったドアの外側で待つトトン」に差し替える。
+       中を描かずに手順を文章側で説明する形にできる。
+       絵本としては弱くなるが、出版はできる。
+
+  ※拒否を回避するために MODESTY 指定を外すのは絶対にしない。
+    外して通った絵は、KDPの審査で止まる種類の絵である。
+
+
+■ AI申告のリマインド（毎回）
+
+  この方式で画像を作った場合、KDPの出版登録画面で
+  「AI生成コンテンツ」の申告が必要になる。
+  KDPは AI-Generated（申告必須）と AI-Assisted（申告不要）を区別し、
+  AIが画像を生成した場合は、あとから人が大幅に手を入れても
+  AI-Generated として申告する整理になっている。
+  隠して出すのは規約違反で、出版停止のリスクがある。
+  申告しても出版はできる。必ず申告する。
