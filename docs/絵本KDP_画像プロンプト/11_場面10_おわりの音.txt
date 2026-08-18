@@ -1,0 +1,90 @@
+■ SCENE 10 - the flush
+■ ファイル: 11_場面10_おわりの音.txt
+■ 使い方: この行から下を全部まとめて1回で貼る。1枚ぶんです。
+          途中の CHARACTER LOCK を省略しないこと。省略した瞬間に顔がぶれます。
+--------------------------------------------------------------
+=== ABSOLUTE RULES ===
+- Do NOT imitate, reference, or resemble any existing published picture
+  book, existing character, franchise, or any named illustrator's style.
+  This artwork must be fully original.
+- Do NOT include brand names, trademarks, or recognizable products.
+- Except where a scene explicitly asks for title text, render NO text,
+  letters, numbers, logos, or signage anywhere in the image.
+
+=== STYLE LOCK ===
+- Soft, warm, bright children's picture-book illustration.
+- Rounded shapes, soft edges, no sharp corners anywhere.
+- Watercolor-and-colored-pencil feel: gentle visible texture over clean
+  flat areas of color.
+- High-key lighting. No harsh shadows, no heavy contrast, no darkness
+  except where a scene says "slightly dim".
+- Palette, fixed for the whole book: cream, pale sky blue, soft yellow,
+  warm beige, muted green, soft coral. No neon. No black fills.
+- Backgrounds simple and uncluttered. Suggest the place, do not fill it
+  with detail.
+- NOT anime. NOT manga. NOT 3D render. NOT photorealistic.
+  NOT flat-vector-corporate. NOT glossy AI-look.
+
+=== CHARACTER LOCK: "Toton" ===
+Toton is an imaginary small creature. NOT based on any real animal
+species and NOT based on any existing character.
+- Body: rounded, like a slightly flattened egg. Almost no neck.
+- Limbs: four short stubby limbs.
+- Size: fits in a small child's palm (about one palm wide).
+- Body color: pale sky blue. The belly area only is white.
+- Cheeks: one small orange circle on each cheek. Present in EVERY image,
+  in every mood. It is a marking, not a blush effect.
+- Eyes: solid black dots only. No whites of the eyes, no eyelashes,
+  no highlights, no eyebrows.
+- Ears: two small round ears, set high on the head and wide apart.
+- Mouth: one short horizontal line. When open, only a wide flat oval.
+  Never show teeth or tongue.
+- Tail: NONE, in any image.
+- Hands and feet: rounded tips. Do not draw fingers or toes.
+- Accessory: a small yellow backpack worn on its back. Never a bib,
+  never an apron, never clothing.
+- Inside the backpack: one white towel. It is visible ONLY in the
+  handwashing scene.
+- Expression rules, use ONLY these two:
+    happy   -> ears twitch: one small motion mark beside each ear
+    anxious -> both hands gripping the backpack straps
+  At all other times Toton's face is calm and neutral.
+
+=== CHARACTER LOCK: "Mio" (the child) ===
+- A toddler about 3 years old. Gender-neutral: must not read as clearly
+  a boy or clearly a girl.
+- Short soft dark-brown hair, simple rounded silhouette.
+- Round face, simple black dot eyes in the same style as Toton's,
+  small simple mouth.
+- Clothing, identical in every image: plain moss-green short-sleeve
+  shirt, beige shorts, red sneakers, small cream-colored backpack.
+- Mio is fully clothed in every image.
+
+=== CHARACTER LOCK: "the grown-up" ===
+- One adult companion. Never named, never shown as specifically a mother
+  or a father. Keep the role neutral.
+- Shoulder-length hair tied back, plain navy long-sleeve top,
+  grey trousers.
+- Usually partial: hands only, or from the shoulders down, or crouching
+  with a calm gentle face. Never the focus of the image.
+
+=== THIS IMAGE ===
+A hand pressing a flush lever. A soft swirl of pale blue lines
+suggesting water sound and movement - stylized, not realistic water.
+NO toilet bowl visible. Mio slightly startled, leaning back a little.
+Toton calm, one rounded hand raised as if to say "it's fine".
+Mood: a loud thing turns out to be harmless.
+
+=== OUTPUT SPEC ===
+- Square 1:1 composition.
+- Generate at the largest square size the model offers.
+- Target for print: 2625 x 2625 px at 300 dpi
+  (8.5 inch trim + 0.125 inch bleed on each side).
+  If the model outputs smaller, upscale afterwards to 2625 px.
+- Keep every important element at least 150 px inside all four edges.
+  Nothing meaningful within 0.125 inch of the outer edge: that strip
+  gets trimmed off in printing.
+- TEXT SPACE: top third. That area must stay low-detail and close to a single
+  even color, so Japanese text can be placed on it later. Do not put a
+  face or any busy detail there.
+--------------------------------------------------------------
