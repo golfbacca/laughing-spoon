@@ -71,11 +71,25 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-A hand pressing a flush lever. A soft swirl of pale blue lines
-suggesting water sound and movement - stylized, not realistic water.
-NO toilet bowl visible. Mio slightly startled, leaning back a little.
-Toton calm, one rounded hand raised as if to say "it's fine".
-Mood: a loud thing turns out to be harmless.
+Same public park restroom as the other restroom scenes: pale cream and
+beige walls, light floor, no domestic furniture.
+
+Mio stands beside a wall-mounted flush lever, having just pressed it.
+A soft swirl of pale blue lines rises from the lever, suggesting the
+sound and movement of water - stylized decorative lines only.
+Mio leans back a little, eyebrows up, slightly startled.
+Toton stands on the floor beside Mio, calm, one rounded hand raised as
+if to say "it's fine".
+
+NO toilet and NO toilet bowl visible anywhere in the image.
+
+=== ANATOMY / ARTEFACT RULES - an earlier attempt failed on these ===
+- Exactly TWO characters in this image: Mio and Toton. Nobody else.
+- Do NOT draw any floating, disembodied, or cropped-off head, hair,
+  face, hand, or limb anywhere in the frame.
+- Every body part drawn must belong to a complete, visible character.
+- Do NOT put a second child or an adult in the background.
+- Empty space must stay genuinely empty.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.

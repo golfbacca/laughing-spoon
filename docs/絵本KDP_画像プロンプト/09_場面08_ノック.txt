@@ -71,9 +71,18 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-Toton stretches up on tiptoe and knocks on the lower part of the door
-with one small rounded hand. Two small motion marks near the
-knocking hand.
+SETTING - must match the other restroom scenes in this book:
+A small PUBLIC restroom inside a park. Pale cream and beige partition
+walls and stall doors, tiled upper wall, smooth light floor. A public
+facility, NOT a room in a house.
+Do NOT draw a coat rack, a clothes hanger, a doormat, house furniture,
+a dark wooden interior door, or anything domestic.
+
+Toton stretches up on tiptoe and knocks on the lower part of a closed
+cream-coloured stall door with one small rounded hand. Two small motion
+marks near the knocking hand.
+Mio stands just behind Toton, watching, hands at their sides.
+
 Mood: reassuring, slightly playful.
 
 === OUTPUT SPEC ===

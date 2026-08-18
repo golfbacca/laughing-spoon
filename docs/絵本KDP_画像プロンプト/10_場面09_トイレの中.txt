@@ -71,30 +71,32 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-Inside a clean, bright, simple restroom stall. The door is closed
-behind. Mio is seated, and the grown-up's hands are placing a small step
-stool under Mio's feet, which do not reach the floor. Toton stands on
-the floor nearby, calm.
+A closed restroom stall door, seen from OUTSIDE, in a clean bright simple
+public restroom. The door is shut.
 
-MODESTY RULES - do not omit any of these:
-- Frame from the side, cropped ABOVE the waist.
-- Only Mio's upper body, face, and the feet-on-the-stool detail visible.
-- Mio fully clothed in the moss-green shirt.
-- Do NOT show the toilet bowl.
-- Do NOT show any undressing or clothing being removed.
-- Do NOT show any part of the body below the waist except the shoes and
-  lower legs resting on the stool.
+Under the door there is a gap. Through that gap you can see, inside the
+stall, a small wooden step stool with Mio's red sneakers resting on it -
+just the shoes and the white socks and a little of the lower legs.
+Nothing else of Mio is visible. Mio is entirely behind the closed door.
+
+Toton stands on the floor outside the door, facing the door, waiting
+patiently, calm and neutral.
+
+Mood: quiet, private, safe. The child is doing it, and someone is
+waiting right there.
+
+=== HARD LIMITS - do not break any of these ===
+- Do NOT show the inside of the stall except the shoes on the stool.
+- Do NOT show Mio's body, face, or anything above the ankles.
+- Do NOT show a toilet or a toilet bowl anywhere in the image.
+- Do NOT show any clothing being removed.
 - No nudity of any kind.
+- The door stays closed.
 
-Mood: calm, matter-of-fact, dignified. Not comic, not embarrassed.
-
-IF GENERATION IS REFUSED: strengthen the modesty lines, do not weaken
-them. Add "fully clothed", "cropped above the waist", "no toilet bowl
-visible" again. If it is still refused, replace this scene with Toton
-waiting on the OUTSIDE of the closed door, and carry the steps in the
-written text instead. Never remove the modesty rules to get it through -
-an image that only passes without them is the kind that gets stopped in
-KDP review.
+WHY THIS COMPOSITION: an earlier attempt at drawing the inside of the
+stall came back with the toilet bowl and bare legs visible, which is not
+acceptable for this book. This closed-door composition cannot go wrong
+in that way. Do not "improve" it by opening the door.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.
