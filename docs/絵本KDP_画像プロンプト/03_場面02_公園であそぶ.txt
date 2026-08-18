@@ -74,7 +74,16 @@ species and NOT based on any existing character.
 A park. Mio running with both arms out. Toton running along the ground
 beside Mio's feet, small and quick.
 Mood: open, joyful, energetic.
-Note: scene 12 will repeat this energy, so keep the pose readable.
+
+=== NO EFFECT LINES IN THIS SCENE ===
+Toton's face is calm and neutral here. Do NOT draw motion marks, twitch
+marks, radiating lines, sparkles, sweat drops, or any manga-style effect
+lines near Toton's head, ears or face.
+Short radiating strokes beside the head read as "suddenly noticing
+something", which belongs to a later scene and must not appear here.
+Simple running motion at the feet is fine.
+
+Note: scene 12 repeats this pose and energy, so keep the pose readable.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.

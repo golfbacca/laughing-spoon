@@ -73,8 +73,16 @@ species and NOT based on any existing character.
 === THIS IMAGE ===
 Mio has turned back toward the play equipment, face turned away, saying
 nothing. In the foreground Toton grips BOTH backpack straps with both
-hands - this is the anxious cue and must be clearly visible.
+hands - the anxious cue, clearly visible.
 Mood: being pulled in two directions.
+
+=== ONLY TWO CHARACTERS ===
+Exactly TWO characters in this image: Mio and Toton. Nobody else.
+The grown-up is NOT in this scene.
+Do NOT draw another person, and do NOT let a leg, arm, shoe, shoulder or
+any part of another person enter the frame from any edge.
+An earlier attempt had a stranger's legs intruding at the top left.
+The park equipment in the background is empty of people.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.

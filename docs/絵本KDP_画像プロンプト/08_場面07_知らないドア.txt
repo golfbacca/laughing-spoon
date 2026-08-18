@@ -71,11 +71,20 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-The doorway of a small public restroom building in a park, seen from
-outside. The doorway interior is slightly dim. Mio stands at the
-threshold holding the grown-up's hand, hesitating. Toton at Mio's feet.
+A small public restroom building in a park, seen from outside. Simple
+pale walls, a low roof, one open entryway. The entryway interior is
+slightly dim.
+
+SIGN: on the wall beside the entryway there is one simple square sign
+showing the standard restroom pictogram - two plain simplified human
+figures in flat dark silhouette. This pictogram is the ONLY graphic
+allowed. No letters, no words, no numbers, no arrows, no other signs.
+The pictogram must be clearly visible so a reader knows at a glance that
+this building is a restroom.
+
+Mio stands at the threshold holding the grown-up's hand, hesitating.
+Toton at Mio's feet.
 Mood: unfamiliar, but safe because someone is holding the hand.
-No signage, no lettering on the building.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.

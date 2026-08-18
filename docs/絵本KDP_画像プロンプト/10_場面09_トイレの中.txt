@@ -71,32 +71,58 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-A closed restroom stall door, seen from OUTSIDE, in a clean bright simple
-public restroom. The door is shut.
+SETTING - the SAME set as the knocking scene, unchanged.
+The single accessible family restroom door, plain cream-coloured, with
+the SAME round brass doorknob at adult waist height. The door is on the
+LEFT half of the picture, exactly as before. The door is now shut.
 
-Under the door there is a gap. Through that gap you can see, inside the
-stall, a small wooden step stool with Mio's red sneakers resting on it -
-just the shoes and the white socks and a little of the lower legs.
-Nothing else of Mio is visible. Mio is entirely behind the closed door.
+DOORKNOB: a round brass knob, identical to the previous scene. Do NOT
+replace it with a latch, a bolt, a sliding lock, a lever handle, or an
+occupied/vacant indicator. The same knob, in the same place.
 
-Toton stands on the floor outside the door, facing the door, waiting
-patiently, calm and neutral.
+Under the door there is a gap. Through that gap you can see, inside, a
+small wooden step stool with Mio's red sneakers resting on it - just the
+shoes, the white socks, and a little of the lower legs. Nothing else of
+Mio is visible. Mio is entirely behind the closed door.
+
+Toton stands on the floor OUTSIDE the door, on the RIGHT side of the
+picture, facing the door, waiting patiently, calm and neutral.
+
+ROOM CONTEXT: the door must sit in a real wall, not float as a flat
+panel. Show the door frame, the wall surface continuing to the right
+behind Toton, the join between wall and floor, and a tiled band along
+the upper wall - the same restroom interior as the knocking scene.
 
 Mood: quiet, private, safe. The child is doing it, and someone is
 waiting right there.
 
-=== HARD LIMITS - do not break any of these ===
-- Do NOT show the inside of the stall except the shoes on the stool.
-- Do NOT show Mio's body, face, or anything above the ankles.
-- Do NOT show a toilet or a toilet bowl anywhere in the image.
-- Do NOT show any clothing being removed.
-- No nudity of any kind.
-- The door stays closed.
+=== ABSOLUTELY NO TEXT IN THIS IMAGE ===
+Render NO writing of any kind. No Japanese characters, no kana, no kanji,
+no letters, no numbers, no captions, no sign on the door, no label.
+An earlier attempt printed a line of nonsense Japanese across the top of
+the picture. That must not happen.
+The top third is EMPTY BACKGROUND ONLY - a plain, even, light cream area
+with nothing drawn on it. It is left blank on purpose; text is added by
+hand later. Do not fill it. Do not decorate it. Do not write on it.
 
-WHY THIS COMPOSITION: an earlier attempt at drawing the inside of the
-stall came back with the toilet bowl and bare legs visible, which is not
-acceptable for this book. This closed-door composition cannot go wrong
-in that way. Do not "improve" it by opening the door.
+=== NOTHING FLOATS. NO STRAY SHAPES. ===
+Only ONE character is visible in this image: Toton. Mio is behind the
+closed door and only the shoes on the stool are seen.
+- Do NOT draw any floating, disembodied or cropped-off head, hair, face,
+  hand or limb anywhere in the frame.
+- Do NOT draw any dark blob, dome, arch, hanging object or unexplained
+  shape above or around the door. An earlier attempt put a large brown
+  dome floating above the door for no reason.
+- Every shape in the picture must be an identifiable part of the room:
+  door, door frame, wall, tiled band, floor, step stool, shoes, Toton.
+  Nothing else. The area above the door is plain wall.
+
+=== HARD LIMITS ===
+- Exactly ONE door. No row of stalls, no second door, no urinals.
+- Do NOT show a toilet or a toilet bowl anywhere.
+- Do NOT show Mio's body, face, or anything above the ankles.
+- Do NOT show any clothing being removed. No nudity of any kind.
+- The door stays closed.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.
