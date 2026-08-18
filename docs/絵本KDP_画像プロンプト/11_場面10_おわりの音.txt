@@ -72,24 +72,38 @@ species and NOT based on any existing character.
 
 === THIS IMAGE ===
 Same public park restroom as the other restroom scenes: pale cream and
-beige walls, light floor, no domestic furniture.
+beige partition walls, tiled upper wall, light floor.
 
-Mio stands beside a wall-mounted flush lever, having just pressed it.
-A soft swirl of pale blue lines rises from the lever, suggesting the
-sound and movement of water - stylized decorative lines only.
-Mio leans back a little, eyebrows up, slightly startled.
+THE FLUSH MECHANISM - draw this exactly, it must be readable at a glance:
+On the wall there is a WHITE RECTANGULAR CERAMIC CISTERN (a toilet water
+tank), a simple boxy shape with a flat lid, mounted at about Mio's chest
+height. A small silver flush LEVER sticks out from the side of that
+cistern. The lever is ATTACHED TO THE CISTERN - it is part of it.
+Mio has just pushed that lever down and is still touching it.
+
+A soft swirl of pale blue lines rises from the cistern, suggesting the
+sound and rush of water - stylized decorative lines only, no real water.
+
+Mio leans back a little, eyebrows up, slightly startled but not afraid.
 Toton stands on the floor beside Mio, calm, one rounded hand raised as
 if to say "it's fine".
 
-NO toilet and NO toilet bowl visible anywhere in the image.
+FRAMING: the bottom edge of the picture cuts across just below the
+cistern, so whatever is underneath it is simply outside the picture.
+Do not draw a toilet bowl. Do not draw a seat. Nothing below the cistern
+is shown - not hidden, not blurred, just outside the frame.
 
-=== ANATOMY / ARTEFACT RULES - an earlier attempt failed on these ===
-- Exactly TWO characters in this image: Mio and Toton. Nobody else.
-- Do NOT draw any floating, disembodied, or cropped-off head, hair,
-  face, hand, or limb anywhere in the frame.
-- Every body part drawn must belong to a complete, visible character.
-- Do NOT put a second child or an adult in the background.
-- Empty space must stay genuinely empty.
+=== WHY THIS IS SPELLED OUT ===
+An earlier attempt drew ONLY a small handle stuck on a blank wall, with
+nothing attached to it. It was impossible to tell what the child was
+doing. The lever must be visibly part of the white cistern box, and the
+cistern must be clearly drawn, or the picture does not read.
+
+=== ANATOMY / ARTEFACT RULES ===
+- Exactly TWO characters: Mio and Toton. Nobody else.
+- No floating, disembodied or cropped-off head, hair, face, hand or limb.
+- Every body part must belong to a complete, visible character.
+- Empty space stays genuinely empty.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.
