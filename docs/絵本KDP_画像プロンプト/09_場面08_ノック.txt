@@ -71,26 +71,54 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-SETTING - this is a fixed set. The next scene reuses it exactly.
-Inside the entry area of the small park restroom building.
-There is exactly ONE door: a single accessible family restroom, one
-plain cream-coloured door with a round brass doorknob at adult waist
-height. The door is CLOSED.
+Inside the entry area of a small park restroom building: a single
+accessible family restroom. The door is CLOSED.
 
-HARD SET RULES:
-- Exactly ONE door in the whole image. No row of stalls. No second door.
-- No open doorway, no visible empty cubicle. Nothing is visibly vacant,
-  which is exactly why knocking is necessary.
-- NO urinals anywhere. No gendered fixtures of any kind. No toilet, no
-  toilet bowl, no sink in this frame.
-- The door is on the LEFT half of the picture. The characters are on the
-  RIGHT of the door. Keep this left-right arrangement.
+=== DOOR SPEC - IDENTICAL IN EVERY SCENE SHOWING THIS DOOR ===
+This is a fixed set. The knocking scene and the waiting scene must show
+the SAME door, drawn the same way.
 
-ACTION: Toton stretches up on tiptoe and knocks on the lower part of
-that closed door with one small rounded hand. Two small motion marks
-near the knocking hand. Mio stands just behind Toton, watching, hands at
-their sides.
-Mood: reassuring, slightly playful.
+- ONE single door only. Plain cream-coloured panel, set in a proper door
+  frame in a real wall. No row of stalls, no second door, no open cubicle.
+- POSITION: the door is in the LEFT half of the picture. Characters stand
+  to the RIGHT of it.
+- DOORKNOB SIDE: the round brass knob is on the RIGHT-HAND EDGE of the
+  door panel - the edge nearest the characters. The hinges are on the
+  LEFT edge of the panel. Never draw the knob on the left side of the
+  panel. Knob height: adult waist height.
+- Never replace the knob with a latch, a bolt, a sliding lock, a lever
+  handle, or an occupied/vacant indicator. Always the same round knob.
+- GAP UNDER THE DOOR: the door does NOT reach the floor. There is an open
+  gap about one hand's width tall between the bottom edge of the door and
+  the floor, running the full width of the door. This gap is present in
+  every scene that shows this door.
+- Wall: door frame visible, wall continuing to the right behind the
+  characters, a tiled band along the upper wall, and the join between
+  wall and floor.
+- NO urinals, no gendered fixtures, no toilet, no toilet bowl, no sink.
+
+=== THE GAP IN THIS SCENE - DRAW IT, IT IS EASY TO MISS ===
+The door must NOT touch the floor. Its bottom edge stops clearly ABOVE
+the floor, leaving an open horizontal gap about one hand's width tall,
+running the full width of the door. Through that gap the floor inside is
+visible as a plain lighter strip.
+The gap is EMPTY: no feet, no shoes, no stool - nobody is in there yet.
+An earlier attempt drew the door reaching all the way down to the floor.
+That is wrong. The gap must be plainly visible.
+
+ACTION: Toton stretches up on tiptoe and knocks on the lower part of the
+closed door with one small rounded hand. Two small motion marks near the
+knocking hand. Mio stands just behind Toton on the right, watching,
+hands at their sides.
+Mood: reassuring, slightly playful. Knocking is the rule you follow
+before you go in.
+
+=== NO TEXT, NO STRAY SHAPES ===
+Render no writing of any kind - no kana, kanji, letters or numbers.
+The top third is plain empty background, left blank on purpose.
+No floating or disembodied head, hair, hand or limb. No unexplained
+blob, dome or hanging object. Every shape must be part of the room:
+door, frame, wall, tiled band, floor, Toton, Mio.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.
