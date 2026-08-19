@@ -69,8 +69,10 @@ species and NOT based on any existing character.
 === CHARACTER LOCK: "the grown-up" ===
 - One adult companion. Never named, never shown as specifically a mother
   or a father. Keep the role neutral.
-- Shoulder-length hair tied back, plain navy long-sleeve top,
-  grey trousers.
+- Shoulder-length DARK BROWN hair, tied back in a low ponytail.
+  Plain navy long-sleeve top, grey trousers, dark grey shoes.
+  The hair is dark brown in every scene - not black, not light brown,
+  not blonde.
 - Usually partial: hands only, or from the shoulders down, or crouching
   with a calm gentle face. Never the focus of the image.
 
@@ -106,6 +108,15 @@ IF THE JAPANESE GLYPHS COME OUT WRONG (this is common): regenerate this
 same image with the title line removed and no text at all, then place
 the title by hand afterwards. Do not accept an image with malformed
 Japanese characters — readers notice immediately.
+
+
+=== EXPRESSIONS ON THE COVER ===
+This is the cover. It must invite the reader in.
+Mio's face is CALM and GENTLY SMILING - a small, easy, contented smile,
+eyes relaxed. Do NOT draw Mio worried, anxious, sad, or with lowered
+eyebrows and a downturned mouth. The worried face belongs inside the
+book, not on the cover.
+Toton's face stays calm and neutral, mouth a single flat line.
 
 === OUTPUT SPEC ===
 - Portrait, aspect ratio 1 : 1.6 (width : height). This is the Kindle
