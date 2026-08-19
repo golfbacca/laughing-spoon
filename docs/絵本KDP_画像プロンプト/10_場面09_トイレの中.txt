@@ -58,8 +58,12 @@ species and NOT based on any existing character.
 - Short soft dark-brown hair, simple rounded silhouette.
 - Round face, simple black dot eyes in the same style as Toton's,
   small simple mouth.
-- Clothing, identical in every image: plain moss-green short-sleeve
-  shirt, beige shorts, red sneakers, small cream-colored backpack.
+- Clothing, identical in every image: plain moss-green LONG-SLEEVE
+  shirt (sleeves reach the wrists), beige shorts, red sneakers, small
+  cream-coloured backpack.
+  The shirt is long-sleeved in EVERY scene of this book. Never draw Mio
+  in a short-sleeve shirt. The sleeves may be pushed up to the forearm
+  when Mio is washing hands, but nowhere else.
 - Mio is fully clothed in every image.
 
 === CHARACTER LOCK: "the grown-up" ===
@@ -130,6 +134,17 @@ door. There must be nothing there.
 Mio is entirely BEHIND and BELOW the closed door. No part of Mio - and
 especially not Mio's hair or head - may appear above the door or over
 the top of it. Only the shoes in the gap below are visible.
+
+
+=== THE DOOR IS SHUT. THIS KEEPS GOING WRONG. ===
+The door is CLOSED, flat against its frame, its face turned toward the
+viewer. You cannot see into the room behind it at all - no interior
+wall, no floor inside, no fixtures, nothing.
+Do NOT draw the door standing open. Do NOT draw it ajar or swung inward.
+Do NOT draw a saloon-style half door or a short partition you can see
+over. It is a full, solid, closed door.
+Recent attempts drew this door hanging open, which destroys the point of
+the scene.
 
 === OUTPUT SPEC ===
 - Square 1:1 composition.
