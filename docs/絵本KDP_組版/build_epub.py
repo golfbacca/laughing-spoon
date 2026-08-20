@@ -10,7 +10,7 @@ PAGES = ROOT/"docs"/"絵本KDP_完成ページ"
 OUT   = ROOT/"docs"/"絵本KDP_入稿"; OUT.mkdir(exist_ok=True)
 
 TITLE  = "トトンと おでかけトイレ"
-AUTHOR = "つかさ まこと"     # 既刊（塗り絵4点）は「ツカサ マコト」表記
+AUTHOR = "はりま せいじ"     # HARIMA SEIJI
 LANG   = "ja"
 BOOKID = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "toton-odekake-toilet"))
 
