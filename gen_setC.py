@@ -14,9 +14,9 @@
 from sticker_engine import SUMI, CHI, HAI, render_set
 
 STICKERS = [
- ("今日も削ってます", {"blocks":[
+ ("今日も技工です", {"blocks":[
     {"text":"今日も","font":"sans_l","size":38,"color":HAI},
-    {"text":"削ってます","font":"black","size":60,"color":SUMI,"gap":6},
+    {"text":"技工です","font":"black","size":68,"color":SUMI,"gap":6},
  ]}),
  ("咬合器の上では完璧だった", {"blocks":[
     {"text":"咬合器の上では","font":"min_l","size":40,"color":SUMI},
@@ -30,25 +30,25 @@ STICKERS = [
     {"text":"本日の再製報告","font":"min_r","size":44,"color":SUMI,"spacing":6},
     {"type":"rule","width":296,"thick":3,"color":SUMI,"gap":14},
  ]}),
- ("指示書、白紙です", {"blocks":[
+ ("指示書、シェードが無い", {"blocks":[
     {"text":"指示書、","font":"sans_l","size":36,"color":SUMI},
-    {"text":"白紙です","font":"sans_l","size":56,"color":SUMI,"gap":6},
+    {"text":"シェードが無い","font":"sans_l","size":46,"color":SUMI,"gap":6},
  ]}),
- ("まだ削ってる", {"blocks":[
-    {"text":"まだ","font":"min_m","size":66,"color":CHI,"align":"left"},
-    {"text":"削ってる","font":"min_l","size":44,"color":HAI,"gap":6,"align":"right"},
+ ("まだ、この仕事です", {"blocks":[
+    {"text":"まだ、","font":"min_m","size":62,"color":CHI,"align":"left"},
+    {"text":"この仕事です","font":"min_l","size":42,"color":HAI,"gap":6,"align":"right"},
  ]}),
- ("指紋、もうない", {"blocks":[
-    {"text":"指紋、","font":"min_l","size":36,"color":HAI},
-    {"text":"もうない","font":"min_m","size":58,"color":SUMI,"gap":8},
+ ("爪は、黒いまま", {"blocks":[
+    {"text":"爪は、","font":"min_l","size":36,"color":HAI},
+    {"text":"黒いまま","font":"min_m","size":58,"color":SUMI,"gap":8},
  ]}),
  ("明日まで、が常態", {"blocks":[
     {"text":"明日まで、","font":"min_l","size":40,"color":SUMI},
     {"text":"が常態","font":"min_m","size":72,"color":CHI,"gap":12},
  ]}),
- ("適合、出ました", {"blocks":[
+ ("適合、良好", {"blocks":[
     {"text":"適合、","font":"maru","size":42,"color":SUMI,"jitter":1.7,"seed":3},
-    {"text":"出ました","font":"maru","size":70,"color":SUMI,"gap":4,"jitter":1.7,"seed":5},
+    {"text":"良好","font":"maru","size":80,"color":SUMI,"gap":4,"jitter":1.7,"seed":5},
  ], "rotate":-4}),
  ("誰にも会ってない（平気）", {"blocks":[
     {"text":"誰にも会ってない","font":"maru","size":40,"color":SUMI},
@@ -58,8 +58,8 @@ STICKERS = [
     {"text":"作った人は","font":"black","size":40,"color":SUMI},
     {"text":"ここにいない","font":"black","size":54,"color":SUMI,"gap":2},
  ]}),
- ("窓のない部屋です", {"blocks":[
-    {"type":"vertical","text":"窓のない部屋です","font":"min_l","size":32,"color":HAI,
+ ("換気扇の音だけ", {"blocks":[
+    {"type":"vertical","text":"換気扇の音だけ","font":"min_l","size":34,"color":HAI,
      "line":1.0,"dx":58},
  ]}),
  ("削った分は戻らない", {"blocks":[
@@ -69,9 +69,9 @@ STICKERS = [
     {"type":"vertical","text":["技工士にしか","通じない"],"font":"min_l","size":46,"color":SUMI,
      "line":1.0,"dx":30},
  ]}),
- ("見えないところが一番きれい", {"blocks":[
-    {"text":"見えないところが","font":"sans_l","size":36,"color":SUMI,"spacing":2},
-    {"text":"一番きれい","font":"sans_l","size":52,"color":SUMI,"gap":10},
+ ("気づかれないのが成功", {"blocks":[
+    {"text":"気づかれないのが","font":"sans_l","size":36,"color":SUMI,"spacing":2},
+    {"text":"成功","font":"sans_l","size":72,"color":SUMI,"gap":10},
  ]}),
  ("朝までに、なんとかします", {"blocks":[
     {"text":"朝までに、","font":"min_l","size":32,"color":SUMI},
@@ -81,9 +81,9 @@ STICKERS = [
 
 MAIN = {"blocks":[
     {"text":"今日も","font":"sans_l","size":28,"color":HAI},
-    {"text":"削ってます","font":"black","size":42,"color":SUMI,"gap":6},
+    {"text":"技工です","font":"black","size":48,"color":SUMI,"gap":6},
 ]}
-TAB = {"blocks":[{"text":"削る","font":"black","size":28,"color":SUMI}]}
+TAB = {"blocks":[{"text":"技工","font":"black","size":28,"color":SUMI}]}
 
 if __name__ == "__main__":
     problems = render_set("stickers/setC", 'シリーズC「不可視版」1セット目 16枚',
