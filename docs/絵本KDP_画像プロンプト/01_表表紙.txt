@@ -86,31 +86,41 @@ species and NOT based on any existing character.
 === THIS IMAGE ===
 FRONT COVER ARTWORK for a SQUARE picture book. No text at all.
 
-Toton standing on the ground close beside Mio, at about Mio's knee
-height. Both face the viewer. Mio smiling calmly and gently - relaxed
-eyes, a small easy smile. Not worried, not anxious. Toton's face calm
-and neutral, mouth a single flat line.
+Toton and Mio standing side by side on a pale sandy path, both facing
+the viewer, in a park. Mio smiling calmly and gently - relaxed eyes, a
+small easy smile. Toton calm and neutral, mouth a single flat line.
 Mio IS WEARING the small cream-coloured backpack, straps over both
 shoulders clearly visible from the front.
-A park gate softly suggested behind them, kept very simple, with soft
-green trees and bushes to the left and right.
+A simple park gate softly suggested behind them, with soft green trees
+and bushes to the left and right.
 
-COMPOSITION FOR A SQUARE FRAME - THE EMPTY TOP IS THE POINT:
-Imagine the square divided into ten horizontal strips.
-  Strips 1-4 (the TOP 40%): completely EMPTY. Plain, even, pale cream.
-      Nothing at all here - no heads, no hair, no trees, no gate, no
-      leaves, no glow. Just flat empty colour. The title goes here.
-  Strips 5-10 (the BOTTOM 60%): the whole scene. The two characters
-      stand here, small enough that the TOP OF MIO'S HEAD stays BELOW
-      the 40% line. Their feet rest well inside the bottom edge.
-      The park gate, trees and bushes also stay entirely in this lower
-      band.
-A previous attempt put Mio's head up in the top area and the title
-collided with it. Keep the top 40% genuinely empty.
+COMPOSE IT NATURALLY, FILLING THE WHOLE SQUARE.
+Place the two characters so their heads sit around the middle of the
+picture and their feet rest well inside the bottom edge. The sky and
+foliage fill the upper part normally, as in any illustration.
+Do not leave a blank band anywhere. Just draw the scene.
+
+=== TOTON'S HEIGHT - MEASURE IT ===
+The two stand side by side, so their heights are compared directly.
+
+  Mio, ground to top of head       = 100 units
+  Toton, ground to top of its ears =  60 units
+
+The TOP OF TOTON'S HEAD is level with the BOTTOM HEM of Mio's green
+shirt, just below Mio's chest. Toton is obviously the smaller of the
+two - a little companion at the child's side.
+Earlier attempts drew Toton up at Mio's shoulder or chin. Far too big.
+
+=== NOTHING FLOATS. TWO CHARACTERS ONLY. ===
+Exactly TWO characters: Mio and Toton. Nobody else.
+Do NOT draw any floating, disembodied or cropped-off head, hair, face,
+hand or limb anywhere in the frame. Several earlier attempts put a
+second head of hair floating in the air above Mio. Every body part must
+belong to one complete, visible character.
 
 === ABSOLUTELY NO TEXT ===
-Render NO writing of any kind: no Japanese characters, no kana, no kanji,
-no letters, no numbers, no title, no signature. The title is added later.
+Render NO writing of any kind: no Japanese characters, no kana, no
+kanji, no letters, no numbers, no title, no signature.
 
 === OUTPUT SPEC ===
 - Portrait, aspect ratio 1 : 1.6 (width : height). This is the Kindle
