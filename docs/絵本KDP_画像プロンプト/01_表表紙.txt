@@ -84,46 +84,33 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
+FRONT COVER ARTWORK for a SQUARE picture book. No text at all.
+
 Toton standing on the ground close beside Mio, at about Mio's knee
-height. Both face the viewer.
-Mio IS WEARING the small cream-coloured backpack - the straps over both
-shoulders must be clearly visible from the front, exactly as in the rest
-of the book. Do not leave Mio without the backpack.
+height. Both face the viewer. Mio smiling calmly and gently - relaxed
+eyes, a small easy smile. Not worried, not anxious. Toton's face calm
+and neutral, mouth a single flat line.
+Mio IS WEARING the small cream-coloured backpack, straps over both
+shoulders clearly visible from the front.
+A park gate softly suggested behind them, kept very simple, with soft
+green trees and bushes to the left and right.
 
-TOTON'S SIZE ON THE COVER - this must match the inside of the book:
-Toton's head reaches only to about Mio's KNEE. Toton is a small creature
-that walks at the child's feet. An earlier cover drew Toton almost as
-tall as Mio's chest, which does not match any interior page. Keep Toton
-small and low, standing on the ground beside Mio's legs. Mio smiling
-calmly, Toton neutral. A park gate softly suggested behind them, kept
-very simple. Warm, inviting, safe.
+COMPOSITION FOR A SQUARE FRAME - THE EMPTY TOP IS THE POINT:
+Imagine the square divided into ten horizontal strips.
+  Strips 1-4 (the TOP 40%): completely EMPTY. Plain, even, pale cream.
+      Nothing at all here - no heads, no hair, no trees, no gate, no
+      leaves, no glow. Just flat empty colour. The title goes here.
+  Strips 5-10 (the BOTTOM 60%): the whole scene. The two characters
+      stand here, small enough that the TOP OF MIO'S HEAD stays BELOW
+      the 40% line. Their feet rest well inside the bottom edge.
+      The park gate, trees and bushes also stay entirely in this lower
+      band.
+A previous attempt put Mio's head up in the top area and the title
+collided with it. Keep the top 40% genuinely empty.
 
-Composition: characters in the LOWER two-thirds. Leave the TOP third as
-a calm, near-single-color area for the title.
-
-TITLE TEXT — this is the one image that carries text:
-Render this Japanese text across the top third, large and centered,
-in a soft rounded hand-lettered style, dark warm brown, no outline,
-no shadow, no effects:
-
-    トトンと おでかけトイレ
-
-Nothing else in writing. No subtitle, no author name, no other text.
-The subtitle will be added by hand afterwards.
-
-IF THE JAPANESE GLYPHS COME OUT WRONG (this is common): regenerate this
-same image with the title line removed and no text at all, then place
-the title by hand afterwards. Do not accept an image with malformed
-Japanese characters — readers notice immediately.
-
-
-=== EXPRESSIONS ON THE COVER ===
-This is the cover. It must invite the reader in.
-Mio's face is CALM and GENTLY SMILING - a small, easy, contented smile,
-eyes relaxed. Do NOT draw Mio worried, anxious, sad, or with lowered
-eyebrows and a downturned mouth. The worried face belongs inside the
-book, not on the cover.
-Toton's face stays calm and neutral, mouth a single flat line.
+=== ABSOLUTELY NO TEXT ===
+Render NO writing of any kind: no Japanese characters, no kana, no kanji,
+no letters, no numbers, no title, no signature. The title is added later.
 
 === OUTPUT SPEC ===
 - Portrait, aspect ratio 1 : 1.6 (width : height). This is the Kindle

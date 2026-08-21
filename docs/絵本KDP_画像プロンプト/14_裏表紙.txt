@@ -84,24 +84,22 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
+BACK COVER ARTWORK for a SQUARE picture book. No text at all.
+
 Seen from behind: Mio and the grown-up walking away down a soft park
-path, small in the frame, near the TOP of the image. Toton walking on the ground
-beside them, small, turning its head back toward the viewer, calm.
+path. Toton walking on the ground beside them, small, turning its head
+back toward the viewer, calm, mouth a single flat line.
 
-Composition: characters small and high in the frame. The LOWER
-two-thirds must stay almost empty - a plain, even, light cream area.
-That space carries the blurb text and the barcode box, both added later.
+COMPOSITION FOR A SQUARE FRAME:
+Put the three figures small and HIGH in the square, in the upper third,
+walking away from the viewer.
+The LOWER TWO-THIRDS must stay almost empty - a plain, even, light cream
+area. The blurb text and the barcode box are placed there by hand
+afterwards.
 
-No text of any kind in this image.
-
-
-=== NO BARCODE, NO TEXT ===
-Do NOT draw a barcode, and do NOT draw any digits, numbers, letters or
-product code anywhere. A recent attempt drew a fake barcode with numbers
-under it - that must not happen. The real barcode is added by the
-printer later.
-The lower-right area must be left as plain, empty, light background with
-nothing drawn on it at all.
+=== ABSOLUTELY NO TEXT, NO BARCODE ===
+Render NO writing of any kind and NO barcode, no digits, no product code.
+Leave the lower-right corner plain and empty.
 
 === OUTPUT SPEC ===
 - Portrait, aspect ratio 1 : 1.6 (width : height), matching the front
