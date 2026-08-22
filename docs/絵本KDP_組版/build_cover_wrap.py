@@ -17,7 +17,7 @@ OUT   = ROOT/"docs"/"絵本KDP_入稿"; OUT.mkdir(exist_ok=True)
 
 TRIM     = 8.5      # 仕上がり 8.5インチ角（KDPのカスタムサイズ）
 BLEED    = 0.125    # 塗り足し（外周）
-SPINE_IN = 0.054    # 24ページ／プレミantカラー用紙のときの背幅
+SPINE_IN = 0.056    # 24ページ／プレミアムカラー用紙のときの背幅
 SPINE_TEXT_MIN = 0.25   # これ未満の背には文字を入れない
 
 pdfmetrics.registerFont(TTFont("MaruB", str(FONTS/"ZenMaruGothic-Bold.ttf")))
