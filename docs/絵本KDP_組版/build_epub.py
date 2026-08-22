@@ -2,7 +2,7 @@
 """完成ページから Kindle 固定レイアウト EPUB を作る。
 出力: docs/絵本KDP_入稿/トトンとおでかけトイレ.epub
 """
-import pathlib, zipfile, uuid, datetime
+import pathlib, zipfile, uuid, datetime, tempfile
 from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
@@ -12,13 +12,27 @@ OUT   = ROOT/"docs"/"絵本KDP_入稿"; OUT.mkdir(exist_ok=True)
 TITLE  = "トトンと おでかけトイレ"
 AUTHOR = "はりま せいじ"     # HARIMA SEIJI
 LANG   = "ja"
+EPUB_PX = 1600   # Kindleの表示に十分。配信コストはMB単位で引かれる
+_TMP = pathlib.Path(tempfile.mkdtemp())
+
+def fitted(name):
+    src = PAGES/f"{name}.jpg"
+    im = Image.open(src)
+    if max(im.size) > EPUB_PX:
+        r = EPUB_PX/max(im.size)
+        im = im.resize((int(im.width*r), int(im.height*r)), Image.LANCZOS)
+    out = _TMP/f"{name}.jpg"
+    im.save(out, quality=88, optimize=True)
+    return out
+
 BOOKID = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "toton-odekake-toilet"))
 
 ORDER = ["01_表表紙_Kindle_1600x2560",
-         "02_場面01_バス","03_場面02_公園であそぶ","04_場面03_もじもじ",
-         "05_場面04_言えない","06_場面05_いまいこう","07_場面06_言えた",
-         "08_場面07_知らないドア","09_場面08_ノック","10_場面09_トイレの中",
-         "11_場面10_おわりの音","12_場面11_手をあらう","13_場面12_公園にもどる"]
+         "S01_いえをでる","02_場面01_バス","03_場面02_公園であそぶ","S04_きづく",
+         "04_場面03_もじもじ","05_場面04_言えない","06_場面05_いまいこう","07_場面06_言えた",
+         "S09_トイレがみえる","08_場面07_知らないドア","09_場面08_ノック","10_場面09_トイレの中",
+         "S13_ドアがあく","S14_レバー","11_場面10_おわりの音","12_場面11_手をあらう",
+         "13_場面12_公園にもどる","S18_つぎのおでかけ"]
 
 def page_xhtml(img, w, h):
     return f'''<?xml version="1.0" encoding="UTF-8"?>
@@ -32,7 +46,7 @@ img{{width:100%;height:100%;display:block;}}</style></head>
 
 def main():
     epub = OUT/"トトンとおでかけトイレ.epub"
-    files = [(n, PAGES/f"{n}.jpg") for n in ORDER]
+    files = [(n, fitted(n)) for n in ORDER]
     sizes = {n: Image.open(p).size for n, p in files}
     cw, ch = sizes[ORDER[0]]           # 表紙の寸法をビューポートの基準にする
 
