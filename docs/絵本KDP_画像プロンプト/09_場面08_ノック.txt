@@ -164,6 +164,30 @@ Checklist for this image:
     holding nothing at all.
   - Mio's expression is uncertain, not happy.
 
+=== TOTON STANDS RIGHT AGAINST THE DOOR ===
+Place Toton IMMEDIATELY beside the door, so close that its body almost
+brushes the door frame - no gap of floor between Toton and the door.
+Toton's raised paw rests FLAT ON THE DOOR PANEL itself, the pad pressed
+against the wood and slightly squashed where it touches.
+Two earlier attempts left Toton standing well away from the door with
+its paw waving in empty air. That is wrong. Toton must be touching it.
+
+=== TOTON IS ACTUALLY TOUCHING THE DOOR ===
+Toton's rounded hand must be IN CONTACT with the door - the paw pressed
+flat against the wooden surface, slightly squashed where it meets the
+wood, at about the height of Toton's own head.
+Toton leans its whole body toward the door, weight forward, one foot
+lifted a little behind - the posture of someone actually knocking.
+The two small motion marks sit right next to the touching hand.
+An earlier attempt left a clear gap between the hand and the door, so it
+looked like Toton was just waving in the air. The hand must touch.
+
+=== KEEP THE TOP OF THE PICTURE CLEAR ===
+The door must NOT reach the top edge of the picture. The top of the door
+frame stops around 40% down from the top, and above it is plain, empty,
+pale wall all the way to the top edge. The written text goes there, so
+nothing may stick up into that area - no door frame, no tiles, no sign.
+
 === OUTPUT SPEC ===
 - Square 1:1 composition.
 - Generate at the largest square size the model offers.

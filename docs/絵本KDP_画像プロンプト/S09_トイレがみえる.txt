@@ -98,6 +98,56 @@ the grown-up's hand, with Toton trotting alongside at Mio's feet.
 The three are small in the frame; the building is what the eye lands on.
 Mood: the destination comes into view.
 
+=== TOTON MUST NOT TURN INTO A BIRD ===
+An earlier attempt drew Toton as a penguin: a teardrop body, no ears,
+and an orange BEAK in the middle of the face. Completely wrong.
+Even seen from behind or from the side, Toton must clearly have:
+  - the one continuous egg body, wider than it is tall-ish, no neck
+  - TWO small round ears on top of the head, set wide apart
+  - the orange circles are CHEEK MARKS on the sides of the face.
+    They are never a beak, never a nose, never in the middle.
+  - the large white belly oval on the front
+If Toton is walking away from the viewer, show its back and the two
+ears, and let it turn its head enough that one cheek circle is visible.
+
+=== MIO'S HAIR FROM BEHIND ===
+Mio is seen from behind here. Draw the back of the head as ONE simple,
+smooth, rounded bob of dark brown hair - a single clean shape with a
+soft edge at the neck. Do NOT draw a detached chunk, a floating lock, a
+second layer or a strange notch. One earlier attempt broke the hair into
+pieces. Keep it simple and whole.
+
+=== FILL THE TOP WITH TREES. NO OPEN SKY. ===
+Do NOT leave a large empty sky at the top of the picture.
+The upper part of the frame is filled with the soft green canopies of
+the park trees, meeting overhead, with only small pale gaps between the
+leaves. The building sits under them.
+Every earlier attempt that left an open sky ended up with a giant
+disembodied head of hair floating in it. Fill the top with foliage and
+that cannot happen.
+There is exactly ONE child and ONE adult in this picture, both seen from
+behind, both small, both standing on the path. No other person, no
+floating head, no extra hair anywhere.
+
+=== TOTON MUST NOT TURN INTO A BIRD ===
+An earlier attempt drew Toton as a penguin: a teardrop body, no ears,
+and an orange BEAK in the middle of the face. Completely wrong.
+Even seen from behind or from the side, Toton must clearly have:
+  - the one continuous egg body, wider than it is tall-ish, no neck
+  - TWO small round ears on top of the head, set wide apart
+  - the orange circles are CHEEK MARKS on the sides of the face.
+    They are never a beak, never a nose, never in the middle.
+  - the large white belly oval on the front
+If Toton is walking away from the viewer, show its back and the two
+ears, and let it turn its head enough that one cheek circle is visible.
+
+=== MIO'S HAIR FROM BEHIND ===
+Mio is seen from behind here. Draw the back of the head as ONE simple,
+smooth, rounded bob of dark brown hair - a single clean shape with a
+soft edge at the neck. Do NOT draw a detached chunk, a floating lock, a
+second layer or a strange notch. One earlier attempt broke the hair into
+pieces. Keep it simple and whole.
+
 === NOTHING FLOATS ABOVE ===
 The sky area above the building must be plain, empty, pale cream.
 Do NOT draw a dark dome, an arch, a mound of hair, a floating head, a
@@ -124,7 +174,7 @@ the front. Toton is not a teddy bear. Copy the attached reference.
 - Keep every important element at least 150 px inside all four edges.
   Nothing meaningful within 0.125 inch of the outer edge: that strip
   gets trimmed off in printing.
-- TEXT SPACE: top third. That area must stay low-detail and close to a single
+- TEXT SPACE: bottom third. That area must stay low-detail and close to a single
   even color, so Japanese text can be placed on it later. Do not put a
   face or any busy detail there.
 --------------------------------------------------------------
