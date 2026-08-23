@@ -73,9 +73,11 @@ PAGES = [
  ("S09_トイレがみえる",      "bottom", ["こうえんの トイレが みえてきた。"]),
  ("08_場面07_知らないドア",  "bottom", ["しらない ドア。",
                                       "なかは すこし くらい。"]),
- ("09_場面08_ノック",        "top",    ["トトンが せのびして ドアを たたく。",
+ ("09_場面08_ノック",        "top",    ["トトンが せのびして",
+                                      "ドアを たたく。",
                                       "トン、トン。",
-                                      "だれも いない。はいって いいよ。"]),
+                                      "だれも いない。はいって いいよ。"],
+                                     {"scale": 0.80, "x": 0.40, "y": 0.02}),
  ("10_場面09_トイレの中",    "top",    ["ドアを しめる。",
                                       "パンツを おろす。",
                                       "よいしょ と すわる。",
@@ -99,11 +101,16 @@ PAGES = [
 
 def main():
     OUT.mkdir(exist_ok=True)
-    for stem, where, lines in PAGES:
+    for entry in PAGES:
+        stem, where, lines = entry[0], entry[1], entry[2]
+        opt = entry[3] if len(entry) > 3 else {}
         src = SRC / f"{stem}.jpg"
         im = Image.open(src).convert("RGB")
         size = BODY_PT if max(len(l) for l in lines) <= 26 else int(BODY_PT * 0.86)
-        draw_lines(im, lines, where, size=size)
+        size = int(size * opt.get("scale", 1.0))
+        draw_lines(im, lines, where, size=size,
+                   x_off=int(im.width * opt.get("x", 0.0)),
+                   y_off=int(im.height * opt.get("y", 0.0)))
         im.save(OUT / f"{stem}.jpg", quality=93, dpi=(300, 300))
         print("本文", stem)
 
