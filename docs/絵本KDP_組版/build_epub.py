@@ -27,7 +27,7 @@ def fitted(name):
 
 BOOKID = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "toton-odekake-toilet"))
 
-ORDER = ["01_表表紙_Kindle_1600x2560",
+ORDER = ["PB_表表紙_正方形",
          "S01_いえをでる","02_場面01_バス","03_場面02_公園であそぶ","S04_きづく",
          "04_場面03_もじもじ","05_場面04_言えない","06_場面05_いまいこう","07_場面06_言えた",
          "S09_トイレがみえる","08_場面07_知らないドア","09_場面08_ノック","10_場面09_トイレの中",
@@ -39,7 +39,7 @@ ORDER = ["01_表表紙_Kindle_1600x2560",
 # 代替テキストを入れないとスクリーンリーダーには何も届かない。
 # 各ページ「そのページの本文」＋「絵の説明」を入れる。
 ALT = {
- "01_表表紙_Kindle_1600x2560":
+ "PB_表表紙_正方形":
    "表紙。タイトル「トトンと おでかけトイレ」。"
    "サブタイトル「2さい 3さい 4さいの『いま いきたい』が いえるように なる えほん」。"
    "みどりの シャツの ミオちゃんと、みずいろの ちいさな いきもの トトンが ならんで いる。",
@@ -122,7 +122,17 @@ def main():
     epub = OUT/"トトンとおでかけトイレ.epub"
     files = [(n, fitted(n)) for n in ORDER]
     sizes = {n: Image.open(p).size for n, p in files}
-    cw, ch = sizes[ORDER[0]]           # 表紙の寸法をビューポートの基準にする
+
+    # 固定レイアウトの本は、全ページが同じ寸法でなければならない。
+    # original-resolution は本1冊に1つしか無く、それと違う比率の
+    # ページは端末側で引き伸ばされる（表紙1:1.6・本文1:1 で
+    # 本文が縦に伸びる事故を起こした。2026-08-24）
+    uniq = set(sizes.values())
+    if len(uniq) != 1:
+        for n in ORDER:
+            print(f"  {sizes[n][0]}x{sizes[n][1]}  {n}")
+        raise SystemExit(f"中止: ページの寸法がそろっていない {sorted(uniq)}")
+    cw, ch = next(iter(uniq))          # 本1冊の基準寸法
 
     with zipfile.ZipFile(epub, "w") as z:
         z.writestr("mimetype", "application/epub+zip", zipfile.ZIP_STORED)
