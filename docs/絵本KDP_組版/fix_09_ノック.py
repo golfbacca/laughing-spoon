@@ -72,6 +72,17 @@ S0, S1 = 3296, 3384
 seg2 = orig[S0:S1, RX0:W, :]
 bg2 = np.percentile(seg2.mean(axis=2), 88, axis=0)[None, :]
 al2 = np.clip((bg2 - seg2.mean(axis=2) - 6.0) / 60.0, 0, 1)
+# 写す元にキャラ（靴）が写り込んでいる列はそのまま使うと、
+# 靴の先が 150px 上の空中に写ってしまう。
+# その列は「一番近い、キャラの写っていない列」の画素で代用する。
+valid = ~chars[S0:S1, RX0:W].any(axis=0)
+vi = np.where(valid)[0]
+xs_all = np.arange(W - RX0)
+pos = np.clip(np.searchsorted(vi, xs_all), 1, len(vi) - 1)
+lo, hi = vi[pos - 1], vi[pos]
+nearest = np.where(xs_all - lo <= hi - xs_all, lo, hi)
+seg2 = seg2[:, nearest, :]
+al2 = al2[:, nearest]
 al2 *= ~chars[S0 - DY:S1 - DY, RX0:W]
 dst = a[S0 - DY:S1 - DY, RX0:W, :]
 a[S0 - DY:S1 - DY, RX0:W, :] = dst * (1 - al2[..., None]) + seg2 * al2[..., None]
