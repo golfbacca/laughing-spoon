@@ -27,8 +27,8 @@ def fitted(name):
 
 BOOKID = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "toton-odekake-toilet"))
 
-ORDER = ["PB_表表紙_正方形",
-         "S01_いえをでる","02_場面01_バス","03_場面02_公園であそぶ","S04_きづく",
+COVER = "PB_表表紙_正方形"      # manifest の cover-image 用。本文には入れない
+ORDER = [         "S01_いえをでる","02_場面01_バス","03_場面02_公園であそぶ","S04_きづく",
          "04_場面03_もじもじ","05_場面04_言えない","06_場面05_いまいこう","07_場面06_言えた",
          "S09_トイレがみえる","08_場面07_知らないドア","09_場面08_ノック","10_場面09_トイレの中",
          "S13_ドアがあく","S14_レバー","11_場面10_おわりの音","12_場面11_手をあらう",
@@ -121,6 +121,7 @@ img{{width:100%;height:100%;display:block;}}</style></head>
 def main():
     epub = OUT/"トトンとおでかけトイレ.epub"
     files = [(n, fitted(n)) for n in ORDER]
+    cover_path = fitted(COVER)
     sizes = {n: Image.open(p).size for n, p in files}
 
     # 固定レイアウトの本は、全ページが同じ寸法でなければならない。
@@ -143,13 +144,18 @@ def main():
           'media-type="application/oebps-package+xml"/></rootfiles></container>')
 
         manifest, spine = [], []
+        # 表紙は manifest だけに置く。本文ページとしては入れない。
+        # KDPは登録画面でアップロードした表紙を1ページ目に差し込むので、
+        # 本の中にも表紙を持たせると、表紙が2回続けて出てしまう。
+        z.write(cover_path, f"OEBPS/images/{COVER}.jpg")
+        manifest.append(f'<item id="cover" href="images/{COVER}.jpg" '
+                        f'media-type="image/jpeg" properties="cover-image"/>')
         for i, (n, p) in enumerate(files):
             z.write(p, f"OEBPS/images/{n}.jpg")
             w, h = sizes[n]
             z.writestr(f"OEBPS/text/p{i:02d}.xhtml", page_xhtml(f"{n}.jpg", w, h, ALT[n]))
-            props = ' properties="cover-image"' if i == 0 else ""
             manifest.append(f'<item id="img{i:02d}" href="images/{n}.jpg" '
-                            f'media-type="image/jpeg"{props}/>')
+                            f'media-type="image/jpeg"/>')
             manifest.append(f'<item id="p{i:02d}" href="text/p{i:02d}.xhtml" '
                             f'media-type="application/xhtml+xml"/>')
             spine.append(f'<itemref idref="p{i:02d}"/>')
@@ -159,7 +165,6 @@ def main():
                f'xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="{LANG}">'
                '<head><meta charset="utf-8"/><title>もくじ</title></head><body>'
                '<nav epub:type="toc"><ol>'
-               '<li><a href="text/p00.xhtml">ひょうし</a></li>'
                '<li><a href="text/p01.xhtml">ほんぶん</a></li>'
                '</ol></nav></body></html>')
         z.writestr("OEBPS/nav.xhtml", nav)
@@ -181,7 +186,7 @@ def main():
 <meta name="original-resolution" content="{cw}x{ch}"/>
 <meta name="fixed-layout" content="true"/>
 <meta name="book-type" content="children"/>
-<meta name="cover" content="img00"/>
+<meta name="cover" content="cover"/>
 <meta property="schema:accessMode">textual</meta>
 <meta property="schema:accessMode">visual</meta>
 <meta property="schema:accessModeSufficient">textual</meta>
