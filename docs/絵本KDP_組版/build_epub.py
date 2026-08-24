@@ -34,7 +34,81 @@ ORDER = ["01_表表紙_Kindle_1600x2560",
          "S13_ドアがあく","S14_レバー","11_場面10_おわりの音","12_場面11_手をあらう",
          "13_場面12_公園にもどる","S18_つぎのおでかけ"]
 
-def page_xhtml(img, w, h):
+# 代替テキスト（読み上げ用）。
+# 固定レイアウトの絵本は本文も絵の中に焼き込まれているので、
+# 代替テキストを入れないとスクリーンリーダーには何も届かない。
+# 各ページ「そのページの本文」＋「絵の説明」を入れる。
+ALT = {
+ "01_表表紙_Kindle_1600x2560":
+   "表紙。タイトル「トトンと おでかけトイレ」。"
+   "サブタイトル「2さい 3さい 4さいの『いま いきたい』が いえるように なる えほん」。"
+   "みどりの シャツの ミオちゃんと、みずいろの ちいさな いきもの トトンが ならんで いる。",
+ "S01_いえをでる":
+   "きょうは こうえんへ いく ひ。ミオちゃんが くつを はく。"
+   "トトンは リュックの よこで まって いる。 ／ "
+   "げんかんで ミオちゃんが あかい くつを はいて いる。よこに トトンが いる。",
+ "02_場面01_バス":
+   "バスに のって、こうえんへ。ミオちゃんの となりに トトンが すわって いる。 ／ "
+   "バスの ざせき。まどの そとは あかるい。",
+ "03_場面02_公園であそぶ":
+   "すべりだいも ブランコも たのしい。トトンも いっしょに はしる。 ／ "
+   "こうえんで ミオちゃんが りょうてを ひろげて はしり、トトンが あしもとを はしって いる。",
+ "S04_きづく":
+   "あれ。ミオちゃんの あしが とまった。 ／ "
+   "はしって いた ミオちゃんが きゅうに たちどまり、したを むいて いる。",
+ "04_場面03_もじもじ":
+   "おなかの したの ほうが むずむず する。 ／ "
+   "ミオちゃんが もじもじ して いる。トトンが あしもとから みあげて いる。",
+ "05_場面04_言えない":
+   "でも、まだ あそびたい。ミオちゃんは なにも いわなかった。"
+   "トトンが リュックの ひもを ぎゅっと にぎる。 ／ "
+   "ミオちゃんは くちを むすんで いる。トトンが リュックの ひもを にぎって いる。",
+ "06_場面05_いまいこう":
+   "トトンが ちいさな こえで いった。「いま、いこう」 ／ "
+   "トトンが ミオちゃんの みみの ちかくで そっと はなして いる。",
+ "07_場面06_言えた":
+   "ミオちゃんは かおを あげた。「トイレ、いきたい」 いえた。 ／ "
+   "ミオちゃんが かおを あげて いって いる。",
+ "S09_トイレがみえる":
+   "こうえんの トイレが みえてきた。 ／ "
+   "こうえんの おくに トイレの たてものが みえる。",
+ "08_場面07_知らないドア":
+   "しらない ドア。なかは すこし くらい。 ／ "
+   "しろい ドアの まえで ミオちゃんが たちどまって いる。",
+ "09_場面08_ノック":
+   "トトンが せのびして ドアを たたく。トン、トン。"
+   "だれも いない。はいって いいよ。 ／ "
+   "トトンが せのびして ドアを たたいて いる。よこに ミオちゃんが たって いる。",
+ "10_場面09_トイレの中":
+   "ドアを しめる。パンツを おろす。よいしょ と すわる。"
+   "あしが とどかない ときは、だいに のせる。 ／ "
+   "しまった ドアの そと。ドアの したの すきまから、だいに のった あかい くつが みえる。"
+   "トトンは そとで まって いる。",
+ "S13_ドアがあく":
+   "ドアが あいた。ミオちゃんが でてきた。 ／ "
+   "ドアが ひらいて、ミオちゃんが わらって でてくる。トトンが まって いる。",
+ "S14_レバー":
+   "よこの レバーに てを のばす。 ／ "
+   "ミオちゃんが タンクの よこの レバーに てを のばして いる。",
+ "11_場面10_おわりの音":
+   "ジャーッ。おおきな おと。「これは おわりの おと」トトンが いった。 ／ "
+   "みずが ながれる おとに ミオちゃんが すこし びっくりして いる。トトンが よこに いる。",
+ "12_場面11_手をあらう":
+   "てを あらう。トトンが リュックから タオルを だす。 ／ "
+   "ミオちゃんが てあらいで てを あらい、トトンが タオルを だして いる。",
+ "13_場面12_公園にもどる":
+   "また はしれる。トトンの みみが ぴくっと うごいた。「つぎも いえるよ」 ／ "
+   "こうえんに もどって ミオちゃんが また はしって いる。",
+ "S18_つぎのおでかけ":
+   "つぎの おでかけの ひ。ミオちゃんが じぶんから いった。「トイレ、いきたい」 ／ "
+   "つぎの おでかけの ひ。ミオちゃんが かおを あげて じぶんから いって いる。",
+}
+
+def esc(t):
+    return (t.replace("&", "&amp;").replace("<", "&lt;")
+             .replace(">", "&gt;").replace('"', "&quot;"))
+
+def page_xhtml(img, w, h, alt):
     return f'''<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{LANG}">
@@ -42,7 +116,7 @@ def page_xhtml(img, w, h):
 <meta name="viewport" content="width={w}, height={h}"/>
 <style>html,body{{margin:0;padding:0;height:100%;}}
 img{{width:100%;height:100%;display:block;}}</style></head>
-<body><div><img src="../images/{img}" alt=""/></div></body></html>'''
+<body><div><img src="../images/{img}" alt="{esc(alt)}"/></div></body></html>'''
 
 def main():
     epub = OUT/"トトンとおでかけトイレ.epub"
@@ -62,7 +136,7 @@ def main():
         for i, (n, p) in enumerate(files):
             z.write(p, f"OEBPS/images/{n}.jpg")
             w, h = sizes[n]
-            z.writestr(f"OEBPS/text/p{i:02d}.xhtml", page_xhtml(f"{n}.jpg", w, h))
+            z.writestr(f"OEBPS/text/p{i:02d}.xhtml", page_xhtml(f"{n}.jpg", w, h, ALT[n]))
             props = ' properties="cover-image"' if i == 0 else ""
             manifest.append(f'<item id="img{i:02d}" href="images/{n}.jpg" '
                             f'media-type="image/jpeg"{props}/>')
@@ -84,7 +158,7 @@ def main():
 
         opf = f'''<?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bid"
-         prefix="rendition: http://www.idpf.org/vocab/rendition/#">
+         prefix="rendition: http://www.idpf.org/vocab/rendition/# schema: http://schema.org/">
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
 <dc:identifier id="bid">{BOOKID}</dc:identifier>
 <dc:title>{TITLE}</dc:title>
@@ -98,6 +172,12 @@ def main():
 <meta name="fixed-layout" content="true"/>
 <meta name="book-type" content="children"/>
 <meta name="cover" content="img00"/>
+<meta property="schema:accessMode">textual</meta>
+<meta property="schema:accessMode">visual</meta>
+<meta property="schema:accessModeSufficient">textual</meta>
+<meta property="schema:accessibilityFeature">alternativeText</meta>
+<meta property="schema:accessibilityHazard">none</meta>
+<meta property="schema:accessibilitySummary">すべての絵に、本文と絵の内容を説明した代替テキストが入っています。</meta>
 </metadata>
 <manifest>{''.join(manifest)}</manifest>
 <spine>{''.join(spine)}</spine>
