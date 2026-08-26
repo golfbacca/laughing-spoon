@@ -1,0 +1,167 @@
+■ S09_すわる
+■ 2冊目「トトンと はじめての パンツ」
+■ 使い方: この行から下を全部まとめて1回で貼る。1枚ぶんです。
+          途中の CHARACTER LOCK と MODESTY を省略しないこと。
+          省略した瞬間に顔がぶれるか、出してはいけない絵が出ます。
+--------------------------------------------------------------
+=== ABSOLUTE RULES ===
+- Do NOT imitate, reference, or resemble any existing published picture
+  book, existing character, franchise, or any named illustrator's style.
+  This artwork must be fully original.
+- Do NOT include brand names, trademarks, or recognizable products.
+- Except where a scene explicitly asks for title text, render NO text,
+  letters, numbers, logos, or signage anywhere in the image.
+
+=== STYLE LOCK ===
+- Soft, warm, bright children's picture-book illustration.
+- Rounded shapes, soft edges, no sharp corners anywhere.
+- Watercolor-and-colored-pencil feel: gentle visible texture over clean
+  flat areas of color.
+- High-key lighting. No harsh shadows, no heavy contrast, no darkness
+  except where a scene says "slightly dim".
+- Palette, fixed for the whole book: cream, pale sky blue, soft yellow,
+  warm beige, muted green, soft coral. No neon. No black fills.
+- Backgrounds simple and uncluttered. Suggest the place, do not fill it
+  with detail.
+- NOT anime. NOT manga. NOT 3D render. NOT photorealistic.
+  NOT flat-vector-corporate. NOT glossy AI-look.
+
+=== CHARACTER LOCK: "Toton" ===
+Toton is an imaginary small creature. NOT based on any real animal
+species and NOT based on any existing character.
+- Body: ONE CONTINUOUS EGG SHAPE. The head and the body are a single
+  rounded form - there is NO neck, NO separate head, and NO narrowing
+  anywhere between the top of the head and the bottom of the body.
+  The silhouette is wide and squat, like a rice cake, slightly flattened.
+- Toton is NOT a teddy bear and NOT a conventional cartoon animal.
+  Do NOT give Toton a round head sitting on top of a separate body.
+  If the head reads as a distinct ball, the design is wrong.
+- Limbs: four short stubby limbs.
+- Size: small but not tiny. Toton stands about as tall as Mio's shin -
+  roughly knee height to the child. Toton walks on the ground beside Mio.
+  Toton is NOT palm-sized, and NOT as tall as Mio.
+- Body colour: pale sky blue. The belly is white and LARGE - a big soft
+  white oval covering roughly the lower two-thirds of the front of the
+  body, reaching almost to the sides. A small white patch is wrong.
+- Cheeks: one small orange circle on each cheek. Present in EVERY image,
+  in every mood. It is a marking, not a blush effect.
+- Eyes: solid black dots only. No whites of the eyes, no eyelashes,
+  no highlights, no eyebrows.
+- Ears: two small round ears, set high on the head and wide apart.
+- Mouth: one short horizontal line. When open, only a wide flat oval.
+  Never show teeth or tongue.
+- Tail: NONE, in any image.
+- Hands and feet: rounded tips. Do not draw fingers or toes.
+- Accessory: a small yellow backpack worn on its back. Never a bib,
+  never an apron, never clothing.
+- Inside the backpack: one white towel. It is visible ONLY in the
+  handwashing scene.
+- Expression rules, use ONLY these two:
+    happy   -> ears twitch: one small motion mark beside each ear
+    anxious -> both hands gripping the backpack straps
+  At all other times Toton's face is calm and neutral.
+
+=== CHARACTER LOCK: "Mio" (the child) ===
+- A toddler about 3 years old. Gender-neutral: must not read as clearly
+  a boy or clearly a girl.
+- Short soft dark-brown hair, simple rounded silhouette.
+- Round face, simple black dot eyes in the same style as Toton's,
+  small simple mouth.
+- Clothing in this book (Mio is at home in the morning, not dressed to
+  go out): the SAME plain moss-green shirt, but TUNIC LENGTH - it hangs
+  down to MID-THIGH and completely covers the hips and bottom at all
+  times. Short sleeves ending high on the upper arm, so the elbows and
+  forearms are bare. Bare legs below the shirt hem, white ankle socks,
+  no shoes indoors. No backpack indoors.
+  In the LAST TWO SCENES ONLY, Mio also puts on beige shorts and red
+  sneakers, returning to the outdoor look of the first book.
+- HAIR - THIS DRIFTED ONCE ALREADY: Mio's hair is SHORT. A simple soft
+  crop that ends ABOVE the ears at the sides and never reaches the jaw
+  or the chin. It must read gender-neutral. Do NOT draw a chin-length
+  bob. Do NOT draw hair falling past the ears onto the neck.
+- Mio is fully clothed in every image.
+
+=== CHARACTER LOCK: "the grown-up" ===
+- One adult companion. Never named, never shown as specifically a mother
+  or a father. Keep the role neutral.
+- Shoulder-length DARK BROWN hair, tied back in a low ponytail.
+  Plain navy long-sleeve top, grey trousers, dark grey shoes.
+  The hair is dark brown in every scene - not black, not light brown,
+  not blonde.
+- Usually partial: hands only, or from the shoulders down, or crouching
+  with a calm gentle face. Never the focus of the image.
+
+=== THIS IMAGE ===
+Mio sits down on the light wood floor, legs folded to one side, the
+tunic-length shirt draped over the lap and knees so the hips and thighs
+are completely covered. Mio holds the soft yellow pants in the lap with
+both hands, looking down at them, calm.
+Toton walks in from the right and sits down on the floor beside Mio,
+close, facing the same way. Calm and neutral.
+The bottom third of the picture is plain empty wood floor.
+
+=== ROOM SPEC - IDENTICAL IN EVERY INDOOR SCENE ===
+One single room, drawn the same way every time. This is a fixed set.
+- A quiet corner of a family home, early morning. Warm and plain.
+- Wall: plain pale cream. Floor: light warm wood, simple boards.
+- On the LEFT: one low wooden shelf, about chest height to Mio.
+  Its top surface is clear except where a scene says otherwise.
+- On the RIGHT: one window with soft morning light and a plain
+  cream curtain. The light falls gently from the right.
+- On the floor beside the shelf: one small round woven basket,
+  used as the waste basket.
+- Nothing else. No furniture clutter, no pictures on the wall,
+  no toys scattered about, no rug patterns, no plants.
+- NO text, NO logos, NO brand marks anywhere in the room.
+
+=== PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
+Three pairs of small toddler underpants, drawn as simple flat garments.
+- Plain solid colours, one each: SOFT YELLOW, PALE SKY BLUE, SOFT CORAL.
+- Simple shape with a plain ribbed waistband. No patterns, no prints,
+  no characters, no stripes, no letters, no numbers of any kind.
+- They are ordinary, modest, everyday children's underwear, drawn the
+  way a clothing shape is drawn - soft, rounded, unremarkable.
+- Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
+  the yellow one in every later scene.
+- The paper shop bag is plain warm beige with simple rope handles and
+  NO writing on it.
+
+=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
+- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
+  times. It fully covers the hips and the bottom in every single frame.
+- NO nudity of any kind, ever. Never show bare buttocks, never show the
+  groin, never show any undressed or partly undressed area of the body.
+- Underpants appear ONLY as a flat garment: held in the hands, lying on
+  the floor, or gathered at ankle or calf level. Never drawn on the body
+  in a way that shows the body.
+- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
+  garment down at ankle or calf level are visible. Everything above the
+  knee stays covered by the shirt hem.
+- Never draw the moment of undressing. Never draw a nappy being taken
+  off a body.
+- Toton never wears clothing of any kind - only the yellow backpack.
+  Toton never wears or tries on the underpants.
+
+=== TOTON'S HEIGHT - MEASURE IT ===
+  Mio, ground to top of head       = 100 units
+  Toton, ground to top of its ears =  60 units
+The TOP OF TOTON'S HEAD is level with the BOTTOM HEM of Mio's shirt.
+Toton is obviously the smaller of the two. Earlier attempts in the first
+book drew Toton up at Mio's shoulder or chin. Far too big.
+
+=== NO TEXT, NO STRAY SHAPES ===
+Render no writing of any kind - no kana, no kanji, no letters, no
+numbers, no signage, no signature.
+No floating or disembodied head, hair, hand or limb anywhere. Every
+shape must belong to one complete character or to the room itself.
+
+=== OUTPUT SPEC ===
+- Square 1:1 composition.
+- Generate at the largest square size the model offers.
+- Target for print: 2625 x 2625 px at 300 dpi
+  (8.5 inch trim + 0.125 inch bleed on each side).
+- Keep every important element at least 150 px inside all four edges.
+- TEXT SPACE: bottom third. That area must stay low-detail and close to a
+  single even colour, so Japanese text can be placed on it later.
+  Do not put a face or any busy detail there.
+--------------------------------------------------------------
