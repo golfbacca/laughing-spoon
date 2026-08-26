@@ -55,6 +55,29 @@ One single room, drawn the same way every time. This is a fixed set.
 - Nothing else. No furniture clutter, no pictures on the wall,
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
+
+=== THE SHELF - SAME GEOMETRY IN EVERY INDOOR SCENE ===
+- The shelf is a low TWO-TIER wooden shelf: a flat top surface and one
+  lower shelf below it, with slim wooden legs. It stands against the BACK
+  wall, on the LEFT of the picture, running left-to-right across the frame.
+- The window is on the RIGHT-HAND wall, which meets the back wall at a
+  RIGHT ANGLE. So the shelf runs across the picture and the window faces
+  in from the side, perpendicular to it. Keep this same corner geometry in
+  every indoor scene, whatever the camera angle.
+- The paper bag sits on the shelf's TOP surface unless a scene says the
+  bag is on the floor.
+
+=== BAG SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS IT ===
+One single paper shop bag, drawn exactly the same way every time.
+- Plain warm beige paper. Flat-bottomed, standing upright and squared off.
+- TWO ROPE HANDLES, ALWAYS PRESENT. A pair of thin twisted cord handles
+  looped over the top edge, forming two small arcs standing above the
+  mouth of the bag. They appear in EVERY picture that shows the bag, from
+  every angle and at every distance. A bag drawn without handles is wrong.
+- The mouth is OPEN and UNFOLDED. The top edge is a plain straight rim.
+  NEVER fold, crease, roll or crimp the top shut. This is a shop bag with
+  handles, not a folded paper lunch sack.
+- No writing, no logo, no printing, no pattern anywhere on it.
 """
 
 PANTS = """=== PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
@@ -66,8 +89,6 @@ Three pairs of small toddler underpants, drawn as simple flat garments.
   way a clothing shape is drawn - soft, rounded, unremarkable.
 - Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
   the yellow one in every later scene.
-- The paper shop bag is plain warm beige with simple rope handles and
-  NO writing on it.
 """
 
 MODESTY = """=== HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
@@ -223,13 +244,29 @@ The top third of the picture is plain wall.
 """, [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("07_場面06_えらんだ", "top third", """
-Mio has reached out and taken hold of the SOFT YELLOW pair. Mio now
-holds it in both hands at chest height, looking down at it with a small
-calm smile - the moment of having chosen.
+Mio has reached out and taken hold of the SOFT YELLOW pair. Mio now holds
+it in both hands at chest height, looking down at it with a small calm
+smile - the moment of having chosen.
 Toton stands on the floor just below, both front limbs still slightly
 raised from having offered it, ears twitching with one small motion mark
 beside each ear - the happy pose.
-The blue and coral pairs remain on the floor, no longer the subject.
+The blue and coral pairs remain on the floor nearby, no longer the subject.
+
+SET THE SCENE IN THE USUAL ROOM, WITH THE USUAL GEOMETRY:
+- The low TWO-TIER wooden shelf stands against the back wall on the LEFT,
+  running across the picture, with the beige paper bag on its top surface.
+- The window with its cream curtain is on the RIGHT-hand wall, meeting the
+  back wall at a right angle, light coming in from that side.
+- The round woven basket sits on the floor near the shelf.
+- Plain pale cream wall, light wood floor. No wooden wall panelling, no
+  wainscot, no dado rail, no boarded wall behind the characters.
+
+TOTON'S SHAPE - THIS DRIFTED HERE ONCE:
+Toton is ONE CONTINUOUS EGG SHAPE, wide and squat, with NO neck and NO
+separate head. Do not draw a round ball head sitting on a body. The white
+belly is a LARGE soft oval covering most of the lower front. Check it
+against the reference images before drawing.
+
 The top third of the picture is plain wall.
 """, [ROOM, PANTS, MODESTY, HEIGHT]),
 

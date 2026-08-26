@@ -16,57 +16,78 @@ IMG = pathlib.Path(__file__).resolve().parents[2] / "docs" / "絵本KDP_2冊目_
 ANCHOR = IMG / "01_表表紙_正方形.jpg"
 
 FIX = {
- "06_場面05_どれにする": """
+ "01_表表紙_正方形": """
 
-=== THIS PAGE IS STILL WRONG. THE BAND IS STILL THERE. ===
-Two attempts have now drawn a horizontal seam across the upper part of
-this picture, with a second paper bag and a cropped head above it.
+=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
+The characters, their poses, their faces, the room, the furniture, the
+colours and the whole composition are correct. Reproduce this picture
+exactly as it is. Do NOT redraw the characters. Do NOT reframe.
 
-Do this instead:
-- COMPOSE THE SCENE NATURALLY AND FILL THE WHOLE SQUARE, edge to edge,
-  the way any ordinary illustration fills its frame. Do NOT reserve,
-  clear, empty or flatten any part of the picture. Do NOT leave a blank
-  band. The empty space for text is made afterwards by hand, not by you.
-- ONE continuous room. ONE unbroken wall. ONE paper bag in the whole
-  picture, standing on the shelf. No seam, no join, no second panel.
-- Exactly TWO characters: Mio and Toton, both whole, both on the same
-  floor. No cropped head, no floating hair, no third figure.
-- Let the shelf, the wall and the window fill the upper part normally.
+Change only the BEIGE PAPER BAG:
+- It currently has NO handles, and its top is folded or creased flat like
+  a paper lunch sack. Every other page in this book shows the same bag
+  with handles and an open top.
+- Give it TWO ROPE HANDLES: a pair of thin twisted cord handles looped
+  over the top edge, standing up as two small arcs above the mouth of the
+  bag. Draw them clearly.
+- Open its mouth: the top edge becomes a plain straight rim, unfolded and
+  uncreased. Remove the fold.
+- Keep the bag in exactly the same place, at the same size and angle,
+  in the same beige paper, with no writing on it.
 """,
- "07_場面06_えらんだ": """
+ "05_場面04_だきしめる": """
 
-=== THIS PAGE CAME OUT WRONG. FIX EXACTLY THIS. ===
-The previous attempt drew Mio with a long chin-length bob, which made Mio
-read as clearly a girl. That is wrong for this character.
-- Draw Mio's hair SHORT, exactly as in the reference images: a soft crop
-  that ends ABOVE the ears at the sides and does not reach the jaw or the
-  neck. The ears are not covered by hair.
-- Everything else about this scene stays as described above.
+=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
+The characters, their poses, their faces, the room, the furniture, the
+colours and the whole composition are correct. Reproduce this picture
+exactly as it is. Do NOT redraw the characters. Do NOT reframe.
+
+Change only the BEIGE PAPER BAG:
+- It currently has NO handles, and its top is folded or creased flat like
+  a paper lunch sack. Every other page in this book shows the same bag
+  with handles and an open top.
+- Give it TWO ROPE HANDLES: a pair of thin twisted cord handles looped
+  over the top edge, standing up as two small arcs above the mouth of the
+  bag. Draw them clearly.
+- Open its mouth: the top edge becomes a plain straight rim, unfolded and
+  uncreased. Remove the fold.
+- Keep the bag in exactly the same place, at the same size and angle,
+  in the same beige paper, with no writing on it.
 """,
- "S13_かべにて": """
+ "S09_すわる": """
+
+=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
+The characters, their poses, their faces, the room, the furniture, the
+colours and the whole composition are correct. Reproduce this picture
+exactly as it is. Do NOT redraw the characters. Do NOT reframe.
+
+Change only the BEIGE PAPER BAG:
+- It currently has NO handles, and its top is folded or creased flat like
+  a paper lunch sack. Every other page in this book shows the same bag
+  with handles and an open top.
+- Give it TWO ROPE HANDLES: a pair of thin twisted cord handles looped
+  over the top edge, standing up as two small arcs above the mouth of the
+  bag. Draw them clearly.
+- Open its mouth: the top edge becomes a plain straight rim, unfolded and
+  uncreased. Remove the fold.
+- Keep the bag in exactly the same place, at the same size and angle,
+  in the same beige paper, with no writing on it.
+""",
+ "02_場面01_ふくろ": """
 
 === THIS PICTURE IS APPROVED. CHANGE ONE THING ONLY. ===
-The composition, the room, the poses, the faces and Toton are all
-correct. Reproduce this picture exactly as it is. Do NOT redraw it, do
-NOT reframe it, do NOT move anything.
+The characters, their poses, the room, the furniture, the colours and the
+whole composition are correct. Reproduce this picture exactly as it is.
+Do NOT redraw the characters. Do NOT reframe.
 
-Change only this:
-- Mio's sleeves. They are currently LONG, down to the wrists. Every other
-  page in this book has SHORT sleeves. Shorten both sleeves so they end
-  high on the upper arm, well above the elbow, leaving both elbows and
-  both forearms bare. The body of the shirt stays exactly as long as it
-  is now, down to mid-thigh.
-- Keep the arm that reaches to the wall in exactly the same position and
-  the same shape. Only the fabric on it changes.
-""",
- "04_場面03_おむつがいい": """
-
-=== ONE THING TO FIX ON THIS PAGE ===
-The previous attempt gave Mio LONG sleeves down to the wrists.
-- Mio's moss-green shirt has SHORT sleeves that end high on the upper
-  arm, well above the elbow, so both elbows and both forearms are bare.
-  The shirt is long in the BODY (down to mid-thigh) but SHORT in the
-  SLEEVE. Everything else about this scene stays as described above.
+Change only the top of the BEIGE PAPER BAG on the shelf:
+- Its mouth is currently FOLDED OVER and creased shut. Every other page in
+  this book shows this bag with its mouth open.
+- Unfold it. The top edge becomes a plain straight rim, open and
+  uncreased, with the two rope handles still looped over it as they are
+  now.
+- Everything else about the bag stays identical: same position, same size,
+  same angle, same beige paper, no writing.
 """,
 }
 
