@@ -29,21 +29,41 @@ def refs():
         r.insert(0, ANCHOR)        # 承認済みを先頭に置くと「編集」寄りになる
     return r
 
+FAILED = []
+
 def one(name, force=False):
+    """1枚落ちても全体を止めない。落ちたものは最後にまとめて出す。
+    画像が返らない主因は安全フィルタで、MODESTY文を否定形で書くと
+    かえって弾かれる（2026-08-26に場面07で発生）。肯定形で書くこと。"""
     out = IMG / f"{name}.jpg"
     if out.exists() and not force:
         print(f"  済み {name}")
         return
     print(f"生成 {name}")
-    generate(prompts2.prompt_for(name), str(out), ref_images=refs(), aspect="1:1")
+    prompt = prompts2.prompt_for(name)
+    for attempt in range(3):
+        try:
+            generate(prompt, str(out), ref_images=refs(), aspect="1:1")
+            return
+        except KeyError:
+            # 画像が返らない。プロンプトの構図の問題なので、粘っても同じ。
+            FAILED.append(name)
+            print(f"  × {name}: 画像が返らない。構図を寄せて描き直すこと")
+            return
+        except Exception as e:
+            print(f"  … {name}: {type(e).__name__}（{attempt+1}回目）")
+    FAILED.append(name)
+    print(f"  × {name}: 通信で3回とも落ちた")
 
 if __name__ == "__main__":
     a = sys.argv[1:]
     if not a or a[0] == "--list":
         for n in prompts2.NAMES: print(" ", n)
-    elif a[0] == "--all":
-        for n in prompts2.NAMES: one(n)
     else:
         force = "--force" in a
-        for n in [x for x in a if not x.startswith("--")]:
+        names = prompts2.NAMES if a[0] == "--all" else [x for x in a if not x.startswith("--")]
+        for n in names:
             one(n, force=force)
+        print(f"\n完了 {len(names)-len(FAILED)}/{len(names)}")
+        if FAILED:
+            print("描き直しが必要:", " ".join(FAILED))

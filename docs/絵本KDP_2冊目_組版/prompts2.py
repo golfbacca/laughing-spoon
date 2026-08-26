@@ -70,21 +70,26 @@ Three pairs of small toddler underpants, drawn as simple flat garments.
   NO writing on it.
 """
 
-MODESTY = """=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
-- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
-  times. It fully covers the hips and the bottom in every single frame.
-- NO nudity of any kind, ever. Never show bare buttocks, never show the
-  groin, never show any undressed or partly undressed area of the body.
-- Underpants appear ONLY as a flat garment: held in the hands, lying on
-  the floor, or gathered at ankle or calf level. Never drawn on the body
-  in a way that shows the body.
-- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
-  garment down at ankle or calf level are visible. Everything above the
-  knee stays covered by the shirt hem.
-- Never draw the moment of undressing. Never draw a nappy being taken
-  off a body.
-- Toton never wears clothing of any kind - only the yellow backpack.
-  Toton never wears or tries on the underpants.
+MODESTY = """=== HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
+- Mio's moss-green shirt is tunic length and reaches MID-THIGH in every
+  frame. It covers Mio from the shoulders down to mid-thigh at all times,
+  in every pose, including bending, sitting and stepping.
+- Mio is fully clothed in every frame of this book, without exception.
+- The underpants are drawn as a simple flat everyday garment: held up in
+  the hands, lying folded on the floor, or gathered down around the
+  ankles or calves. Draw them the way a folded shirt is drawn.
+- Where Mio steps into the garment, draw ONLY the legs below the knee
+  together with the garment down near the ankles. Everything higher up
+  stays covered by the shirt, and the shirt stays down.
+- Toton wears only its small yellow backpack. Toton holds the garment out
+  flat and does nothing else with it.
+"""
+
+MODESTY_LIGHT = """=== WHAT IS IN FRAME - MANDATORY ===
+- This is a tightly cropped picture. Draw only the body parts listed in
+  THIS IMAGE and nothing more. Do not widen the framing.
+- Mio is fully clothed in the moss-green shirt, which is tunic length.
+- Toton wears only its small yellow backpack.
 """
 
 def out_spec(text_space):
@@ -244,8 +249,8 @@ no hand, no foot, no hair, no shadow of a child.
 
 The picture shows only:
 - The small round woven waste basket on the floor beside the shelf. One
-  rolled-up white nappy sits in it, drawn as a simple plain white bundle,
-  neatly rolled, clearly just an object. Nothing is on it or in it.
+  clean white nappy sits in it, folded and rolled into a neat plain
+  white bundle - drawn simply, the way a rolled towel is drawn.
 - Toton standing on the floor a little way from the basket, facing the
   viewer, holding the SOFT YELLOW pair spread open between its two
   stubby front limbs, held ready at its own chest height, waiting.
@@ -255,8 +260,9 @@ The picture shows only:
 The room behind them as always: cream wall, wood floor, the shelf edge.
 The top third of the picture is plain wall.
 
-This composition is deliberate. The undressing happens off the page and
-is carried entirely by the words. Do not add the child back in.
+This composition is deliberate. The words carry what happens; the
+picture shows only the basket, the bundle and Toton waiting.
+Keep the frame to those three things.
 """, [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("09_場面08_かたあし", "top third", """
@@ -275,52 +281,69 @@ The top third of the picture is plain wall.
 """, [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("S13_かべにて", "top third", """
-Mio has placed one flat hand against the plain cream wall on the left to
-steady itself, arm straight, and now stands firm and balanced.
-Same framing as before: tunic-length shirt to mid-thigh, bare knees and
-shins below it, white ankle socks, the yellow garment still gathered
-down at ankle level around one foot.
-Mio's face is calmer now, the wobble gone. No motion marks.
-Toton stands on the floor beside Mio's feet, looking up, calm.
+Mio stands on the wood floor, seen from the front and slightly to one
+side, and has placed ONE flat hand against the plain cream wall on the
+left to steady itself. That arm is straight and firm. The other arm hangs
+relaxed at the side. Both feet are on the floor in white ankle socks,
+standing balanced and still.
+Mio looks down towards the floor, the face calm and settled - the wobble
+has passed. No motion marks anywhere in this picture.
+Mio wears the tunic-length moss-green shirt reaching mid-thigh, with bare
+knees and shins below it. Nothing is being held.
+Toton stands on the floor beside Mio's feet, looking up at Mio, calm and
+neutral.
+The room as always: cream wall, light wood floor, the shelf edge at the
+left, the window's soft light from the right.
 The top third of the picture is plain wall.
-""", [ROOM, PANTS, MODESTY, HEIGHT]),
+""", [ROOM, MODESTY, HEIGHT]),
 
 ("10_場面09_もういっぽう", "top third", """
-Mio, still steadied with one hand flat on the wall, lifts the SECOND
-foot and puts it into the other leg opening. The yellow garment is still
-gathered low, at ankle and calf level, around both feet now.
-Same framing: tunic-length shirt to mid-thigh covering everything above
-the knee; bare knees and shins; white ankle socks.
-Mio's face is calm and careful, taking its time. Unhurried.
-Toton sits on the floor nearby, watching quietly, calm and neutral.
-The top third of the picture is plain wall.
-""", [ROOM, PANTS, MODESTY, HEIGHT]),
+CLOSE VIEW OF THE FLOOR, camera down low near the floorboards.
+
+The picture contains only: light wood floor, the bottom edge of a
+moss-green shirt hem, two lower legs from just below the knee down,
+white ankle socks, and Toton.
+One sock-foot rests flat on the floor. The other lifts a little, toes
+tilted, mid-step, with one small motion mark beside it.
+Draw NO other object on the floor. No garment, no cloth, no bag, nothing
+lying about - just the bare wood floor, the two feet and Toton.
+Nothing above the knees is in the picture; the frame simply ends there.
+Toton stands on the floor beside the feet, facing them, calm and neutral.
+The top third of the picture is plain empty floor and skirting board.
+""", [ROOM, MODESTY_LIGHT, HEIGHT]),
 
 ("11_場面10_ひっぱる", "top third", """
-Mio has both hands down at the sides, gripping the waistband of the
-yellow pants, and is pulling it UPWARD. The garment is drawn at
-mid-calf, rising. Both elbows are bent outward with the effort.
-CRITICAL FRAMING: the tunic-length shirt still hangs to mid-thigh and
-covers everything above the knee. Mio's hands and the waistband are
-BELOW the shirt hem, at calf level. Nothing above the knee is shown.
-Mio's face is set with effort - a small firm mouth, eyes down at the
-task. Two small motion marks along the sides to show the upward pull.
-Toton stands close on the floor, ears twitching with one small motion
-mark beside each ear - the happy pose.
-The top third of the picture is plain wall.
-""", [ROOM, PANTS, MODESTY, HEIGHT]),
+HEAD AND SHOULDERS PORTRAIT OF MIO. Nothing below the chest is in the
+picture; the frame ends there.
+
+Mio's face fills the middle of the picture, seen from the front, tilted
+down a little. The eyes look downward at something below the frame. The
+mouth is a small firm line, set with effort. Cheeks slightly flushed.
+Both shoulders are lifted and drawn in, and the tops of both upper arms
+angle downward and outward, so you can read that both hands are busy
+somewhere below the frame.
+The moss-green shirt collar and the short sleeve edges are visible at
+the bottom of the picture.
+Two small motion marks in the air beside the shoulders, both pointing
+upward, to show effort.
+Background: plain cream wall, softly lit. Toton is not in this picture.
+The top third of the picture is plain empty wall.
+""", [ROOM, MODESTY_LIGHT, HEIGHT]),
 
 ("S14_みおろす", "bottom third", """
-Mio stands still and looks DOWN at itself, chin tucked, hands resting
-loosely at the sides, a small pleased smile.
-We see Mio from the front. The tunic-length shirt hangs to mid-thigh.
-Just at the very hem of the shirt, a narrow band of SOFT YELLOW is
-visible - only a thin sliver of the waistband peeking out from under the
-shirt hem, no more than that. Below it, bare knees, shins, white socks.
-Nothing else of the garment is visible.
-Toton stands on the floor looking up at Mio, calm and neutral.
-The bottom third of the picture is plain empty wood floor.
-""", [ROOM, PANTS, MODESTY, HEIGHT]),
+HEAD AND SHOULDERS PORTRAIT OF MIO, seen slightly from one side and a
+little from above. Nothing below the chest is in the picture.
+
+Mio's chin is tucked down and the eyes look downward at something below
+the frame. A small pleased smile - quiet, private satisfaction. The
+shoulders have dropped and relaxed.
+The moss-green shirt collar and short sleeve edges are visible at the
+bottom of the picture.
+Further back and small, past Mio's shoulder, Toton stands on the floor
+looking up. Soft focus, simple.
+Background: plain cream wall with the window's warm light from the right.
+The bottom third of the picture is plain empty wall and floor.
+""", [ROOM, MODESTY_LIGHT, HEIGHT]),
 
 ("12_場面11_はけた", "top third", """
 Mio stands upright and relaxed, both arms slightly out and away from the

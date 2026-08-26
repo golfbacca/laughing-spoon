@@ -92,15 +92,18 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-Mio stands still and looks DOWN at itself, chin tucked, hands resting
-loosely at the sides, a small pleased smile.
-We see Mio from the front. The tunic-length shirt hangs to mid-thigh.
-Just at the very hem of the shirt, a narrow band of SOFT YELLOW is
-visible - only a thin sliver of the waistband peeking out from under the
-shirt hem, no more than that. Below it, bare knees, shins, white socks.
-Nothing else of the garment is visible.
-Toton stands on the floor looking up at Mio, calm and neutral.
-The bottom third of the picture is plain empty wood floor.
+HEAD AND SHOULDERS PORTRAIT OF MIO, seen slightly from one side and a
+little from above. Nothing below the chest is in the picture.
+
+Mio's chin is tucked down and the eyes look downward at something below
+the frame. A small pleased smile - quiet, private satisfaction. The
+shoulders have dropped and relaxed.
+The moss-green shirt collar and short sleeve edges are visible at the
+bottom of the picture.
+Further back and small, past Mio's shoulder, Toton stands on the floor
+looking up. Soft focus, simple.
+Background: plain cream wall with the window's warm light from the right.
+The bottom third of the picture is plain empty wall and floor.
 
 === ROOM SPEC - IDENTICAL IN EVERY INDOOR SCENE ===
 One single room, drawn the same way every time. This is a fixed set.
@@ -116,33 +119,11 @@ One single room, drawn the same way every time. This is a fixed set.
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
 
-=== PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
-Three pairs of small toddler underpants, drawn as simple flat garments.
-- Plain solid colours, one each: SOFT YELLOW, PALE SKY BLUE, SOFT CORAL.
-- Simple shape with a plain ribbed waistband. No patterns, no prints,
-  no characters, no stripes, no letters, no numbers of any kind.
-- They are ordinary, modest, everyday children's underwear, drawn the
-  way a clothing shape is drawn - soft, rounded, unremarkable.
-- Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
-  the yellow one in every later scene.
-- The paper shop bag is plain warm beige with simple rope handles and
-  NO writing on it.
-
-=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
-- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
-  times. It fully covers the hips and the bottom in every single frame.
-- NO nudity of any kind, ever. Never show bare buttocks, never show the
-  groin, never show any undressed or partly undressed area of the body.
-- Underpants appear ONLY as a flat garment: held in the hands, lying on
-  the floor, or gathered at ankle or calf level. Never drawn on the body
-  in a way that shows the body.
-- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
-  garment down at ankle or calf level are visible. Everything above the
-  knee stays covered by the shirt hem.
-- Never draw the moment of undressing. Never draw a nappy being taken
-  off a body.
-- Toton never wears clothing of any kind - only the yellow backpack.
-  Toton never wears or tries on the underpants.
+=== WHAT IS IN FRAME - MANDATORY ===
+- This is a tightly cropped picture. Draw only the body parts listed in
+  THIS IMAGE and nothing more. Do not widen the framing.
+- Mio is fully clothed in the moss-green shirt, which is tunic length.
+- Toton wears only its small yellow backpack.
 
 === TOTON'S HEIGHT - MEASURE IT ===
   Mio, ground to top of head       = 100 units

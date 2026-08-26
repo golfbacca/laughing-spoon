@@ -135,21 +135,19 @@ Three pairs of small toddler underpants, drawn as simple flat garments.
 - The paper shop bag is plain warm beige with simple rope handles and
   NO writing on it.
 
-=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
-- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
-  times. It fully covers the hips and the bottom in every single frame.
-- NO nudity of any kind, ever. Never show bare buttocks, never show the
-  groin, never show any undressed or partly undressed area of the body.
-- Underpants appear ONLY as a flat garment: held in the hands, lying on
-  the floor, or gathered at ankle or calf level. Never drawn on the body
-  in a way that shows the body.
-- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
-  garment down at ankle or calf level are visible. Everything above the
-  knee stays covered by the shirt hem.
-- Never draw the moment of undressing. Never draw a nappy being taken
-  off a body.
-- Toton never wears clothing of any kind - only the yellow backpack.
-  Toton never wears or tries on the underpants.
+=== HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
+- Mio's moss-green shirt is tunic length and reaches MID-THIGH in every
+  frame. It covers Mio from the shoulders down to mid-thigh at all times,
+  in every pose, including bending, sitting and stepping.
+- Mio is fully clothed in every frame of this book, without exception.
+- The underpants are drawn as a simple flat everyday garment: held up in
+  the hands, lying folded on the floor, or gathered down around the
+  ankles or calves. Draw them the way a folded shirt is drawn.
+- Where Mio steps into the garment, draw ONLY the legs below the knee
+  together with the garment down near the ankles. Everything higher up
+  stays covered by the shirt, and the shirt stays down.
+- Toton wears only its small yellow backpack. Toton holds the garment out
+  flat and does nothing else with it.
 
 === TOTON'S HEIGHT - MEASURE IT ===
   Mio, ground to top of head       = 100 units

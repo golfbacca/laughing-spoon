@@ -97,8 +97,8 @@ no hand, no foot, no hair, no shadow of a child.
 
 The picture shows only:
 - The small round woven waste basket on the floor beside the shelf. One
-  rolled-up white nappy sits in it, drawn as a simple plain white bundle,
-  neatly rolled, clearly just an object. Nothing is on it or in it.
+  clean white nappy sits in it, folded and rolled into a neat plain
+  white bundle - drawn simply, the way a rolled towel is drawn.
 - Toton standing on the floor a little way from the basket, facing the
   viewer, holding the SOFT YELLOW pair spread open between its two
   stubby front limbs, held ready at its own chest height, waiting.
@@ -108,8 +108,9 @@ The picture shows only:
 The room behind them as always: cream wall, wood floor, the shelf edge.
 The top third of the picture is plain wall.
 
-This composition is deliberate. The undressing happens off the page and
-is carried entirely by the words. Do not add the child back in.
+This composition is deliberate. The words carry what happens; the
+picture shows only the basket, the bundle and Toton waiting.
+Keep the frame to those three things.
 
 === ROOM SPEC - IDENTICAL IN EVERY INDOOR SCENE ===
 One single room, drawn the same way every time. This is a fixed set.
@@ -137,21 +138,19 @@ Three pairs of small toddler underpants, drawn as simple flat garments.
 - The paper shop bag is plain warm beige with simple rope handles and
   NO writing on it.
 
-=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
-- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
-  times. It fully covers the hips and the bottom in every single frame.
-- NO nudity of any kind, ever. Never show bare buttocks, never show the
-  groin, never show any undressed or partly undressed area of the body.
-- Underpants appear ONLY as a flat garment: held in the hands, lying on
-  the floor, or gathered at ankle or calf level. Never drawn on the body
-  in a way that shows the body.
-- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
-  garment down at ankle or calf level are visible. Everything above the
-  knee stays covered by the shirt hem.
-- Never draw the moment of undressing. Never draw a nappy being taken
-  off a body.
-- Toton never wears clothing of any kind - only the yellow backpack.
-  Toton never wears or tries on the underpants.
+=== HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
+- Mio's moss-green shirt is tunic length and reaches MID-THIGH in every
+  frame. It covers Mio from the shoulders down to mid-thigh at all times,
+  in every pose, including bending, sitting and stepping.
+- Mio is fully clothed in every frame of this book, without exception.
+- The underpants are drawn as a simple flat everyday garment: held up in
+  the hands, lying folded on the floor, or gathered down around the
+  ankles or calves. Draw them the way a folded shirt is drawn.
+- Where Mio steps into the garment, draw ONLY the legs below the knee
+  together with the garment down near the ankles. Everything higher up
+  stays covered by the shirt, and the shirt stays down.
+- Toton wears only its small yellow backpack. Toton holds the garment out
+  flat and does nothing else with it.
 
 === TOTON'S HEIGHT - MEASURE IT ===
   Mio, ground to top of head       = 100 units

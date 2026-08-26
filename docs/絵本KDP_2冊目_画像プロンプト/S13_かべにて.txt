@@ -92,13 +92,19 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-Mio has placed one flat hand against the plain cream wall on the left to
-steady itself, arm straight, and now stands firm and balanced.
-Same framing as before: tunic-length shirt to mid-thigh, bare knees and
-shins below it, white ankle socks, the yellow garment still gathered
-down at ankle level around one foot.
-Mio's face is calmer now, the wobble gone. No motion marks.
-Toton stands on the floor beside Mio's feet, looking up, calm.
+Mio stands on the wood floor, seen from the front and slightly to one
+side, and has placed ONE flat hand against the plain cream wall on the
+left to steady itself. That arm is straight and firm. The other arm hangs
+relaxed at the side. Both feet are on the floor in white ankle socks,
+standing balanced and still.
+Mio looks down towards the floor, the face calm and settled - the wobble
+has passed. No motion marks anywhere in this picture.
+Mio wears the tunic-length moss-green shirt reaching mid-thigh, with bare
+knees and shins below it. Nothing is being held.
+Toton stands on the floor beside Mio's feet, looking up at Mio, calm and
+neutral.
+The room as always: cream wall, light wood floor, the shelf edge at the
+left, the window's soft light from the right.
 The top third of the picture is plain wall.
 
 === ROOM SPEC - IDENTICAL IN EVERY INDOOR SCENE ===
@@ -115,33 +121,19 @@ One single room, drawn the same way every time. This is a fixed set.
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
 
-=== PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
-Three pairs of small toddler underpants, drawn as simple flat garments.
-- Plain solid colours, one each: SOFT YELLOW, PALE SKY BLUE, SOFT CORAL.
-- Simple shape with a plain ribbed waistband. No patterns, no prints,
-  no characters, no stripes, no letters, no numbers of any kind.
-- They are ordinary, modest, everyday children's underwear, drawn the
-  way a clothing shape is drawn - soft, rounded, unremarkable.
-- Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
-  the yellow one in every later scene.
-- The paper shop bag is plain warm beige with simple rope handles and
-  NO writing on it.
-
-=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
-- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
-  times. It fully covers the hips and the bottom in every single frame.
-- NO nudity of any kind, ever. Never show bare buttocks, never show the
-  groin, never show any undressed or partly undressed area of the body.
-- Underpants appear ONLY as a flat garment: held in the hands, lying on
-  the floor, or gathered at ankle or calf level. Never drawn on the body
-  in a way that shows the body.
-- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
-  garment down at ankle or calf level are visible. Everything above the
-  knee stays covered by the shirt hem.
-- Never draw the moment of undressing. Never draw a nappy being taken
-  off a body.
-- Toton never wears clothing of any kind - only the yellow backpack.
-  Toton never wears or tries on the underpants.
+=== HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
+- Mio's moss-green shirt is tunic length and reaches MID-THIGH in every
+  frame. It covers Mio from the shoulders down to mid-thigh at all times,
+  in every pose, including bending, sitting and stepping.
+- Mio is fully clothed in every frame of this book, without exception.
+- The underpants are drawn as a simple flat everyday garment: held up in
+  the hands, lying folded on the floor, or gathered down around the
+  ankles or calves. Draw them the way a folded shirt is drawn.
+- Where Mio steps into the garment, draw ONLY the legs below the knee
+  together with the garment down near the ankles. Everything higher up
+  stays covered by the shirt, and the shirt stays down.
+- Toton wears only its small yellow backpack. Toton holds the garment out
+  flat and does nothing else with it.
 
 === TOTON'S HEIGHT - MEASURE IT ===
   Mio, ground to top of head       = 100 units

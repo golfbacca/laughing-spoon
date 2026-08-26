@@ -92,17 +92,21 @@ species and NOT based on any existing character.
   with a calm gentle face. Never the focus of the image.
 
 === THIS IMAGE ===
-Mio has both hands down at the sides, gripping the waistband of the
-yellow pants, and is pulling it UPWARD. The garment is drawn at
-mid-calf, rising. Both elbows are bent outward with the effort.
-CRITICAL FRAMING: the tunic-length shirt still hangs to mid-thigh and
-covers everything above the knee. Mio's hands and the waistband are
-BELOW the shirt hem, at calf level. Nothing above the knee is shown.
-Mio's face is set with effort - a small firm mouth, eyes down at the
-task. Two small motion marks along the sides to show the upward pull.
-Toton stands close on the floor, ears twitching with one small motion
-mark beside each ear - the happy pose.
-The top third of the picture is plain wall.
+HEAD AND SHOULDERS PORTRAIT OF MIO. Nothing below the chest is in the
+picture; the frame ends there.
+
+Mio's face fills the middle of the picture, seen from the front, tilted
+down a little. The eyes look downward at something below the frame. The
+mouth is a small firm line, set with effort. Cheeks slightly flushed.
+Both shoulders are lifted and drawn in, and the tops of both upper arms
+angle downward and outward, so you can read that both hands are busy
+somewhere below the frame.
+The moss-green shirt collar and the short sleeve edges are visible at
+the bottom of the picture.
+Two small motion marks in the air beside the shoulders, both pointing
+upward, to show effort.
+Background: plain cream wall, softly lit. Toton is not in this picture.
+The top third of the picture is plain empty wall.
 
 === ROOM SPEC - IDENTICAL IN EVERY INDOOR SCENE ===
 One single room, drawn the same way every time. This is a fixed set.
@@ -118,33 +122,11 @@ One single room, drawn the same way every time. This is a fixed set.
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
 
-=== PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
-Three pairs of small toddler underpants, drawn as simple flat garments.
-- Plain solid colours, one each: SOFT YELLOW, PALE SKY BLUE, SOFT CORAL.
-- Simple shape with a plain ribbed waistband. No patterns, no prints,
-  no characters, no stripes, no letters, no numbers of any kind.
-- They are ordinary, modest, everyday children's underwear, drawn the
-  way a clothing shape is drawn - soft, rounded, unremarkable.
-- Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
-  the yellow one in every later scene.
-- The paper shop bag is plain warm beige with simple rope handles and
-  NO writing on it.
-
-=== MODESTY - MANDATORY. DO NOT SOFTEN OR OMIT THIS. ===
-- Mio's moss-green shirt is tunic length and reaches MID-THIGH at all
-  times. It fully covers the hips and the bottom in every single frame.
-- NO nudity of any kind, ever. Never show bare buttocks, never show the
-  groin, never show any undressed or partly undressed area of the body.
-- Underpants appear ONLY as a flat garment: held in the hands, lying on
-  the floor, or gathered at ankle or calf level. Never drawn on the body
-  in a way that shows the body.
-- When Mio steps into the pants, ONLY the legs BELOW THE KNEE and the
-  garment down at ankle or calf level are visible. Everything above the
-  knee stays covered by the shirt hem.
-- Never draw the moment of undressing. Never draw a nappy being taken
-  off a body.
-- Toton never wears clothing of any kind - only the yellow backpack.
-  Toton never wears or tries on the underpants.
+=== WHAT IS IN FRAME - MANDATORY ===
+- This is a tightly cropped picture. Draw only the body parts listed in
+  THIS IMAGE and nothing more. Do not widen the framing.
+- Mio is fully clothed in the moss-green shirt, which is tunic length.
+- Toton wears only its small yellow backpack.
 
 === TOTON'S HEIGHT - MEASURE IT ===
   Mio, ground to top of head       = 100 units
