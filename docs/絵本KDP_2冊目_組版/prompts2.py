@@ -50,8 +50,10 @@ One single room, drawn the same way every time. This is a fixed set.
   Its top surface is clear except where a scene says otherwise.
 - On the RIGHT: one window with soft morning light and a plain
   cream curtain. The light falls gently from the right.
-- On the floor beside the shelf: one small round woven basket,
-  used as the waste basket.
+- On the floor beside the shelf: ONE small round woven basket, used as
+  the waste basket. It stands out on the OPEN FLOOR next to the shelf -
+  never underneath the shelf, never tucked under any furniture. There is
+  only one basket in the whole room.
 - Nothing else. No furniture clutter, no pictures on the wall,
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
@@ -69,15 +71,36 @@ One single room, drawn the same way every time. This is a fixed set.
 
 === BAG SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS IT ===
 One single paper shop bag, drawn exactly the same way every time.
-- Plain warm beige paper. Flat-bottomed, standing upright and squared off.
-- TWO ROPE HANDLES, ALWAYS PRESENT. A pair of thin twisted cord handles
-  looped over the top edge, forming two small arcs standing above the
-  mouth of the bag. They appear in EVERY picture that shows the bag, from
-  every angle and at every distance. A bag drawn without handles is wrong.
-- The mouth is OPEN and UNFOLDED. The top edge is a plain straight rim.
-  NEVER fold, crease, roll or crimp the top shut. This is a shop bag with
-  handles, not a folded paper lunch sack.
+- Plain warm beige paper, flat-bottomed. It ALWAYS STANDS UPRIGHT on its
+  own base, squared off - whether on the shelf or on the floor. It is
+  never lying on its side, never tipped over, never collapsed.
+- HANDLES - THIS KEEPS GOING WRONG. READ IT TWICE.
+  Two thin twisted cord handles, and they HANG DOWN, limp and slack.
+  * The FRONT handle droops against the FRONT FACE of the bag, sagging
+    into a loose U that hangs BELOW the top rim and rests flat against
+    the paper.
+  * The BACK handle does the same on the far side, so it is mostly
+    hidden. Normally only the front handle is visible.
+  * NEVER draw the handles as two stiff arcs standing UP above the rim.
+    A handle only stands up while somebody is carrying the bag, and in
+    these pictures nobody is carrying it. A standing handle is wrong.
+- WHERE THE CORD ATTACHES: each end of the cord enters a small round
+  eyelet punched in the OUTER FRONT FACE of the bag, a little below the
+  top rim. You see the two eyelets on the front paper with the cord
+  sagging between them. The cord must NOT go over the rim and drop down
+  inside the bag's mouth. It never disappears into the opening.
+- The mouth is OPEN and UNFOLDED: a plain straight rim. Never folded,
+  creased, rolled or crimped shut. This is a shop bag with cord handles,
+  not a folded paper lunch sack.
 - No writing, no logo, no printing, no pattern anywhere on it.
+
+=== WINDOW SPEC - SAME IN EVERY INDOOR SCENE ===
+- One window on the right-hand wall, hung with a plain cream curtain.
+- The curtain is FULL LENGTH. It hangs from above the top edge of the
+  picture all the way DOWN TO THE FLOOR, and its hem reaches the floor.
+- Because the curtain covers the window, NO window frame, NO sill, NO
+  glazing bar and NO glass are visible anywhere. Never draw a short
+  curtain with a frame or a sill showing underneath its hem.
 """
 
 PANTS = """=== PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
@@ -200,7 +223,8 @@ Overhead-ish view of the light wood floor. THREE pairs of small
 underpants lie side by side in a neat row on the floor: soft yellow on
 the left, pale sky blue in the middle, soft coral on the right. Each one
 lies flat and folded, plain and simple.
-The empty beige paper bag lies on its side behind the row.
+The empty beige paper bag STANDS UPRIGHT on the floor behind the row,
+on its own flat base, with its front handle drooping down its front face.
 Toton stands at the left end of the row on the floor, looking along it.
 Mio is NOT in this picture - only the pants, the bag and Toton.
 The bottom third of the picture is plain empty wood floor.
@@ -303,51 +327,94 @@ Keep the frame to those three things.
 """, [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("09_場面08_かたあし", "top third", """
-Mio stands on the wood floor, putting ONE foot into the soft yellow
-pants. The garment is held open low down, gathered at ANKLE HEIGHT, and
-one foot is stepping into it.
-CAMERA AND FRAMING: we see Mio from the front, standing. The tunic-length
-shirt hangs down to mid-thigh and covers everything above the knee.
-Below the shirt hem: bare knees, bare shins, white ankle socks, and the
-yellow garment gathered down at ankle level around one foot.
-Mio is slightly off balance on one leg, the free arm out to the side for
-balance, body tilted a little, face concentrating - a small determined
+Mio stands on the wood floor and has just put ONE foot through ONE leg
+opening of the soft yellow pants.
+
+COUNT THE LEGS. ONE leg is through. ONE leg is not.
+- The raised foot has passed through one leg hole, so the yellow garment
+  now hangs from that ankle, the rest of it drooping down and resting on
+  the floor beneath it.
+- The OTHER foot stands flat on the floor, completely OUTSIDE the
+  garment. No fabric touches that leg. Its leg opening is still empty.
+- The waistband is NOT around both legs. It is NOT up at the knees or
+  thighs. Nothing is pulled up. Everything stays low, at ankle level.
+
+Mio is a little off balance from the step: the free arm out to the side,
+the body tilted slightly, the face concentrating with a small determined
 mouth. One small motion mark beside the raised foot to show the wobble.
+
+Mio wears the tunic-length moss-green shirt reaching mid-thigh, with bare
+knees and shins below it, and white ankle socks.
 Toton stands on the floor nearby, watching, calm and neutral.
+
+THE ROOM MUST MATCH THE OTHER PAGES:
+- At the LEFT, the low TWO-TIER wooden shelf with slim legs and an open
+  lower shelf, the beige paper bag standing on its top. NOT a solid
+  wooden box, NOT a closed cabinet, NOT a bench with a filled-in front.
+- The round woven basket stands on the OPEN FLOOR beside the shelf.
+- At the RIGHT, the cream curtain hanging FULL LENGTH to the floor, with
+  no window frame and no sill showing under its hem.
 The top third of the picture is plain wall.
 """, [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("S13_かべにて", "top third", """
-Mio stands on the wood floor, seen from the front and slightly to one
-side, and has placed ONE flat hand against the plain cream wall on the
-left to steady itself. That arm is straight and firm. The other arm hangs
-relaxed at the side. Both feet are on the floor in white ankle socks,
-standing balanced and still.
-Mio looks down towards the floor, the face calm and settled - the wobble
-has passed. No motion marks anywhere in this picture.
+THE SAME MOMENT, ONE BEAT LATER THAN THE STEPPING-IN PICTURE. The state of
+the pants is UNCHANGED from that picture and must be drawn again here.
+
+COUNT THE LEGS. ONE leg is through. ONE leg is not.
+- One foot is still through one leg opening of the soft yellow pants, so
+  the garment hangs from that ankle and rests on the floor beneath it.
+  The pants are still there - do not remove them from the picture.
+- The other foot stands flat on the floor, outside the garment.
+- Nothing is pulled up. Everything stays low, at ankle level.
+
+Mio has placed ONE flat hand against the plain cream wall on the left to
+steady itself, that arm straight and firm. The other arm hangs relaxed.
+Mio now stands balanced and still, looking down, the face calm and
+settled - the wobble has passed. No motion marks.
+
 Mio wears the tunic-length moss-green shirt reaching mid-thigh, with bare
-knees and shins below it. Nothing is being held.
-Toton stands on the floor beside Mio's feet, looking up at Mio, calm and
-neutral.
-The room as always: cream wall, light wood floor, the shelf edge at the
-left, the window's soft light from the right.
+knees and shins below it, and white ankle socks.
+Toton stands on the floor beside Mio's feet, looking up, calm and neutral.
+
+THE ROOM MUST MATCH THE OTHER PAGES:
+- At the LEFT, the low TWO-TIER wooden shelf with slim legs and an open
+  lower shelf, the beige paper bag standing on its top. NOT a solid
+  wooden box, NOT a closed cabinet, NOT a bench with a filled-in front.
+- The round woven basket stands on the OPEN FLOOR beside the shelf.
+- At the RIGHT, the cream curtain hanging FULL LENGTH to the floor, with
+  no window frame and no sill showing under its hem.
 The top third of the picture is plain wall.
-""", [ROOM, MODESTY, HEIGHT]),
+""", [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("10_場面09_もういっぽう", "top third", """
-CLOSE VIEW OF THE FLOOR, camera down low near the floorboards.
+Mio has now put the SECOND foot through the other leg opening.
 
-The picture contains only: light wood floor, the bottom edge of a
-moss-green shirt hem, two lower legs from just below the knee down,
-white ankle socks, and Toton.
-One sock-foot rests flat on the floor. The other lifts a little, toes
-tilted, mid-step, with one small motion mark beside it.
-Draw NO other object on the floor. No garment, no cloth, no bag, nothing
-lying about - just the bare wood floor, the two feet and Toton.
-Nothing above the knees is in the picture; the frame simply ends there.
-Toton stands on the floor beside the feet, facing them, calm and neutral.
-The top third of the picture is plain empty floor and skirting board.
-""", [ROOM, MODESTY_LIGHT, HEIGHT]),
+COUNT THE LEGS. BOTH legs are through, and that is the change from the
+picture before.
+- Both white-socked feet are down on the floor, and the soft yellow
+  garment is gathered in a loose ring around BOTH ankles, resting on the
+  floor around them. It is a recognisable pair of pants with a ribbed
+  waistband, not a flat mat and not a towel.
+- Nothing is pulled up yet. The garment stays down at ankle level.
+
+Mio keeps one flat hand on the wall on the left for balance, stands square
+and steady, and looks down at both feet. The face is calm and careful,
+unhurried. No motion marks.
+
+Mio wears the tunic-length moss-green shirt reaching mid-thigh, with bare
+knees and shins below it.
+Toton stands on the floor nearby, watching quietly, calm and neutral.
+
+THE ROOM MUST MATCH THE OTHER PAGES:
+- At the LEFT, the low TWO-TIER wooden shelf with slim legs and an open
+  lower shelf, the beige paper bag standing on its top. NOT a solid
+  wooden box, NOT a closed cabinet, NOT a bench with a filled-in front.
+- The round woven basket stands on the OPEN FLOOR beside the shelf.
+- At the RIGHT, the cream curtain hanging FULL LENGTH to the floor, with
+  no window frame and no sill showing under its hem.
+The top third of the picture is plain wall.
+""", [ROOM, PANTS, MODESTY, HEIGHT]),
 
 ("11_場面10_ひっぱる", "top third", """
 HEAD AND SHOULDERS PORTRAIT OF MIO. Nothing below the chest is in the

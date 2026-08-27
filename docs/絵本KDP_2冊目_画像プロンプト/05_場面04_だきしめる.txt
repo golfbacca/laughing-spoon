@@ -111,11 +111,57 @@ One single room, drawn the same way every time. This is a fixed set.
   Its top surface is clear except where a scene says otherwise.
 - On the RIGHT: one window with soft morning light and a plain
   cream curtain. The light falls gently from the right.
-- On the floor beside the shelf: one small round woven basket,
-  used as the waste basket.
+- On the floor beside the shelf: ONE small round woven basket, used as
+  the waste basket. It stands out on the OPEN FLOOR next to the shelf -
+  never underneath the shelf, never tucked under any furniture. There is
+  only one basket in the whole room.
 - Nothing else. No furniture clutter, no pictures on the wall,
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
+
+=== THE SHELF - SAME GEOMETRY IN EVERY INDOOR SCENE ===
+- The shelf is a low TWO-TIER wooden shelf: a flat top surface and one
+  lower shelf below it, with slim wooden legs. It stands against the BACK
+  wall, on the LEFT of the picture, running left-to-right across the frame.
+- The window is on the RIGHT-HAND wall, which meets the back wall at a
+  RIGHT ANGLE. So the shelf runs across the picture and the window faces
+  in from the side, perpendicular to it. Keep this same corner geometry in
+  every indoor scene, whatever the camera angle.
+- The paper bag sits on the shelf's TOP surface unless a scene says the
+  bag is on the floor.
+
+=== BAG SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS IT ===
+One single paper shop bag, drawn exactly the same way every time.
+- Plain warm beige paper, flat-bottomed. It ALWAYS STANDS UPRIGHT on its
+  own base, squared off - whether on the shelf or on the floor. It is
+  never lying on its side, never tipped over, never collapsed.
+- HANDLES - THIS KEEPS GOING WRONG. READ IT TWICE.
+  Two thin twisted cord handles, and they HANG DOWN, limp and slack.
+  * The FRONT handle droops against the FRONT FACE of the bag, sagging
+    into a loose U that hangs BELOW the top rim and rests flat against
+    the paper.
+  * The BACK handle does the same on the far side, so it is mostly
+    hidden. Normally only the front handle is visible.
+  * NEVER draw the handles as two stiff arcs standing UP above the rim.
+    A handle only stands up while somebody is carrying the bag, and in
+    these pictures nobody is carrying it. A standing handle is wrong.
+- WHERE THE CORD ATTACHES: each end of the cord enters a small round
+  eyelet punched in the OUTER FRONT FACE of the bag, a little below the
+  top rim. You see the two eyelets on the front paper with the cord
+  sagging between them. The cord must NOT go over the rim and drop down
+  inside the bag's mouth. It never disappears into the opening.
+- The mouth is OPEN and UNFOLDED: a plain straight rim. Never folded,
+  creased, rolled or crimped shut. This is a shop bag with cord handles,
+  not a folded paper lunch sack.
+- No writing, no logo, no printing, no pattern anywhere on it.
+
+=== WINDOW SPEC - SAME IN EVERY INDOOR SCENE ===
+- One window on the right-hand wall, hung with a plain cream curtain.
+- The curtain is FULL LENGTH. It hangs from above the top edge of the
+  picture all the way DOWN TO THE FLOOR, and its hem reaches the floor.
+- Because the curtain covers the window, NO window frame, NO sill, NO
+  glazing bar and NO glass are visible anywhere. Never draw a short
+  curtain with a frame or a sill showing underneath its hem.
 
 === PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
 Three pairs of small toddler underpants, drawn as simple flat garments.
@@ -126,8 +172,6 @@ Three pairs of small toddler underpants, drawn as simple flat garments.
   way a clothing shape is drawn - soft, rounded, unremarkable.
 - Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
   the yellow one in every later scene.
-- The paper shop bag is plain warm beige with simple rope handles and
-  NO writing on it.
 
 === HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
 - Mio's moss-green shirt is tunic length and reaches MID-THIGH in every

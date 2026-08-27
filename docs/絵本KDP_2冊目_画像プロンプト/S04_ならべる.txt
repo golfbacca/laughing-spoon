@@ -96,7 +96,8 @@ Overhead-ish view of the light wood floor. THREE pairs of small
 underpants lie side by side in a neat row on the floor: soft yellow on
 the left, pale sky blue in the middle, soft coral on the right. Each one
 lies flat and folded, plain and simple.
-The empty beige paper bag lies on its side behind the row.
+The empty beige paper bag STANDS UPRIGHT on the floor behind the row,
+on its own flat base, with its front handle drooping down its front face.
 Toton stands at the left end of the row on the floor, looking along it.
 Mio is NOT in this picture - only the pants, the bag and Toton.
 The bottom third of the picture is plain empty wood floor.
@@ -109,8 +110,10 @@ One single room, drawn the same way every time. This is a fixed set.
   Its top surface is clear except where a scene says otherwise.
 - On the RIGHT: one window with soft morning light and a plain
   cream curtain. The light falls gently from the right.
-- On the floor beside the shelf: one small round woven basket,
-  used as the waste basket.
+- On the floor beside the shelf: ONE small round woven basket, used as
+  the waste basket. It stands out on the OPEN FLOOR next to the shelf -
+  never underneath the shelf, never tucked under any furniture. There is
+  only one basket in the whole room.
 - Nothing else. No furniture clutter, no pictures on the wall,
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
@@ -128,15 +131,36 @@ One single room, drawn the same way every time. This is a fixed set.
 
 === BAG SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS IT ===
 One single paper shop bag, drawn exactly the same way every time.
-- Plain warm beige paper. Flat-bottomed, standing upright and squared off.
-- TWO ROPE HANDLES, ALWAYS PRESENT. A pair of thin twisted cord handles
-  looped over the top edge, forming two small arcs standing above the
-  mouth of the bag. They appear in EVERY picture that shows the bag, from
-  every angle and at every distance. A bag drawn without handles is wrong.
-- The mouth is OPEN and UNFOLDED. The top edge is a plain straight rim.
-  NEVER fold, crease, roll or crimp the top shut. This is a shop bag with
-  handles, not a folded paper lunch sack.
+- Plain warm beige paper, flat-bottomed. It ALWAYS STANDS UPRIGHT on its
+  own base, squared off - whether on the shelf or on the floor. It is
+  never lying on its side, never tipped over, never collapsed.
+- HANDLES - THIS KEEPS GOING WRONG. READ IT TWICE.
+  Two thin twisted cord handles, and they HANG DOWN, limp and slack.
+  * The FRONT handle droops against the FRONT FACE of the bag, sagging
+    into a loose U that hangs BELOW the top rim and rests flat against
+    the paper.
+  * The BACK handle does the same on the far side, so it is mostly
+    hidden. Normally only the front handle is visible.
+  * NEVER draw the handles as two stiff arcs standing UP above the rim.
+    A handle only stands up while somebody is carrying the bag, and in
+    these pictures nobody is carrying it. A standing handle is wrong.
+- WHERE THE CORD ATTACHES: each end of the cord enters a small round
+  eyelet punched in the OUTER FRONT FACE of the bag, a little below the
+  top rim. You see the two eyelets on the front paper with the cord
+  sagging between them. The cord must NOT go over the rim and drop down
+  inside the bag's mouth. It never disappears into the opening.
+- The mouth is OPEN and UNFOLDED: a plain straight rim. Never folded,
+  creased, rolled or crimped shut. This is a shop bag with cord handles,
+  not a folded paper lunch sack.
 - No writing, no logo, no printing, no pattern anywhere on it.
+
+=== WINDOW SPEC - SAME IN EVERY INDOOR SCENE ===
+- One window on the right-hand wall, hung with a plain cream curtain.
+- The curtain is FULL LENGTH. It hangs from above the top edge of the
+  picture all the way DOWN TO THE FLOOR, and its hem reaches the floor.
+- Because the curtain covers the window, NO window frame, NO sill, NO
+  glazing bar and NO glass are visible anywhere. Never draw a short
+  curtain with a frame or a sill showing underneath its hem.
 
 === PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
 Three pairs of small toddler underpants, drawn as simple flat garments.

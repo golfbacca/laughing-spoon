@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""トトンの体色のぶれを、生成ではなく画素で直す。
+
+なぜ生成で直さないか（1冊目の原則の応用）:
+  色だけの問題で描き直すと、せっかく合った構図（足の本数など）が
+  また転ぶ。色は数値で測れて数値で直せるので、画素で直すほうが確実。
+
+測り方:
+  トトンの淡い水色にあたる画素を拾って平均RGBを出す。
+  正しい絵は G が R より10前後 高い（水色）。
+  紫に転んだ絵は R が G を上回る。
+
+  python3 fix_toton_color.py            測るだけ
+  python3 fix_toton_color.py --apply    ずれた絵を直す
+"""
+import sys, pathlib
+import numpy as np
+from PIL import Image, ImageFilter
+from scipy import ndimage
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import prompts2
+
+IMG = pathlib.Path(__file__).resolve().parents[2]/"docs"/"絵本KDP_2冊目_画像"
+TOL = 10.0       # これ以上離れたら直す。±10は水彩のゆらぎの範囲なので、
+                 # それ未満は触らない。2回かけて2枚を退色させた（下記の罠）
+
+def mask_of(a):
+    """トトン本体だけを拾う。
+
+    【罠・2026-08-26に実際にやらかした】
+    「青っぽい画素すべて」でマスクを作ると、床に置いた青いパンツや
+    白い靴下まで入る。場面06ではそちらが多数派になり、
+    トトンではなくパンツの色を補正してしまった。
+    しかも2回かけたのでトトンのほうが退色した。
+
+    そこで、青系画素の【最大の連結塊】だけをトトンとみなす。
+    パンツや靴下は小さいので落ちる。
+    直したあとは必ず測り直し、画素数が急に減っていないか見ること。
+    減っていたら、そのページは補正が外れている。
+    """
+    r, g, b = a[..., 0], a[..., 1], a[..., 2]
+    m = (b - r > 15) & (b > 150) & (b < 252) & (r > 120)
+    m = ndimage.binary_opening(m, np.ones((5, 5)))
+    lab, n = ndimage.label(m)
+    if n == 0:
+        return np.zeros_like(m)
+    sizes = ndimage.sum(m, lab, range(1, n + 1))
+    big = (lab == (int(np.argmax(sizes)) + 1))
+    return big if big.sum() > 4000 else np.zeros_like(m)
+
+def measure(path):
+    a = np.asarray(Image.open(path).convert("RGB")).astype(np.int16)
+    m = mask_of(a)
+    if m.sum() < 3000:
+        return None, m
+    return np.array([a[..., c][m].mean() for c in range(3)]), m
+
+def main(apply=False):
+    stats = {}
+    for n in prompts2.NAMES:
+        v, _ = measure(IMG/f"{n}.jpg")
+        if v is not None:
+            stats[n] = v
+    # 基準は「G が R より高い（＝水色のまま）」絵だけの平均
+    target = np.median(np.array(list(stats.values())), axis=0)
+    print(f"基準色 R{target[0]:.0f} G{target[1]:.0f} B{target[2]:.0f}"
+          f"（{len(stats)}枚の中央値）\n")
+
+    for n, v in stats.items():
+        d = float(np.linalg.norm(v - target))
+        if d <= TOL:
+            print(f"  OK   {n:<26} 差 {d:4.1f}")
+            continue
+        print(f"  直す {n:<26} 差 {d:4.1f}  R{v[0]:.0f} G{v[1]:.0f} B{v[2]:.0f}")
+        if not apply:
+            continue
+        p = IMG/f"{n}.jpg"
+        im = Image.open(p).convert("RGB")
+        a = np.asarray(im).astype(np.float32)
+        m = mask_of(a.astype(np.int16))
+        # マスクをぼかして、境目に段差が出ないようにする
+        soft = np.asarray(Image.fromarray((m*255).astype(np.uint8))
+                          .filter(ImageFilter.GaussianBlur(6))).astype(np.float32)/255.0
+        off = (target - v).astype(np.float32)
+        a += soft[..., None] * off[None, None, :]
+        Image.fromarray(np.clip(a, 0, 255).astype(np.uint8)).save(
+            p, quality=95, dpi=(300, 300))
+        v2, _ = measure(p)
+        print(f"       → R{v2[0]:.0f} G{v2[1]:.0f} B{v2[2]:.0f}"
+              f"  差 {float(np.linalg.norm(v2-target)):.1f}")
+
+if __name__ == "__main__":
+    main(apply="--apply" in sys.argv)
