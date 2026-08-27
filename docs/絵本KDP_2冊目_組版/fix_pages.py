@@ -16,140 +16,49 @@ IMG = pathlib.Path(__file__).resolve().parents[2] / "docs" / "絵本KDP_2冊目_
 ANCHOR = IMG / "01_表表紙_正方形.jpg"
 
 FIX = {
- "01_表表紙_正方形": """
+ "S13_かべにて": """
 
-=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
-The characters, their poses, their faces, the room, the furniture, the
-colours and the whole composition are correct. Reproduce this picture
-exactly as it is. Do NOT redraw the characters. Do NOT reframe. Do NOT
-move the bag, resize it, or change its angle or its paper colour.
+=== THIS PICTURE IS APPROVED. MIRROR ONE OBJECT. ===
+Mio, the pose, the hand on the wall, the face, the legs, the socks,
+Toton, the room, the furniture and the framing are all correct.
+Reproduce them exactly. Do not redraw the characters. Do not reframe.
+Do not move either foot.
 
-Change ONLY the CORD HANDLES on the beige paper bag:
-- They are currently drawn STANDING UP as two stiff arcs above the top
-  rim. That is wrong. Nobody is carrying this bag.
-- Redraw them HANGING DOWN, limp and slack: the front handle droops
-  against the FRONT FACE of the bag, sagging into a loose U that hangs
-  BELOW the top rim and rests flat against the paper. The back handle
-  does the same on the far side, so it is hidden. Normally only the
-  front handle is visible.
-- Each end of the cord enters a small round EYELET punched in the OUTER
-  FRONT FACE of the bag, a little below the rim. The two eyelets are on
-  the front paper, with the cord sagging between them.
-- The cord must NOT pass over the rim or drop down inside the bag's
-  mouth. Nothing of the cord goes into the opening.
-- Leave the mouth of the bag open and unfolded, exactly as it is now.
+Do exactly one thing to the yellow garment: MIRROR IT LEFT-TO-RIGHT
+about the ankle it is hanging on.
+
+- Keep the ribbed waistband ring exactly where it is now, around the same
+  ankle, at the same height and the same size.
+- Right now the body of the garment, and the empty second leg opening,
+  spread out to the VIEWER'S RIGHT - away from the other foot, off toward
+  Toton. Flip that to the opposite side.
+- After the flip, the body of the garment and the empty leg opening lie
+  on the floor to the VIEWER'S LEFT, in the space BETWEEN the two feet,
+  right next to the bare white sock. The empty opening faces that sock,
+  open and waiting for it.
+- Nothing of the garment extends past the feet on the outer side any
+  more. The floor to the viewer's right of the garment is bare wood.
+- Same soft yellow, same size, same ribbed waistband.
 """,
- "05_場面04_だきしめる": """
+ "04_場面03_おむつがいい": """
 
-=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
-The characters, their poses, their faces, the room, the furniture, the
-colours and the whole composition are correct. Reproduce this picture
-exactly as it is. Do NOT redraw the characters. Do NOT reframe. Do NOT
-move the bag, resize it, or change its angle or its paper colour.
+=== THIS PICTURE IS APPROVED. PUT ONE OBJECT BACK ON THE FLOOR. ===
+Mio, the pose, the face, the three pairs of pants on the floor, Toton,
+the two-tier shelf, the full-length curtain, the basket, the wall and the
+framing are all correct. Reproduce them exactly. Do not redraw the
+characters, do not reframe, do not move anything else.
 
-Change ONLY the CORD HANDLES on the beige paper bag:
-- They are currently drawn STANDING UP as two stiff arcs above the top
-  rim. That is wrong. Nobody is carrying this bag.
-- Redraw them HANGING DOWN, limp and slack: the front handle droops
-  against the FRONT FACE of the bag, sagging into a loose U that hangs
-  BELOW the top rim and rests flat against the paper. The back handle
-  does the same on the far side, so it is hidden. Normally only the
-  front handle is visible.
-- Each end of the cord enters a small round EYELET punched in the OUTER
-  FRONT FACE of the bag, a little below the rim. The two eyelets are on
-  the front paper, with the cord sagging between them.
-- The cord must NOT pass over the rim or drop down inside the bag's
-  mouth. Nothing of the cord goes into the opening.
-- Leave the mouth of the bag open and unfolded, exactly as it is now.
-""",
- "07_場面06_えらんだ": """
-
-=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
-The characters, their poses, their faces, the room, the furniture, the
-colours and the whole composition are correct. Reproduce this picture
-exactly as it is. Do NOT redraw the characters. Do NOT reframe. Do NOT
-move the bag, resize it, or change its angle or its paper colour.
-
-Change ONLY the CORD HANDLES on the beige paper bag:
-- They are currently drawn STANDING UP as two stiff arcs above the top
-  rim. That is wrong. Nobody is carrying this bag.
-- Redraw them HANGING DOWN, limp and slack: the front handle droops
-  against the FRONT FACE of the bag, sagging into a loose U that hangs
-  BELOW the top rim and rests flat against the paper. The back handle
-  does the same on the far side, so it is hidden. Normally only the
-  front handle is visible.
-- Each end of the cord enters a small round EYELET punched in the OUTER
-  FRONT FACE of the bag, a little below the rim. The two eyelets are on
-  the front paper, with the cord sagging between them.
-- The cord must NOT pass over the rim or drop down inside the bag's
-  mouth. Nothing of the cord goes into the opening.
-- Leave the mouth of the bag open and unfolded, exactly as it is now.
-""",
- "S09_すわる": """
-
-=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
-The characters, their poses, their faces, the room, the furniture, the
-colours and the whole composition are correct. Reproduce this picture
-exactly as it is. Do NOT redraw the characters. Do NOT reframe. Do NOT
-move the bag, resize it, or change its angle or its paper colour.
-
-Change ONLY the CORD HANDLES on the beige paper bag:
-- They are currently drawn STANDING UP as two stiff arcs above the top
-  rim. That is wrong. Nobody is carrying this bag.
-- Redraw them HANGING DOWN, limp and slack: the front handle droops
-  against the FRONT FACE of the bag, sagging into a loose U that hangs
-  BELOW the top rim and rests flat against the paper. The back handle
-  does the same on the far side, so it is hidden. Normally only the
-  front handle is visible.
-- Each end of the cord enters a small round EYELET punched in the OUTER
-  FRONT FACE of the bag, a little below the rim. The two eyelets are on
-  the front paper, with the cord sagging between them.
-- The cord must NOT pass over the rim or drop down inside the bag's
-  mouth. Nothing of the cord goes into the opening.
-- Leave the mouth of the bag open and unfolded, exactly as it is now.
-""",
- "02_場面01_ふくろ": """
-
-=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
-The characters, their poses, their faces, the room, the furniture, the
-colours and the whole composition are correct. Reproduce this picture
-exactly as it is. Do NOT redraw the characters. Do NOT reframe. Do NOT
-move the bag, resize it, or change its angle or its paper colour.
-
-Change ONLY the CORD HANDLES on the beige paper bag:
-- Right now the FAR handle stands UP above the rim while the NEAR one
-  droops. They must both behave the same way, and both must HANG DOWN.
-- The front handle droops against the FRONT FACE of the bag, sagging into
-  a loose U that hangs BELOW the top rim and rests flat on the paper. The
-  back handle does the same on the far side and is therefore hidden - do
-  not show it arching above the rim.
-- Each cord end enters a small round EYELET punched in the OUTER FRONT
-  FACE, a little below the rim, with the cord sagging between the two.
-- No part of the cord passes over the rim or drops inside the bag.
-- Leave the mouth of the bag open and unfolded, exactly as it is now.
-""",
- "S18_つぎのあさ": """
-
-=== THIS PICTURE IS APPROVED. CHANGE ONE OBJECT ONLY. ===
-The characters, their poses, their faces, the room, the furniture, the
-colours and the whole composition are correct. Reproduce this picture
-exactly as it is. Do NOT redraw the characters. Do NOT reframe.
-
-Change ONLY the beige paper bag standing on the shelf:
-- It currently has NO handles and its top is folded and creased shut like
-  a paper lunch sack. Every other page shows this bag with cord handles
-  and an open top.
-- Open its mouth: the top edge becomes a plain straight rim, unfolded and
-  uncreased.
-- Give it CORD HANDLES that HANG DOWN, limp and slack - never standing up
-  as arcs. The front handle droops against the FRONT FACE of the bag,
-  sagging into a loose U that hangs BELOW the rim and rests flat on the
-  paper. The back handle does the same on the far side and is hidden.
-- Each cord end enters a small round EYELET punched in the OUTER FRONT
-  FACE, a little below the rim, with the cord sagging between them. The
-  cord never passes over the rim or drops inside the bag.
-- Keep the bag in the same place, at the same size and angle, same beige
-  paper, no writing on it.
+Move ONE object: the beige paper bag.
+- It is currently standing on TOP of the two-tier shelf. That is wrong
+  for this moment in the story: the bag was taken down and opened on the
+  floor on the previous pages, and it has not been put back yet.
+- Put it back down ON THE FLOOR, standing upright on its own flat base,
+  near the foot of the shelf on the LEFT of the picture, clear of the row
+  of pants.
+- The top of the shelf is then empty.
+- The bag keeps its cord handles HANGING DOWN against its front face,
+  drooping below the rim from two small eyelets in the front paper, and
+  its mouth stays open and unfolded.
 """,
 }
 
