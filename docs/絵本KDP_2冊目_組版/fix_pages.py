@@ -16,49 +16,38 @@ IMG = pathlib.Path(__file__).resolve().parents[2] / "docs" / "絵本KDP_2冊目_
 ANCHOR = IMG / "01_表表紙_正方形.jpg"
 
 FIX = {
- "S13_かべにて": """
-
-=== THIS PICTURE IS APPROVED. MIRROR ONE OBJECT. ===
-Mio, the pose, the hand on the wall, the face, the legs, the socks,
-Toton, the room, the furniture and the framing are all correct.
-Reproduce them exactly. Do not redraw the characters. Do not reframe.
-Do not move either foot.
-
-Do exactly one thing to the yellow garment: MIRROR IT LEFT-TO-RIGHT
-about the ankle it is hanging on.
-
-- Keep the ribbed waistband ring exactly where it is now, around the same
-  ankle, at the same height and the same size.
-- Right now the body of the garment, and the empty second leg opening,
-  spread out to the VIEWER'S RIGHT - away from the other foot, off toward
-  Toton. Flip that to the opposite side.
-- After the flip, the body of the garment and the empty leg opening lie
-  on the floor to the VIEWER'S LEFT, in the space BETWEEN the two feet,
-  right next to the bare white sock. The empty opening faces that sock,
-  open and waiting for it.
-- Nothing of the garment extends past the feet on the outer side any
-  more. The floor to the viewer's right of the garment is bare wood.
-- Same soft yellow, same size, same ribbed waistband.
-""",
  "04_場面03_おむつがいい": """
 
-=== THIS PICTURE IS APPROVED. PUT ONE OBJECT BACK ON THE FLOOR. ===
-Mio, the pose, the face, the three pairs of pants on the floor, Toton,
-the two-tier shelf, the full-length curtain, the basket, the wall and the
-framing are all correct. Reproduce them exactly. Do not redraw the
-characters, do not reframe, do not move anything else.
+=== THIS PICTURE IS APPROVED. CHANGE THREE THINGS ONLY. ===
+Keep EXACTLY as they are: Mio's pose (one step back, hands held close in
+front of the chest, shoulders drawn in, the small uncertain mouth), the
+three pairs of pants laid in a row on the floor with the gap of empty
+floor between them and Mio's feet, Toton with both hands gripping the
+backpack straps, the beige paper bag standing on the floor, the shelf's
+position and size, and the framing.
 
-Move ONE object: the beige paper bag.
-- It is currently standing on TOP of the two-tier shelf. That is wrong
-  for this moment in the story: the bag was taken down and opened on the
-  floor on the previous pages, and it has not been put back yet.
-- Put it back down ON THE FLOOR, standing upright on its own flat base,
-  near the foot of the shelf on the LEFT of the picture, clear of the row
-  of pants.
-- The top of the shelf is then empty.
-- The bag keeps its cord handles HANGING DOWN against its front face,
-  drooping below the rim from two small eyelets in the front paper, and
-  its mouth stays open and unfolded.
+1. THE SHELF TOP IS THE WRONG MATERIAL.
+   It is currently a solid opaque WOODEN plank. On every other page this
+   shelf has a CLEAR GLASS TOP set in a thin wooden frame - you look
+   straight through the glass and see the wooden lower shelf beneath it,
+   with a few soft pale highlights sliding across the glass.
+   Replace the wooden top with that glass top. If you cannot see through
+   it, it is still wrong. The lower shelf stays plain solid wood.
+
+2. THE CURTAIN IS CLOSED. IT SHOULD BE OPEN.
+   It currently spreads across and covers the window. Instead, gather it
+   and push it to ONE SIDE, hanging in soft vertical folds, still full
+   length down to the floor. Beside it the window is left OPEN, so the
+   morning light pours in: draw that opening as a soft field of warm,
+   almost-white light with no hard edges - no frame, no sill, no glazing
+   bars, no pane lines.
+
+3. THE BASKET IS NOT FAR ENOUGH LEFT.
+   The round woven basket currently sits in under the shelf, between its
+   legs. Move it OUT and well to the LEFT: it stands on the open floor
+   beyond the shelf's left-hand leg, at the far left of the picture,
+   clear of the shelf entirely. It becomes the leftmost object in the
+   room. Nothing of it is tucked under the furniture.
 """,
 }
 

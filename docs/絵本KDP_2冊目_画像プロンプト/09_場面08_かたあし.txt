@@ -129,18 +129,24 @@ One single room, drawn the same way every time. This is a fixed set.
   Its top surface is clear except where a scene says otherwise.
 - On the RIGHT: one window with soft morning light and a plain
   cream curtain. The light falls gently from the right.
-- On the floor beside the shelf: ONE small round woven basket, used as
-  the waste basket. It stands out on the OPEN FLOOR next to the shelf -
-  never underneath the shelf, never tucked under any furniture. There is
-  only one basket in the whole room.
+- ONE small round woven basket, used as the waste basket. It stands on
+  the OPEN FLOOR at the FAR LEFT of the picture, clear of the shelf and
+  beyond its left-hand leg - never in between the legs, never underneath
+  the shelf, never tucked under any furniture. It is the leftmost object
+  in the room. There is only one basket in the whole room.
 - Nothing else. No furniture clutter, no pictures on the wall,
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
 
 === THE SHELF - SAME GEOMETRY IN EVERY INDOOR SCENE ===
-- The shelf is a low TWO-TIER wooden shelf: a flat top surface and one
-  lower shelf below it, with slim wooden legs. It stands against the BACK
-  wall, on the LEFT of the picture, running left-to-right across the frame.
+- The shelf is a low TWO-TIER shelf with slim wooden legs. It stands
+  against the BACK wall, on the LEFT of the picture, running left-to-right
+  across the frame.
+  * Its TOP is a CLEAR GLASS PANEL set in a thin wooden frame. You can see
+    straight through the glass to the wooden lower shelf underneath, with
+    a few soft pale highlights on the glass. The top is NOT a solid wooden
+    plank - if you cannot see through it, it is wrong.
+  * The LOWER shelf is plain wood, solid and opaque.
 - The window is on the RIGHT-HAND wall, which meets the back wall at a
   RIGHT ANGLE. So the shelf runs across the picture and the window faces
   in from the side, perpendicular to it. Keep this same corner geometry in
@@ -175,11 +181,17 @@ One single paper shop bag, drawn exactly the same way every time.
 
 === WINDOW SPEC - SAME IN EVERY INDOOR SCENE ===
 - One window on the right-hand wall, hung with a plain cream curtain.
-- The curtain is FULL LENGTH. It hangs from above the top edge of the
+- The curtain is OPEN, not closed. It is gathered and pushed to ONE SIDE,
+  hanging in soft vertical folds, so that beside it the window stands
+  OPEN and the morning light pours straight in. The curtain never spreads
+  across the picture to cover the window.
+- Beside the curtain, where the window is, draw only a soft field of warm
+  light - a bright, almost white area with no hard edges.
+- The curtain is FULL LENGTH: it hangs from above the top edge of the
   picture all the way DOWN TO THE FLOOR, and its hem reaches the floor.
-- Because the curtain covers the window, NO window frame, NO sill, NO
-  glazing bar and NO glass are visible anywhere. Never draw a short
-  curtain with a frame or a sill showing underneath its hem.
+- NO window frame, NO sill, NO glazing bar and NO pane lines anywhere.
+  The light simply glows; nothing is outlined. Never draw a short curtain
+  with a frame or a sill showing underneath its hem.
 
 === PANTS SPEC - IDENTICAL IN EVERY SCENE THAT SHOWS THEM ===
 Three pairs of small toddler underpants, drawn as simple flat garments.
