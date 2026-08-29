@@ -112,10 +112,10 @@ One single room, drawn the same way every time. This is a fixed set.
 - On the RIGHT: one window with soft morning light and a plain
   cream curtain. The light falls gently from the right.
 - ONE small round woven basket, used as the waste basket. It stands on
-  the OPEN FLOOR at the FAR LEFT of the picture, clear of the shelf and
-  beyond its left-hand leg - never in between the legs, never underneath
-  the shelf, never tucked under any furniture. It is the leftmost object
-  in the room. There is only one basket in the whole room.
+  the floor DIRECTLY IN FRONT OF the shelf's LEFT-HAND LEG, overlapping
+  it, so that leg is HIDDEN BEHIND the basket and cannot be seen past it.
+  Not in between the legs, not underneath the shelf, and not out on the
+  empty floor away from it. There is only one basket in the whole room.
 - Nothing else. No furniture clutter, no pictures on the wall,
   no toys scattered about, no rug patterns, no plants.
 - NO text, NO logos, NO brand marks anywhere in the room.
@@ -184,6 +184,10 @@ Three pairs of small toddler underpants, drawn as simple flat garments.
   way a clothing shape is drawn - soft, rounded, unremarkable.
 - Mio always chooses the SOFT YELLOW pair. Once chosen, it is always
   the yellow one in every later scene.
+- THE FABRIC IS OPAQUE. Nothing behind it shows through. Where the
+  garment covers a foot, you see only yellow cloth - never a sock, never
+  a toe, never a leg and never the floor showing through the fabric. Do
+  not draw the outline of anything that is behind it.
 
 === HOW THE CLOTHING IS SHOWN - MANDATORY, DO NOT OMIT ===
 - Mio's moss-green shirt is tunic length and reaches MID-THIGH in every

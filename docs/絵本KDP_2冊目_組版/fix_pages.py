@@ -18,36 +18,23 @@ ANCHOR = IMG / "01_表表紙_正方形.jpg"
 FIX = {
  "04_場面03_おむつがいい": """
 
-=== THIS PICTURE IS APPROVED. CHANGE THREE THINGS ONLY. ===
-Keep EXACTLY as they are: Mio's pose (one step back, hands held close in
-front of the chest, shoulders drawn in, the small uncertain mouth), the
-three pairs of pants laid in a row on the floor with the gap of empty
-floor between them and Mio's feet, Toton with both hands gripping the
-backpack straps, the beige paper bag standing on the floor, the shelf's
-position and size, and the framing.
+=== THIS PICTURE IS APPROVED. MOVE ONE OBJECT BACK DOWN. ===
+Everything else is correct and must be reproduced exactly: Mio's pose and
+face, the three pairs of pants on the floor, Toton with both hands on its
+backpack straps, the glass-topped two-tier shelf, the basket overlapping
+the shelf's left-hand leg, the open curtain hanging loose at the right,
+and the framing. Do not redraw the characters. Do not move the basket.
 
-1. THE SHELF TOP IS THE WRONG MATERIAL.
-   It is currently a solid opaque WOODEN plank. On every other page this
-   shelf has a CLEAR GLASS TOP set in a thin wooden frame - you look
-   straight through the glass and see the wooden lower shelf beneath it,
-   with a few soft pale highlights sliding across the glass.
-   Replace the wooden top with that glass top. If you cannot see through
-   it, it is still wrong. The lower shelf stays plain solid wood.
-
-2. THE CURTAIN IS CLOSED. IT SHOULD BE OPEN.
-   It currently spreads across and covers the window. Instead, gather it
-   and push it to ONE SIDE, hanging in soft vertical folds, still full
-   length down to the floor. Beside it the window is left OPEN, so the
-   morning light pours in: draw that opening as a soft field of warm,
-   almost-white light with no hard edges - no frame, no sill, no glazing
-   bars, no pane lines.
-
-3. THE BASKET IS NOT FAR ENOUGH LEFT.
-   The round woven basket currently sits in under the shelf, between its
-   legs. Move it OUT and well to the LEFT: it stands on the open floor
-   beyond the shelf's left-hand leg, at the far left of the picture,
-   clear of the shelf entirely. It becomes the leftmost object in the
-   room. Nothing of it is tucked under the furniture.
+Move ONLY the beige paper bag:
+- It is currently standing on TOP of the shelf. It should not be there.
+  On the previous pages it was taken down and opened on the floor, and
+  nobody has put it back yet.
+- Put it on the FLOOR, standing upright on its own flat base, near the
+  foot of the shelf on the LEFT, beside the basket and clear of the row
+  of pants.
+- The TOP OF THE SHELF IS THEN COMPLETELY EMPTY. Nothing stands on it.
+- The bag keeps its cord handles HANGING DOWN against its front face,
+  drooping below the rim from two small eyelets, mouth open and unfolded.
 """,
 }
 
