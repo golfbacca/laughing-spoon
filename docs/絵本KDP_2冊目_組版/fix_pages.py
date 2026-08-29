@@ -18,23 +18,37 @@ ANCHOR = IMG / "01_表表紙_正方形.jpg"
 FIX = {
  "04_場面03_おむつがいい": """
 
-=== THIS PICTURE IS APPROVED. MOVE ONE OBJECT BACK DOWN. ===
+=== THIS PICTURE IS APPROVED. SLIDE ONE OBJECT LEFT. ===
 Everything else is correct and must be reproduced exactly: Mio's pose and
-face, the three pairs of pants on the floor, Toton with both hands on its
-backpack straps, the glass-topped two-tier shelf, the basket overlapping
-the shelf's left-hand leg, the open curtain hanging loose at the right,
-and the framing. Do not redraw the characters. Do not move the basket.
+face, the three pairs of pants on the floor, Toton, the beige paper bag
+standing on the floor, the empty glass-topped two-tier shelf, the open
+curtain at the right, the wall, the floor and the framing. Do not redraw
+the characters. Do not reframe. Do not move the bag or the shelf.
 
-Move ONLY the beige paper bag:
-- It is currently standing on TOP of the shelf. It should not be there.
-  On the previous pages it was taken down and opened on the floor, and
-  nobody has put it back yet.
-- Put it on the FLOOR, standing upright on its own flat base, near the
-  foot of the shelf on the LEFT, beside the basket and clear of the row
-  of pants.
-- The TOP OF THE SHELF IS THEN COMPLETELY EMPTY. Nothing stands on it.
-- The bag keeps its cord handles HANGING DOWN against its front face,
-  drooping below the rim from two small eyelets, mouth open and unfolded.
+Slide ONLY the round woven basket to the LEFT, until the shelf's
+LEFT-HAND FRONT LEG passes across the basket at this exact place:
+
+  Read the basket's width from its left edge to its right edge.
+  The leg must cross it ONE THIRD of the way in FROM THE BASKET'S LEFT
+  EDGE. So one third of the basket lies to the LEFT of the leg, and two
+  thirds of the basket lie to the RIGHT of the leg.
+  The leg therefore sits a little to the LEFT of the basket's centre
+  line - not on the centre line, and not at the basket's edge.
+
+Right now the leg is entirely OUTSIDE the basket, standing clear on the
+floor to its left, with the whole leg visible down to where it meets the
+floor. That is what has to change.
+
+How to check you have done it right:
+- Follow the leg downward. It comes down from the shelf, then DISAPPEARS
+  behind the basket's rim. Below the rim it is not seen again, and where
+  it meets the floor is completely hidden.
+- The strip of basket to the left of the leg is about half as wide as
+  the strip of basket to the right of it.
+
+Keep the basket the same size, the same weave and the same colour, still
+standing flat on the floor. Only one basket. The floor it leaves behind
+on the right becomes plain empty wood.
 """,
 }
 
