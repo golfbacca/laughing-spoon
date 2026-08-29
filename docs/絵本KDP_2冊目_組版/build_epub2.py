@@ -127,7 +127,7 @@ img{{width:100%;height:100%;display:block;}}</style></head>
 <body><div><img src="../images/{img}" alt="{esc(alt)}"/></div></body></html>'''
 
 def main():
-    epub = OUT/"トトンとはじめてのパンツ.epub"
+    epub = OUT/"toton02-ebook.epub"   # 入稿物は英数字名（日本語名は弾かれる）
     files = [(n, fitted(n)) for n in ORDER]
     cover_path = fitted(COVER)
     sizes = {n: Image.open(p).size for n, p in files}

@@ -26,7 +26,8 @@ def main():
     spine = float(sys.argv[1]) if len(sys.argv) > 1 else SPINE_IN
     W = TRIM*2 + spine + BLEED*2
     H = TRIM + BLEED*2
-    out = OUT/f"表紙ラップ_8.5inch角_背{spine:.4f}in.pdf"
+    # ファイル名の途中にドットを入れない。拡張子の判定を惑わせる。
+    out = OUT/f"toton02-paperback-cover-spine{int(round(spine*10000)):04d}in.pdf"
     c = canvas.Canvas(str(out), pagesize=(W*inch, H*inch))
     c.setTitle("トトンと はじめての パンツ 表紙")
 

@@ -16,11 +16,17 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT  = pathlib.Path(__file__).resolve().parents[2]
 SRC   = ROOT/"docs"/"絵本KDP_2冊目_画像"
 OUT   = ROOT/"docs"/"絵本KDP_2冊目_完成ページ"; OUT.mkdir(exist_ok=True)
+SHIP  = ROOT/"docs"/"絵本KDP_2冊目_入稿"; SHIP.mkdir(exist_ok=True)
 FONTS = ROOT/"docs"/"絵本KDP_組版"/"fonts"
 
 INK      = (74, 55, 45)
 INK_SOFT = (110, 90, 78)
 CREAM    = (250, 244, 232)
+# 【KDPに弾かれた・2026-08-26】アップロードするファイル名に日本語を入れると
+# 「サポートされるファイル形式の表紙をアップロードします」と出る。
+# 画像自体は正しいのに、拡張子の判定が通らない。入稿物は英数字名にする。
+KINDLE_COVER = "toton02-cover-kindle-2560.jpg"
+
 B = lambda s: ImageFont.truetype(str(FONTS/"ZenMaruGothic-Bold.ttf"), s)
 M = lambda s: ImageFont.truetype(str(FONTS/"ZenMaruGothic-Medium.ttf"), s)
 
@@ -71,8 +77,8 @@ def front():
     im.save(OUT/"PB_表表紙_正方形.jpg", quality=95, dpi=(300, 300))
     print("表表紙(PB)", im.size)
     im.resize((2560, 2560), Image.LANCZOS).save(
-        OUT/"01_表表紙_Kindle_正方形2560.jpg", quality=95, dpi=(300, 300))
-    print("表表紙(Kindle) 2560x2560  ※ストア表紙も本文と同じ正方形")
+        SHIP/KINDLE_COVER, quality=95, dpi=(300, 300))
+    print(f"表表紙(Kindle) 2560x2560  {KINDLE_COVER}  ※正方形・英数字名")
 
 def back():
     im = Image.open(SRC/"14_裏表紙_正方形.jpg").convert("RGB")

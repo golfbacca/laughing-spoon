@@ -68,7 +68,7 @@ def left_page(c, blocks, top=0.24, x=0.13):
     c.showPage()
 
 def main():
-    out = OUT/"本文_ペーパーバック_8.5inch角.pdf"
+    out = OUT/"toton02-paperback-interior.pdf"   # 入稿物は英数字名
     c = canvas.Canvas(str(out), pagesize=(PAGE, PAGE))
     c.setTitle("トトンと はじめての パンツ")
 
