@@ -272,17 +272,21 @@ The bottom third of the picture is plain empty floor.
 """),
 
 ("06_場面05_てをのばす", "upper part of the picture, which is plain wall", """
-DEEP NIGHT, LAMP STILL OFF. CLOSE VIEW of the stool and the lamp.
+DEEP NIGHT, LAMP STILL OFF. Everything is the soft dusty blue-grey of the
+night pages. The lamp on the stool is unlit - a plain cream dome with no
+glow at all. The only brightness is a little pale moonlight.
 
-Mio's arm reaches in from the right of the frame and the fingertips are
-just arriving at the top of the unlit lamp, almost touching the big round
-button. You can see the hand, the forearm and the short moss-green sleeve
-at the frame edge - nothing else of Mio.
-The lamp is still unlit, plain cream, and the whole picture is blue-grey.
-Toton stands on the floor below the stool, looking up at the hand.
-The top third of the picture is plain wall.
+WHOLE FIGURE, not a close-up of a hand. Mio is kneeling up on the futon
+and leaning across towards the stool beside the pillow, one arm stretched
+out, the fingertips just arriving above the unlit lamp - almost touching
+it, not yet pressing. The other hand rests on the quilt for balance.
+Mio's face is turned towards the lamp, mouth small and set, eyes open.
+Draw Mio's whole body: head, shoulders, the moss-green nightshirt to
+mid-thigh, the knees on the quilt, the white socks.
+Toton stands on the floor below the stool, looking up at the reaching
+hand, calm and neutral. Toton does not glow.
+The upper part of the picture is plain blue-grey wall.
 """),
-
 ("07_場面06_ついた", "upper part of the picture, which is plain wall", """
 THE MOMENT THE LAMP COMES ON. This is the core page of the whole book.
 

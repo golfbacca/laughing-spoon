@@ -59,6 +59,40 @@ def make_headroom(im, shift=SHIFT_DOWN):
         for x in range(W): px[x, y] = a
     return Image.composite(base, Image.new("RGB", (W, H), CREAM), mask)
 
+
+# ------------------------------------------------------------------
+# 【3冊目で必要になった処理】文字を置く面をクリームで敷く
+#
+# 1冊目・2冊目は昼の明るい絵だったので、濃い茶色の文字がそのまま読めた。
+# 3冊目は夜の本で、絵が青灰色に暗い。同じ文字色を置くと沈んで読めない。
+# 「トイレ」の一語だけ背景が明るくて、白い箱に入ったようにも見えた。
+#
+# 絵をずらす（make_headroom）と下が切れるので、
+# 絵の上にクリームをかぶせる方式にした。かぶせる場所はどちらも
+# もともと文字用に平らに描かせてある部分なので、失うものが無い。
+# ------------------------------------------------------------------
+def veil(im, top=None, bottom=None, fade=0.10):
+    """top: この比率まで完全にクリーム、そこからfadeぶんで絵へ戻す。
+       bottom: この比率から下を完全にクリーム、その上fadeぶんで絵へ戻す。"""
+    W, H = im.size
+    base = Image.new("RGB", (W, H), CREAM)
+    mask = Image.new("L", (W, H), 0)
+    px = mask.load()
+    for y in range(H):
+        a = 0.0
+        if top is not None:
+            t0, t1 = H*top, H*(top+fade)
+            if y <= t0: a = max(a, 1.0)
+            elif y < t1: a = max(a, 0.5*(1+math.cos(math.pi*(y-t0)/(t1-t0))))
+        if bottom is not None:
+            b1, b0 = H*(bottom-fade), H*bottom
+            if y >= b0: a = max(a, 1.0)
+            elif y > b1: a = max(a, 0.5*(1-math.cos(math.pi*(y-b1)/(b0-b1))))
+        v = int(255*a)
+        for x in range(W): px[x, y] = v
+    return Image.composite(base, im, mask)
+
+
 def titled(im):
     """余白を作った絵に、タイトル・サブタイトル・著者名を置く。"""
     d = ImageDraw.Draw(im); W = im.width
@@ -69,11 +103,13 @@ def titled(im):
     y += int(W*0.010)
     for ln in SUB:
         center(d, im, ln, fs, y); y += int(W*0.0265*1.5)
-    center(d, im, AUTHOR, fa, int(W*0.915), fill=INK_SOFT)
+    # 著者名は暗い床の上に載る。濃い色だと沈むのでクリームで抜く
+    center(d, im, AUTHOR, fa, int(W*0.915), fill=CREAM)
     return im
 
 def front():
-    im = titled(make_headroom(Image.open(SRC/"01_表表紙_正方形.jpg").convert("RGB")))
+    art = Image.open(SRC/"01_表表紙_正方形.jpg").convert("RGB")
+    im = titled(veil(art, top=0.275, fade=0.075))
     im.save(OUT/"PB_表表紙_正方形.jpg", quality=95, dpi=(300, 300))
     print("表表紙(PB)", im.size)
     im.resize((2560, 2560), Image.LANCZOS).save(
@@ -81,7 +117,8 @@ def front():
     print(f"表表紙(Kindle) 2560x2560  {KINDLE_COVER}  ※正方形・英数字名")
 
 def back():
-    im = Image.open(SRC/"14_裏表紙_正方形.jpg").convert("RGB")
+    im = veil(Image.open(SRC/"14_裏表紙_正方形.jpg").convert("RGB"),
+              bottom=0.52, fade=0.10)
     d = ImageDraw.Draw(im); W = im.width
     fr, fb, fs = M(int(W*0.027)), B(int(W*0.030)), M(int(W*0.022))
     x, y = int(W*0.085), int(W*0.545)
