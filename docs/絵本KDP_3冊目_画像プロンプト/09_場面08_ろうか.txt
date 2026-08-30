@@ -78,6 +78,13 @@ species and NOT based on any existing character.
   cream backpack. Those belong to the daytime books in this series and
   must not appear. At night Mio wears the moss-green nightshirt and white
   ankle socks, and nothing else at all.
+- PROPORTIONS: Mio is a small child and is drawn at about THREE
+  HEAD-HEIGHTS tall - the head is large, roughly a third of the whole
+  figure, the limbs short and soft. NEVER draw Mio at four or more
+  head-heights; that reads as a school-age child, not a preschooler.
+- SLEEVES: the nightshirt has SHORT sleeves that end high on the upper
+  arm, well above the elbow. Both elbows and both forearms are bare in
+  every picture. Mio never wears long sleeves anywhere in this book.
 - HAIR: Mio's hair is SHORT. A soft crop that ends ABOVE the ears at the
   sides and never reaches the jaw or the chin. It must read
   gender-neutral. Never a chin-length bob.
@@ -124,8 +131,16 @@ book series. Darkness must never be made with black.
 
 === THE LAMP - IDENTICAL IN EVERY SCENE THAT SHOWS IT ===
 One small portable night lamp. It is the object the whole book turns on.
-- Shape: a small rounded dome, about the size of the child's two hands
-  together, like a smooth mushroom cap on a low base. Plain cream body.
+- Shape: a smooth rounded DOME on a low cylindrical base - like half an
+  egg sitting on a short round foot. About the size of the child's two
+  hands together. Plain cream body.
+  IT IS NOT A MUSHROOM. No stalk, no stem, no flared overhanging cap, no
+  gills, no narrow neck. The dome sits directly on its base and the base
+  is only slightly narrower than the dome.
+- IT HAS NO HANDLE, no strap, no loop and no hook. It can only be
+  CARRIED IN BOTH HANDS, cradled from underneath, or set down on a
+  surface. It is never dangled from the fingers, never hung, and never
+  held by its rim with one hand.
 - On its top is ONE large soft round button. That is how it is switched
   on - a child presses the whole top down. NO wall switch, NO cord, NO
   toggle, NO pull-string anywhere in this book.
@@ -149,14 +164,26 @@ The child makes the light. The companion does not.
 One small Japanese bedroom, drawn the same way every time.
 - Floor: light warm wood, simple boards. Wall: plain pale cream.
 - ONE futon laid directly on the floor, low and flat: a plain cream
-  mattress with a soft moss-green quilt and one cream pillow.
+  mattress with a soft moss-green quilt and EXACTLY ONE CREAM PILLOW.
+  The pillow is CREAM, never green - only the quilt is moss-green.
+  Never draw two pillows or a stack of pillows.
 - Beside the pillow, on the LEFT: ONE low wooden stool, knee height, with
   the night lamp standing on its top. Nothing else on it.
+  The stool has four round wooden legs and a HORIZONTAL CROSS-BRACE
+  joining the legs partway down, like a simple milking stool. That brace
+  is always visible.
   There is EXACTLY ONE stool in the whole room. Never draw a second stool,
   a second table or any other small piece of furniture beside it.
 - On the RIGHT: one window with a plain cream curtain, closed at night,
   with a little pale moonlight coming through the fabric.
-- The bedroom door is in the BACK wall, plain cream, closed.
+- THE LAYOUT NEVER CHANGES, whatever the camera angle:
+    the futon lies along the middle of the room with its PILLOW END at
+    the LEFT; the stool stands just beyond the pillow, still on the LEFT;
+    the plain cream bedroom door is in the BACK wall, closed, roughly
+    behind the middle of the futon; the curtained window is on the RIGHT
+    wall, which meets the back wall at a right angle.
+    Left to right, therefore: stool and pillow, then the futon, then the
+    window. Keep that order in every picture of this room.
 - Nothing else. No toys, no pictures, no clutter, no plants.
 - NO text, NO logos, NO brand marks anywhere.
 
@@ -182,6 +209,12 @@ One small Japanese bedroom, drawn the same way every time.
   Toton, ground to top of its ears =  60 units
 The TOP OF TOTON'S HEAD is level with the BOTTOM HEM of Mio's shirt.
 Toton is obviously the smaller of the two.
+
+=== FULL BLEED. NO FRAME. ===
+The illustration runs all the way to all four edges of the square, with
+SQUARE corners. No border, no outline, no rounded corner, no vignette,
+no margin, no drop shadow around the picture, and no card or sticker
+look. It is a full-bleed page of a picture book.
 
 === NO TEXT, NO STRAY SHAPES ===
 Render no writing of any kind - no kana, no kanji, no letters, no
