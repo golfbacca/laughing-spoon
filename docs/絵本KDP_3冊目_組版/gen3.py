@@ -24,22 +24,51 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 IMG  = ROOT / "docs" / "絵本KDP_3冊目_画像"; IMG.mkdir(exist_ok=True)
 IMG2 = ROOT / "docs" / "絵本KDP_2冊目_画像"
 
-ANCHOR = IMG / "01_表表紙_正方形.jpg"          # 1枚できたら夜の基準になる
 REF_NIGHTSHIRT = IMG2 / "12_場面11_はけた.jpg"  # ふともも丈のシャツ姿
+
+# 場面ごとの基準画。承認できた1枚を手でここにコピーして使う。
+#   cp 絵本KDP_3冊目_画像/02_場面01_めがさめる.jpg 絵本KDP_3冊目_画像/_anchor_寝室.jpg
+BED_ANCHOR  = IMG / "_anchor_寝具.jpg"   # 敷＝クリーム／掛＝緑 が正しく写った1枚
+LAMP_ANCHOR = IMG / "_anchor_あかり.jpg" # ドーム型のあかりと丸椅子だけ。布団は写らない
+ROOM_ANCHOR = IMG / "_anchor_部屋.jpg"   # 壁・ドア・窓だけ。布団は写らない
+HALL_ANCHOR = IMG / "_anchor_廊下.jpg"
+
+BEDROOM = {"01_表表紙_正方形", "S01_ねるまえ", "02_場面01_めがさめる",
+           "03_場面02_むずむず", "S04_ふとんのふち", "04_場面03_でられない",
+           "05_場面04_ここにある", "06_場面05_てをのばす", "07_場面06_ついた",
+           "S09_じぶんでつけられた", "08_場面07_ふとんからでる",
+           "13_場面12_またねる", "S18_つぎのよる", "14_裏表紙_正方形"}
+CORRIDOR = {"09_場面08_ろうか", "S13_トイレのドア", "10_場面09_トイレのなか",
+            "11_場面10_おわりのおと", "S14_てをあらう", "12_場面11_もどる"}
 
 FAILED = []
 
-def refs():
+def refs(name):
     """【やらかし・2026-08-29】最初 1冊目の表表紙（REF_BOTH）を
     身長比の見本として入れていたら、そこに描かれている
     ベージュの短パン・赤いくつ・クリーム色のリュックまで写された。
     プロンプト側は正しく「No backpack anywhere in this book」と
     書いてあったのに、参照画像のほうが強い。
     その本に出てこない服装の絵は、参照に入れない。
-    身長比は2冊目の絵（同じ2人が並んでいる）で足りる。"""
+    身長比は2冊目の絵（同じ2人が並んでいる）で足りる。
+
+    【やらかし・2026-08-31】同じことが寝具でも起きた。
+    表紙を全ページの基準画にしていたら、表紙の緑（＝敷パッドとして
+    描かれてしまったもの）が18枚すべてに写り、文章でいくら
+    「緑は掛け布団」と書いても直らなかった。
+    基準画は場面ごとに持ち、【直したい要素が正しく写っている1枚】
+    だけを使う。まだ無いなら基準画なしで1枚目を描き、それを見て
+    採否を決めてから基準画にする。"""
     r = [REF_SHEET, REF_NIGHTSHIRT]
-    if ANCHOR.exists():
-        r.insert(0, ANCHOR)
+    if name in CORRIDOR:
+        cand = [HALL_ANCHOR]
+    else:
+        # 寝具の基準画は【寝具だけ】、あかりの基準画は【布団を写さない切り抜き】。
+        # 1枚の絵に両方を任せると、正しくないほうまで一緒に写る。
+        cand = [BED_ANCHOR, LAMP_ANCHOR, ROOM_ANCHOR]
+    for a in reversed(cand):
+        if a.exists():
+            r.insert(0, a)
     return r
 
 def one(name, force=False):
@@ -50,7 +79,7 @@ def one(name, force=False):
     prompt = prompts3.prompt_for(name)
     for attempt in range(3):
         try:
-            generate(prompt, str(out), ref_images=refs(), aspect="1:1")
+            generate(prompt, str(out), ref_images=refs(name), aspect="1:1")
             return
         except KeyError:
             FAILED.append(name)

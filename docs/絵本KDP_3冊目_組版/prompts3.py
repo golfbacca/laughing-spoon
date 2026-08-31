@@ -86,9 +86,18 @@ One small portable night lamp. It is the object the whole book turns on.
 - On its top is ONE large soft round button. That is how it is switched
   on - a child presses the whole top down. NO wall switch, NO cord, NO
   toggle, NO pull-string anywhere in this book.
-- OFF state: the dome is plain cream, unlit, and the room is blue-grey.
+- OFF state: the dome is a DULL, MATT, SLIGHTLY GREYED cream. It is a
+  dark object in a dark room, no brighter than the pillow beside it.
+  NO bright highlight on its crown, NO gloss, NO sheen, NO halo, NO glow
+  of any kind around it, and NO warm light anywhere on the wall, the
+  floor, the stool or the bedding. Its shaded side is blue-grey like
+  everything else. A reader must be able to tell at a glance that it is
+  switched off. The whole room is blue-grey twilight, and Mio's face and
+  the futon carry the same cool shading as the walls.
 - ON state: the dome glows warm amber from inside, and a soft pool of
   amber light spreads onto whatever is nearest.
+- Every scene below says OFF or ON. The two states must look obviously
+  different. A scene marked LAMP OFF must never read as if it were lit.
 - It stands on the low wooden stool beside the pillow, within easy reach
   of a child lying down. From the scene where Mio takes it, Mio carries
   it in both hands.
@@ -107,10 +116,34 @@ The child makes the light. The companion does not.
 ROOM = """=== THE BEDROOM - IDENTICAL IN EVERY SCENE THERE ===
 One small Japanese bedroom, drawn the same way every time.
 - Floor: light warm wood, simple boards. Wall: plain pale cream.
-- ONE futon laid directly on the floor, low and flat: a plain cream
-  mattress with a soft moss-green quilt and EXACTLY ONE CREAM PILLOW.
-  The pillow is CREAM, never green - only the quilt is moss-green.
-  Never draw two pillows or a stack of pillows.
+- ONE futon laid directly on the floor. It is made of EXACTLY THREE
+  pieces of bedding and nothing else, stacked in this order:
+
+  1. THE UNDER-FUTON (the mattress). A plain CREAM slab lying directly on
+     the floor, thin and low. Its front SIDE FACE - its thickness - is
+     visible along the bottom edge, which is how you can tell it is the
+     mattress. Its top surface is smooth and flat: NO quilting, NO hem
+     roll, NO folded-back corner, NO turned-down edge anywhere on it.
+     THIS IS THE ONLY THING MIO'S BODY EVER RESTS ON. Mio always sits,
+     kneels and lies DIRECTLY ON THE CREAM.
+
+  2. THE COVER QUILT. A soft MOSS-GREEN quilt. It goes OVER Mio, or is
+     thrown back and lies in a loose heap BESIDE her. It is NEVER
+     underneath Mio and is NEVER used as a mattress or a pad.
+
+  3. ONE CREAM PILLOW, lying on the cream mattress at its left end.
+
+  THE TEST FOR EVERY PICTURE: wherever Mio's body touches the bedding,
+  the colour under her is CREAM. Moss-green appears only ON TOP OF Mio,
+  or heaped BESIDE her. Never draw Mio sitting, kneeling or lying on the
+  moss-green.
+
+  FORBIDDEN, because these keep appearing by mistake:
+  - a second cream cloth laid on top of the green quilt
+  - a folded-back cream edge, a rolled cream hem, or a turned-down collar
+    of cream cloth anywhere on the bedding
+  - the green drawn as a thick quilted pad or mattress topper
+  - two pillows, a stack of pillows, or a green pillow
 - Beside the pillow, on the LEFT: ONE low wooden stool, knee height, with
   the night lamp standing on its top. Nothing else on it.
   The stool has four round wooden legs and a HORIZONTAL CROSS-BRACE
@@ -131,15 +164,34 @@ One small Japanese bedroom, drawn the same way every time.
 - Nothing else. No toys, no pictures, no clutter, no plants.
 - NO text, NO logos, NO brand marks anywhere.
 
-=== THE CORRIDOR AND THE TOILET DOOR ===
-- The corridor is plain: cream walls, the same light wood floor, and a
-  simple skirting board. It runs away from the camera.
-- At its end, ONE toilet door: a plain cream panel in a proper frame,
-  with a round wooden knob on its RIGHT-HAND edge and hinges on the left.
+=== THE CORRIDOR - ONE FIXED LAYOUT, ONE FIXED CAMERA ===
+The corridor is drawn from the SAME viewpoint in every corridor scene:
+the camera stands at the bedroom end and looks straight along it, so the
+corridor runs away from the viewer into the picture.
+
+Three things are always in the same place:
+- FAR END, straight ahead: ONE toilet door, closed unless the scene says
+  otherwise. A plain cream panel in a proper frame, a round wooden knob
+  on its RIGHT-HAND edge, hinges on the left.
+- RIGHT-HAND WALL, partway along, nearer the camera than the door: ONE
+  small washbasin. A plain white basin on a simple light-wood cabinet, a
+  single tap, no mirror, no bottles, no towel rail. It stands against the
+  right wall and juts into the corridor, so from this camera it is seen
+  from its side, on the RIGHT of the picture.
+- LEFT-HAND WALL: completely bare.
+
+THE WASHBASIN IS PART OF THE CORRIDOR AND IS VISIBLE ON THE RIGHT IN
+EVERY CORRIDOR SCENE, whether or not anybody is using it. Never draw an
+empty stretch of corridor where the basin should be.
+THE TOILET DOOR IS ALWAYS AT THE FAR END, straight ahead. It is NEVER on
+the right-hand wall and never on the left-hand wall. There is exactly ONE
+door in the corridor, and no other doors anywhere.
+
 - GAP UNDER THE DOOR: the door does not reach the floor. There is an open
   gap about one hand's width tall along its whole bottom edge. This gap
   is present every time the door is shown.
-- No other doors, no pictures on the corridor walls, no rugs.
+- No pictures on the corridor walls, no rugs, no clutter.
+- Cream walls, the same light wood floor, a simple skirting board.
 """
 
 MODESTY = """=== HOW MIO IS SHOWN - MANDATORY ===
@@ -224,8 +276,11 @@ leave a blank band - the space for the title is made afterwards by hand.
 """),
 
 ("S01_ねるまえ", "upper part of the picture, which is plain wall", """
-EVENING, LAMP ON, curtains closed. Mio is getting into the futon: sitting
-on it, lifting the moss-green quilt with one hand, about to lie down.
+EVENING, LAMP ON, curtains closed. Mio is getting into the futon.
+Mio SITS DIRECTLY ON THE CREAM MATTRESS, and with one hand HOLDS THE
+MOSS-GREEN QUILT UP AND CLEAR OF HER, about to slide underneath it and
+lie down. Because the quilt is lifted, the cream mattress is plainly
+visible underneath it and under her. She is NOT sitting on the green.
 Calm and sleepy, a small easy mouth.
 On the low wooden stool beside the pillow, the night lamp stands lit, its
 warm amber glow pooling over the pillow and the near half of the futon.
@@ -240,9 +295,12 @@ DEEP NIGHT, LAMP OFF. The whole room is soft dusty blue-grey, lit only by
 a little pale moonlight through the closed curtain. Nothing is black; the
 futon, the stool and the walls are all clearly visible.
 
-Mio has just woken: lying on the futon under the quilt, eyes OPEN, head
-turned a little to one side, looking out into the dim room. Not crying,
-not frightened - just awake and still.
+Mio has just woken. She LIES DIRECTLY ON THE CREAM MATTRESS with the
+MOSS-GREEN QUILT DRAWN UP OVER HER BODY to the shoulders, so only her
+head, her neck and one forearm are outside it. Eyes OPEN, head turned a
+little to one side, looking out into the dim room. Not crying, not
+frightened - just awake and still.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 The night lamp stands UNLIT on the stool, a plain cream dome.
 Toton lies curled beside the pillow, awake, a blue-grey shape, looking at
 Mio. Toton does not glow.
@@ -252,10 +310,16 @@ The bottom third of the picture is plain empty floor.
 ("03_場面02_むずむず", "upper part of the picture, which is plain wall", """
 DEEP NIGHT, LAMP OFF. Same blue-grey room, same futon.
 
-Mio is still lying down but has drawn both knees up under the quilt and
-pressed one hand against the tummy over the quilt. The face is a small
+Mio is still lying on her side ON THE CREAM MATTRESS, head on the cream
+pillow, with the MOSS-GREEN QUILT OVER HER. She has drawn both knees up
+under the quilt and pressed one hand against her tummy on top of it. Her
+lower arm is folded under her body, and the cream mattress is visible
+beneath that arm and beneath her shoulder and cheek. The face is a small
 uncomfortable frown - the body has said something. Eyes open, looking
 down towards the quilt.
+The quilt is a single sheet lying over her; it does NOT have a hole in it
+and her upper body does NOT emerge through a gap in it.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 The lamp stands UNLIT on the stool.
 Toton sits up beside the pillow now, watching Mio quietly.
 The top third of the picture is plain wall.
@@ -264,9 +328,12 @@ The top third of the picture is plain wall.
 ("S04_ふとんのふち", "lower part of the picture, which is plain floor", """
 DEEP NIGHT, LAMP OFF. Everything soft dusty blue-grey.
 
-WHOLE FIGURE, not a close-up. Mio has sat halfway up in the futon and is
-gripping the hem of the moss-green quilt with BOTH small hands, pulling
-it a little towards the chin. The shoulders are drawn in, the head is
+WHOLE FIGURE, not a close-up. Mio has sat halfway up, SITTING ON THE
+CREAM MATTRESS, and is gripping the hem of the moss-green quilt with
+BOTH small hands, pulling it a little towards the chin. The quilt lies
+over her legs; the cream mattress shows under her and beside her.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
+ The shoulders are drawn in, the head is
 turned towards the dim room, the mouth a small tight line.
 Draw Mio's whole upper body: head, shoulders, the short-sleeved
 nightshirt, both bare forearms, both hands on the quilt.
@@ -277,8 +344,11 @@ The lower part of the picture is plain empty wood floor.
 ("04_場面03_でられない", "lower part of the picture, which is plain floor", """
 DEEP NIGHT, LAMP OFF. THE HESITATION. This is a core page.
 
-Mio has sat up on the futon, quilt pushed back over the legs, and has
-stopped there. Both hands rest on the quilt, shoulders drawn in a little,
+Mio has SAT UP ON THE CREAM MATTRESS, the moss-green quilt pushed back
+so that it lies over her lower legs only, and has stopped there. Her
+bottom and both hands are on the CREAM; the green is over her shins.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
+Shoulders drawn in a little,
 head turned towards the dim room beyond the futon. The mouth is a small
 uncertain line. Mio is looking OUT at the dark, and not moving.
 Between Mio and the bedroom door there is a clear stretch of empty
@@ -290,14 +360,22 @@ The bottom third of the picture is plain empty floor.
 """),
 
 ("05_場面04_ここにある", "lower part of the picture, which is plain floor", """
-DEEP NIGHT, LAMP OFF. Still blue-grey.
+DEEP NIGHT, LAMP OFF. THE LAMP IS NOT LIT IN THIS PICTURE.
+The whole room is cool dusty blue-grey, exactly as dark as the two pages
+before it. The cream dome on the stool is DULL AND MATT, with no
+highlight on its crown, no sheen, no halo and no glow. There is NO warm
+light anywhere in this picture - not on the wall, not on the floor, not
+on the stool, not on the bedding, not on Mio. Mio's face and the futon
+carry the same cool blue-grey shading as the walls.
 
 Toton has turned and is looking UP at the low wooden stool beside the
 pillow, where the unlit lamp stands. One of Toton's short front limbs is
 raised slightly towards it - not touching it, just pointing the way with
 its whole body. Toton is calm, mouth a single flat line.
-Mio, still sitting on the futon, has turned to follow Toton's look, head
-coming round towards the stool.
+Mio, still SITTING ON THE CREAM MATTRESS with the moss-green quilt over
+her legs, has turned to follow Toton's look, head coming round towards
+the stool.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 The unlit lamp is clearly visible on the stool: a plain cream dome with
 one big round button on top.
 Toton does not glow, and does not touch the lamp.
@@ -309,13 +387,17 @@ DEEP NIGHT, LAMP STILL OFF. Everything is the soft dusty blue-grey of the
 night pages. The lamp on the stool is unlit - a plain cream dome with no
 glow at all. The only brightness is a little pale moonlight.
 
-WHOLE FIGURE, not a close-up of a hand. Mio is kneeling up on the futon
-and leaning across towards the stool beside the pillow, one arm stretched
-out, the fingertips just arriving above the unlit lamp - almost touching
-it, not yet pressing. The other hand rests on the quilt for balance.
+WHOLE FIGURE, not a close-up of a hand. Mio is KNEELING UP ON THE CREAM
+MATTRESS - both knees on the cream - and leaning across towards the stool
+beside the pillow, one arm stretched out, the fingertips just arriving
+above the unlit lamp - almost touching it, not yet pressing. The other
+hand rests ON THE CREAM MATTRESS for balance.
+The moss-green quilt has been thrown back and lies in a loose heap
+BEHIND her, off to one side. Nothing green is under her.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 Mio's face is turned towards the lamp, mouth small and set, eyes open.
 Draw Mio's whole body: head, shoulders, the moss-green nightshirt to
-mid-thigh, the knees on the quilt, the white socks.
+mid-thigh, the knees on the cream mattress, the white socks.
 Toton stands on the floor below the stool, looking up at the reaching
 hand, calm and neutral. Toton does not glow.
 The upper part of the picture is plain blue-grey wall.
@@ -326,9 +408,11 @@ THE MOMENT THE LAMP COMES ON. This is the core page of the whole book.
 THE LAMP STAYS ON THE STOOL. Mio is NOT holding it and NOT carrying it.
 This is the only page in the book where the lamp is switched on, and it
 is switched on exactly where it stands, on the stool.
-Mio is still ON THE FUTON, kneeling up on the quilt and leaning across
-towards the stool, with one arm stretched out to it. The other hand rests
-on the futon for balance.
+Mio is still on the futon, KNEELING UP ON THE CREAM MATTRESS - both
+knees on the cream - and leaning across towards the stool, with one arm
+stretched out to it. The other hand rests ON THE CREAM MATTRESS for
+balance. The moss-green quilt lies thrown back in a heap behind her.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 
 That outstretched hand is pressing down on the big round button, and the
 lamp has JUST lit: the cream dome glows warm amber from inside and a soft pool of
@@ -344,12 +428,14 @@ this picture.
 The top third of the picture is plain wall.
 """),
 
-("S09_じぶんでついた", "lower part of the picture, which is plain floor", """
+("S09_じぶんでつけられた", "lower part of the picture, which is plain floor", """
 LAMP ON. The warm amber pool now fills the near half of the room; the far
 corners stay soft blue-grey.
 
-Mio sits on the futon looking at the lit lamp, a small calm smile, both
-hands resting in the lap. Shoulders relaxed.
+Mio SITS ON THE CREAM MATTRESS looking at the lit lamp, a small calm
+smile, both hands resting in the lap. Shoulders relaxed. The moss-green
+quilt lies thrown back in a loose heap beside her.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 Toton stands on the floor beside the stool, looking up at Mio, with ONE
 SMALL MOTION MARK BESIDE EACH EAR - the ears are twitching. This is the
 happy pose and it must be clearly visible here.
@@ -358,10 +444,12 @@ The bottom third of the picture is plain empty floor.
 """),
 
 ("08_場面07_ふとんからでる", "upper part of the picture, which is plain wall", """
-LAMP ON, standing on the stool. Mio is getting out of the futon: quilt
-folded back, one white-socked foot already flat on the wooden floor, the
-other still on the mattress, one hand on the floor for balance, body
-leaning forward. The face is set and awake.
+LAMP ON, standing on the stool. Mio is getting out of the futon. She
+SITS ON THE EDGE OF THE CREAM MATTRESS with the moss-green quilt thrown
+right back into a heap behind her, one white-socked foot already flat on
+the wooden floor, the other still on the cream mattress, one hand on the
+floor for balance, body leaning forward. The face is set and awake.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is only ever over her or heaped beside her, never under her.
 The amber light from the lamp falls across the floor where the foot has
 landed. Beyond the pool, the room is blue-grey.
 Toton stands on the floor waiting, calm and neutral.
@@ -372,10 +460,25 @@ The top third of the picture is plain wall.
 THE CORRIDOR, LAMP CARRIED. Mio walks away from the camera down the
 corridor, seen from BEHIND - the back of the head, the moss-green
 nightshirt to mid-thigh, bare legs, white socks on the wooden floor.
+THE BACK OF MIO'S HEAD: the hair is a SHORT crop. It ends WELL ABOVE the
+nape, so the whole neck is bare, and it ends above the ears at the sides.
+Seen from behind it is a small round cap of hair with a bare neck under
+it. It is NOT a bob, NOT chin-length, and never touches the shoulders.
+THERE IS ONLY ONE DOOR in this picture, at the far end. Do not draw a
+second door, a doorway or a door frame on either side wall.
 Mio carries the lit lamp in BOTH HANDS, held low in front of the body, so
 a warm amber pool travels along the floor and up the corridor walls just
 ahead of the feet. Beyond that pool the corridor is soft blue-grey, and
 at its far end the cream toilet door is only just visible.
+THE WASHBASIN IS IN THIS PICTURE. On the RIGHT-HAND WALL of the
+corridor, nearer the camera than the toilet door, the small white
+washbasin on its light-wood cabinet stands against the wall and juts into
+the corridor. It is seen from the side, on the RIGHT of the picture. Do
+not leave that stretch of wall empty.
+THE TOILET DOOR IS AT THE FAR END, straight ahead. There is no door on
+the right-hand wall and no door on the left-hand wall.
+The basin is beyond Mio, further down the corridor, still in the
+blue-grey; the lamp's pool has not reached it yet.
 Toton walks on the floor beside Mio's ankle, inside the pool of light,
 lit by it. Toton does not glow.
 The top third of the picture is plain wall.
@@ -384,9 +487,20 @@ The top third of the picture is plain wall.
 ("S13_トイレのドア", "upper part of the picture, which is plain wall", """
 THE TOILET DOOR, seen from the corridor.
 
-The plain cream door fills the middle of the picture, closed, with its
-round wooden knob on the RIGHT-HAND edge and the open gap along its
-bottom. There is only ONE door.
+Stand the camera back a little, so some corridor is visible on either
+side of the door and the whole basin fits in.
+The plain cream door stands at the far end in the middle of the picture,
+closed, with its round wooden knob on the RIGHT-HAND edge and the open
+gap along its bottom. There is only ONE door.
+THE WASHBASIN IS IN THIS PICTURE. On the RIGHT-HAND WALL of the
+corridor, nearer the camera than the toilet door, the small white
+washbasin on its light-wood cabinet stands against the wall and juts into
+the corridor. It is seen from the side, on the RIGHT of the picture. Do
+not leave that stretch of wall empty.
+THE TOILET DOOR IS AT THE FAR END, straight ahead. There is no door on
+the right-hand wall and no door on the left-hand wall.
+Here the basin is close to the camera, on the right, and Mio has already
+walked past it.
 
 Mio stands in front of it, seen from behind and slightly to the side.
 THE LAMP IS NOT IN MIO'S HANDS. Mio has SET IT DOWN on the corridor
@@ -410,6 +524,14 @@ out onto the corridor floor in a low bright band - the lamp is inside with
 Mio. That band of light is the subject of the picture.
 Toton stands on the corridor floor OUTSIDE the door, in that spilled
 light, facing the door, waiting patiently, calm and neutral.
+THE WASHBASIN IS IN THIS PICTURE. On the RIGHT-HAND WALL of the
+corridor, nearer the camera than the toilet door, the small white
+washbasin on its light-wood cabinet stands against the wall and juts into
+the corridor. It is seen from the side, on the RIGHT of the picture. Do
+not leave that stretch of wall empty.
+THE TOILET DOOR IS AT THE FAR END, straight ahead. There is no door on
+the right-hand wall and no door on the left-hand wall.
+The basin stands in the blue-grey, outside the band of light.
 The rest of the corridor is soft blue-grey.
 
 HARD LIMITS
@@ -431,6 +553,13 @@ door, at about knob height, to show a sound coming through it - simple
 gentle arcs in the same soft line as the rest of the book, nothing harsh.
 Toton stands outside the door as before, facing it, ears twitching with
 one small motion mark beside each ear.
+THE WASHBASIN IS IN THIS PICTURE. On the RIGHT-HAND WALL of the
+corridor, nearer the camera than the toilet door, the small white
+washbasin on its light-wood cabinet stands against the wall and juts into
+the corridor. It is seen from the side, on the RIGHT of the picture. Do
+not leave that stretch of wall empty.
+THE TOILET DOOR IS AT THE FAR END, straight ahead. There is no door on
+the right-hand wall and no door on the left-hand wall.
 The corridor stays soft blue-grey.
 Same hard limits as before: door shut, no Mio, no fixtures, plain wall
 above the door.
@@ -438,18 +567,30 @@ The top third of the picture is plain wall.
 """),
 
 ("S14_てをあらう", "lower part of the picture, which is plain floor", """
-A SMALL WASHBASIN in the corridor beside the toilet door.
+THE WASHBASIN IN THE CORRIDOR. Same corridor, same camera as every other
+corridor page: the camera stands at the bedroom end and looks along it.
 
-WHOLE FIGURE, SEEN FROM THE SIDE. Mio stands at the basin in profile,
-facing left, up on tiptoe a little, with both hands held under a thin
-stream of water from a single tap. Head bent forward, looking down at
-the hands. The whole child is in the picture: head, body, the
+LAYOUT, AND IT MUST MATCH THE OTHER CORRIDOR PAGES EXACTLY:
+- The basin is on the RIGHT-HAND WALL, on the RIGHT of the picture,
+  fairly close to the camera. Plain white basin, light-wood cabinet, one
+  tap, no mirror.
+- The TOILET DOOR is at the FAR END of the corridor, straight ahead and
+  BEYOND MIO, small with distance, closed now. It is NOT on the
+  right-hand wall. There is no other door anywhere in this picture, and
+  no door beside or behind Toton.
+- The left-hand wall is bare.
+
+WHOLE FIGURE, SEEN FROM THE SIDE. Mio stands at the basin FACING RIGHT,
+towards the right-hand wall, up on tiptoe a little, both hands held under
+a thin stream of water from the single tap. Head bent forward, looking
+down at the hands. The whole child is in the picture: head, body, the
 short-sleeved nightshirt to mid-thigh, bare legs, white socks on the
 floor.
 The lit lamp stands on the corner of the basin, throwing warm amber over
 the water, the hands and Mio's face.
 There is NO mirror above the basin - the wall above it is plain. Do not
-draw a mirror, a frame or a reflection anywhere.
+draw a mirror, a frame or a reflection anywhere, and never let an arm or
+a hand appear out of the wall.
 Toton stands on the floor beside Mio's feet, looking up.
 Beyond the amber pool the corridor is soft blue-grey.
 The lower part of the picture is plain empty floor.
@@ -459,7 +600,17 @@ BACK ALONG THE CORRIDOR, LAMP CARRIED, walking TOWARDS the camera now.
 Mio comes back up the corridor holding the lit lamp in both hands in
 front of the body. The warm amber pool lights Mio's face gently from
 below, and the face is calm and easy - the walk back is not frightening.
-Behind Mio the corridor recedes into soft blue-grey.
+Behind Mio the corridor recedes into soft blue-grey, with the closed
+toilet door small at its far end.
+THE WASHBASIN IS IN THIS PICTURE. On the RIGHT-HAND WALL of the
+corridor, nearer the camera than the toilet door, the small white
+washbasin on its light-wood cabinet stands against the wall and juts into
+the corridor. It is seen from the side, on the RIGHT of the picture. Do
+not leave that stretch of wall empty.
+THE TOILET DOOR IS AT THE FAR END, straight ahead. There is no door on
+the right-hand wall and no door on the left-hand wall.
+Mio has already walked past the basin, so it stands behind her on the
+right, at the edge of the light.
 Toton walks beside Mio's ankle inside the pool of light.
 The top third of the picture is plain wall.
 """),
@@ -470,13 +621,25 @@ has returned to soft dusty blue-grey, with a little pale moonlight
 through the curtain. The lamp stands UNLIT on the stool where it began -
 a plain cream dome, no glow.
 
-Mio is lying down in the futon under the moss-green quilt, curled on one
-side, head on the ONE CREAM pillow, eyes CLOSED, mouth soft and settled -
-already asleep. Peaceful, not frightened. The dark is just the dark now.
+Mio LIES DIRECTLY ON THE CREAM MATTRESS, curled on one side, head on the
+ONE CREAM pillow, with the MOSS-GREEN QUILT DRAWN UP OVER HER BODY to the
+shoulders so that only her head and one hand are outside it. Eyes CLOSED,
+mouth soft and settled - already asleep. Peaceful, not frightened. The
+dark is just the dark now.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is
+over her, never under her. She is not lying on top of the green.
 
-Toton SITS on the floor beside the stool, upright and still, with its
-EYES CLOSED - two short closed curves instead of the usual black dots.
-Calm and settled, keeping watch while asleep.
+TOTON IS SITTING DOWN, NOT STANDING. This matters. Toton is SEATED ON THE
+FLOOR beside the stool, its bottom on the floorboards and its short back
+legs folded out in front of it, the body settled and low - the posture of
+a small animal that has sat down for the night. Do not draw Toton
+standing upright on its feet.
+Its EYES ARE CLOSED - two short closed curves instead of the usual black
+dots. Calm and settled, asleep sitting up.
+TOTON'S YELLOW BACKPACK IS OFF. It has been taken off for the night and
+lies on the floorboards right beside Toton, resting on its back with its
+two straps upward, small and neat. Toton is NOT wearing it in this
+picture; it is the only page where the backpack is off.
 TOTON HAS NO TAIL. Do not draw a round tail, a stub, a bobble or any
 tail-like shape behind it. Toton is not a cat and not a rabbit: one
 continuous egg-shaped body, two small round ears set high and wide
@@ -486,10 +649,16 @@ The upper part of the picture is plain wall.
 ("S18_つぎのよる", "lower part of the picture, which is plain floor", """
 ANOTHER NIGHT, LAMP OFF, blue-grey room, the same futon and stool.
 
-Mio has woken again and is already sitting up, and this time reaches
-straight out towards the unlit lamp on the stool without hesitating -
-the arm extended, the hand almost at the button, the face calm and
-matter-of-fact. No drawn-in shoulders, no uncertainty.
+Mio has woken again and is already SITTING UP ON THE CREAM MATTRESS,
+with the moss-green quilt thrown back into a loose heap beside her, and
+this time reaches straight out towards the unlit lamp on the stool
+without hesitating - the arm extended, the hand almost at the button.
+Mio's body rests DIRECTLY ON THE CREAM MATTRESS. The moss-green quilt is
+never under her.
+HER FACE IS PLEASED. THE CORNERS OF HER MOUTH ARE TURNED UP in a clear,
+warm little smile - not a flat line, not a neutral mouth. The eyes are
+soft and easy. This is the last picture in the book and she is confident
+now. No drawn-in shoulders, no uncertainty.
 Toton stands on the floor beside the stool with ONE SMALL MOTION MARK
 BESIDE EACH EAR - the happy pose.
 The bottom third of the picture is plain empty floor.

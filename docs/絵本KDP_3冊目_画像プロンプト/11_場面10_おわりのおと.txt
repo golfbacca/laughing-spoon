@@ -110,6 +110,13 @@ door, at about knob height, to show a sound coming through it - simple
 gentle arcs in the same soft line as the rest of the book, nothing harsh.
 Toton stands outside the door as before, facing it, ears twitching with
 one small motion mark beside each ear.
+THE WASHBASIN IS IN THIS PICTURE. On the RIGHT-HAND WALL of the
+corridor, nearer the camera than the toilet door, the small white
+washbasin on its light-wood cabinet stands against the wall and juts into
+the corridor. It is seen from the side, on the RIGHT of the picture. Do
+not leave that stretch of wall empty.
+THE TOILET DOOR IS AT THE FAR END, straight ahead. There is no door on
+the right-hand wall and no door on the left-hand wall.
 The corridor stays soft blue-grey.
 Same hard limits as before: door shut, no Mio, no fixtures, plain wall
 above the door.
@@ -147,9 +154,18 @@ One small portable night lamp. It is the object the whole book turns on.
 - On its top is ONE large soft round button. That is how it is switched
   on - a child presses the whole top down. NO wall switch, NO cord, NO
   toggle, NO pull-string anywhere in this book.
-- OFF state: the dome is plain cream, unlit, and the room is blue-grey.
+- OFF state: the dome is a DULL, MATT, SLIGHTLY GREYED cream. It is a
+  dark object in a dark room, no brighter than the pillow beside it.
+  NO bright highlight on its crown, NO gloss, NO sheen, NO halo, NO glow
+  of any kind around it, and NO warm light anywhere on the wall, the
+  floor, the stool or the bedding. Its shaded side is blue-grey like
+  everything else. A reader must be able to tell at a glance that it is
+  switched off. The whole room is blue-grey twilight, and Mio's face and
+  the futon carry the same cool shading as the walls.
 - ON state: the dome glows warm amber from inside, and a soft pool of
   amber light spreads onto whatever is nearest.
+- Every scene below says OFF or ON. The two states must look obviously
+  different. A scene marked LAMP OFF must never read as if it were lit.
 - It stands on the low wooden stool beside the pillow, within easy reach
   of a child lying down. From the scene where Mio takes it, Mio carries
   it in both hands.
@@ -166,10 +182,34 @@ The child makes the light. The companion does not.
 === THE BEDROOM - IDENTICAL IN EVERY SCENE THERE ===
 One small Japanese bedroom, drawn the same way every time.
 - Floor: light warm wood, simple boards. Wall: plain pale cream.
-- ONE futon laid directly on the floor, low and flat: a plain cream
-  mattress with a soft moss-green quilt and EXACTLY ONE CREAM PILLOW.
-  The pillow is CREAM, never green - only the quilt is moss-green.
-  Never draw two pillows or a stack of pillows.
+- ONE futon laid directly on the floor. It is made of EXACTLY THREE
+  pieces of bedding and nothing else, stacked in this order:
+
+  1. THE UNDER-FUTON (the mattress). A plain CREAM slab lying directly on
+     the floor, thin and low. Its front SIDE FACE - its thickness - is
+     visible along the bottom edge, which is how you can tell it is the
+     mattress. Its top surface is smooth and flat: NO quilting, NO hem
+     roll, NO folded-back corner, NO turned-down edge anywhere on it.
+     THIS IS THE ONLY THING MIO'S BODY EVER RESTS ON. Mio always sits,
+     kneels and lies DIRECTLY ON THE CREAM.
+
+  2. THE COVER QUILT. A soft MOSS-GREEN quilt. It goes OVER Mio, or is
+     thrown back and lies in a loose heap BESIDE her. It is NEVER
+     underneath Mio and is NEVER used as a mattress or a pad.
+
+  3. ONE CREAM PILLOW, lying on the cream mattress at its left end.
+
+  THE TEST FOR EVERY PICTURE: wherever Mio's body touches the bedding,
+  the colour under her is CREAM. Moss-green appears only ON TOP OF Mio,
+  or heaped BESIDE her. Never draw Mio sitting, kneeling or lying on the
+  moss-green.
+
+  FORBIDDEN, because these keep appearing by mistake:
+  - a second cream cloth laid on top of the green quilt
+  - a folded-back cream edge, a rolled cream hem, or a turned-down collar
+    of cream cloth anywhere on the bedding
+  - the green drawn as a thick quilted pad or mattress topper
+  - two pillows, a stack of pillows, or a green pillow
 - Beside the pillow, on the LEFT: ONE low wooden stool, knee height, with
   the night lamp standing on its top. Nothing else on it.
   The stool has four round wooden legs and a HORIZONTAL CROSS-BRACE
@@ -190,15 +230,34 @@ One small Japanese bedroom, drawn the same way every time.
 - Nothing else. No toys, no pictures, no clutter, no plants.
 - NO text, NO logos, NO brand marks anywhere.
 
-=== THE CORRIDOR AND THE TOILET DOOR ===
-- The corridor is plain: cream walls, the same light wood floor, and a
-  simple skirting board. It runs away from the camera.
-- At its end, ONE toilet door: a plain cream panel in a proper frame,
-  with a round wooden knob on its RIGHT-HAND edge and hinges on the left.
+=== THE CORRIDOR - ONE FIXED LAYOUT, ONE FIXED CAMERA ===
+The corridor is drawn from the SAME viewpoint in every corridor scene:
+the camera stands at the bedroom end and looks straight along it, so the
+corridor runs away from the viewer into the picture.
+
+Three things are always in the same place:
+- FAR END, straight ahead: ONE toilet door, closed unless the scene says
+  otherwise. A plain cream panel in a proper frame, a round wooden knob
+  on its RIGHT-HAND edge, hinges on the left.
+- RIGHT-HAND WALL, partway along, nearer the camera than the door: ONE
+  small washbasin. A plain white basin on a simple light-wood cabinet, a
+  single tap, no mirror, no bottles, no towel rail. It stands against the
+  right wall and juts into the corridor, so from this camera it is seen
+  from its side, on the RIGHT of the picture.
+- LEFT-HAND WALL: completely bare.
+
+THE WASHBASIN IS PART OF THE CORRIDOR AND IS VISIBLE ON THE RIGHT IN
+EVERY CORRIDOR SCENE, whether or not anybody is using it. Never draw an
+empty stretch of corridor where the basin should be.
+THE TOILET DOOR IS ALWAYS AT THE FAR END, straight ahead. It is NEVER on
+the right-hand wall and never on the left-hand wall. There is exactly ONE
+door in the corridor, and no other doors anywhere.
+
 - GAP UNDER THE DOOR: the door does not reach the floor. There is an open
   gap about one hand's width tall along its whole bottom edge. This gap
   is present every time the door is shown.
-- No other doors, no pictures on the corridor walls, no rugs.
+- No pictures on the corridor walls, no rugs, no clutter.
+- Cream walls, the same light wood floor, a simple skirting board.
 
 === HOW MIO IS SHOWN - MANDATORY ===
 - Mio is fully clothed in every frame of this book, without exception.
