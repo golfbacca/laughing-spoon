@@ -32,6 +32,13 @@ BED_ANCHOR  = IMG / "_anchor_寝具.jpg"   # 敷＝クリーム／掛＝緑 が�
 LAMP_ANCHOR = IMG / "_anchor_あかり.jpg" # ドーム型のあかりと丸椅子だけ。布団は写らない
 ROOM_ANCHOR = IMG / "_anchor_部屋.jpg"   # 壁・ドア・窓だけ。布団は写らない
 HALL_ANCHOR = IMG / "_anchor_廊下.jpg"
+# 人物が大きく正面を向くページでは、キャラ基準シートだけでは足りない。
+# 【この本の絵柄で描かれた顔とトトン】の切り抜きを足す（作業記録16章）。
+FACE_ANCHOR  = IMG / "_anchor_ミオの顔.jpg"
+TOTON_ANCHOR = IMG / "_anchor_トトン.jpg"
+CLOSEUP = {"09_場面08_ろうか", "S13_トイレのドア", "S14_てをあらう",
+           "12_場面11_もどる", "01_表表紙_正方形", "S09_じぶんでつけられた",
+           "08_場面07_ふとんからでる", "S18_つぎのよる"}
 
 BEDROOM = {"01_表表紙_正方形", "S01_ねるまえ", "02_場面01_めがさめる",
            "03_場面02_むずむず", "S04_ふとんのふち", "04_場面03_でられない",
@@ -69,6 +76,10 @@ def refs(name):
     for a in reversed(cand):
         if a.exists():
             r.insert(0, a)
+    if name in CLOSEUP:
+        for a in (TOTON_ANCHOR, FACE_ANCHOR):
+            if a.exists():
+                r.insert(0, a)
     return r
 
 def trim_border(path):
