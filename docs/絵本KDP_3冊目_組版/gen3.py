@@ -71,6 +71,29 @@ def refs(name):
             r.insert(0, a)
     return r
 
+def trim_border(path):
+    """【やらかし・2026-09-01】「FULL BLEED. NO FRAME」と書いてあるのに、
+    描き直すたびに白い縁がついた絵が返ってくることがある。
+    03 は四辺きっちり132px、12 は上0/下163/左24/右49 と不揃いだった。
+    文章では止まらないので、生成後に機械的に切る。
+    絵の中に真っ白はほとんど無いので、白の帯だけが確実に取れる。"""
+    from PIL import Image
+    import numpy as np
+    im = Image.open(path).convert("RGB")
+    a = np.asarray(im, dtype=int)
+    h, w, _ = a.shape
+    ink = (a.min(axis=2) < 235)
+    rows = np.nonzero(ink.any(axis=1))[0]
+    cols = np.nonzero(ink.any(axis=0))[0]
+    if len(rows) == 0 or len(cols) == 0:
+        return
+    t, b, l, r = rows[0], h - 1 - rows[-1], cols[0], w - 1 - cols[-1]
+    if max(t, b, l, r) < 8:                     # 縁なし。触らない
+        return
+    im.crop((int(l), int(t), int(w - r), int(h - b))) \
+      .resize((w, h), Image.LANCZOS).save(path, quality=95)
+    print(f"  白縁を切った 上{t} 下{b} 左{l} 右{r}")
+
 def one(name, force=False):
     out = IMG / f"{name}.jpg"
     if out.exists() and not force:
@@ -80,6 +103,7 @@ def one(name, force=False):
     for attempt in range(3):
         try:
             generate(prompt, str(out), ref_images=refs(name), aspect="1:1")
+            trim_border(out)
             return
         except KeyError:
             FAILED.append(name)

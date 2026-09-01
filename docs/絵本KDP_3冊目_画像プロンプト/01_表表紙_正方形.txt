@@ -85,6 +85,11 @@ species and NOT based on any existing character.
 - SLEEVES: the nightshirt has SHORT sleeves that end high on the upper
   arm, well above the elbow. Both elbows and both forearms are bare in
   every picture. Mio never wears long sleeves anywhere in this book.
+  MIO WEARS NOTHING UNDERNEATH THE NIGHTSHIRT. There is no undershirt,
+  no base layer, no thin inner sleeve and no second garment of any kind.
+  Where the short sleeve ends, there is BARE SKIN - the same pink-cream
+  skin tone as the face and the hands - all the way to the fingers.
+  Never draw a thin pale-green sleeve continuing down the forearm.
 - HAIR: Mio's hair is SHORT. A soft crop that ends ABOVE the ears at the
   sides and never reaches the jaw or the chin. It must read
   gender-neutral. Never a chin-length bob.
@@ -167,6 +172,16 @@ One small portable night lamp. It is the object the whole book turns on.
   it in both hands.
 - No writing, no logo, no pattern on it.
 
+=== TOTON'S BACKPACK - WHEN IT IS ON AND WHEN IT IS OFF ===
+Toton's small backpack is a warm MUSTARD YELLOW. It is never blue and
+never any other colour.
+- WHENEVER TOTON IS AWAKE, IT IS WEARING THE BACKPACK. That is every
+  page of this book except the two below.
+- TOTON TAKES THE BACKPACK OFF ONLY TO SLEEP. On the two pages where it
+  is asleep, it sits on the floor with its eyes closed and the backpack
+  lies on the floorboards beside it, straps upward.
+- Toton never sleeps lying down, and never sleeps wearing the backpack.
+
 === TOTON NEVER GLOWS. THIS IS NOT NEGOTIABLE. ===
 Toton gives off NO light of its own, in any picture, at any moment.
 It is not luminous, not glowing, not shining, not radiant, and it never
@@ -242,9 +257,17 @@ Three things are always in the same place:
   from its side, on the RIGHT of the picture.
 - LEFT-HAND WALL: completely bare.
 
-THE WASHBASIN IS PART OF THE CORRIDOR AND IS VISIBLE ON THE RIGHT IN
-EVERY CORRIDOR SCENE, whether or not anybody is using it. Never draw an
-empty stretch of corridor where the basin should be.
+THE WASHBASIN STANDS AGAINST A FLAT WALL. The right-hand wall runs
+straight from one end of the corridor to the other. There is NO alcove,
+NO niche and NO recess in it - the wall never steps back to make a bay
+for the basin. The basin simply stands against the flat wall and juts
+out into the corridor.
+THE BASIN IS WELL IN FRONT OF THE TOILET DOOR, about halfway along the
+corridor, much nearer the camera than the door. It is never level with
+the door and never tucked in beside the door frame.
+Each scene below says whether the basin is in shot. When it is, draw it
+on the right against the flat wall. When a scene says the basin is not
+in shot, the right-hand wall is plain and flat all the way along.
 THE TOILET DOOR IS ALWAYS AT THE FAR END, straight ahead. It is NEVER on
 the right-hand wall and never on the left-hand wall. There is exactly ONE
 door in the corridor, and no other doors anywhere.
