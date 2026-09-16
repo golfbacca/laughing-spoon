@@ -97,3 +97,12 @@ python3 gen_setA.py
 - ファイルは `01.png` 〜 `16.png` の番号順でアップロードする
 - LINEスタンプメーカー経由の場合、**フチの自動追加を「0／なし」にする**
   （画像側に白フチが入っているため二重になる）
+
+---
+
+## 別案件：Garden Flag（米国Etsy / Printify）
+
+このリポジトリには、LINEスタンプとは別の副業案件も同居している。
+
+- `garden_flag/` … 米国Etsy向けガーデンフラッグ案件（Printify製造）。
+  進行状況と次にやることは `garden_flag/README.md` を参照。
