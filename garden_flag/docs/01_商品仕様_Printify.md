@@ -3,8 +3,21 @@
 ## 対象商品
 
 Printifyカタログの **Garden and House Banner**（generic brand / 商品ID 976）。
-※ Printifyには他にもフラッグ系商品がある。Product Creatorで "garden flag" / "banner" を
-検索して、**両面印刷に対応しているもの**を選ぶこと。
+
+### ⚠️ 検索語の注意（2026-09-17 実地で判明）
+
+**Printifyのカタログ検索で `garden flag` と打っても出てこない。**
+デニムジャケットやポロシャツなど、無関係なアパレルが返る。
+**Printify上の商品名が「garden flag」ではなく「Garden and House Banner」だから。**
+
+正しい探し方（上から順に試す）:
+
+1. カタログ検索で **`banner`** と打つ
+2. 上部メニューの **`Home and Living`** カテゴリを開く
+3. 直接URL: `https://printify.com/app/products/976/generic-brand/garden-and-house-banner`
+
+※ printify.com はクラウドセッションからブロックされているため、
+このURLの生存は未確認。開かなければ1か2で。
 
 | 項目 | 内容 | 確度 |
 |---|---|---|
@@ -25,7 +38,7 @@ Printifyカタログの **Garden and House Banner**（generic brand / 商品ID 9
 Printifyのサイトは開発環境からアクセスできない（ネットワーク制限）ため、
 以下の数値は画面を見て教えてほしい。これが揃わないと価格設定ができない。
 
-Printify → Catalog → "garden flag" で検索 → 商品を開く、の順で以下を確認：
+Printify → Catalog → **`banner`** で検索（`garden flag` では出ない）→ 商品を開く、の順で以下を確認：
 
 1. **Print Provider名**（複数出るので、US拠点かつ評価の高いものを選ぶ）
 2. **Production cost**（12×18サイズ、両面印刷を選んだ状態の金額。$〜）
