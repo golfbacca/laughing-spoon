@@ -1,0 +1,208 @@
+========================================================================
+ガーデンフラッグ 改訂版プロンプト集（2026-09-18）
+========================================================================
+
+【使い方】
+ ・各プロンプトはそのまま全文コピーして貼るだけ。切り貼り不要
+ ・1案ごとに必ず新規チャットで開始する（文脈が混ざると崩れる）
+ ・モデルは 3.1 Pro
+ ・入力欄が最初の打鍵を飲み込むので、打ち直して文字数を確認してから送信
+
+【生成後に必ず見る】
+ 1. 縦長か（横長・正方形になっていないか）
+ 2. 200px幅に縮小して、絵だけでゴルフと分かるか
+ 3. 中央のプレートが空欄で、画面の1/3を占める大きさか  ← 今回の要点
+ 4. 上端15%・四辺8%に要素が入っていないか
+ 5. スペルミス・文字崩れ・透かし
+
+
+########################################################################
+#  R01  STILL WORKING ON IT
+########################################################################
+
+ORIENTATION — THIS IS THE MOST IMPORTANT REQUIREMENT:
+Produce a PORTRAIT image, 2:3 aspect ratio, 1200 x 1800 pixels.
+This is a tall vertical garden flag. It is NOT a horizontal sign or plaque.
+Never produce a landscape or square image.
+A charming decorative garden flag design that FILLS the frame.
+Soft white and forest green gingham check pattern forming a wide border.
+The golf illustration is a detailed watercolour classic golf bag with wooden clubs.
+The large empty plaque is a cream oval with a thin dark green outline.
+The small fixed caption at the bottom reads: STILL WORKING ON IT
+
+LAYOUT — follow this vertical order exactly:
+ - top 15% of the image: ONLY flat plain background colour, nothing else
+ - next 25%: the golf illustration, large and clearly recognisable
+ - next 35%: a LARGE EMPTY plaque with a smooth blank surface and
+   absolutely NO text, letters or numbers on it. This blank plaque is the
+   biggest single element in the design. It must be completely blank.
+ - bottom 20%: the small fixed caption text
+
+CRITICAL: an 8% margin along the left, right and bottom edges must contain
+ONLY flat plain background colour — no text, no borders, no frames, no pattern,
+no illustration, no ornament of any kind.
+
+Bright, colourful, decorative. Readable from 10 metres away.
+Flat illustrated poster style. No photorealism, no mockup, no flag pole, no scene.
+Do not add any other words.
+
+
+########################################################################
+#  R02  19TH HOLE - ALWAYS OPEN
+########################################################################
+
+ORIENTATION — THIS IS THE MOST IMPORTANT REQUIREMENT:
+Produce a PORTRAIT image, 2:3 aspect ratio, 1200 x 1800 pixels.
+This is a tall vertical garden flag. It is NOT a horizontal sign or plaque.
+Never produce a landscape or square image.
+A bold decorative garden flag design that FILLS the frame.
+Vivid fresh grass-green background with a subtle mown-stripe texture.
+The golf illustration is a putting green cup with a bright red pennant flag on a pin.
+The large empty plaque is a white rectangle with softly notched corners.
+The small fixed caption at the bottom reads: 19TH HOLE - ALWAYS OPEN
+
+LAYOUT — follow this vertical order exactly:
+ - top 15% of the image: ONLY flat plain background colour, nothing else
+ - next 25%: the golf illustration, large and clearly recognisable
+ - next 35%: a LARGE EMPTY plaque with a smooth blank surface and
+   absolutely NO text, letters or numbers on it. This blank plaque is the
+   biggest single element in the design. It must be completely blank.
+ - bottom 20%: the small fixed caption text
+
+CRITICAL: an 8% margin along the left, right and bottom edges must contain
+ONLY flat plain background colour — no text, no borders, no frames, no pattern,
+no illustration, no ornament of any kind.
+
+Bright, colourful, decorative. Readable from 10 metres away.
+Flat illustrated poster style. No photorealism, no mockup, no flag pole, no scene.
+Do not add any other words.
+
+
+########################################################################
+#  R05  MULLIGANS WELCOME HERE
+########################################################################
+
+ORIENTATION — THIS IS THE MOST IMPORTANT REQUIREMENT:
+Produce a PORTRAIT image, 2:3 aspect ratio, 1200 x 1800 pixels.
+This is a tall vertical garden flag. It is NOT a horizontal sign or plaque.
+Never produce a landscape or square image.
+A soft pretty decorative garden flag design that FILLS the frame.
+Warm white background with watercolour blooms in blush pink and pale blue
+along the upper corners and lower corners.
+The golf illustration is a putting green with a bright red pennant flag
+and a white golf ball on a red tee.
+The large empty plaque is a blush-pink rectangle with rounded corners.
+The small fixed caption at the bottom reads: MULLIGANS WELCOME HERE
+
+LAYOUT — follow this vertical order exactly:
+ - top 15% of the image: ONLY flat plain background colour, nothing else
+ - next 25%: the golf illustration, large and clearly recognisable
+ - next 35%: a LARGE EMPTY plaque with a smooth blank surface and
+   absolutely NO text, letters or numbers on it. This blank plaque is the
+   biggest single element in the design. It must be completely blank.
+ - bottom 20%: the small fixed caption text
+
+CRITICAL: an 8% margin along the left, right and bottom edges must contain
+ONLY flat plain background colour — no text, no borders, no frames, no pattern,
+no illustration, no ornament of any kind.
+
+Bright, colourful, decorative. Readable from 10 metres away.
+Flat illustrated poster style. No photorealism, no mockup, no flag pole, no scene.
+Do not add any other words.
+
+
+########################################################################
+#  R09  GONE GOLFING - BACK EVENTUALLY
+########################################################################
+
+ORIENTATION — THIS IS THE MOST IMPORTANT REQUIREMENT:
+Produce a PORTRAIT image, 2:3 aspect ratio, 1200 x 1800 pixels.
+This is a tall vertical garden flag. It is NOT a horizontal sign or plaque.
+Never produce a landscape or square image.
+A cosy decorative garden flag design that FILLS the frame.
+Cream background with a wide red and forest-green tartan plaid border band.
+The golf illustration is a vintage golf cart loaded with clubs.
+The large empty plaque is a cream rectangle with a thin dark brown outline.
+The small fixed caption at the bottom reads: GONE GOLFING - BACK EVENTUALLY
+
+LAYOUT — follow this vertical order exactly:
+ - top 15% of the image: ONLY flat plain background colour, nothing else
+ - next 25%: the golf illustration, large and clearly recognisable
+ - next 35%: a LARGE EMPTY plaque with a smooth blank surface and
+   absolutely NO text, letters or numbers on it. This blank plaque is the
+   biggest single element in the design. It must be completely blank.
+ - bottom 20%: the small fixed caption text
+
+CRITICAL: an 8% margin along the left, right and bottom edges must contain
+ONLY flat plain background colour — no text, no borders, no frames, no pattern,
+no illustration, no ornament of any kind.
+
+Bright, colourful, decorative. Readable from 10 metres away.
+Flat illustrated poster style. No photorealism, no mockup, no flag pole, no scene.
+Do not add any other words.
+
+
+########################################################################
+#  R11  GOLF CLUB - MEMBERS ONLY  （N10の差し替え）
+########################################################################
+
+ORIENTATION — THIS IS THE MOST IMPORTANT REQUIREMENT:
+Produce a PORTRAIT image, 2:3 aspect ratio, 1200 x 1800 pixels.
+This is a tall vertical garden flag. It is NOT a horizontal sign or plaque.
+Never produce a landscape or square image.
+A distinguished private country club entrance sign that FILLS the frame.
+Deep navy background with thin gold rule lines framing the design.
+The golf illustration is two large crossed gold golf clubs with a golf ball,
+with clearly drawn club heads.
+The large empty plaque is a navy panel with an ornate gold border.
+The small fixed caption below the plaque reads on two lines:
+GOLF CLUB
+MEMBERS ONLY
+
+LAYOUT — follow this vertical order exactly:
+ - top 15% of the image: ONLY flat plain background colour, nothing else
+ - next 25%: the golf illustration, large and clearly recognisable
+ - next 35%: a LARGE EMPTY plaque with a smooth blank surface and
+   absolutely NO text, letters or numbers on it. This blank plaque is the
+   biggest single element in the design. It must be completely blank.
+ - bottom 20%: the small fixed caption text
+
+CRITICAL: an 8% margin along the left, right and bottom edges must contain
+ONLY flat plain background colour — no text, no borders, no frames, no pattern,
+no illustration, no ornament of any kind.
+
+Bright, colourful, decorative. Readable from 10 metres away.
+Flat illustrated poster style. No photorealism, no mockup, no flag pole, no scene.
+Do not add any other words.
+
+
+########################################################################
+#  モックアップ用の背景シーン（3種）
+########################################################################
+
+※ フラッグは真っ白・無地で生成させる。デザインはこちらで合成する
+※ 縦横比の指定は不要。写真として自然な構図でよい
+
+--- シーン1  朝の前庭 --------------------------------------------------
+A photorealistic front yard scene in an American suburb on a bright morning.
+Green mown lawn in the foreground, a flower bed and a house porch softly
+blurred in the background.
+A single garden flag hangs from a black metal garden flag pole in the centre,
+angled slightly toward the camera.
+THE FLAG IS COMPLETELY BLANK PURE WHITE with no design, no text, no pattern.
+Shallow depth of field, warm natural sunlight, shot at eye level.
+
+--- シーン2  玄関ポーチ脇 ------------------------------------------------
+A photorealistic residential front porch in the late afternoon.
+Brick steps and a white door softly blurred behind, potted plants beside them.
+A single garden flag hangs from a black metal garden flag pole at the left,
+seen from a slight angle.
+THE FLAG IS COMPLETELY BLANK PURE WHITE with no design, no text, no pattern.
+Warm golden light, shallow depth of field.
+
+--- シーン3  ゴルフ場に面した裏庭 --------------------------------------------
+A photorealistic back garden that opens onto a golf course fairway.
+Mown grass, a distant green with a red pin flag far in the background, blurred.
+A single garden flag hangs from a black metal garden flag pole in the foreground.
+THE FLAG IS COMPLETELY BLANK PURE WHITE with no design, no text, no pattern.
+Soft evening light, shallow depth of field.
