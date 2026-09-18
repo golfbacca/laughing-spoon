@@ -45,6 +45,9 @@
 | etsy.com | WebFetch が 403 |
 | 本人のローカルディスク（`C:\...`） | **一切見えない**。ファイルは添付・Drive・リポジトリ経由で渡してもらう |
 | Google Drive / Gmail | **読める**（MCP経由）。過去資料の発掘に有効 |
+| Driveの**画像の実データ** | `download_file_content` はbase64で返る。**8MBのPNG1枚で膨大なトークンを消費**するので実用外。`read_file_content` は画像に対して空を返す |
+| `drive.google.com` へ直接curl | **プロキシがブロック**（printify.com と同じ） |
+| **チャットに添付された画像** | ✅ **`/tmp/claude-0/<...>/images/*.webp` にファイルとして保存され、Pillowで直接処理できる。画像を渡す最良のルート** |
 | GitHub | 読み書き可（MCP経由） |
 
 → どちらの環境でも、**EtsyとPrintifyの画面操作は本人にやってもらう**のが基本。
