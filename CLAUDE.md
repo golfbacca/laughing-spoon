@@ -47,7 +47,8 @@
 | Google Drive / Gmail | **読める**（MCP経由）。過去資料の発掘に有効 |
 | Driveの**画像の実データ** | `download_file_content` はbase64で返る。**8MBのPNG1枚で膨大なトークンを消費**するので実用外。`read_file_content` は画像に対して空を返す |
 | `drive.google.com` へ直接curl | **プロキシがブロック**（printify.com と同じ） |
-| **チャットに添付された画像** | ✅ **`/tmp/claude-0/<...>/images/*.webp` にファイルとして保存され、Pillowで直接処理できる。画像を渡す最良のルート** |
+| **チャットに添付された画像** | `/tmp/claude-0/<...>/images/*.webp` にファイルとして保存され処理できる。ただし**WebPへ再圧縮され、幅1368px程度に縮小される** |
+| **★ZIPにまとめて添付** | ✅ **`/root/.claude/uploads/` に無変換で届く。解凍すれば元の解像度・元の形式のまま使える。画像を渡す最良のルート**（2026-09-19実証） |
 | GitHub | 読み書き可（MCP経由） |
 
 → どちらの環境でも、**EtsyとPrintifyの画面操作は本人にやってもらう**のが基本。
