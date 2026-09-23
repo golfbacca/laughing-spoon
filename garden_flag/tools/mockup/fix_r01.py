@@ -21,8 +21,11 @@ from PIL import Image
 import numpy as np
 from scipy import ndimage
 
-SRC="upload_r/_R01_before.png"
-DST="upload_r/R01_upload_3900x5700.png"
+# build_upload_r.py が作った直後の入稿データを読み、同じ場所へ上書きする。
+# 補修前を _R01_before.png に残す（2回流しても壊れないように）。
+SRC_BUILT="upload_r/R01_upload_3900x5700.png"
+BACKUP   ="upload_r/_R01_before.png"
+DST      ="upload_r/R01_upload_3900x5700.png"
 # (帯の範囲, t(y)を測る列, オーバルが入ってくる向き)
 BANDS=[((415,728),(430,520),"right"), ((3172,3482),(3380,3465),"left")]
 Y0,Y1 = 1110, 5123
@@ -36,7 +39,9 @@ def tone_wave(y, y0, pitch, edge):
     return np.clip(np.clip((f-1.0)/e,0,1)-np.clip((f-2.0+e)/e,0,1),0,1)
 
 def main():
-    src=np.asarray(Image.open(SRC).convert("RGB")).astype(np.float32)
+    import os, shutil
+    if not os.path.exists(BACKUP): shutil.copy(SRC_BUILT, BACKUP)   # 初回だけ退避
+    src=np.asarray(Image.open(BACKUP).convert("RGB")).astype(np.float32)
     out=src.copy()
     pitch=(Y1-Y0)/N_ROWS
     print(f"補修 y {Y0}〜{Y1} ({Y1-Y0}px) → {N_ROWS}行 × {pitch:.2f}px")
