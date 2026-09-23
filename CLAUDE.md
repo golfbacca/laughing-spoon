@@ -79,7 +79,7 @@
 
 | 項目 | 状態 |
 |---|---|
-| デザイン5案・入稿データ | 完成。**元データは `garden_flag/source/` に同梱**（R01は要補修・`source/README.md`） |
+| デザイン5案・入稿データ | 完成。**入稿5枚は `garden_flag/upload/`、元データは `garden_flag/source/`**（R01は要補修・`source/README.md`） |
 | 自前モックアップ15枚 | 完成（`garden_flag/mockups/`） |
 | 出品画像 35枚（7枚×5商品） | 完成（`garden_flag/listing/`）。R01は柄の補修後に作り直し済み |
 | タイトル・タグ・説明文 | 完成（`docs/21_出品文言.md`） |
