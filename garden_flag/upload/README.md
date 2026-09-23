@@ -14,6 +14,24 @@
 | `R09_SMITHS_3900x5700.png` | GONE GOLFING - BACK EVENTUALLY |
 | `R11_SMITHS_3900x5700.png` | GOLF CLUB - MEMBERS ONLY |
 
+## `house/` — ハウスフラッグ 24.5"×32" 用（★Printifyにはこちらを載せる）
+
+**7800 × 10012 px。** 名字は THE SMITHS。
+
+| ファイル |
+|---|
+| `R01_SMITHS_house_7800x10012.png` |
+| `R02_SMITHS_house_7800x10012.png` |
+| `R05_SMITHS_house_7800x10012.png` |
+| `R09_SMITHS_house_7800x10012.png` |
+| `R11_SMITHS_house_7800x10012.png` |
+
+⚠ **Printifyは印刷エリアを1つしか持たない。** 両サイズを選ぶと 7800×10012 になり、
+1枚の画像が両サイズに使われる。**こちらを載せれば両サイズとも正しく出る。**
+3900×5700 を載せると 24.5"×32" で上下が各2.31インチ切れる（`docs/25` 第4節）。
+
+→ **12"×18" だけで出すなら上の5枚、2サイズで出すなら `house/` の5枚。**
+
 ## `blank/` — 名字が空の版
 
 **注文が来たときに、ここへ名字を合成する。**
@@ -27,6 +45,12 @@ python3 make_name_flag_r.py JOHNSONS
 
 ※ 末尾に **S を付ける**（`THE JOHNSONS` になる）。
 ※ 既に S で終わる名字（例 `ROGERS`）は **`ROGERS`** のまま。
+
+ハウスサイズの注文なら、そのあと `tools/house/house_build.py` を通す。
+
+```bash
+python3 house_build.py named_r "R09_JOHNSONS_3900x5700.png"
+```
 
 ## 検証済みの値（2026-09-23）
 
