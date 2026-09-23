@@ -8,7 +8,7 @@ CODES=["R01","R02","R05","R09","R11"]
 NAME={"R01":"still-working-on-it","R02":"19th-hole","R05":"mulligans",
       "R09":"gone-golfing","R11":"members-only"}
 SUB={"R01":"yard","R02":"door","R05":"yard","R09":"door","R11":"door"}   # 2枚目の風景
-CLOSE_LABEL="SOFT, FADE-RESISTANT FABRIC"
+CLOSE_LABEL="100% POLY POPLIN-CANVAS"
 OUT="listing"
 os.makedirs(OUT,exist_ok=True)
 for c in CODES:

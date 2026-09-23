@@ -119,7 +119,8 @@ def img_notice(tag, out):
         text(d,(x,y),line,f3,INK); y+=60
     y+=56; rule(d,y,x,W-150); y+=48
     text(d,(x,y),"CARE",F(38,"Bold"),ACC); y+=72
-    for line in ["Hand wash in cool water.","Hang to dry.","Bring it indoors in storms","and heavy wind."]:
+    for line in ["Wipe clean with a soft,","damp cloth.","Do not machine wash.",
+                 "Bring it indoors in storms","and heavy wind."]:
         text(d,(x,y),line,f4,SUB); y+=56
     base.save(out,quality=92,subsampling=0)
 
