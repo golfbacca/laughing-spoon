@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
-"""2サイズ併記のサイズ図（出品画像5枚目の差し替え版）"""
+"""2サイズ併記のサイズ図（出品画像の5枚目）。
+
+出力先は listing/<商品フォルダ>/5_two_sizes.jpg。
+12x18だけのサイズ図は 6_size_12x18.jpg として残してある（袖2インチの注記があるため）。
+"""
 from PIL import Image, ImageDraw
 import listing_img as L
 
@@ -30,13 +34,17 @@ def img_size_two(tag, out):
            f3,L.SUB,"ma")
     base.save(out,quality=92,subsampling=0)
 
+PROD={"R01":"R01_still-working-on-it","R02":"R02_19th-hole","R05":"R05_mulligans",
+      "R09":"R09_gone-golfing","R11":"R11_members-only"}
+
 if __name__=="__main__":
     import os
-    os.makedirs("size2",exist_ok=True)
-    for t in ("R01","R02","R05","R09","R11"):
-        img_size_two(t, f"size2/{t}_5_size.jpg"); print("  ",t)
+    for t,dname in PROD.items():
+        out=f"../../listing/{dname}/5_two_sizes.jpg"
+        os.makedirs(os.path.dirname(out),exist_ok=True)
+        img_size_two(t,out); print("  ",out)
     from PIL import Image as I
     o=I.new("RGB",(430*5+60,323+20),(255,255,255))
-    for i,t in enumerate(("R01","R02","R05","R09","R11")):
-        o.paste(I.open(f"size2/{t}_5_size.jpg").resize((430,323),I.LANCZOS),(10+i*440,10))
+    for i,(t,dname) in enumerate(PROD.items()):
+        o.paste(I.open(f"../../listing/{dname}/5_two_sizes.jpg").resize((430,323),I.LANCZOS),(10+i*440,10))
     o.save("size2_sheet.png"); print("saved")

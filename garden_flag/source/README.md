@@ -47,7 +47,8 @@ python3 detect_plates.py           # 名入れプレートを検出 → bands_r.
 python3 make_name_flag_r.py SMITHS # 名入れ合成
 python3 mockup/run_geom.py         # 背景写真の旗の輪郭を実測
 python3 mockup/make_mock.py        # モックアップ15枚
-python3 mockup/build_listing.py    # 出品画像35枚
+python3 mockup/build_listing.py    # 出品画像（1〜4・6〜8枚目）
+python3 house/size_two.py          # 5枚目（2サイズ併記の図）
 ```
 
 必要なもの：Python + Pillow + numpy + scipy。

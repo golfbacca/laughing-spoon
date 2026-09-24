@@ -37,5 +37,6 @@ python3 house_build.py named_r  "R*_SMITHS_3900x5700.png"
 python3 size_two.py     # size2/ に5枚出る
 ```
 
-出来上がりは `garden_flag/listing_house/` に入れてある。
+出来上がりは `garden_flag/listing/<商品フォルダ>/5_two_sizes.jpg`。
+12×18だけのサイズ図は `6_size_12x18.jpg` として残してある（袖2インチの注記があるため）。
 2サイズで出すなら、各商品の `5_size.jpg` をこれに差し替える。
