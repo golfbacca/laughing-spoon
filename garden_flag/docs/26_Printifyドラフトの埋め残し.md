@@ -527,6 +527,73 @@ Etsyは**1枚目の写真を正方形・縦長・横長に切ってサムネイ�
 3が「1つだけ失敗」ならその商品固有（文言か画像）、
 「全部失敗」なら接続かEtsy側。切り分けの効率が大きく変わる。
 
-### 結果
+### 切り分けの結果（2026-09-26）
 
-（判明したらここに追記する）
+本人の報告：**5商品すべて失敗。Etsyには1件も出来ていない。**
+
+こちら側で文言を機械検査した（`docs/21` の内容をEtsyの上限と照合）：
+
+| 検査 | 結果 |
+|---|---|
+| タイトル5件 | 120〜127字（上限140） **OK** |
+| タグ | 5件とも13個・最長18字（上限20） **OK** |
+| 説明文 | 2,038字（上限13,000） **OK** |
+| 名入れ説明 | 116字（Printify上限120） **OK** |
+| 使用文字 | **全部ASCII。** Etsyが弾く文字なし |
+
+**→ 商品の中身は原因ではない。**
+
+次の3つが揃っているので、**Printify↔Etsyの通信側**と判断する：
+1. 5件すべて同じエラー
+2. Etsy側に1件も作成されていない
+3. **十数分前に、同じストア・同じ接続でテスト品が公開に成功している**
+
+### やる順番（改訂）
+
+| # | やること |
+|---|---|
+| 1 | **30分待って1商品だけ再 `Publish`。** Etsyに何も出来ていないので重複の心配はない（毎回Etsy側は確認する） |
+| 2 | **1商品だけ `Tags` を外して `Publish`。** テスト品はタグ3個で成功、本番は13個。数の差だけが未検証 |
+| 3 | **Printifyサポートへ**（下に英文あり）。こちらからもEtsyからも見えないログを持っている |
+
+### ⚠ Etsyストアの `Disconnect` は押さない
+
+前に「繋ぎ直す」と書いたのは**取り消す。**
+Printifyでストアを切断すると**公開中の商品の紐付けが外れる。**
+いま**ゴルフタオル9商品が公開中**なので巻き込む危険がある。
+**サポートに確認してから。**
+
+### サポートに送る英文
+
+```
+Hello,
+
+I cannot publish any of my products to my Etsy store. All 5 fail with the
+same message:
+
+"Sorry, we couldn't publish this product. Please try again later or get in
+touch with support if the issue reoccurs."
+
+Details:
+- Etsy store: OnePureStrike
+- Date/time: 26 Sep 2026, around 21:30 JST (UTC+9)
+- Product type: "Garden and House Banner" by Pic The Gift,
+  2 variants (12x18 and 24.5x32)
+- All 5 products fail. Nothing is created on the Etsy side.
+- A test product published successfully about 15 minutes earlier,
+  from the same store and the same connection.
+
+Could you check the API response you are receiving from Etsy for these
+publish attempts? The on-screen message does not tell me what is wrong,
+and I would rather not keep retrying and risk creating duplicate listings.
+
+Thank you.
+```
+
+**狙い**：`All 5 fail / Nothing is created on the Etsy side` で切り分け済みを先に示し、
+`A test product published successfully ... same connection` で**接続は生きている**と証明する。
+これで1次対応の「再試行してください」「再接続してください」を両方先回りで潰せる。
+`Could you check the API response you are receiving from Etsy` は
+**サポートにしかできない作業を名指しで頼む**言い方。
+
+（サポートの回答が来たらここに追記する）
