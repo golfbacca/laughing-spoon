@@ -1146,3 +1146,66 @@ Personalization used: enabled, Required, character limit 16. I also tried removi
 
 Already ruled out: tags, shipping profile, title, description, price, mockups, payment, connection.
 ```
+
+
+---
+
+## 10. ★決着：Etsyは名入れ説明文に「全大文字の語」を1つしか許さない（2026-09-27）
+
+Printifyの担当者 Michael からの回答：
+
+> The error is the same for all failed products, the issue is with personalisation instructions.
+> **Personalisation instructions contain 3 words with consecutive capital letters.
+> Etsy allows a maximum of 1.**
+> Please adjust the instructions, and publish again.
+
+> （失敗した全商品で同じエラーです。原因は名入れの説明文です。
+> **説明文に大文字が連続する語が3つ含まれています。Etsyは最大1つまでです。**）
+
+**旧版の `SMITH` / `THE` / `SMITHS` の3つが原因だった。**
+
+| 事実 | |
+|---|---|
+| なぜ引用符を外しても駄目だったか | **大文字が残っていたから。** 引用符は最初から無関係 |
+| なぜテスト品は通ったか | **Printifyの既定文に全大文字の語が1つも無かった** |
+| なぜ文字数上限16を疑ったか | 外れ。**上限は原因ではない。16のままでよい** |
+| エラーメッセージ | **理由はどこにも出ない。** 汎用の「公開できませんでした」だけ |
+
+### 採用した文（110字・全大文字0個）
+
+```
+Enter your family name - for example: Smith
+We print it in capitals as The Smiths. Longer names print smaller.
+```
+
+**上限1に対して0にした。** PrintifyとEtsyで数え方がずれても落ちないため。
+
+### 検査ツールを作った
+
+```bash
+python3 garden_flag/tools/check_personalization.py "文面"
+```
+
+全大文字の語の数（上限1）と文字数（上限120）を測る。
+**この規則はどこにも表示されないので、文面を変えるたびに通すこと。**
+
+### 回り道（第9節）は不要になった
+
+Printifyから名入れが同期されるので、
+**`Publishing settings` の `Personalization` のチェックは入れたままでよい。**
+
+### 公開の手順（確定版）
+
+1. 5商品とも `Personalization` の文面を上の110字版に差し替える
+   （`Enable personalization` はON、文字数上限16のまま）
+2. `Publishing settings` で **`Tags` にチェック**
+3. **`Save as draft` を挟まず直接 `Publish`**
+4. ⚠ **R05は名入れOFFで公開済み**なので、まずR05で通ることを確認してから残り4つ
+
+### この件から得た教訓
+
+| | |
+|---|---|
+| **ボットと人間は別物** | ボットは「ドキュメントに記載がありません」しか言えない。**「見られないならそうとはっきり言ってください」と白黒つけさせる質問**でエスカレーションできた |
+| **推測での総当たりは高くつく** | 接続・支払い・タグ・配送・引用符・上限と6つ潰して丸1日。**ログを持っている相手に最初から人間を要求すべきだった** |
+| **画面に出ないバリデーションがある** | Etsy側の制約がPrintify経由だと汎用エラーになる。**同種の詰まりは今後もサポート直行が早い** |
