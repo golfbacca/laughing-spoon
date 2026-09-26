@@ -1115,3 +1115,34 @@ Will Printify leave the Etsy personalization field alone after that, including w
 
 **狙い：** 原因が今日分からなくても、**回り道が安全だとメーカー自身に確認できれば明日には出せる。**
 「直してくれ」だけで終わらせず、**動く道の裏取りを取りに行く。**
+
+### F（引用符を外す）も失敗（2026-09-27）
+
+名入れの文から二重引用符2個を外して `Publish` → **同じエラー。**
+**引用符は原因ではない。**
+
+未検証で残っているのは **G（文字数上限 16 → 13）だけ。**
+成功したテスト品は13（Printifyの既定値）だった。
+
+**Gも駄目なら、名入れ設定の中身に関係なく「ONにすると落ちる」ということ。**
+原因究明は担当者に任せ、**第9節の回り道（Etsy側で名入れ欄を足す）で5商品とも出す。**
+
+#### サポートチャットは数分放置すると一時停止する
+
+> This conversation is currently paused. We've saved all your progress, and the chat
+> will automatically resume as soon as a message is sent from either side!
+
+**担当者の枠を失わないよう、何か送って再開させること。**
+検証しながら待つときは注意。
+
+2通目は引用符の件を反映した版に差し替えた（411字）。
+
+```
+Store: OnePureStrike (Etsy)
+Product: https://printify.com/app/product-details/<商品ID>
+Blueprint: Garden and House Banner, Pic The Gift, 2 variants.
+
+Personalization used: enabled, Required, character limit 16. I also tried removing the double quotes from the instruction text. It still failed.
+
+Already ruled out: tags, shipping profile, title, description, price, mockups, payment, connection.
+```
