@@ -706,3 +706,41 @@ Thank you.
 **「すでに除外できたこと」を先に並べるのが要点。**
 英語サポートの1次対応はテンプレで「再試行」「再接続」「支払い確認」の3つを返してくる。
 それを全部先回りで潰してあるので、**ログを見る2次対応へ直行できる。**
+
+### 投げ先は Printify のサポート（Etsyではない）
+
+| 理由 | |
+|---|---|
+| エラーを出しているのはPrintify | 文面の `get in touch with support` は**Printify自身**を指す |
+| EtsyのAPIを叩いているのはPrintify | **Etsyが何を返したかを見られるのはPrintifyだけ。** 本人の画面にもEtsyの画面にも出ない |
+| Etsyに投げると差し戻される | 「連携アプリの問題なので開発元へ」と返すのが定番 |
+
+**投げ方：Printifyの画面の左下の隅にある黒い丸のチャットボタン。** あれがサポートのチャット。
+
+#### Printifyが「Etsy側の問題」と言ってきた場合のEtsy宛の文
+
+Etsyの画面の**右下 `💬 Get Help`** から。
+
+```
+Hello,
+
+A third-party app (Printify) is failing to create new listings on my shop
+through the Etsy API. It has been failing since 26 Sep 2026, around 21:30
+JST. Nothing is created on my side.
+
+Another listing was created successfully through the same app about 15
+minutes before the failures started, so the app connection itself works.
+
+My payment account shows "Nothing due" and auto-billing is active, and there
+are no warnings on my shop dashboard.
+
+Is there anything on my shop or my account that would block new listings
+from being created through the API?
+
+Thank you.
+```
+
+#### 補足：Printifyの商品ページに出る赤い帯
+
+商品ページ上部に残る赤い帯は**今回のエラーが表示され続けているだけ**で、
+別の障害ではない。Etsyのダッシュボードの警告帯とは別物。
