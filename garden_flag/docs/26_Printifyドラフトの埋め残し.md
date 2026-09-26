@@ -744,3 +744,67 @@ Thank you.
 
 商品ページ上部に残る赤い帯は**今回のエラーが表示され続けているだけ**で、
 別の障害ではない。Etsyのダッシュボードの警告帯とは別物。
+
+### サポート1次対応の返答と、その返し方（2026-09-26）
+
+Printifyからの返答（要旨）：
+
+> 通常すぐ公開されるが、混雑時や大量公開時は遅延する。**公開処理に数時間かかることがあり、
+> 24時間は超えず、その後 Publishing 状態が解除される。**
+> 今回は複数商品で失敗しているので**設定上の問題**で止まっている可能性がある。
+> **Printifyの担当者がEtsyとの連携を確認したり、公開処理を停止したりできる。**
+
+**典型的な1次対応で、前提がずれている。**
+
+| 向こうの前提 | 実際 |
+|---|---|
+| `Publishing` のまま止まっている | **数秒で解け、赤いエラー帯が出て失敗する** |
+| 24時間待てば解決 | 商品は**下書きに戻り `Publish` ボタンが復活している** |
+
+**ここを正さないと「24時間お待ちください」で1日潰れる。**
+
+ただし2段落目は使える。**「担当者がEtsy連携を確認できます」と向こうが自分で書いている。**
+それをそのまま依頼に変換する。
+
+#### 返信した文
+
+```
+Thank you for the reply.
+
+To be clear, this is not a delay. The products do not stay in "Publishing"
+state. They enter "Publishing" for a few seconds, then fail with a red error
+banner on the product page:
+
+"Sorry, we couldn't publish this product. Please try again later or get in
+touch with support if the issue reoccurs."
+
+The product then returns to draft state, with the "Publish" button available
+again. This has been repeating since 26 Sep 2026, about 21:30 JST.
+
+Yes, please have an agent check the Etsy integration for my store now.
+
+Specifically, could you tell me the actual error response that Etsy's API
+returned for these publish attempts? That is the one piece of information I
+cannot see from my side, and it would tell us which setting is wrong.
+
+Store: OnePureStrike (Etsy)
+Product type: "Garden and House Banner" by Pic The Gift, 2 variants
+Affected: all 5 products. Example product URL.
+
+Note: a different product published successfully to the same store about 15
+minutes before the failures began, as a brand new listing.
+
+Thank you.
+```
+
+#### 書き方の型（次に同種のことが起きたら流用する）
+
+| 英語 | 狙い |
+|---|---|
+| **To be clear, this is not a delay.** | **相手の前提を最初の一文で否定する。** 曖昧にするとテンプレ回答のループに入る |
+| `enter "Publishing" for a few seconds, then fail` / `returns to draft state, with the "Publish" button available again` | 遅延ではない**証拠を、観察できる事実として2つ**出す。「エラーが出ます」だけでは通らない |
+| **Yes, please have an agent check ... now** | 向こうが「担当者が確認できます」と書いた文を**そのまま依頼に変換。** 自分で出した選択肢は断りにくい |
+| **That is the one piece of information I cannot see from my side** | **そちらにしかできない作業だと確定させる。**「調べてください」より効く |
+
+向こうも「設定上の問題かもしれない」と言っているので、
+**待つ間にB（配送プロファイル）→A（タグ）→C（名入れ）を潰す作業は無駄にならない。**
