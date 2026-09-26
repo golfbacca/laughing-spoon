@@ -808,3 +808,56 @@ Thank you.
 
 向こうも「設定上の問題かもしれない」と言っているので、
 **待つ間にB（配送プロファイル）→A（タグ）→C（名入れ）を潰す作業は無駄にならない。**
+
+### ★Printifyのサポートチャットは1通500字まで（2026-09-26 実測）
+
+1通目が **ちょうど500字で切れて**いた。
+`Nothing is created on th` で途切れており、**肝心の「すでに除外できたこと」が届いていなかった。**
+テンプレ返答が来たのはそのため。
+
+**上限500字。以後、サポートへは500字以内に分けて送ること。**
+
+#### 添付ファイルではなく分割して送る
+
+| 理由 | |
+|---|---|
+| **返答が日本語で来た＝チャットが自動翻訳されている** | **添付ファイルは翻訳されない** |
+| 1次対応は添付を開かないことが多い | 本文に書いたほうが確実に読まれる |
+
+#### 送り直した3通（実測 399 / 418 / 228字）
+
+**1通目（399字）— これだけ読まれても効くように先頭に置く**
+
+```
+This is not a delay. The product stays in "Publishing" only a few seconds, then shows a red error banner and returns to draft, with the Publish button active again. It has repeated since 26 Sep, 21:30 JST.
+
+Please have an agent check the Etsy integration for my store now, and tell me the actual error response Etsy's API returned for these attempts. That is the one thing I cannot see from my side.
+```
+
+**2通目（418字）**
+
+```
+Already ruled out:
+
+1. Another product published fine to the same store 15 minutes before, as a brand new listing. So the connection works and new listing creation works.
+2. Etsy payment account says "Nothing due", auto-billing active, no overdue balance.
+3. No warning banners on my Etsy dashboard.
+4. Title 120-127 chars. 13 tags, each 20 chars or fewer, no duplicates. Description about 2000 chars. All plain ASCII.
+```
+
+**3通目（228字）**
+
+```
+Store: OnePureStrike (Etsy)
+Product type: "Garden and House Banner" by Pic The Gift, 2 variants (12x18 and 24.5x32)
+All 5 products are affected.
+
+Example product:
+https://printify.com/app/product-details/<商品ID>
+```
+
+#### 分割の設計
+
+**「遅延ではない」と「Etsyの応答を教えてほしい」を1通目に固める。**
+2通目以降が読まれなくても、**24時間待ちのループには入らない。**
+除外リストと識別子は2・3通目に回してよい。
