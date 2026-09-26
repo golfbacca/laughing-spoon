@@ -636,3 +636,73 @@ Thank you.
 #### この確認が空振りだった場合
 
 `Tags` を外して1商品だけ `Publish`（2クリック）→ それでも駄目ならサポートへ。
+
+### 支払いの線は空振り。新規作成も通っていた（2026-09-26）
+
+本人が3点とも確認してくれた結果、**こちらの仮説は2つとも外れた。**
+
+| # | 確認結果 |
+|---|---|
+| 1 | Payment account は **Current −$0.22**。ただし同じ画面に **`Nothing due for September`**（9月分の請求なし）、**`Auto-billing: Monthly on 1st · MasterCard`**。**期限超過ではない。10月1日に自動引き落とし。支払い操作は不要** |
+| 2 | ダッシュボードに警告帯なし |
+| 3 | **テスト品は今日が初めての出品。→ 新規リスティングの作成は通っている** |
+
+**−$0.22 は未払いではなく、今月たまった手数料（テスト品の出品料$0.20など）。**
+Etsyが出品を止めるのは「**期限を過ぎた**残高」があるとき。この画面はその状態ではない。
+
+### 残った差は3つ（未検証）
+
+| | テスト品（成功） | 本番（失敗） |
+|---|---|---|
+| タグ | 3個 | **13個** |
+| 配送プロファイル | 既存を使った可能性 | **`Automatically assign`（新規作成が要る）** |
+| 名入れ | Printifyの既定文 | **こちらの文＋上限16** |
+| 写真8枚 / 両サイズ | 同じ | 同じ |
+
+#### 1つずつトグルを倒して1商品だけ `Publish`（各2クリック・入力は消えない）
+
+| | やること | 狙い |
+|---|---|---|
+| A | `Publishing settings` → `Tags` のチェックを外す | タグ13個が原因か |
+| **B** | `Shipping` → プロファイルを `Automatically assign…` から**既存のもの**（ゴルフタオルで使用中）に変える | **一番怪しい。** 新規プロファイル作成でEtsyに蹴られている可能性 |
+| C | `Personalization` → `Enable personalization` をOFF | 名入れが原因か（原因特定用。この状態では本番公開しない） |
+
+#### サポートへ送る英文（除外済み事項を追記した版）
+
+```
+Hello,
+
+I cannot publish any of my products to my Etsy store. All 5 fail with:
+
+"Sorry, we couldn't publish this product. Please try again later or get in
+touch with support if the issue reoccurs."
+
+The product goes into "Publishing" state, then fails.
+
+Details:
+- Etsy store: OnePureStrike
+- Date/time: 26 Sep 2026, from about 21:30 JST (UTC+9), still failing
+- Product type: "Garden and House Banner" by Pic The Gift,
+  2 variants (12x18 and 24.5x32)
+- All 5 products fail. Nothing is created on the Etsy side.
+
+What I have already ruled out:
+- A different product published successfully to the same store about 15
+  minutes before, as a brand new listing. So the connection works and new
+  listing creation works.
+- My Etsy payment account shows "Nothing due for September" and auto-billing
+  is active. There is no overdue balance.
+- No warning banners on my Etsy shop dashboard.
+- Title 120-127 characters, 13 tags each 20 characters or fewer with no
+  duplicates, description about 2,000 characters, all plain ASCII.
+
+Could you look up the actual API response Etsy is returning for these publish
+attempts? The on-screen message does not say what is wrong, and I do not want
+to keep retrying blindly.
+
+Thank you.
+```
+
+**「すでに除外できたこと」を先に並べるのが要点。**
+英語サポートの1次対応はテンプレで「再試行」「再接続」「支払い確認」の3つを返してくる。
+それを全部先回りで潰してあるので、**ログを見る2次対応へ直行できる。**
