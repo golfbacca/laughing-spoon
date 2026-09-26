@@ -993,3 +993,76 @@ Personalization settings that fail: Required, character limit 16, and instructio
 
 What does Etsy return for the personalization fields?
 ```
+
+### E も失敗。サポートはボットだった。→ 回り道で解決する（2026-09-27）
+
+名入れをONに戻して `Publish` → **また失敗。**
+R05はEtsyと紐付いている（`See in store` が出ている）ので**「更新」でも落ちる。**
+
+サポートの返答：
+
+> Etsyがパーソナライズ設定に対して返した実際のAPIレスポンスは、**利用可能な情報では確認できません。**
+> （中略）ただし、今回の組み合わせについて**Etsyが返す具体的なレスポンス内容までは記載されていません。**
+
+**ドキュメントを検索して答えているだけのボット。** アカウントのログを見ていない。
+→ 人間へのエスカレーションを要求した（378字）。
+
+```
+This answer looks like it came from documentation, not from my account's logs. Please escalate this to a human support agent.
+
+I need someone who can look at the actual publish attempts on my store and see what Etsy returned. If support cannot see that either, please say so directly, and instead tell me which personalization settings are known to work when publishing to Etsy.
+```
+
+`If support cannot see that either, please say so directly`（見られないならそうとはっきり言ってください）が要点。
+**ボットが一番苦手な、白黒つけさせる質問。** ここで人間に回る。
+
+---
+
+## 9. ★回り道：Printifyの名入れ機能は、そもそも要らない
+
+**`docs/22` 第4部の運用では、Printifyの名入れ中継機能を使っていない。**
+注文が来たらEtsyの注文画面で名字を読み、こちらのスクリプトでデザインを作り直し、
+Printifyで差し替える手作業。
+
+**必要なのは「Etsyの商品ページに名前の入力欄があること」だけ。**
+**それはEtsy側で直接足せる。**
+
+### 手順（1商品あたり5分）
+
+**① Printifyで公開する**
+
+1. `Personalization` タブ → **`Enable personalization` をOFF**
+2. `Publishing settings` → **`Tags` にチェック、`Personalization` のチェックを外す**
+   ⚠ `Personalization` の同期を切らないと、**再公開のたびにEtsy側の名入れ欄が消される**
+3. **`Publish`**
+
+**② Etsyで名入れ欄を足す**
+
+1. `etsy.com/your/shops/me/tools/listings` から商品を開く
+2. **`Item Options`** タブ
+3. `Custom options` の **`+ Add field`**
+
+| 項目 | 値 |
+|---|---|
+| 種類 | **Text box** |
+| Required | **チェックを入れる** |
+| Instructions | 下記 |
+| Character limit | **16** |
+
+```
+Enter your family name - for example: SMITH
+We print it as "THE SMITHS". Longer names simply print a little smaller.
+```
+
+4. **`Publish changes`**
+
+### 残っている任意の検証
+
+原因を潰しておきたい場合のみ。**回り道で完成するので急がない。**
+
+| | やること |
+|---|---|
+| F | 名入れの文から**二重引用符2個を外す**（`We print it as THE SMITHS.`）→ ONのまま `Publish` |
+| G | 文字数上限を **16 → 13**（成功したテスト品は既定値のまま） |
+
+**APIに渡す文字列の引用符は、エスケープ漏れで通信を壊す典型。** Fが本命。
