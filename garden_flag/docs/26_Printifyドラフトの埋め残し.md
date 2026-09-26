@@ -861,3 +861,41 @@ https://printify.com/app/product-details/<商品ID>
 **「遅延ではない」と「Etsyの応答を教えてほしい」を1通目に固める。**
 2通目以降が読まれなくても、**24時間待ちのループには入らない。**
 除外リストと識別子は2・3通目に回してよい。
+
+### B：配送プロファイルは `Pic The Gift, 976` を選ぶ（2026-09-27）
+
+プルダウンの選択肢は3つ。
+
+| 選択肢 | 中身 |
+|---|---|
+| `Automatically assign and update profile if needed` | 既定。公開のたびにプロファイルを更新しに行く |
+| **`Standard: Pic The Gift, 976, 5353, Home Decor: 2-30 business days`** | **976 = Garden and House Banner（`docs/01`）。これが正解** |
+| `Standard: Taylor, 1614, Home Decor: 2-30 business days` | **1614 = ゴルフタオル**（`golf_towel/HANDOFF.md`）。**タオルの送料と納期がフラッグに適用されてしまう。使わない** |
+
+#### 分かったこと：プロファイルはEtsy側に既に存在する
+
+`Pic The Gift, 976, **5353**` の `5353` は**EtsyのプロファイルID**。
+つまり**Etsy側にもう作られている**（テスト品も同じ Pic The Gift / 976 なので、
+その公開時に作られたはず）。
+
+**→「新規プロファイルの作成で蹴られている」という筋は薄い。**
+ただし `Automatically assign` のままだと公開のたびに更新しに行くので、
+明示指定に変える価値は残る。
+
+#### 押す順番（Tagsを落とさないため）
+
+1. プルダウンで `Standard: Pic The Gift, 976, 5353` を選ぶ
+2. ⚠ **`Save as draft` は押さない**（Tagsのチェックが外れる）
+3. `Publishing settings` タブ → **`Tags` にチェック**
+4. そのまま緑の `Publish`
+
+### 後回しの検討事項：送料無料にするかどうか
+
+`Shipping` タブに **`Free shipping — Enable free Standard shipping ($6.39)`** があり、いまOFF。
+`docs/10` の採算はこれ（買い手が送料負担）で組んである。
+
+**ただしEtsyは米国向けに送料無料の商品を検索で優遇する。**
+いま **$27.99 + $6.39 = $34.38** で、**Etsyの送料無料保証ライン $35 のすぐ下**。
+
+売価を上げて送料込みにする案は、**広告を回して実数が出てから**検討する。
+（`docs/16` の公開1週間後の価格調整と合わせて判断）
