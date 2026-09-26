@@ -1066,3 +1066,52 @@ We print it as "THE SMITHS". Longer names simply print a little smaller.
 | G | 文字数上限を **16 → 13**（成功したテスト品は既定値のまま） |
 
 **APIに渡す文字列の引用符は、エスケープ漏れで通信を壊す典型。** Fが本命。
+
+### 人間の担当者に繋がった（2026-09-27）
+
+エスカレーション要求が効いて、ボットから人間へ回った
+（`The estimated wait time is 6-8 minutes.`）。
+
+**「見られないならそうとはっきり言ってください」と白黒つけさせる質問が効いた。**
+ボットはこの形の質問を処理できない。以後も同じ手が使える。
+
+#### 担当者に送った3通
+
+**1通目（433字）— 切り分け結果と依頼**
+
+```
+Thank you. Here is the isolated result.
+
+Publishing this product to Etsy fails every time Personalization is ON, and succeeds immediately when Personalization is OFF. Nothing else is changed between the two attempts.
+
+It fails both when creating a new listing and when updating a listing that is already live on Etsy.
+
+Could you look at the publish logs for my store and tell me the error Etsy returns for the personalization fields?
+```
+
+**2通目（393字）— 識別子と除外済み**
+
+```
+Store: OnePureStrike (Etsy)
+Product: https://printify.com/app/product-details/<商品ID>
+Blueprint: Garden and House Banner, Pic The Gift, 2 variants.
+
+Personalization used: enabled, Required, character limit 16, instruction text 116 characters including two double quote marks.
+
+Already ruled out: tags, shipping profile, title, description, price, mockups, payment, connection.
+```
+
+**3通目（383字）— ★回り道の裏取り。これが一番実利がある**
+
+```
+If this cannot be fixed today, please confirm my workaround is safe:
+
+1. Publish from Printify with Personalization OFF.
+2. Add the personalization field manually on the Etsy listing.
+3. Uncheck Personalization under Synced product details in Printify.
+
+Will Printify leave the Etsy personalization field alone after that, including when I edit the design for an order and republish?
+```
+
+**狙い：** 原因が今日分からなくても、**回り道が安全だとメーカー自身に確認できれば明日には出せる。**
+「直してくれ」だけで終わらせず、**動く道の裏取りを取りに行く。**
