@@ -387,12 +387,39 @@ https://printify.com/app/account/connections
 `Publish as draft` / `Make products visible` のような文言を探す。
 **あれば、一番リスクの大きい疑問は実験なしで消える。**
 
+### 使うテスト品
+
+本人が既に持っている **「Garden & House Banner | Generic」**
+（ゴルフタオルの `STILL CHASING ONE PURE STRIKE` を載せたもの）。
+既製モックアップ10枚・**タグ0個**・価格はPrintify既定（$22.99–42.38）。
+
 ### 段取り
 
-1. 上の設定を探す
-2. テスト品に R01の8枚をアップ、Primaryを `1_main` に
-3. タグを数個、`Personalization` をON、**`Tags` のチェックを入れて即 `Publish`**
-4. Etsyで確認：**下書きか／写真の並び／タグの数／名入れが必須か／画像が粗くなっていないか**
-5. 確認後、Etsyで **`Deactivate`**（削除より先に無効化。戻せる）
+1. 上の接続設定を探す
+2. `Listing details` → タグを3つ。**`zztest one` / `zztest two` / `zztest three`**
+   （`zz` で始めるのは**Etsy側で入ったか一目で分かる**ようにするため）
+3. `Mockups` → `Deselect all` → `⬆ Upload` で
+   `listing/R01_still-working-on-it/` の1〜8を番号順。Primaryは `1_main`
+4. `Personalization` をON（文面は何でもよい）
+5. `Publishing settings` の **`Tags` にチェック** → **`Save as draft` を挟まず即 `Publish`**
+   ⚠ **価格は触らない**（テスト品なので既定のまま）
+6. Etsyで確認：**下書きか販売中か／写真の並び／`zztest` タグが入ったか／
+   名入れが必須か／画像がにじんでいないか**
+7. 確認後、Etsyで **`Deactivate`**（削除より先に無効化。戻せる）
+
+### 副産物：「Pricing: Too high」は無視してよいと確定した
+
+このテスト品は **Printifyの既定価格のまま（$22.99–42.38）なのに
+「Pricing: Too high」が出ている。**
+
+| 商品 | 24.5×32の価格 | 警告 |
+|---|---:|---|
+| R01 / R02 / R05 / R11（既定） | $34.99 | Pricing: Good |
+| R09（既定） | $42.38 | **Too high** |
+| テスト品（既定） | $42.38 | **Too high** |
+| R02（$74.99に変更後） | $74.99 | **Too high** |
+
+**閾値は $34.99 と $42.38 の間にある。** こちらの価格設定とは無関係に、
+**上のサイズの金額だけで機械的に出る警告。** 無視してよい。
 
 **コストは出品料 $0.20。** 消しても返らないが、4つの疑問が潰せるなら安い。
