@@ -934,3 +934,62 @@ https://printify.com/app/product-details/<商品ID>
 
 サポートには投函済み。こちらで確かめられることは出し尽くした。
 **向こうがEtsyのAPI応答を見れば一発**なので、返事を待つのが一番早い。
+
+### ★原因は名入れ（Personalization）だった（2026-09-27）
+
+| テスト | 結果 |
+|---|---|
+| A タグを外す | **通らず** → タグはシロ |
+| D 商品を複製 | **複製できず**（Printifyに複製の項目が無かった） |
+| **C 名入れをOFF** | **★通った** |
+
+Cはタグ同期ONのまま通っているので、**タグ・タイトル・説明文・価格・写真8枚・
+配送プロファイルはすべてシロ**と確定。**名入れだけが原因。**
+
+⚠ **この時点でR05はEtsyに公開されている（名入れ無しの状態）。**
+説明文に「PERSONALIZE ボタンを押してください」とあるのにボタンが無い。
+流入はほぼゼロだが、把握しておくこと。
+
+#### 名入れの中で疑わしいのは2つ
+
+成功したテスト品の名入れは **Printifyの既定文・既定の文字数上限**。
+本番5商品との差はこの2点だけ。
+
+| # | 差 |
+|---|---|
+| 1 | **説明文に二重引用符 `"THE SMITHS"` が2個** |
+| 2 | **文字数上限を 13 → 16 に変更** |
+
+#### 次の手（R05だけで試す。残り4つは触らない）
+
+| | やること | 狙い |
+|---|---|---|
+| **E** | **名入れをONに戻して `Publish`** | ★本命。R05はEtsyと紐付いたので**次は「新規作成」ではなく「更新」**。Etsyは作成時と更新時で検証の厳しさが違うことがある |
+| F | 名入れの文から**引用符を外す**（下記・114字） | APIに渡す文字列の引用符は**エスケープ漏れで通信を壊す典型** |
+| G | 文字数上限を **16 → 13** に戻す | テスト品は既定値13のまま成功している |
+
+**Eが通れば、残り4つも「名入れOFFで公開 → ONに戻して再公開」の2段構えで解決する。**
+
+**Fの文（引用符なし・114字）**
+
+```
+Enter your family name - for example: SMITH
+We print it as THE SMITHS. Longer names simply print a little smaller.
+```
+
+引用符を外しても意味は変わらない（大文字だけで十分目立つ）。
+
+**Gの副作用**：13だと14字の名字（CHRISTOPHERSON等）が弾かれる。
+`docs/21` 第7節の判断と矛盾するが、**公開できないよりはるかにマシ。**
+
+#### サポートへ送った追加の1通（438字）
+
+```
+Update: I found the trigger. The product publishes fine when Personalization is OFF. It fails every time Personalization is ON.
+
+Everything else is unchanged and fine: 13 tags, shipping profile set explicitly to Pic The Gift 976, our own title, description and mockups.
+
+Personalization settings that fail: Required, character limit 16, and instruction text containing double quotes.
+
+What does Etsy return for the personalization fields?
+```
