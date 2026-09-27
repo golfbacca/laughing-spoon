@@ -1287,9 +1287,16 @@ R05は一度**名入れOFFで公開**している。**名入れ欄が付いた�
 
 | 欄 | 値 | 根拠 |
 |---|---|---|
-| **Materials** | `Polyester` | 100% poly poplin-canvas（`docs/21`） |
+| **Materials**（最大5・3つ入れる） | `Polyester` / `Poplin` / `Canvas` | Printifyの表記 **`100% poly poplin-canvas`** に literally 書いてある3語（`docs/21`） |
 | **Width** | `12 in` | ガーデンサイズ。タイトルも `12x18` |
 | **Height** | `18 in` | 同上 |
+
+**Materialsを増やしても Polyester の絞り込みから外れない。入り口が増えるだけ。**
+
+⚠ **残り2枠は空けておく。** 仕様書に無い語（`Cotton` `Waterproof` `Fabric` 等）を足すと、
+**誤認させた責任がこちらに来る**（「Canvasとあったから綿だと思った」で低評価）。
+Etsyも不正確な属性を問題として扱う。
+**`Canvas` を入れられるのはメーカー自身がそう呼んでいるからで、そこを超えない。**
 
 ⚠ Width/Height は**2サイズのうちガーデンの方**。数の出る方で、タイトルとも一致する。
 ハウスサイズはバリエーション名と説明文に書いてあるので誤解にならない。
