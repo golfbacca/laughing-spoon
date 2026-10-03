@@ -68,7 +68,7 @@
 | `golf_towel/` | Etsy「ONE PURE STRIKE」ゴルフタオル（Printify製造） | 9商品公開中・**売上0** |
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開・広告稼働中（2026-09-27〜10-27）** |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
-| `tapestry/` | Etsy タペストリー（Printify製造） | **着手（2026-10-03）・テーマ未決定** |
+| `tapestry/` | Etsy タペストリー（Printify製造） | **着手（2026-10-03）・売れ筋テーマ×SVG入稿。作風は検索語待ち** |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
 `git branch -r` で確認すること。
