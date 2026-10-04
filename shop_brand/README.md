@@ -37,8 +37,19 @@ Etsyのショップアイコンは**検索結果やレビュー欄で70px前後�
 
 ## アップロードの場所
 
+⚠ `etsy.com/your/shops/me/edit` は **404**。推測で書いたURLだった（2026-10-04に判明）。
+
+**確認できている道は2つ。**
+
+### 1. Etsyが出しているボタンから（確実）
+
 ```
-Shop Manager → Settings → Info & appearance → Shop icon
+https://www.etsy.com/your/shops/me/search-visibility
 ```
 
-`Etsy search visibility` のページに出る **`Add logo`** ボタンからも行ける。
+このページの `Your shop` の枠にある **`Add logo`** を押す。
+
+### 2. 左メニューから
+
+`Shop Manager` のメニューの `Sales channels` の下、
+`Etsy / OnePureStrike` の右の**鉛筆アイコン ✏** を押す。
