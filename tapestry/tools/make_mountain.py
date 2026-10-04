@@ -3,7 +3,7 @@
 
 形（山の稜線・太陽の位置）は全色で共通。色だけを差し替える＝シリーズとして揃う。
 キャンバスは 88×104 の印刷エリア 13650×16125（縦長4サイズ共通の絵。docs/04）。
-重要な要素（太陽・月）は全サイズ共通の安全域 x 1,420〜12,230 / y 1,230〜14,895 に入れる。
+重要な要素（太陽・月）は全サイズ共通の安全域 x 2,075〜11,575 / y 1,240〜14,885 に入れる（docs/04 §3）。
 
 使い方: python3 tapestry/tools/make_mountain.py            # 全色
         python3 tapestry/tools/make_mountain.py dusk night  # 指定した色だけ
@@ -15,7 +15,7 @@ import random
 import sys
 
 W, H = 13650, 16125
-SAFE = (1420, 1230, 12230, 14895)
+SAFE = (2075, 1240, 11575, 14885)
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 
