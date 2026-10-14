@@ -69,7 +69,7 @@
 | `golf_towel/` | Etsy「ONE PURE STRIKE」ゴルフタオル（Printify製造） | 9商品公開中・**売上0** |
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止し Offsite Ads へ切替（2026-10-04）** |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
-| `zazzle_calendar/` | Zazzle 妻籠宿の写真カレンダー（本人の父の写真・英語で米国向け） | **出品文言 第1稿（2026-10-12）。写真の確認待ち** |
+| `zazzle_calendar/` | Zazzle 妻籠宿の写真カレンダー（本人の父の写真・英語で米国向け） | **13枚の並びと出品文言が確定（2026-10-14）。`zazzle_calendar/docs/02_出品文言_確定版.md`。次は入稿用の切り抜き** |
 | `tapestry/`（予定） | Etsy タペストリー（Printify製造） | **別スレッドで着手予定（2026-10-03〜）** |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
