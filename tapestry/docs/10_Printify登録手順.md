@@ -68,9 +68,21 @@ start https://github.com/golfbacca/laughing-spoon/archive/refs/heads/claude/eage
 start https://printify.com/app/products/241/generic-brand/indoor-wall-tapestry
 ```
 
-1. ページを少し下へ。**「Select a fulfillment option」** の下の **`Choose manually`** を押す
-2. **★8.3 MWW On Demand** の行の右、濃い色のボタン **`Start designing`** を押す
-   ⚠ `Printify Choice` の方から入らない。注文ごとに工場が変わり、色味が揃わない（`docs/03`）
+0. 画面の右上に白い **`Log in`** ボタンが出ていたら、先にログインする（本人操作）。
+   ログイン済みなら、そこは丸い顔のアイコンになっている
+1. ページを開いた直後は、商品の写真が左、**薄い黄緑の箱**が右に見える。
+   ⚠ **その黄緑の箱の中の `Start designing` は押さない**（こちらは Printify Choice＝工場おまかせ）
+2. マウスのホイールで**画面を2回分ほど下へ**スクロールする
+3. 太字の見出し **「Select a fulfillment option」**（製造の選び方）が出てくる。
+   その下に、丸みのある横長のボタンが**2つ並んでいる**：
+   - 左：**`Printify Choice`**（おまかせ）
+   - 右：**`Choose manually`**（自分で選ぶ）← **これを押す**。押すと濃い色に変わる
+4. すぐ下に見出し **「Local USA providers」**（米国の工場）と、灰色の四角い枠が1つ出る。
+   枠の左上に **`★ 8.3 MWW On Demand`** と書いてある（米国の工場はこの1社だけ）
+5. その枠の**右上**にボタンが2つ並んでいる：
+   - 左：白いボタン **`Provider info`**（工場の説明）← 押さない
+   - 右：**黒っぽい濃い色のボタン `Start designing`** ← **これを押す**
+6. デザイン画面（真ん中に白いキャンバス、左に `Upload` などの縦の列）が開けば成功
 
 ### 2-2. サイズを選ぶ
 
