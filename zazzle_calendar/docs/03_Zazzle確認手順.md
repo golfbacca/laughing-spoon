@@ -94,3 +94,22 @@ Thank you.
 
 語感：用件を**番号付きの質問2つ**にした。サポートの担当者は質問ごとに答えやすく、答え漏れが減る。
 「for example」で具体例を添えると、質問の意味を取り違えられにくい。
+
+---
+
+## 記録：商品ページで分かったこと（2026-10-18・本人のスクリーンショット）
+
+URL：`zazzle.com/pd/spp/pt-zazzle_calendar?color=white&size=standard&style=twopage_calendar`
+
+| 項目 | 画面の表示 |
+|---|---|
+| 価格（ミディアム・Two Page） | **$22.95**（表示はセール中で $19.51） |
+| サイズ | Small **−$1.15** ／ Medium（基準） ／ Large **+$6.90** |
+| 寸法（説明欄） | Small 5.5"L × **7"W** ／ Medium 8.5"L × **11"W** ／ Large 11"L × **14.25"W** → **幅のほうが長い＝写真ページは横長**（これまでの計算の前提どおり） |
+| 開始月 | **`Start Date`**：月（January）と年（2027）の2つのプルダウン |
+| ほかの選択肢 | Calendar Months（12 Months）／Culture（English, U.S.）／Holidays／Layout（Single Page −$1.15 ／ **Two Page**）／Wire Binding Color／Grid Transparency／Grid Style（16種） |
+| デザインを入れるボタン | 黄色の `Add to Cart` の下にある**青い `Add your design`** |
+
+→ **サイズも開始月も、お客さんが商品ページで選ぶ欄。** 出品者が隠せるかは、この先の画面で確認する。
+
+回収の目安（定価 $22.95・1ドル150円）：取り分10%で1冊約$2.30 → 6,160円の回収に**約18冊**、15%で約12冊。
