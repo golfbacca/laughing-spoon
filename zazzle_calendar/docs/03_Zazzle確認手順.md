@@ -113,3 +113,12 @@ URL：`zazzle.com/pd/spp/pt-zazzle_calendar?color=white&size=standard&style=twop
 → **サイズも開始月も、お客さんが商品ページで選ぶ欄。** 出品者が隠せるかは、この先の画面で確認する。
 
 回収の目安（定価 $22.95・1ドル150円）：取り分10%で1冊約$2.30 → 6,160円の回収に**約18冊**、15%で約12冊。
+
+## 記録：編集画面（2026-10-18・本人のスクリーンショット）
+
+URL：`zazzle.com/customizer?...`。上部のタブ **`Design` / `Options` / `Review`**、右上に `Preview` と青い `Next: Design Back`、左上 `Save & Exit`。
+左の縦メニュー：`Templates` / `Add Text` / `Uploads` / `Background` / `Elements` / `Icons` / `Options`。
+キャンバスは **11 in × 8.5 in（横長）**、緑の点線で `Safe area`（切れずに残る範囲）。
+右の縦の一覧（ページ）：**`Cover` → `Back` → `Back`（カレンダーの升目入り）→ `Page 1` → …**
+
+**気づき：ページの名前が「1月」ではなく `Page 1`。** 写真は月ではなく**ページ**に付く作りの可能性が高い（＝開始月を変えると写真がずれる恐れ）。次の操作で確かめる。
