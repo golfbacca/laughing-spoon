@@ -130,3 +130,37 @@ URL：`zazzle.com/customizer?...`。上部のタブ **`Design` / `Options` / `Re
 - `Options` タブ（編集画面の中）：`Start Date`（January / 2027）、`Calendar Months`、`Culture`、`Holidays`、`Layout`、`Grid Style`。**この画面に `Size` は見えなかった**（価格の表示が重なっていて一部見えない）
 
 **見立て：** 写真は「Page 1」に付き、Page 1 の升目は**開始月**になる。開始月を2月にすると、Page 1 の升目が February に変わり、**1月用の写真が2月の上に来る**可能性が高い → 次の操作で確定させる。
+
+## ✅ 結果：開始月を変えると写真がずれる（2026-10-18 実機で確認）
+
+`Start Date` を February にして `Page 1` を開くと、升目が **「February • 2027」** に変わった。
+→ **写真はページに付いたまま。** お客さんが開始月を変えると、1月用の写真（雪と柿）が2月の上に来る。季節がずれる。
+
+### 対策
+
+1. **説明文の最後に「開始月は1月のままに」と書く**（`02_出品文言_確定版.md` に追加済み）
+2. **Zazzle サポートに、開始月を1月に固定できるか聞く**（下の英文。サイズの質問もまとめた）
+3. 既定は January / 2027 なので、何も触らない客はずれない。年末〜年始の買い手の多くはそのまま買うはず（推測）
+
+### サポートへの英文（改訂版）
+
+```text
+Hello,
+
+I am a creator and I plan to sell a Two Page Photo Calendar with a seasonal photo for each month.
+
+I tested the editor: when the start month is changed to February, Page 1 shows the February grid, so my January photo appears above February.
+
+1. Can I lock the start month to January so customers cannot change it?
+2. Can I limit which sizes customers can choose (for example, Small and Medium only)?
+
+Thank you.
+```
+
+訳：
+> こんにちは。私はクリエイターで、各月に季節の写真を入れた2ページ式の写真カレンダーを販売する予定です。
+> 編集画面で試したところ、開始月を2月に変えると Page 1 に2月の升目が表示され、1月用の写真が2月の上に来てしまいます。
+> 1. お客さんが変えられないよう、開始月を1月に固定できますか？
+> 2. お客さんが選べるサイズを限定できますか（たとえばスモールとミディアムだけ）？
+
+語感：**試した結果を先に書いた**（I tested the editor ...）。何が困っているかが一文で伝わるので、担当者が「仕様の説明」だけで終わらせず、固定の方法があるかを調べてくれやすい。
