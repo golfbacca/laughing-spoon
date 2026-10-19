@@ -231,3 +231,16 @@ Hello. For the Indoor Wall Tapestry (product 241) made by MWW On Demand, does th
 → **方針：参加しない（オフ）。** ガーデンフラッグで本人が決めた設定と同じ（`garden_flag/docs/18`）。
 Etsyの設定は**店全体で1つ**。**2026-10-19 に本人の画面で `Opt out from Offsite Ads` がON（不参加）を確認済み。**
 Printify側のスイッチは**オフにしてから保存**（利益の表示が実際と合うように。4色とも）。
+
+## 6. 「夜」の下書きの点検（本人のスクショ・2026-10-19）✅
+
+| タブ | 状態 |
+|---|---|
+| Mockups | 7/20選択・**Primary＝寝室（1_bedroom）** ✅。ただし2枚目以降の並びが アップロード完了順（3→5→7→4→6→2）になっている |
+| Listing details | タイトル 122/140 ✅・説明文 ✅・タグ13個（0 left）✅・名入れ OFF ✅ |
+| Shipping | Economy / Standard、配送プロファイル自動 ✅ |
+| Pricing | Offsite Ads OFF ✅。Etsy fee 26×36 $4.40（式どおり）。定価での Profit $14.81 / $33.07 / $46.71 / $61.37 |
+| Publishing settings | Hide in store OFF ✅・Variant visibility 初期値 ✅・Tags の同期は**未チェック（公開直前に入れる）** ✅ |
+
+**写真の並び**：あるべき順は 寝室 → 居間 → 絵 → 寄り → サイズ → 色 → 仕様。
+Printifyの Mockups 画面でドラッグできれば直す。できなければ**公開後にEtsyでドラッグ**（知見 §2）。
