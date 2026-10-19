@@ -138,6 +138,19 @@ start https://printify.com/app/products/241/generic-brand/indoor-wall-tapestry
 
 ⚠ 写真の並びは**アップロードが終わった順**になる（ファイル名順ではない）。Etsy側で公開後に直す。
 
+### 2-6b. `Variant visibility`（サイズの表示のしかた）
+
+**触らない。初期値の3つ目 `Only show in stock variants and hide any out of stock variants` のまま。**
+（在庫のあるサイズだけ出し、切れたサイズは隠す。ガーデンフラッグも同じ・`garden_flag/docs/26` §2-5）
+
+| 選択肢 | 意味 | 使わない理由 / 使う理由 |
+|---|---|---|
+| Show all variants as available… | 在庫に関係なく全サイズを売る | 作れない注文を受けてしまう |
+| Show in stock … out of stock as "sold out" | 切れたサイズを「売り切れ」と表示 | 「SEO向き」とあるが、売り切れ表示は買い手に不安を与える |
+| **Only show in stock variants…（初期値）** | **在庫のあるサイズだけ出す** | **作れない注文を受けない。いまは4サイズとも在庫あり** |
+
+⚠ 灰色の帯の注意書き：在庫切れはEtsyへ**自動では反映されず、再公開が要る**。
+
 ### 2-7. 保存（ここで止まる）
 
 21. **`Save as draft`**（下書き保存）を押す
