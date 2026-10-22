@@ -65,6 +65,10 @@ GOOD TO KNOW
 - Each tapestry is made to order just for you.
 - Colors may vary slightly between screens and the printed fabric.
 
+ABOUT THE ARTWORK
+- This design was created by our small studio using AI-assisted digital tools.
+- The room photos are digital mockups, made to show the style and approximate size. The printed design is the same as shown.
+
 MORE COLORS
 This design also comes in {others}. Visit the shop to see them all.
 """
