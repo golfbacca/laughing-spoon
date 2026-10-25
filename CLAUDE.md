@@ -51,6 +51,7 @@
 | printify.com | **egress proxy でブロック**。到達不可 |
 | etsy.com | WebFetch が 403 |
 | zazzle.com | **egress proxy で 403**（WebFetch も失敗）。Zazzle の画面はこちらから見られない（2026-10-18 確認） |
+| x.photoscape.org | WebFetch で名前解決できず（2026-10-25）。本人にスクリーンショットをもらう |
 | 本人のローカルディスク（`C:\...`） | **一切見えない**。ファイルは添付・Drive・リポジトリ経由で渡してもらう |
 | Google Drive / Gmail | **読める**（MCP経由）。過去資料の発掘に有効 |
 | Driveの**画像の実データ** | `download_file_content` はbase64で返る。**8MBのPNG1枚で膨大なトークンを消費**するので実用外。`read_file_content` は画像に対して空を返す |

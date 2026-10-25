@@ -26,6 +26,9 @@
   - 実測（修正前後の差）：変化が大きい（差40超）のは**髪の毛の場所 x 6784〜7104・y 2112〜2688 にほぼ集中**。ほかは下端の暗い稜線にごく少し（JPEG の保存し直しによる誤差）。全体の平均差 1.7/255
   - 拡大して目視：線は消え、雲の模様も自然。**直径8px程度の小さな黒い点が近くに3つ残る**（ミディアムで約0.2mm。印刷では見えない大きさ）
   - 修正版は 38MB（元の切り抜き 22MB より大きい＝高画質で保存されている）
+  - ✅ **generativecontent タグは不要と判断**（2026-10-25）。PhotoScape X 公式ヘルプ（`x.photoscape.org/help.php`、本人のスクリーンショット）の説明：
+    "The Spot Healing Brush automatically fills the selected area with the pixels around the edge of the selection."
+    ＝**選んだ範囲を、その縁のまわりの画素で埋める**昔ながらの仕組み。「AI」「生成」の記載なし（PhotoScape X 2.4 の機能）
 
 ## 状態（2026-10-25）
 
