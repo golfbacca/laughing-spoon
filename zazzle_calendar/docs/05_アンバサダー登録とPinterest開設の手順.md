@@ -93,3 +93,11 @@ start https://www.pinterest.com/business/create/
 - URL：`https://jp.pinterest.com/stillvalleyhomeshop/`（ユーザー名 `stillvalleyhomeshop`）
 - ボード・ピンはまだ無し（予定どおり。出品後に作る）
 - ⚠ **ビジネスアカウントかどうか未確認**（スクリーンショットの左の列に分析（グラフ）のアイコンが見当たらない）
+
+### 2026-10-25 追記：Pinterest アカウントの整理
+
+- `stillvalleyhomeshop` は**別案件（Etsy タペストリー「Still Valley Home」・ショップ未開設）用の名前**。登録したメールも本人の意図と違った
+- 方針（こちらの提案）：
+  - **いまのアカウントは消さず、タペストリー用として残す**（表示名はあとでタペストリーのブランド名に戻す）
+  - **カレンダー用に、本人の Gmail で新しいビジネスアカウントを作る**（ブランドごとにアカウントを分ける。客層も内容も違うため）
+  - ユーザー名は**仮で `tsumagophotocalendar`**（ブランド名が決まったら設定で変えられる）
