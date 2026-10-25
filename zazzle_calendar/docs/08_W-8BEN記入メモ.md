@@ -55,3 +55,31 @@
 - Form W-8BEN (Rev. October 2021)（本人が開いた IRS の PDF）
 - HMRC Double Taxation Relief Manual DT10652（Japan: Treaty summary）— Royalties 0%, Article 12
 - Yale University: Income tax treaties for royalty — Japan, Article 12, 0%。W-8BEN には米国番号か自国番号が必要
+
+## 提出（2026-10-25 本人が Zazzle ヘルプで確認）
+
+- 宛先：**`zazzle-w8@zazzle.com`**
+- 条件：**Zazzle アカウントに登録したメールアドレス（本人の Gmail）から送る**
+- 添付：署名済みの W-8BEN（PDF）
+- 署名：IRS の PDF は電子署名付きで Edge の「手描き」が使えなかった → **「Microsoft Print to PDF」で印刷し直した PDF に署名**して解決（10-25）
+
+メールの文面：
+
+件名
+```text
+W-8BEN Form - Store: Kiso Valley Light
+```
+
+本文
+```text
+Hello,
+
+Please find attached my signed Form W-8BEN.
+
+Zazzle account email: (the email address you are sending from)
+Store name: Kiso Valley Light
+Store URL: https://www.zazzle.com/store/kisovalleylight
+
+Thank you.
+```
+訳：こんにちは。署名済みの W-8BEN を添付します。Zazzle アカウントのメールアドレス：（送信元のアドレス）／ストア名：Kiso Valley Light／ストアの URL。よろしくお願いします。
