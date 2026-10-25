@@ -112,3 +112,7 @@ start https://www.pinterest.com/business/create/
 - ✅ **ユーザー名を `tsumagophotocalendar` に変更済み**（URL：`https://jp.pinterest.com/tsumagophotocalendar/`）
 - ✅ **ビジネスアカウントで確定**：`≡` メニューに「ビジネスハブ」「アナリティクスのオーバービュー」「オーディエンスインサイト」がある
 - 有料広告（キャンペーン）のメニューもあるが**使わない**
+
+### 2026-10-25：ブランド名に合わせて変更済み
+- 表示名：**Kiso Valley Light | Tsumago Photo Calendar**
+- ユーザー名：**kisovalleylight**（URL `https://jp.pinterest.com/kisovalleylight/`）
