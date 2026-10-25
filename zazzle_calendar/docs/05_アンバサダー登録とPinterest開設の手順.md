@@ -71,3 +71,25 @@ start https://www.pinterest.com/business/create/
 1. ボード `Tsumago & the Kiso Valley, Japan` を作る
 2. 13枚のピンを作る：写真＋タイトル＋説明文（`02_出品文言_確定版.md` 第4章）＋**素の商品URL**
 3. 1日に全部出さず、**数日に分けて**出す（一度に大量に出すより、毎日少しずつのほうが届きやすいと言われる・未検証）
+
+---
+
+## ✅ 結果（2026-10-25・本人のスクリーンショット）
+
+### Zazzle アンバサダー：**登録済み**
+
+- Ambassador Center（`zazzle.com/my/ambassador/ambassador`、日本版 `zazzle.co.jp/my/ambassador/ambassador` にも同じ画面）
+- アンバサダーID：`238247253989239962`（**他人の商品を紹介するときだけ**使う。自分の商品には付けない）
+- 画面の説明で確定したこと：
+  - **自分の商品ページ・ストア・コレクションの URL を共有すれば、パラメータ無しで自動的に Self-Promotion（35〜50%）として追跡される**
+    （"Our Ambassador tracking system works behind the scenes without requiring additional parameters or your Ambassador ID."）
+  - **自分の商品に `?rf=238247253989239962` を付けると Cross-Promotion 扱いになり 15% だけ**（画面の「IMPORTANT」枠）
+  - 自分の商品で**共有ボタン**を押した場合は、ID は付かない（付くのは他人の商品のときだけ、と画面に記載）
+  - 国際サイト：ルールは同じ。`zazzle.com` を各国のドメインに置き換えるだけ → **米国向けのピンは `zazzle.com` の URL を使う**（`zazzle.co.jp` のURLを貼らない）
+
+### Pinterest：**アカウント作成済み**
+
+- 表示名：**Photo Calendar Tsumago**
+- URL：`https://jp.pinterest.com/stillvalleyhomeshop/`（ユーザー名 `stillvalleyhomeshop`）
+- ボード・ピンはまだ無し（予定どおり。出品後に作る）
+- ⚠ **ビジネスアカウントかどうか未確認**（スクリーンショットの左の列に分析（グラフ）のアイコンが見当たらない）
