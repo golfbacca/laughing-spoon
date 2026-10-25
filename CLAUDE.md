@@ -71,7 +71,7 @@
 | `golf_towel/` | Etsy「ONE PURE STRIKE」ゴルフタオル（Printify製造） | 9商品公開中・**売上0** |
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止し Offsite Ads へ切替（2026-10-04）** |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
-| `zazzle_calendar/` | Zazzle 妻籠宿の写真カレンダー（本人の父の写真・英語で米国向け）。**ブランド名 Kiso Valley Light**（10-25 決定） | **13枚の並びと出品文言が確定（2026-10-14）。`zazzle_calendar/docs/02_出品文言_確定版.md`。1・3・4月のフィルムはヨドバシで3200dpi読み取り中（11/5納品）。再開点は同ファイル末尾。Pinterest経由の取り分は `docs/04`** |
+| `zazzle_calendar/` | Zazzle 妻籠宿の写真カレンダー（本人の父の写真・英語で米国向け）。**ブランド名 Kiso Valley Light**（10-25 決定）。Zazzle ストア `zazzle.com/store/kisovalleylight`・Pinterest `kisovalleylight` 開設済み | **13枚の並びと出品文言が確定（2026-10-14）。`zazzle_calendar/docs/02_出品文言_確定版.md`。1・3・4月のフィルムはヨドバシで3200dpi読み取り中（11/5納品）。再開点は同ファイル末尾。Pinterest経由の取り分は `docs/04`** |
 | `tapestry/`（予定） | Etsy タペストリー（Printify製造） | **別スレッドで着手予定（2026-10-03〜）** |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
