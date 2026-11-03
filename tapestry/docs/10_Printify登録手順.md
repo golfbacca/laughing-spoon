@@ -229,7 +229,10 @@ Hello. For the Indoor Wall Tapestry (product 241) made by MWW On Demand, does th
 **Offsite Ads**（Etsyが店の外＝Google等に勝手に出す広告）：その経由で売れた注文だけ15%取られる。
 売上が年$10,000未満の店は**断れる（任意）**。Printifyのこのスイッチは**計算用で、Etsyの設定は変わらない。**
 → **方針：参加しない（オフ）。** ガーデンフラッグで本人が決めた設定と同じ（`garden_flag/docs/18`）。
-Etsyの設定は**店全体で1つ**。**2026-10-19 に本人の画面で `Opt out from Offsite Ads` がON（不参加）を確認済み。**
+Etsyの設定は**店全体で1つ**。~~2026-10-19 に `Opt out from Offsite Ads` がON（不参加）を確認済み~~
+**⚠ 2026-11-03 訂正：読み違い。`Opt out from Offsite Ads` は状態ではなく操作の名前で、OnePureStrike は**参加している**（`garden_flag/docs/28` の 10/04 の訂正）。
+**新しい店（StillValleyHome）も既定で参加になる。** 参加のままなら26×36は Offsite 経由の注文で利益$0.42（赤字ではない）。
+参加を続けるかは公開前に本人が決める。
 Printify側のスイッチは**オフにしてから保存**（利益の表示が実際と合うように。4色とも）。
 
 ## 6. 「夜」の下書きの点検（本人のスクショ・2026-10-19）✅
