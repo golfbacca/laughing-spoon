@@ -116,3 +116,8 @@ start https://www.pinterest.com/business/create/
 ### 2026-10-25：ブランド名に合わせて変更済み
 - 表示名：**Kiso Valley Light | Tsumago Photo Calendar**
 - ユーザー名：**kisovalleylight**（URL `https://jp.pinterest.com/kisovalleylight/`）
+
+### ✅ 1枚目のピン公開（2026-11-03）
+- 表紙のピン（`pins/pin_00_cover_snowfall.jpg`）をボード `Tsumago & the Kiso Valley, Japan` に公開
+- ピンから Zazzle の商品ページに飛ぶことを確認。Pinterest が自動で `?utm_source=Pinterest&utm_medium=organic&epik=...` を付ける（`rf=` ではないので Self-Promotion のまま、のはず）
+- 残り12枚は「投稿日時を設定する」で1日2枚ずつ予約（11/4〜11/9）
