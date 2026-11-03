@@ -121,3 +121,9 @@ start https://www.pinterest.com/business/create/
 - 表紙のピン（`pins/pin_00_cover_snowfall.jpg`）をボード `Tsumago & the Kiso Valley, Japan` に公開
 - ピンから Zazzle の商品ページに飛ぶことを確認。Pinterest が自動で `?utm_source=Pinterest&utm_medium=organic&epik=...` を付ける（`rf=` ではないので Self-Promotion のまま、のはず）
 - 残り12枚は「投稿日時を設定する」で1日2枚ずつ予約（11/4〜11/9）
+
+### プロフィール（2026-11-03）
+- 写真：`brand/avatar_A_lanterns.jpg`（8月 雨上がりの提灯）に設定済み
+- 概要（bio）：`Photographs of Tsumago and Japan's Kiso Valley, taken by my father in our hometown. Snow on the old Nakasendo road, lanterns after a summer rain, persimmons in the autumn mist. Find our 2027 wall calendar at our Zazzle store.`
+- ウェブサイト：`https://www.zazzle.com/store/kisovalleylight`（ストアのURL。自分のストアなので Self-Promotion 扱い）
+- メールアドレス・電話番号・住所（販売店の場所）は**公開されるので入れない**
