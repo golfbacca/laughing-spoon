@@ -73,7 +73,8 @@ start https://github.com/golfbacca/laughing-spoon/archive/refs/heads/claude/eage
 start https://www.etsy.com/your/shops/me/sales-discounts
 ```
 
-1. **`Create a sale`**（またはセールを作る）を押す
+1. 画面中ほど「**Drive traffic and move inventory**」の右のカード **`Run a sale`** の **`Set up →`** を押す
+   （「Create a sale」という表記は無かった。2026-11-06 本人の画面で確認）
 2. 割引：**`Percentage off`** → **`30`**
 3. 期間：**今日 〜 30日後**（Etsyの上限は30日）。終わる日をカレンダーに入れる
 4. 対象：**`Select listings`**（商品を選ぶ）→ **タペストリー4つだけ**にチェック
@@ -105,3 +106,9 @@ start https://www.etsy.com/your/shops/me/tools/listings
 - 4商品の Etsy のURL（スクショでよい）を送ってもらう
 - セールの終わる日
 - 公開日の検索順位：`mountain tapestry` / `celestial tapestry` で何ページ目か（`garden_flag/docs/27` と同じ取り方）
+
+## メモ（2026-11-06）
+
+セール画面の「Individual sales and offers」には **CYBER26（11/23〜12/2・40%）だけ**が予定されていた。
+**ガーデンフラッグは 10/27 以降、定価 $39.99 のまま**の可能性（`garden_flag/docs/29` の「10/27 に掛け直す」が未実施）。
+フラッグにも30%を掛けるなら、**別のセールで 11/22 終了**にする（同じ商品に重なるセールは掛けられないため）。本人の判断待ち。
