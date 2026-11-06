@@ -146,3 +146,6 @@ start https://www.etsy.com/your/shops/me/tools/listings
 | Production partners | **Printify（Wilmington, DE）登録済み** ✅ | — |
 | Shop section | None | **Wall Tapestries** を作って入れる |
 | Renewal | Manual（2027-03-06 に期限切れ） | **Automatic**（4か月ごと$0.20。期限切れで棚から消えるのを防ぐ）※本人判断 |
+- 2026-11-06：「夜」で6つの変更（写真の順・Who made it・Shop section・Renewal・属性2つ）をまとめて `Publish changes` →
+  **「There was a problem saving. Try again, or contact Etsy Support」**（汎用エラー・理由の表示なし）。
+  → 一度だけ再試行。だめなら**変更を小分けにして1つずつ保存し、どれで落ちるか特定する**（知見 §1：画面に出ない制約の切り分け）
