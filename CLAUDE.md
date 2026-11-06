@@ -68,7 +68,7 @@
 | `golf_towel/` | Etsy「ONE PURE STRIKE」ゴルフタオル（Printify製造） | 9商品公開中・**売上0** |
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止（10/04決定。10/19に誤って再開→11/03に再停止）。Offsite Adsは参加中**（`garden_flag/docs/28`） |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
-| `tapestry/` | Etsy タペストリー（Printify製造） | **M01 4色をPrintifyに下書き済み。新しい店「StillValleyHome」はPayoneerの口座の結び付きで止まったため保留 → OnePureStrike で公開すると決定（11/05）**（`tapestry/docs/13`） |
+| `tapestry/` | Etsy タペストリー（Printify製造） | **✅ M01 4色を OnePureStrike で公開（2026-11-06）。30%OFF〜12/07。** 新しい店 StillValleyHome は Payoneer の口座の結び付きで保留（`tapestry/docs/12`・`13`） |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
 `git branch -r` で確認すること。
