@@ -1,0 +1,129 @@
+# Zazzle アンバサダー登録 と Pinterest ビジネスアカウント開設 — 手順
+
+2026-10-25 作成。
+> ⚠ こちらからは zazzle.com も pinterest.com も画面を見られない。**検索で得た手順をもとに書いた**ので、ボタン名が違うことがある。
+> 違ったら**その画面のスクリーンショット**を送ってもらい、そこから次を案内する。
+> **パスワード入力・規約への同意は本人が行う。**
+
+---
+
+## A. Zazzle の Ambassador Program に登録する（約5分）
+
+Zazzle ヘルプの説明：「Zazzle にログイン → **Ambassador Center** を開く → **`Join`** を押す」。
+
+1. Zazzle のヘルプ記事「How to Join the Ambassador Program」を開く
+
+```bash
+start https://www.zazzle.com/hc/article/how_to_join_the_ambassador_program-226336108
+```
+
+2. 画面右上が `Sign In` になっていたら、クリックしてログインする（**パスワードは本人**）
+3. 記事の本文の中にある **`Ambassador Center`** の青い文字（リンク）をクリックする
+   - 見つからない → 画面右上の**人の形のアイコン**をクリックし、出てきた一覧に `Ambassador` の文字があればクリック
+   - それでも無い → スクリーンショットを送る
+4. Ambassador Center のページで **`Join`** のボタンをクリックする
+5. 規約（Ambassador Program Agreement）が出たら、**本人が内容を確認して**同意する
+6. 登録後の画面のスクリーンショットを送る（Ambassador ID が表示されていれば記録する）
+
+### ⚠ 登録後に気をつけること
+
+- **自分の商品をピンに貼るときは、素の商品URL**（`?rf=...` が付いていないもの）を使う
+- Zazzle の画面で「共有」ボタンを押すと、`rf=` 付きのリンクが自動で作られることがある → **`?` から後ろを消して貼る**
+
+---
+
+## B. Pinterest のビジネスアカウントを作る（約10分）
+
+ビジネスアカウントは無料。ピンが何回見られ、何回クリックされたかが分かる（個人アカウントでは分からない）。
+
+1. Pinterest のビジネスアカウント作成ページを開く
+
+```bash
+start https://www.pinterest.com/business/create/
+```
+
+   - 個人の Pinterest にログインしたままだと、個人アカウントに紐づく。**新しく作るなら先にログアウトしておく**
+
+2. 入力欄に順に入れる
+   - **メールアドレス**（ふだんの Gmail でよい）
+   - **パスワード**（本人が決めて入力）
+   - **生年月日**
+3. 赤い **`Create account`**（アカウントを作成）をクリックする
+4. 事業の情報を入れる画面になる
+   - **ビジネス名（Business name）**：ブランド名が未定なので、**仮で `Tsumago Photo Calendar`**（あとで変えられる）
+   - **ウェブサイト（Website）**：**空欄でよい**（出品後に Zazzle の店のURLを入れる）
+   - **国・地域**：日本（本当のことを入れる）
+   - **言語**：日本語（画面の表示言語。ピンの英語の文は、そのまま英語圏に届く）
+5. 「事業の種類」「目的」などを聞かれたら：
+   - 事業の種類：`Retail`（小売）や `Creator`（作り手）に近いものを選ぶ
+   - 広告を出すか：**今は「いいえ／まだ決めていない」**（有料広告は使わない）
+6. 最後まで進んだら、ホーム画面のスクリーンショットを送る
+
+### やらなくてよいこと
+
+- **「ウェブサイトの申請（Claim）」は不要。** 自分が持っているサイトの証明の作業で、Zazzle のサイトは申請できない
+- ボードやピンは、**出品して商品URLができてから**作る（リンク先が無いピンは作らない）
+
+---
+
+## C. 出品後にやること（予告）
+
+1. ボード `Tsumago & the Kiso Valley, Japan` を作る
+2. 13枚のピンを作る：写真＋タイトル＋説明文（`02_出品文言_確定版.md` 第4章）＋**素の商品URL**
+3. 1日に全部出さず、**数日に分けて**出す（一度に大量に出すより、毎日少しずつのほうが届きやすいと言われる・未検証）
+
+---
+
+## ✅ 結果（2026-10-25・本人のスクリーンショット）
+
+### Zazzle アンバサダー：**登録済み**
+
+- Ambassador Center（`zazzle.com/my/ambassador/ambassador`、日本版 `zazzle.co.jp/my/ambassador/ambassador` にも同じ画面）
+- アンバサダーID：`238247253989239962`（**他人の商品を紹介するときだけ**使う。自分の商品には付けない）
+- 画面の説明で確定したこと：
+  - **自分の商品ページ・ストア・コレクションの URL を共有すれば、パラメータ無しで自動的に Self-Promotion（35〜50%）として追跡される**
+    （"Our Ambassador tracking system works behind the scenes without requiring additional parameters or your Ambassador ID."）
+  - **自分の商品に `?rf=238247253989239962` を付けると Cross-Promotion 扱いになり 15% だけ**（画面の「IMPORTANT」枠）
+  - 自分の商品で**共有ボタン**を押した場合は、ID は付かない（付くのは他人の商品のときだけ、と画面に記載）
+  - 国際サイト：ルールは同じ。`zazzle.com` を各国のドメインに置き換えるだけ → **米国向けのピンは `zazzle.com` の URL を使う**（`zazzle.co.jp` のURLを貼らない）
+
+### Pinterest：**アカウント作成済み**
+
+- 表示名：**Photo Calendar Tsumago**
+- URL：`https://jp.pinterest.com/stillvalleyhomeshop/`（ユーザー名 `stillvalleyhomeshop`）
+- ボード・ピンはまだ無し（予定どおり。出品後に作る）
+- ⚠ **ビジネスアカウントかどうか未確認**（スクリーンショットの左の列に分析（グラフ）のアイコンが見当たらない）
+
+### 2026-10-25 追記：Pinterest アカウントの整理
+
+- `stillvalleyhomeshop` は**別案件（Etsy タペストリー「Still Valley Home」・ショップ未開設）用の名前**。登録したメールも本人の意図と違った
+- 方針（こちらの提案）：
+  - **いまのアカウントは消さず、タペストリー用として残す**（表示名はあとでタペストリーのブランド名に戻す）
+  - **カレンダー用に、本人の Gmail で新しいビジネスアカウントを作る**（ブランドごとにアカウントを分ける。客層も内容も違うため）
+  - ユーザー名は**仮で `tsumagophotocalendar`**（ブランド名が決まったら設定で変えられる）
+
+### 2026-10-25：カレンダー用 Pinterest アカウント作成済み
+
+- 表示名：**Tsumago Photo Calendar**（本人の Gmail で登録）
+- ⚠ ユーザー名が自動で **メールアドレスの `@` より前と同じ**になった（`jp.pinterest.com/golfbacca…/`）。
+  ユーザー名は誰でも見られる → **Gmail のアドレスが推測できてしまう**（迷惑メールの元）。**`tsumagophotocalendar` に変更する**
+  - 手順：`プロフィールを編集する` → `ユーザー名` 欄を書き換え → 下の `保存`
+- 画面上部にアカウント切り替え欄と `Pinterest ≡` のメニューがあり、ビジネスアカウントの画面に見える。`≡` の中に「アナリティクス」があれば確定
+- ✅ **ユーザー名を `tsumagophotocalendar` に変更済み**（URL：`https://jp.pinterest.com/tsumagophotocalendar/`）
+- ✅ **ビジネスアカウントで確定**：`≡` メニューに「ビジネスハブ」「アナリティクスのオーバービュー」「オーディエンスインサイト」がある
+- 有料広告（キャンペーン）のメニューもあるが**使わない**
+
+### 2026-10-25：ブランド名に合わせて変更済み
+- 表示名：**Kiso Valley Light | Tsumago Photo Calendar**
+- ユーザー名：**kisovalleylight**（URL `https://jp.pinterest.com/kisovalleylight/`）
+
+### ✅ 1枚目のピン公開（2026-11-03）
+- 表紙のピン（`pins/pin_00_cover_snowfall.jpg`）をボード `Tsumago & the Kiso Valley, Japan` に公開
+- ピンから Zazzle の商品ページに飛ぶことを確認。Pinterest が自動で `?utm_source=Pinterest&utm_medium=organic&epik=...` を付ける（`rf=` ではないので Self-Promotion のまま、のはず）
+- 残り12枚は「投稿日時を設定する」で1日2枚ずつ予約（11/4〜11/9）
+
+### プロフィール（2026-11-03）
+- 写真：`brand/avatar_A_lanterns.jpg`（8月 雨上がりの提灯）に設定済み
+- 概要（bio）：`Photographs of Tsumago and Japan's Kiso Valley, taken by my father in our hometown. Snow on the old Nakasendo road, lanterns after a summer rain, persimmons in the autumn mist. Find our 2027 wall calendar at our Zazzle store.`
+- ウェブサイト：`https://www.zazzle.com/store/kisovalleylight`（ストアのURL。自分のストアなので Self-Promotion 扱い）
+- メールアドレス・電話番号・住所（販売店の場所）は**公開されるので入れない**

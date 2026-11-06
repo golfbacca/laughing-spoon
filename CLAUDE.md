@@ -50,11 +50,14 @@
 |---|---|
 | printify.com | **egress proxy でブロック**。到達不可 |
 | etsy.com | WebFetch が 403 |
+| zazzle.com | **egress proxy で 403**（WebFetch も失敗）。Zazzle の画面はこちらから見られない（2026-10-18 確認） |
+| x.photoscape.org | WebFetch で名前解決できず（2026-10-25）。本人にスクリーンショットをもらう |
 | 本人のローカルディスク（`C:\...`） | **一切見えない**。ファイルは添付・Drive・リポジトリ経由で渡してもらう |
 | Google Drive / Gmail | **読める**（MCP経由）。過去資料の発掘に有効 |
 | Driveの**画像の実データ** | `download_file_content` はbase64で返る。**8MBのPNG1枚で膨大なトークンを消費**するので実用外。`read_file_content` は画像に対して空を返す |
 | `drive.google.com` へ直接curl | **プロキシがブロック**（printify.com と同じ） |
 | **チャットに添付された画像** | `/tmp/claude-0/<...>/images/*.webp` にファイルとして保存され処理できる。ただし**WebPへ再圧縮され、幅1368px程度に縮小される** |
+| **TIFなど「画像扱いされない」ファイルをドラッグで添付** | ✅ `/root/.claude/uploads/` に無変換で届く（こちらには `@"/root/.claude/uploads/..."` と見える）。21MBのTIFで実証（2026-10-12）。**JPG/PNGは画像扱いされて縮小される**（幅2000pxで届いた）。**JPGの元データを送るときは、1枚ずつZIPにしてドラッグ。** ⚠ 本人の入力欄で `@` を打っても出るのはリポジトリのファイルだけ。**「@で添付して」と案内しないこと**（2026-10-14 誤案内） |
 | **★ZIPにまとめて添付** | ✅ **`/root/.claude/uploads/` に無変換で届く。解凍すれば元の解像度・元の形式のまま使える。画像を渡す最良のルート**（2026-09-19実証） |
 | GitHub | 読み書き可（MCP経由） |
 
@@ -68,6 +71,7 @@
 | `golf_towel/` | Etsy「ONE PURE STRIKE」ゴルフタオル（Printify製造） | 9商品公開中・**売上0** |
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止（10/04決定。10/19に誤って再開→11/03に再停止）。Offsite Adsは参加中**（`garden_flag/docs/28`） |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
+| `zazzle_calendar/` | Zazzle 妻籠宿の写真カレンダー（本人の父の写真・英語で米国向け）。**ブランド名 Kiso Valley Light**（10-25 決定）。Zazzle ストア `zazzle.com/store/kisovalleylight`・Pinterest `kisovalleylight` 開設済み | **13枚の並びと出品文言が確定（2026-10-14）。`zazzle_calendar/docs/02_出品文言_確定版.md`。**✅ Zazzle に出品済み（2026-11-01）。商品URL・次の作業は `docs/06_出品手順書.md` 末尾**。再開点は同ファイル末尾。Pinterest経由の取り分は `docs/04`** |
 | `tapestry/` | Etsy タペストリー（Printify製造） | **✅ M01 4色を OnePureStrike で公開（2026-11-06）。30%OFF〜12/07。** 新しい店 StillValleyHome は Payoneer の口座の結び付きで保留（`tapestry/docs/12`・`13`） |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
