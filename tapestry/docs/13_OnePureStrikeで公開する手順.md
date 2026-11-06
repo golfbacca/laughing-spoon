@@ -149,3 +149,4 @@ start https://www.etsy.com/your/shops/me/tools/listings
 - 2026-11-06：「夜」で6つの変更（写真の順・Who made it・Shop section・Renewal・属性2つ）をまとめて `Publish changes` →
   **「There was a problem saving. Try again, or contact Etsy Support」**（汎用エラー・理由の表示なし）。
   → 一度だけ再試行。だめなら**変更を小分けにして1つずつ保存し、どれで落ちるか特定する**（知見 §1：画面に出ない制約の切り分け）
+  → **再試行で通った（一時的なエラー）。** 「夜」は6つの変更とも保存済み（Shop section `Wall Tapestries` 作成済み・Renewal Automatic）。残り3色も同じ手順で。
