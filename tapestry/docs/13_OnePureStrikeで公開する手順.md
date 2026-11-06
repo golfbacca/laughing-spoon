@@ -94,7 +94,7 @@ start https://www.etsy.com/your/shops/me/tools/listings
 |---|---|
 | **写真** | 並びを **寝室 → 居間 → 絵 → 寄り → サイズ → 色 → 仕様** にドラッグで直す。1枚目が寝室なら検索のサムネイルはそれ |
 | `Adjust thumbnails` | **触らない**（知見 §4） |
-| **About this listing** | Who made it：**`I did`**（デザインは自分）／What is it：**`A finished product`**／When：**`Made to order`**。製造パートナーを聞かれたら **Printify（MWW On Demand）** を登録（AI方針・知見 §9） |
+| **About this listing**（⚠ 2026-11 の画面では **`How It's Made` タブ**に名前が変わっていた） | Who made it：**`I did`**（初期値は `Another company or person` だった）（デザインは自分）／What is it：**`A finished product`**／When：**`Made to order`**。製造パートナーを聞かれたら **Printify（MWW On Demand）** を登録（AI方針・知見 §9） |
 | **Category** | `Wall Hangings` の下の **`Tapestries`** があればそれ（Printifyの自動設定のままならそれでもよい） |
 | **Shop section** | 新しく **`Wall Tapestries`** を作って入れる（店のページでゴルフと分かれて並ぶ） |
 | **Attributes**（`Item Options` の下の方） | `Add all` のあと値を確認。素材 **Polyester**、向き **Vertical / Portrait**、部屋 **Bedroom / Living room**、色はその商品の色。**`woven` `cotton` が入っていたら消す** |
@@ -128,3 +128,21 @@ start https://www.etsy.com/your/shops/me/tools/listings
 | CYBER26 | Scheduled | 40% | **Nov 23 2:00 PM** — Dec 2 2:00 PM | ガーデンフラッグ5 |
 
   **重なりなし。** フラッグは 11/23 の 0:00〜14:00 の14時間だけ定価に戻る（実害は小さい）。
+
+## 「夜」の編集画面で分かったこと（2026-11-06）
+
+編集画面の上のタブ：`Performance` / `Photo & Video` / `Item Details` / `Item Options` / `Pricing & Shipping` / **`How It's Made`** / `Legal and compliance` / `Settings`
+
+| 項目 | 初期値（Printifyが入れた値） | 直す値 |
+|---|---|---|
+| 写真の順 | 寝室★ → 絵 → サイズ → 仕様 → 寄り → 色 → 居間 | 寝室★ → **居間** → 絵 → 寄り → サイズ → 色 → 仕様 |
+| Category | Wall Decor | `Change` で `tapestry` を検索し、Tapestries があればそれ（無ければそのまま） |
+| Tags | 13個入っている ✅ | — |
+| Materials | 空（候補に Polyester） | **`+ Polyester`** |
+| Framing | 空（候補に Unframed） | **`+ Unframed`** |
+| Width / Height | 空（候補 26 / 104 inches） | **入れない**（サイズが4つあるため。サイズは説明文と5枚目の図に書いてある） |
+| Who made it? | Another company or person | **I did**（デザインは自分・製造は Printify） |
+| What is it? / When | A finished product / Made To Order ✅ | — |
+| Production partners | **Printify（Wilmington, DE）登録済み** ✅ | — |
+| Shop section | None | **Wall Tapestries** を作って入れる |
+| Renewal | Manual（2027-03-06 に期限切れ） | **Automatic**（4か月ごと$0.20。期限切れで棚から消えるのを防ぐ）※本人判断 |
