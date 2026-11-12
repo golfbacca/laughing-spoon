@@ -9,3 +9,8 @@
 
 各ピンのタイトル・説明文は `docs/02_出品文言_確定版.md` 第4章。リンクは素の商品URL：
 `https://www.zazzle.com/tsumago_nakasendo_japan_four_seasons_calendar-256169120708729755`
+
+## 追加：12か月一覧のピン（2026-11-12）
+- `pin_13_overview_12months.jpg`（`tools/make_overview_pin.py`）。12か月の写真を3×4で並べ、月名を添えたもの
+- タイトル：`12 Months in Tsumago, Japan: A 2027 Photo Wall Calendar of the Kiso Valley`
+- 説明文：`All twelve months of our 2027 wall calendar on one page: persimmons in the snow, ice lanterns on a winter night, fallen camellias, cherry blossoms, flooded rice paddies, buckwheat flowers, lanterns after the rain, an autumn sunset, and snow on the old Nakasendo road. Every photo was taken by my father in and around our hometown, Tsumago, in Japan's Kiso Valley.`
