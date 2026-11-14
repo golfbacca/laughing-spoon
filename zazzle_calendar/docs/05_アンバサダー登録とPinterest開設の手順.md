@@ -127,3 +127,9 @@ start https://www.pinterest.com/business/create/
 - 概要（bio）：`Photographs of Tsumago and Japan's Kiso Valley, taken by my father in our hometown. Snow on the old Nakasendo road, lanterns after a summer rain, persimmons in the autumn mist. Find our 2027 wall calendar at our Zazzle store.`
 - ウェブサイト：`https://www.zazzle.com/store/kisovalleylight`（ストアのURL。自分のストアなので Self-Promotion 扱い）
 - メールアドレス・電話番号・住所（販売店の場所）は**公開されるので入れない**
+
+### 手順メモ：ピンの作り方・ボードの増やし方（2026-11-14 本人の求めで再掲）
+- ピン：右上の「≡」近くの「作成」→「ピン」（または `https://www.pinterest.com/pin-creation-tool/`）→ 画像・タイトル・説明文・リンク・ボード → AI ラベルはオフ → 赤い「公開する」
+- ボード：ピン作成画面の「ボードを選択する」→ 一覧の下の「ボードを作成」→ 名前を入れて「作成」
+- 既存のピンを別のボードへ：ピンを開く → 赤い「保存」の左のボード名（▼）→ 保存先のボードを選ぶ
+- 追加予定のボード：`Japan Travel Gift Ideas`／`Nakasendo Trail`（表紙のピンと12か月一覧のピンを保存）
