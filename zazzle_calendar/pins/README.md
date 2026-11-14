@@ -22,8 +22,10 @@
 - タイトル：`Tsumago, Japan Wall Calendar 2027: Snowy Persimmons for January`
 - 説明文：`Our 2027 wall calendar of Tsumago, an Edo-period post town on Japan's old Nakasendo road. Each month pairs a large photo with a clean, easy-to-read grid. January opens with persimmons under fresh snow in the Kiso Valley. Every photo was taken by my father in and around our hometown.`
 - ボード：Tsumago & the Kiso Valley, Japan
+- リンク：**Large** `https://www.zazzle.com/large_tsumago_nakasendo_japan_photo_wall_calendar-256579406588583693`
 
 ### `pin_15_gift.jpg`（A Gift for Japan Lovers）
 - タイトル：`A Gift for Japan Lovers: 2027 Tsumago Photo Wall Calendar`
 - 説明文：`Know someone who loves Japan, or who has walked the Nakasendo Trail? This 2027 wall calendar brings a year of Tsumago and the Kiso Valley to their wall: ice lanterns, cherry blossoms, lanterns after the rain, and snow on the old road. Every photo was taken by my father in our hometown.`
 - ボード：Japan Travel Gift Ideas
+- リンク：**Large**（同上）
