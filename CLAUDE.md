@@ -69,7 +69,7 @@
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止し Offsite Ads へ切替（2026-10-04）** |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
 | `tapestry/`（予定） | Etsy タペストリー（Printify製造） | **別スレッドで着手予定（2026-10-03〜）** |
-| `kdp_coloring/` | Amazon KDP「全国の名所ぬりえ」 | **権利調査中（2026-10-11〜）。北海道4件は掲載可。`kdp_coloring/docs/01`** |
+| `kdp_coloring/` | Amazon KDP「全国の名所ぬりえ」 | **北海道の下絵39枚を検査済み（2026-11-14）。権利はほぼOK、解像度が全数不足。`kdp_coloring/docs/03`** |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
 `git branch -r` で確認すること。
