@@ -139,3 +139,4 @@ start https://www.pinterest.com/business/create/
 - ✅ 12か月一覧のピンを公開し、ボード `Japan Travel Gift Ideas` を作って保存（公開直後：表示3・クリック2・保存1）
 - ⚠ 1度保存すると、ピンの画面のボタンは「保存済み」に変わり、▼（ボード一覧）が出なくなる → **2つ目以降のボードは、プロフィール右上の「＋」→「ボード」で先に作る**。「保存済み」を押すと保存が取り消される可能性があるので押さない（未確認）
 - ✅ ボード `Nakasendo Trail` を作成し、ピンを保存（2026-11-14 本人）。ボードは計3つ：Tsumago & the Kiso Valley, Japan／Japan Travel Gift Ideas／Nakasendo Trail
+- ✅ ピン14（壁掛けイメージ）・15（Gift for Japan Lovers）を公開し、リンクを **Large** の商品URLに変更（2026-11-14 本人）。ピンの合計 16枚
