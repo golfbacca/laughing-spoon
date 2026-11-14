@@ -127,3 +127,16 @@ start https://www.pinterest.com/business/create/
 - 概要（bio）：`Photographs of Tsumago and Japan's Kiso Valley, taken by my father in our hometown. Snow on the old Nakasendo road, lanterns after a summer rain, persimmons in the autumn mist. Find our 2027 wall calendar at our Zazzle store.`
 - ウェブサイト：`https://www.zazzle.com/store/kisovalleylight`（ストアのURL。自分のストアなので Self-Promotion 扱い）
 - メールアドレス・電話番号・住所（販売店の場所）は**公開されるので入れない**
+
+### 手順メモ：ピンの作り方・ボードの増やし方（2026-11-14 本人の求めで再掲）
+- ピン：右上の「≡」近くの「作成」→「ピン」（または `https://www.pinterest.com/pin-creation-tool/`）→ 画像・タイトル・説明文・リンク・ボード → AI ラベルはオフ → 赤い「公開する」
+- ボード：ピン作成画面の「ボードを選択する」→ 一覧の下の「ボードを作成」→ 名前を入れて「作成」
+- 自分のピンの一覧：プロフィールの **「作成コンテンツ」** タブ（「作成済み」ではない。もう一方は「保存済み」）
+- 既存のピンを別のボードへ：ピンを開く → 赤い「保存」の左のボード名（▼）→ 保存先のボードを選ぶ
+- 追加予定のボード：`Japan Travel Gift Ideas`／`Nakasendo Trail`（表紙のピンと12か月一覧のピンを保存）
+
+### 2026-11-14 追記
+- ✅ 12か月一覧のピンを公開し、ボード `Japan Travel Gift Ideas` を作って保存（公開直後：表示3・クリック2・保存1）
+- ⚠ 1度保存すると、ピンの画面のボタンは「保存済み」に変わり、▼（ボード一覧）が出なくなる → **2つ目以降のボードは、プロフィール右上の「＋」→「ボード」で先に作る**。「保存済み」を押すと保存が取り消される可能性があるので押さない（未確認）
+- ✅ ボード `Nakasendo Trail` を作成し、ピンを保存（2026-11-14 本人）。ボードは計3つ：Tsumago & the Kiso Valley, Japan／Japan Travel Gift Ideas／Nakasendo Trail
+- ✅ ピン14（壁掛けイメージ）・15（Gift for Japan Lovers）を公開し、リンクを **Large** の商品URLに変更（2026-11-14 本人）。ピンの合計 16枚
