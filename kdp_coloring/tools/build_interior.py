@@ -14,7 +14,7 @@ content.json:
   1 扉（書名） / 2 この本の使い方 / 3 目次
   4 解説1（＋第1章の導入） / 5 ぬりえ1 / 6 解説2 / 7 ぬりえ2 ...
   ぬりえは必ず右ページ。裏（次の左ページ）は文字だけの解説なので、裏写りしても絵は汚れない。
-  最後に 試し塗りページ / 奥付。総ページ数は偶数にそろえる。
+  最後に 空白（ぬりえ40の裏）/ 試し塗り（右）/ 奥付（その裏）。
 """
 import json, os, sys
 from reportlab.lib.units import mm
@@ -138,7 +138,8 @@ for ch, it in items:
     newpage()  # ぬりえ = 奇数ページ（ページ番号は入れない）
     c.drawImage(as_jpeg(os.path.join(pages_dir, it['image'] + '.png')), 0, 0, W, H)
 
-# 試し塗り
+# 試し塗り：右ページに置く。左ページだとその紙の表がぬりえ40になり、試し塗りの色が絵に裏写りする
+newpage()  # ぬりえ40の裏は空白
 newpage()
 c.setFont('Gothic', 15); c.setFillColorRGB(*INK); c.drawString(25 * mm, H - 35 * mm, '試し塗りのページ')
 para(c, '色鉛筆やペンの色味、重ね塗りの具合を試してみましょう。', 25 * mm, H - 47 * mm, W - 50 * mm, size=10.5, color=GRAY)
@@ -148,9 +149,7 @@ for r in range(8):
         c.rect(25 * mm + k * 27 * mm, H - 75 * mm - r * 24 * mm, 22 * mm, 18 * mm)
 folio(c, page)
 
-# 奥付（偶数ページで終える）
-if page % 2 == 0:
-    newpage()
+# 奥付（試し塗りの裏＝偶数ページで終える）
 newpage()
 y = 70 * mm
 c.setFont('Mincho', 12); c.setFillColorRGB(*INK); c.drawString(25 * mm, y + 20 * mm, C['title'])
