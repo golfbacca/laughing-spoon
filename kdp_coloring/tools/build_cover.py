@@ -25,7 +25,15 @@ px = lambda v: round(v * DPI)
 W, H = px(W_in), px(H_in)
 MIN = '/usr/share/fonts/opentype/ipafont-mincho/ipam.ttf'
 GOT = '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf'
-F = lambda path, pt: ImageFont.truetype(path, round(pt * DPI / 72))
+F = lambda path, pt: ImageFont.truetype(path, round(pt * DPI / 72), index=0)  # .ttc は0番が日本語
+NOTO = '/usr/share/fonts/opentype/noto/'
+FONTS = {  # cover.json の layout で名前で指定する（すべて商用可：IPAフォントライセンス／SIL OFL）
+    'IPA明朝': MIN, 'IPAゴシック': GOT,
+    'Noto明朝M': NOTO + 'NotoSerifCJK-Medium.ttc', 'Noto明朝SB': NOTO + 'NotoSerifCJK-SemiBold.ttc',
+    'Noto明朝B': NOTO + 'NotoSerifCJK-Bold.ttc', 'Noto明朝H': NOTO + 'NotoSerifCJK-Black.ttc',
+    'NotoゴシックM': NOTO + 'NotoSansCJK-Medium.ttc', 'NotoゴシックB': NOTO + 'NotoSansCJK-Bold.ttc',
+    'NotoゴシックH': NOTO + 'NotoSansCJK-Black.ttc',
+}
 
 bg = tuple(C['back_color'])
 cv = Image.new('RGB', (W, H), bg)
@@ -55,33 +63,50 @@ ox = (art.width - fw) // 2
 cv.paste(art.crop((ox, oy, ox + fw, oy + fh)), (x_front, 0))
 
 # 表紙のレイアウト（cover.json の "layout"）
-#   "band": 上に白い半透明の帯を敷き、その上に書名（パターンA）
-#   "sky" : 帯を敷かず、空の上に直接書名。文字の周りに白いふちどり（パターンB）
+#   title_style "band": 上に白い半透明の帯を敷き、その上に書名（パターンA・C）
+#               "sky" : 帯を敷かず、空の上に直接書名。文字の周りに白いふちどり（パターンB）
+#   title_lines: 書名を複数行・別サイズで組むとき [{"text","pt"}]。無ければ書名1行
+#   subtitle_style "plain": 帯の中に文字 / "ribbon": 濃い色の帯に白抜き文字
 L = C.get('layout', {})
 style = L.get('title_style', 'band')
 cx = x_front + px(TW) // 2
-TFONT, SFONT = F(MIN, L.get('title_pt', 38)), F(MIN, L.get('subtitle_pt', 15.5))
-ty = px(BLEED + L.get('title_y_in', 1.17)); sy = px(BLEED + L.get('subtitle_y_in', 1.93))
+tfont = FONTS[L.get('title_font', 'IPA明朝')]; sfont = FONTS[L.get('subtitle_font', 'IPA明朝')]
+# Notoの半角スペースは幅が狭く、語の切れ目が詰まって見えるので全角にする（IPAの元の案はそのまま）
+sp = lambda t, f: t if 'ipafont' in f else t.replace(' ', '　')
+lines = L.get('title_lines') or [{'text': sp(C['title'], tfont), 'pt': L.get('title_pt', 38)}]
+SFONT = F(sfont, L.get('subtitle_pt', 15.5))
 ink = tuple(L.get('title_color', [30, 30, 30])); ink2 = tuple(L.get('subtitle_color', [70, 70, 70]))
+band_top = px(BLEED + L.get('band_top_in', 0.55)); band_h = px(L.get('band_h_in', 2.15))
+ys = L.get('title_y_in', [1.17] if len(lines) == 1 else [0.95, 1.75])
+ys = [ys] if not isinstance(ys, list) else ys
+sy = px(BLEED + L.get('subtitle_y_in', 1.93))
 if style == 'band':
-    band_top = px(BLEED + 0.55); band_h = px(2.15)
-    over = Image.new('RGBA', (fw, band_h), (255, 255, 255, 228))
+    over = Image.new('RGBA', (fw, band_h), (255, 255, 255, L.get('band_alpha', 228)))
     cv.paste(over, (x_front, band_top), over)
-    d.text((cx, ty), C['title'], font=TFONT, fill=ink, anchor='mm')
-    d.text((cx, sy), C['subtitle'], font=SFONT, fill=ink2, anchor='mm')
-    d.line((cx - px(2.6), (ty + sy) // 2, cx + px(2.6), (ty + sy) // 2), fill=(150, 150, 150), width=3)
 else:
-    # ふちどり：白い文字をぼかして下に敷く（空の雲や色に負けないように）
-    glow = Image.new('L', (fw, px(3.2)), 0); gd = ImageDraw.Draw(glow)
-    gd.text((px(TW) // 2, ty), C['title'], font=TFONT, fill=255, anchor='mm', stroke_width=px(0.07))
+    glow = Image.new('L', (fw, px(3.4)), 0); gd = ImageDraw.Draw(glow)
+    for ln, yy in zip(lines, ys):
+        gd.text((px(TW) // 2, px(BLEED + yy)), ln['text'], font=F(tfont, ln['pt']), fill=255, anchor='mm', stroke_width=px(0.07))
     gd.text((px(TW) // 2, sy), C['subtitle'], font=SFONT, fill=255, anchor='mm', stroke_width=px(0.05))
     glow = glow.filter(ImageFilter.GaussianBlur(px(0.05)))
-    white = Image.new('RGB', glow.size, (255, 255, 255))
-    cv.paste(white, (x_front, 0), glow.point(lambda v: min(255, int(v * 0.9))))
-    d.text((cx, ty), C['title'], font=TFONT, fill=ink, anchor='mm')
+    cv.paste(Image.new('RGB', glow.size, (255, 255, 255)), (x_front, 0), glow.point(lambda v: min(255, int(v * 0.9))))
+tbs = []
+for ln, yy in zip(lines, ys):
+    fnt = F(tfont, ln['pt']); col = tuple(ln.get('color', ink))
+    d.text((cx, px(BLEED + yy)), ln['text'], font=fnt, fill=col, anchor='mm')
+    tbs.append(d.textbbox((cx, px(BLEED + yy)), ln['text'], font=fnt, anchor='mm'))
+if L.get('subtitle_style', 'plain') == 'ribbon':
+    tb = d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')
+    rib = tuple(L.get('ribbon_color', [40, 60, 90]))
+    d.rectangle((x_front, tb[1] - px(0.12), x_front + fw, tb[3] + px(0.12)), fill=rib)
+    d.text((cx, sy), C['subtitle'], font=SFONT, fill=(255, 255, 255), anchor='mm')
+else:
     d.text((cx, sy), C['subtitle'], font=SFONT, fill=ink2, anchor='mm')
-tb = d.textbbox((cx, ty), C['title'], font=TFONT, anchor='mm')
-assert tb[0] >= x_front + px(0.375) and tb[2] <= x_front + px(TW) - px(0.375), ('書名が安全範囲外', tb)
+    if style == 'band' and L.get('rule', True) and len(lines) == 1:
+        ry = (tbs[-1][3] + d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')[1]) // 2
+        d.line((cx - px(2.6), ry, cx + px(2.6), ry), fill=(150, 150, 150), width=3)
+for tb in tbs + [d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')]:
+    assert tb[0] >= x_front + px(0.375) and tb[2] <= x_front + px(TW) - px(0.375), ('文字が安全範囲外', tb)
 
 # 下絵の拡大（中身が細密な線画であることを見せる）
 ins = C.get('inset')
@@ -106,13 +131,14 @@ if ins:
     d.text((lx, icy + D // 2 + px(0.30)), lab, font=F(GOT, 10.5), fill=(50, 50, 50), anchor='mm')
 
 # 著者名（拡大の円と反対側の下）
-au = C['author']
-tb = d.textbbox((0, 0), au, font=F(MIN, 15))
+au = sp(C['author'], FONTS[L.get('author_font', 'IPA明朝')])
+AFONT = F(FONTS[L.get('author_font', 'IPA明朝')], L.get('author_pt', 15))
+tb = d.textbbox((0, 0), au, font=AFONT)
 aw = tb[2] - tb[0] + px(0.5)
 ay = H - px(BLEED) - px(0.95)
 ax = x_front + px(0.45) if side == 'right' else x_front + px(TW) - px(0.45) - aw
 d.rounded_rectangle((ax, ay, ax + aw, ay + px(0.5)), radius=px(0.08), fill=(255, 255, 255))
-d.text((ax + aw // 2, ay + px(0.25)), au, font=F(MIN, 15), fill=(40, 40, 40), anchor='mm')
+d.text((ax + aw // 2, ay + px(0.25)), au, font=AFONT, fill=(40, 40, 40), anchor='mm')
 
 # --- 裏表紙 ---
 bx0 = px(BLEED + 0.6); bx1 = x_spine - px(0.6)
