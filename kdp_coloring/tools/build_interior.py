@@ -56,12 +56,18 @@ def para(c, text, x, y, width, font='Mincho', size=11.5, lead=1.85, color=INK):
 
 
 def as_jpeg(png):
-    """PDFを軽くするため、グレースケールJPEG（品質92）に変換して埋め込む。PNGのままだと170MBになる。"""
-    from PIL import Image
-    jpg = os.path.splitext(png)[0] + '.jpg'
+    """ページ画像から白い余白を切り落とし、グレースケールJPEG（品質92）にして返す。
+    戻り値: (jpgのパス, 左, 下, 幅, 高さ)［単位pt］。
+    余白ごと貼ると画像の外枠がページ全体に広がり、KDPの検査で「余白の外に画像がある」と
+    判定されるおそれがあるので、絵のある範囲だけを、元と同じ位置に置く。PNGのままだと170MBになる。"""
+    from PIL import Image, ImageOps
+    jpg = os.path.splitext(png)[0] + '.crop.jpg'
+    im = Image.open(png).convert('L')
+    l, t, r, b = ImageOps.invert(im).point(lambda v: 255 if v > 8 else 0).getbbox()
     if not os.path.exists(jpg) or os.path.getmtime(jpg) < os.path.getmtime(png):
-        Image.open(png).convert('L').save(jpg, quality=92, dpi=(300, 300))
-    return jpg
+        im.crop((l, t, r, b)).save(jpg, quality=92, dpi=(300, 300))
+    k = W / im.width
+    return jpg, l * k, H - b * k, (r - l) * k, (b - t) * k
 
 
 def folio(c, n):
@@ -70,7 +76,8 @@ def folio(c, n):
 
 
 items = [(ch, it) for ch in C['chapters'] for it in ch['items']]
-c = canvas.Canvas(out, pagesize=(W, H))
+margins = []  # (番号, 左, 右, 下, 上) mm：ぬりえの絵と紙の端の距離
+c = canvas.Canvas(out, pagesize=(W, H), initialFontName='Gothic', initialFontSize=10)  # 既定のHelvetica（埋め込みなし）を残さない。KDPは全フォントの埋め込みが必須
 c.setTitle(C['title']); c.setAuthor(C.get('author', ''))
 page = 0
 
@@ -136,7 +143,9 @@ for ch, it in items:
     para(c, it['text'], 25 * mm, y - 16 * mm, W - 50 * mm)
     folio(c, page)
     newpage()  # ぬりえ = 奇数ページ（ページ番号は入れない）
-    c.drawImage(as_jpeg(os.path.join(pages_dir, it['image'] + '.png')), 0, 0, W, H)
+    jpg, x, y, w, h = as_jpeg(os.path.join(pages_dir, it['image'] + '.png'))
+    margins.append((it['no'], x / mm, (W - x - w) / mm, y / mm, (H - y - h) / mm))
+    c.drawImage(jpg, x, y, w, h)
 
 # 試し塗り：右ページに置く。左ページだとその紙の表がぬりえ40になり、試し塗りの色が絵に裏写りする
 newpage()  # ぬりえ40の裏は空白
@@ -158,3 +167,5 @@ for ln in C['colophon']:
     c.setFont('Mincho', 9.5); c.drawString(25 * mm, y + 8 * mm, ln); y -= 6 * mm
 c.save()
 print('pages', page)
+m = [min(v[1:]) for v in margins]
+print('ぬりえと紙の端の最小距離 %.1fmm（KDPの下限：外側6.4mm・綴じ側9.6mm）' % min(m))

@@ -163,7 +163,11 @@ for i, t in enumerate(thumbs):
 cv.save(out_png or '/dev/null', format='PNG') if out_png else None
 tmp = out_pdf + '.jpg'
 cv.save(tmp, quality=95, dpi=(DPI, DPI))
-c = canvas.Canvas(out_pdf, pagesize=(W_in * 72, H_in * 72))
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+pdfmetrics.registerFont(TTFont('Gothic', GOT))
+# 既定フォント（埋め込みなし）が残るとKDPで弾かれるので、埋め込める日本語フォントを既定にする
+c = canvas.Canvas(out_pdf, pagesize=(W_in * 72, H_in * 72), initialFontName='Gothic')
 c.drawImage(tmp, 0, 0, W_in * 72, H_in * 72)
 c.save()
 import os; os.remove(tmp)
