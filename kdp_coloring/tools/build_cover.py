@@ -37,12 +37,16 @@ x_front = px(BLEED + TW + spine)
 art = Image.open(C['front_image']).convert('RGB')
 # 絵に描き込まれた枠線（ぬりえ用の黒い枠）を検出して、その内側だけを使う。表紙に枠線が出ると裁ち落としでずれて目立つ
 import numpy as np
-g = np.asarray(art.convert('L')) < 110
-cols = np.where(g.mean(0) > 0.6)[0]; rows = np.where(g.mean(1) > 0.6)[0]
-if len(cols) >= 2 and len(rows) >= 2:
-    k = 8
-    art = art.crop((cols[cols < art.width // 2].max() + k, rows[rows < art.height // 2].max() + k,
-                    cols[cols > art.width // 2].min() - k, rows[rows > art.height // 2].min() - k))
+# 彩色版は枠線が薄いこともあるので閾値は180。絵の中の水平線（運河の岸など）を拾わないよう、端から8%以内だけを見る
+g = np.asarray(art.convert('L')) < 180
+cm, rm = g.mean(0) > 0.5, g.mean(1) > 0.5
+ew, eh = int(art.width * 0.08), int(art.height * 0.08)
+L_ = [i for i in range(ew) if cm[i]]; R_ = [i for i in range(art.width - ew, art.width) if cm[i]]
+T_ = [i for i in range(eh) if rm[i]]; B_ = [i for i in range(art.height - eh, art.height) if rm[i]]
+if L_ and R_ and T_ and B_:
+    k = 10
+    art = art.crop((max(L_) + k, max(T_) + k, min(R_) - k, min(B_) - k))
+    print('枠線を除去:', max(L_), max(T_), min(R_), min(B_))
 fw, fh = W - x_front, H
 s = max(fw / art.width, fh / art.height)
 art = art.resize((round(art.width * s), round(art.height * s)), Image.LANCZOS)
@@ -50,20 +54,38 @@ oy = round((art.height - fh) * C.get('front_crop_from_top', 0.5))
 ox = (art.width - fw) // 2
 cv.paste(art.crop((ox, oy, ox + fw, oy + fh)), (x_front, 0))
 
-# 書名の帯（上）
-band_top = px(BLEED + 0.55); band_h = px(2.15)
-over = Image.new('RGBA', (fw, band_h), (255, 255, 255, 228))
-cv.paste(over, (x_front, band_top), over)
-cx = x_front + (px(BLEED) * 0 + px(TW) // 2) + 0  # 表紙の中心（裁ち落とし側は除く）
+# 表紙のレイアウト（cover.json の "layout"）
+#   "band": 上に白い半透明の帯を敷き、その上に書名（パターンA）
+#   "sky" : 帯を敷かず、空の上に直接書名。文字の周りに白いふちどり（パターンB）
+L = C.get('layout', {})
+style = L.get('title_style', 'band')
 cx = x_front + px(TW) // 2
-d.text((cx, band_top + px(0.62)), C['title'], font=F(MIN, 38), fill=(30, 30, 30), anchor='mm')
-d.text((cx, band_top + px(1.38)), C['subtitle'], font=F(MIN, 15.5), fill=(70, 70, 70), anchor='mm')
-tb = d.textbbox((cx, band_top + px(0.62)), C['title'], font=F(MIN, 38), anchor='mm')
+TFONT, SFONT = F(MIN, L.get('title_pt', 38)), F(MIN, L.get('subtitle_pt', 15.5))
+ty = px(BLEED + L.get('title_y_in', 1.17)); sy = px(BLEED + L.get('subtitle_y_in', 1.93))
+ink = tuple(L.get('title_color', [30, 30, 30])); ink2 = tuple(L.get('subtitle_color', [70, 70, 70]))
+if style == 'band':
+    band_top = px(BLEED + 0.55); band_h = px(2.15)
+    over = Image.new('RGBA', (fw, band_h), (255, 255, 255, 228))
+    cv.paste(over, (x_front, band_top), over)
+    d.text((cx, ty), C['title'], font=TFONT, fill=ink, anchor='mm')
+    d.text((cx, sy), C['subtitle'], font=SFONT, fill=ink2, anchor='mm')
+    d.line((cx - px(2.6), (ty + sy) // 2, cx + px(2.6), (ty + sy) // 2), fill=(150, 150, 150), width=3)
+else:
+    # ふちどり：白い文字をぼかして下に敷く（空の雲や色に負けないように）
+    glow = Image.new('L', (fw, px(3.2)), 0); gd = ImageDraw.Draw(glow)
+    gd.text((px(TW) // 2, ty), C['title'], font=TFONT, fill=255, anchor='mm', stroke_width=px(0.07))
+    gd.text((px(TW) // 2, sy), C['subtitle'], font=SFONT, fill=255, anchor='mm', stroke_width=px(0.05))
+    glow = glow.filter(ImageFilter.GaussianBlur(px(0.05)))
+    white = Image.new('RGB', glow.size, (255, 255, 255))
+    cv.paste(white, (x_front, 0), glow.point(lambda v: min(255, int(v * 0.9))))
+    d.text((cx, ty), C['title'], font=TFONT, fill=ink, anchor='mm')
+    d.text((cx, sy), C['subtitle'], font=SFONT, fill=ink2, anchor='mm')
+tb = d.textbbox((cx, ty), C['title'], font=TFONT, anchor='mm')
 assert tb[0] >= x_front + px(0.375) and tb[2] <= x_front + px(TW) - px(0.375), ('書名が安全範囲外', tb)
-d.line((cx - px(2.6), band_top + px(1.02), cx + px(2.6), band_top + px(1.02)), fill=(150, 150, 150), width=3)
 
 # 下絵の拡大（中身が細密な線画であることを見せる）
 ins = C.get('inset')
+side = L.get('inset_side', 'right')
 if ins:
     la = Image.open(ins['image']).convert('L')
     l, t, r, b = ins['box']
@@ -71,24 +93,26 @@ if ins:
     D = px(ins['diameter_in'])
     crop = crop.resize((D, D), Image.LANCZOS).convert('RGB')
     mask = Image.new('L', (D, D), 0); ImageDraw.Draw(mask).ellipse((0, 0, D - 1, D - 1), fill=255)
-    icx = x_front + px(TW) - px(0.55) - D // 2
-    icy = H - px(BLEED) - px(1.55) - D // 2
+    icx = (x_front + px(TW) - px(0.55) - D // 2) if side == 'right' else (x_front + px(0.55) + D // 2)
+    icy = H - px(BLEED) - px(L.get('inset_bottom_in', 1.55)) - D // 2
     ring = px(0.06)
     ImageDraw.Draw(cv).ellipse((icx - D // 2 - ring, icy - D // 2 - ring, icx + D // 2 + ring, icy + D // 2 + ring), fill=(255, 255, 255))
     cv.paste(crop, (icx - D // 2, icy - D // 2), mask)
     lab = ins['label']
     tb = d.textbbox((0, 0), lab, font=F(GOT, 10.5))
     lw = tb[2] - tb[0] + px(0.24)
-    d.rounded_rectangle((icx - lw // 2, icy + D // 2 + px(0.12), icx + lw // 2, icy + D // 2 + px(0.48)), radius=px(0.08), fill=(255, 255, 255))
-    d.text((icx, icy + D // 2 + px(0.30)), lab, font=F(GOT, 10.5), fill=(50, 50, 50), anchor='mm')
+    lx = min(max(icx, x_front + px(0.45) + lw // 2), x_front + px(TW) - px(0.45) - lw // 2)
+    d.rounded_rectangle((lx - lw // 2, icy + D // 2 + px(0.12), lx + lw // 2, icy + D // 2 + px(0.48)), radius=px(0.08), fill=(255, 255, 255))
+    d.text((lx, icy + D // 2 + px(0.30)), lab, font=F(GOT, 10.5), fill=(50, 50, 50), anchor='mm')
 
-# 著者名（左下）
+# 著者名（拡大の円と反対側の下）
 au = C['author']
 tb = d.textbbox((0, 0), au, font=F(MIN, 15))
 aw = tb[2] - tb[0] + px(0.5)
 ay = H - px(BLEED) - px(0.95)
-d.rounded_rectangle((x_front + px(0.45), ay, x_front + px(0.45) + aw, ay + px(0.5)), radius=px(0.08), fill=(255, 255, 255))
-d.text((x_front + px(0.45) + aw // 2, ay + px(0.25)), au, font=F(MIN, 15), fill=(40, 40, 40), anchor='mm')
+ax = x_front + px(0.45) if side == 'right' else x_front + px(TW) - px(0.45) - aw
+d.rounded_rectangle((ax, ay, ax + aw, ay + px(0.5)), radius=px(0.08), fill=(255, 255, 255))
+d.text((ax + aw // 2, ay + px(0.25)), au, font=F(MIN, 15), fill=(40, 40, 40), anchor='mm')
 
 # --- 裏表紙 ---
 bx0 = px(BLEED + 0.6); bx1 = x_spine - px(0.6)
