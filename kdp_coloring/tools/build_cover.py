@@ -90,23 +90,24 @@ else:
     gd.text((px(TW) // 2, sy), C['subtitle'], font=SFONT, fill=255, anchor='mm', stroke_width=px(0.05))
     glow = glow.filter(ImageFilter.GaussianBlur(px(0.05)))
     cv.paste(Image.new('RGB', glow.size, (255, 255, 255)), (x_front, 0), glow.point(lambda v: min(255, int(v * 0.9))))
-tbs = []
-for ln, yy in zip(lines, ys):
-    fnt = F(tfont, ln['pt']); col = tuple(ln.get('color', ink))
-    d.text((cx, px(BLEED + yy)), ln['text'], font=fnt, fill=col, anchor='mm')
-    tbs.append(d.textbbox((cx, px(BLEED + yy)), ln['text'], font=fnt, anchor='mm'))
-if L.get('subtitle_style', 'plain') == 'ribbon':
-    tb = d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')
-    rib = tuple(L.get('ribbon_color', [40, 60, 90]))
-    d.rectangle((x_front, tb[1] - px(0.12), x_front + fw, tb[3] + px(0.12)), fill=rib)
-    d.text((cx, sy), C['subtitle'], font=SFONT, fill=(255, 255, 255), anchor='mm')
-else:
-    d.text((cx, sy), C['subtitle'], font=SFONT, fill=ink2, anchor='mm')
-    if style == 'band' and L.get('rule', True) and len(lines) == 1:
-        ry = (tbs[-1][3] + d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')[1]) // 2
-        d.line((cx - px(2.6), ry, cx + px(2.6), ry), fill=(150, 150, 150), width=3)
-for tb in tbs + [d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')]:
-    assert tb[0] >= x_front + px(0.375) and tb[2] <= x_front + px(TW) - px(0.375), ('文字が安全範囲外', tb)
+if not L.get('no_title'):  # Canva用：帯だけ残して書名・副題を入れない版
+    tbs = []
+    for ln, yy in zip(lines, ys):
+        fnt = F(tfont, ln['pt']); col = tuple(ln.get('color', ink))
+        d.text((cx, px(BLEED + yy)), ln['text'], font=fnt, fill=col, anchor='mm')
+        tbs.append(d.textbbox((cx, px(BLEED + yy)), ln['text'], font=fnt, anchor='mm'))
+    if L.get('subtitle_style', 'plain') == 'ribbon':
+        tb = d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')
+        rib = tuple(L.get('ribbon_color', [40, 60, 90]))
+        d.rectangle((x_front, tb[1] - px(0.12), x_front + fw, tb[3] + px(0.12)), fill=rib)
+        d.text((cx, sy), C['subtitle'], font=SFONT, fill=(255, 255, 255), anchor='mm')
+    else:
+        d.text((cx, sy), C['subtitle'], font=SFONT, fill=ink2, anchor='mm')
+        if style == 'band' and L.get('rule', True) and len(lines) == 1:
+            ry = (tbs[-1][3] + d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')[1]) // 2
+            d.line((cx - px(2.6), ry, cx + px(2.6), ry), fill=(150, 150, 150), width=3)
+    for tb in tbs + [d.textbbox((cx, sy), C['subtitle'], font=SFONT, anchor='mm')]:
+        assert tb[0] >= x_front + px(0.375) and tb[2] <= x_front + px(TW) - px(0.375), ('文字が安全範囲外', tb)
 
 # 下絵の拡大（中身が細密な線画であることを見せる）
 ins = C.get('inset')
@@ -123,22 +124,24 @@ if ins:
     ring = px(0.06)
     ImageDraw.Draw(cv).ellipse((icx - D // 2 - ring, icy - D // 2 - ring, icx + D // 2 + ring, icy + D // 2 + ring), fill=(255, 255, 255))
     cv.paste(crop, (icx - D // 2, icy - D // 2), mask)
-    lab = ins['label']
-    tb = d.textbbox((0, 0), lab, font=F(GOT, 10.5))
-    lw = tb[2] - tb[0] + px(0.24)
-    lx = min(max(icx, x_front + px(0.45) + lw // 2), x_front + px(TW) - px(0.45) - lw // 2)
-    d.rounded_rectangle((lx - lw // 2, icy + D // 2 + px(0.12), lx + lw // 2, icy + D // 2 + px(0.48)), radius=px(0.08), fill=(255, 255, 255))
-    d.text((lx, icy + D // 2 + px(0.30)), lab, font=F(GOT, 10.5), fill=(50, 50, 50), anchor='mm')
+    if not L.get('no_inset_label'):
+        lab = ins['label']
+        tb = d.textbbox((0, 0), lab, font=F(GOT, 10.5))
+        lw = tb[2] - tb[0] + px(0.24)
+        lx = min(max(icx, x_front + px(0.45) + lw // 2), x_front + px(TW) - px(0.45) - lw // 2)
+        d.rounded_rectangle((lx - lw // 2, icy + D // 2 + px(0.12), lx + lw // 2, icy + D // 2 + px(0.48)), radius=px(0.08), fill=(255, 255, 255))
+        d.text((lx, icy + D // 2 + px(0.30)), lab, font=F(GOT, 10.5), fill=(50, 50, 50), anchor='mm')
 
 # 著者名（拡大の円と反対側の下）
-au = sp(C['author'], FONTS[L.get('author_font', 'IPA明朝')])
-AFONT = F(FONTS[L.get('author_font', 'IPA明朝')], L.get('author_pt', 15))
-tb = d.textbbox((0, 0), au, font=AFONT)
-aw = tb[2] - tb[0] + px(0.5)
-ay = H - px(BLEED) - px(0.95)
-ax = x_front + px(0.45) if side == 'right' else x_front + px(TW) - px(0.45) - aw
-d.rounded_rectangle((ax, ay, ax + aw, ay + px(0.5)), radius=px(0.08), fill=(255, 255, 255))
-d.text((ax + aw // 2, ay + px(0.25)), au, font=AFONT, fill=(40, 40, 40), anchor='mm')
+if not L.get('no_author'):  # Canva用：著者名を入れない版
+    au = sp(C['author'], FONTS[L.get('author_font', 'IPA明朝')])
+    AFONT = F(FONTS[L.get('author_font', 'IPA明朝')], L.get('author_pt', 15))
+    tb = d.textbbox((0, 0), au, font=AFONT)
+    aw = tb[2] - tb[0] + px(0.5)
+    ay = H - px(BLEED) - px(0.95)
+    ax = x_front + px(0.45) if side == 'right' else x_front + px(TW) - px(0.45) - aw
+    d.rounded_rectangle((ax, ay, ax + aw, ay + px(0.5)), radius=px(0.08), fill=(255, 255, 255))
+    d.text((ax + aw // 2, ay + px(0.25)), au, font=AFONT, fill=(40, 40, 40), anchor='mm')
 
 # --- 裏表紙 ---
 bx0 = px(BLEED + 0.6); bx1 = x_spine - px(0.6)

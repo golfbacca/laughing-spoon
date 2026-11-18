@@ -1,0 +1,52 @@
+{
+ "trim_in": [
+  8.27,
+  11.69
+ ],
+ "pages": 86,
+ "title": "大人のぬりえ 北海道めぐり",
+ "subtitle": "繊細なえんぴつデッサンで描く 名所・自然・味覚の40景",
+ "author": "はりま せいじ",
+ "front_image": "kdp_coloring/hokkaido/cover/表紙用_小樽運河_彩色.jpeg",
+ "front_crop_from_top": 0.0,
+ "inset": {
+  "image": "kdp_coloring/hokkaido/src/05_小樽運河.jpeg",
+  "box": [
+   0.05,
+   0.26,
+   0.41,
+   0.5
+  ],
+  "diameter_in": 2.3,
+  "label": "中のぬりえは、このえんぴつデッサン"
+ },
+ "back_color": [
+  240,
+  244,
+  246
+ ],
+ "back_heading": "えんぴつで描いた、繊細なデッサンのぬりえ。",
+ "back_text": [
+  "札幌の時計台、函館の五稜郭、知床の流氷、富良野のラベンダー畑――。北海道の名所・自然・生きもの・味覚を、えんぴつデッサン風の細密な線画で40景描きました。",
+  "やわらかな陰影が入っているので、色を重ねていくだけで立体感のある仕上がりになります。どの絵にも短い解説がつき、旅をする気分で塗り進められます。"
+ ],
+ "back_points": [
+  "A4サイズ・ぬりえ40枚（札幌／道央／道南／道北／道東／森の生きもの／北海道の味／旅の終わりに）",
+  "ぬりえはすべて右ページ。裏は文字だけなので、裏写りしても次の絵は汚れません",
+  "巻末に試し塗りのページつき"
+ ],
+ "back_thumbs": [
+  "kdp_coloring/hokkaido/src/01_さっぽろテレビ塔.jpeg",
+  "kdp_coloring/hokkaido/src/25_雪原で舞うタンチョウ.jpeg",
+  "kdp_coloring/hokkaido/src/29_エゾモモンガ.jpeg",
+  "kdp_coloring/hokkaido/src/12_五稜郭.jpeg",
+  "kdp_coloring/hokkaido/src/18_富良野のラベンダー畑.jpeg",
+  "kdp_coloring/hokkaido/src/31_味噌ラーメン.jpeg"
+ ],
+ "layout": {
+  "title_style": "band",
+  "inset_side": "left",
+  "inset_bottom_in": 1.55,
+  "no_title": true
+ }
+}
