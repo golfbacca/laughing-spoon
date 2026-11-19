@@ -148,7 +148,23 @@ for ch, it in items:
     c.drawImage(jpg, x, y, w, h)
 
 # 試し塗り：右ページに置く。左ページだとその紙の表がぬりえ40になり、試し塗りの色が絵に裏写りする
-newpage()  # ぬりえ40の裏は空白
+newpage()  # ぬりえ40の裏（左ページ）。購入者特典があれば案内とQRコードを置く。無ければ空白
+if C.get('bonus'):
+    import qrcode
+    from reportlab.lib.utils import ImageReader
+    bo = C['bonus']
+    c.setFont('Gothic', 15); c.setFillColorRGB(*INK); c.drawString(25 * mm, H - 35 * mm, bo['heading'])
+    y = H - 50 * mm
+    for p_ in bo['text']:
+        y = para(c, p_, 25 * mm, y, W - 50 * mm, size=10.5) - 3 * mm
+    # URLは文字で載せない（なか見!検索の本文検索で拾われないよう、QRコードの画像だけにする）
+    q = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=20, border=4)
+    q.add_data(bo['url']); q.make(fit=True)
+    qimg = q.make_image(fill_color='black', back_color='white').convert('RGB')
+    size = 50 * mm
+    c.drawImage(ImageReader(qimg), (W - size) / 2, y - size - 8 * mm, size, size)
+    c.setFont('Gothic', 9); c.setFillColorRGB(*GRAY)
+    c.drawCentredString(W / 2, y - size - 14 * mm, bo.get('caption', 'スマートフォンのカメラで読み取ってください'))
 newpage()
 c.setFont('Gothic', 15); c.setFillColorRGB(*INK); c.drawString(25 * mm, H - 35 * mm, '試し塗りのページ')
 para(c, '色鉛筆やペンの色味、重ね塗りの具合を試してみましょう。', 25 * mm, H - 47 * mm, W - 50 * mm, size=10.5, color=GRAY)
