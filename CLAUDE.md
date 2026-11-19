@@ -70,7 +70,7 @@
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止し Offsite Ads へ切替（2026-10-04）** |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
 | `tapestry/`（予定） | Etsy タペストリー（Printify製造） | **別スレッドで着手予定（2026-10-03〜）** |
-| `kdp_coloring/` | Amazon KDP「全国の名所ぬりえ」（全47都道府県＋地方・東西・全国） | **北海道版の入稿データ完成（2026-11-18）。本人がKDPに登録する段階。手順は `kdp_coloring/docs/08`、方針は `07`** |
+| `kdp_coloring/` | Amazon KDP「大人の旅ぬりえ」シリーズ（全47都道府県＋地方・東西・全国） | **北海道版「大人の旅ぬりえ 北海道の旅」入稿データ完成（2026-11-19）。本人がKDPに登録する段階。手順 `kdp_coloring/docs/08`、方針 `07`、購入者特典の検討 `10`** |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
 `git branch -r` で確認すること。
