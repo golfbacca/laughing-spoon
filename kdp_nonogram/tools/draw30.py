@@ -141,8 +141,9 @@ ARTS = [("01_fuji", "Fuji-san 富士山 (Mount Fuji)", fuji, 30, "puzzles30"),
         ("02_torii", "Torii 鳥居 (shrine gate)", torii, 30, "puzzles30"),
         ("03_daruma", "Daruma だるま (wishing doll)", daruma, 30, "puzzles30"),
         # 04_maneki_neko は本人が手で直した絵（puzzles30/04_maneki_neko.txt）を使う。ここでは上書きしない
-        ("05_chochin", "Chōchin 提灯 (paper lantern)", lantern, 30, "puzzles30"),
-        ("06_goju_no_to", "Gojū-no-tō 五重塔 (five-story pagoda)", pagoda, 30, "puzzles30")]
+        ("05_chochin", "Chōchin 提灯 (paper lantern)", lantern, 30, "puzzles30")]
+# 06_goju_no_to（五重塔）は本人の参考画像をもとに組み直した絵を使う（puzzles30/06_goju_no_to.txt）。ここでは上書きしない。
+# 上の pagoda() は不採用（木に見えた）。経緯は docs/01
 # 15×15の桜は手描き（puzzles/06_sakura.txt）。図形から落とすと花びらがつながって塊になった
 
 if __name__ == "__main__":
