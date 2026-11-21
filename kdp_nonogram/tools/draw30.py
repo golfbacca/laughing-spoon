@@ -124,11 +124,11 @@ def sakura(a):
         a.circle(15 + 5.2 * math.cos(t), 15.5 + 5.2 * math.sin(t), 0.8, black=False)
 
 
-ARTS = [("01_fuji", "Mount Fuji", fuji), ("02_torii", "Torii gate", torii),
-        ("03_daruma", "Daruma doll", daruma),
+ARTS = [("01_fuji", "Fuji-san (Mount Fuji)", fuji), ("02_torii", "Torii (shrine gate)", torii),
+        ("03_daruma", "Daruma (wishing doll)", daruma),
         # 04_maneki_neko は本人が手で直した絵（puzzles30/04_maneki_neko.txt）を使う。ここでは上書きしない
        
-        ("05_lantern", "Paper lantern", lantern), ("06_cherry_blossom", "Cherry blossom", sakura)]
+        ("05_lantern", "Chōchin (paper lantern)", lantern), ("06_cherry_blossom", "Sakura (cherry blossom)", sakura)]
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)

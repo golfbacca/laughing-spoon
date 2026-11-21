@@ -5,6 +5,15 @@ sys.path.insert(0, os.path.dirname(__file__))
 from nonogram import load, clues, check
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+
+# 題に ō ū などの長音記号を使うので、それを持つ書体を埋め込む（Helvetica には無い）
+pdfmetrics.registerFont(TTFont("Title", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
+# KDPは全書体の埋め込みが必須。reportlab の Helvetica は埋め込まれないので、同じ字幅の Liberation Sans を使う
+L = "/usr/share/fonts/truetype/liberation/LiberationSans-"
+pdfmetrics.registerFont(TTFont("Sans", L + "Regular.ttf"))
+pdfmetrics.registerFont(TTFont("Sans-Bold", L + "Bold.ttf"))
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 W, H = 8.5 * inch, 11 * inch
@@ -29,11 +38,12 @@ def draw_puzzle(c, grid, no, solved=False, box=None):
     def num(cx, by, v):
         # 2桁は欄からはみ出す。小さくすると読みにくい（本人指摘）ので、高さは1桁と同じまま横だけ詰める
         t = c.beginText()
-        t.setFont("Helvetica-Bold", fs)
+        t.setFont("Sans-Bold", fs)
         hs = 68 if v >= 10 else 100
         t.setHorizScale(hs)
-        t.setTextOrigin(cx - c.stringWidth(str(v), "Helvetica-Bold", fs) * hs / 200, by)
+        t.setTextOrigin(cx - c.stringWidth(str(v), "Sans-Bold", fs) * hs / 200, by)
         t.textOut(str(v))
+        t.setHorizScale(100)          # 戻さないと、後に描く題まで横に詰まる
         c.drawText(t)
 
     for x, cl in enumerate(cols):         # 列の手がかり（下詰め）
@@ -64,16 +74,16 @@ def main(out, folder="puzzles"):
     bad = [os.path.basename(f) for f, g in grids if not check(g)["logic_only"]]
     if bad:
         sys.exit(f"検査に通らない問題があるので中止: {bad}")
-    c = canvas.Canvas(out, pagesize=(W, H))
+    c = canvas.Canvas(out, pagesize=(W, H), initialFontName="Sans")   # 既定の Helvetica を残すと埋め込みなしの書体が混ざる
     sizes = []
     for n, (f, g) in enumerate(grids, 1):
-        c.setFont("Helvetica-Bold", 22)
+        c.setFont("Sans-Bold", 22)
         c.drawString(MARGIN, H - MARGIN - 14, f"Puzzle {n}")
-        c.setFont("Helvetica", 12)
+        c.setFont("Sans", 12)
         c.drawRightString(W - MARGIN, H - MARGIN - 12, f"{len(g[0])} x {len(g)}")
         cell = draw_puzzle(c, g, n, box=(MARGIN, MARGIN + 0.3 * inch, W - 2 * MARGIN, H - 2 * MARGIN - 0.8 * inch))
         sizes.append(cell / inch)
-        c.setFont("Helvetica", 10)
+        c.setFont("Sans", 10)
         c.drawCentredString(W / 2, MARGIN - 6, str(n))
         c.showPage()
     # 解答：1ページに6問
@@ -82,12 +92,12 @@ def main(out, folder="puzzles"):
     for i, (f, g) in enumerate(grids):
         k = i % per
         if k == 0:
-            c.setFont("Helvetica-Bold", 22)
+            c.setFont("Sans-Bold", 22)
             c.drawString(MARGIN, H - MARGIN - 14, "Solutions")
         bx = MARGIN + (k % colsn) * bw
         by = H - MARGIN - 0.5 * inch - (k // colsn + 1) * bh
         draw_puzzle(c, g, i + 1, solved=True, box=(bx + 8, by + 22, bw - 16, bh - 30))
-        c.setFont("Helvetica", 11)
+        c.setFont("Title", 11)
         c.drawCentredString(bx + bw / 2, by + 8, f"{i + 1}. {title_of(f)}")
         if k == per - 1 or i == len(grids) - 1:
             c.showPage()
