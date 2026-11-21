@@ -125,7 +125,9 @@ def sakura(a):
 
 
 ARTS = [("01_fuji", "Mount Fuji", fuji), ("02_torii", "Torii gate", torii),
-        ("03_daruma", "Daruma doll", daruma), ("04_maneki_neko", "Maneki-neko (lucky cat)", maneki),
+        ("03_daruma", "Daruma doll", daruma),
+        # 04_maneki_neko は本人が手で直した絵（puzzles30/04_maneki_neko.txt）を使う。ここでは上書きしない
+       
         ("05_lantern", "Paper lantern", lantern), ("06_sakura_flower", "Cherry blossom", sakura)]
 
 if __name__ == "__main__":
