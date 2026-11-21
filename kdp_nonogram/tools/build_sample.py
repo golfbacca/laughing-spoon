@@ -2,7 +2,7 @@
 検査に通らない問題が1つでもあれば、PDFを作らずに止まる。"""
 import sys, glob, os
 sys.path.insert(0, os.path.dirname(__file__))
-from nonogram import load, clues, check
+from nonogram import load, clues, check, title_of, title_runs
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 from reportlab.pdfbase import pdfmetrics
@@ -10,6 +10,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 # 題に ō ū などの長音記号を使うので、それを持つ書体を埋め込む（Helvetica には無い）
 pdfmetrics.registerFont(TTFont("Title", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"))
+# 日本語の文字。IPAexゴシック（IPAフォントライセンス。文書への埋め込みは可）。無ければ: apt-get install fonts-ipaexfont-gothic
+pdfmetrics.registerFont(TTFont("JP", "/usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf"))
 # KDPは全書体の埋め込みが必須。reportlab の Helvetica は埋め込まれないので、同じ字幅の Liberation Sans を使う
 L = "/usr/share/fonts/truetype/liberation/LiberationSans-"
 pdfmetrics.registerFont(TTFont("Sans", L + "Regular.ttf"))
@@ -20,8 +22,12 @@ W, H = 8.5 * inch, 11 * inch
 MARGIN = 0.45 * inch   # KDPの下限は外側0.25・内側0.375インチ（150ページまで）
 
 
-def title_of(path):
-    return open(path, encoding="utf-8").readline().lstrip("; ").strip()
+def draw_title(c, cx, y, text, size):
+    """中央ぞろえで題を描く。日本語は IPAexゴシック、ほかは DejaVu Sans"""
+    runs = [("JP" if jp else "Title", t) for jp, t in title_runs(text)]
+    x = cx - sum(c.stringWidth(t, f, size) for f, t in runs) / 2
+    for f, t in runs:
+        c.setFont(f, size); c.drawString(x, y, t); x += c.stringWidth(t, f, size)
 
 
 def draw_puzzle(c, grid, no, solved=False, box=None):
@@ -97,8 +103,7 @@ def main(out, folder="puzzles"):
         bx = MARGIN + (k % colsn) * bw
         by = H - MARGIN - 0.5 * inch - (k // colsn + 1) * bh
         draw_puzzle(c, g, i + 1, solved=True, box=(bx + 8, by + 22, bw - 16, bh - 30))
-        c.setFont("Title", 11)
-        c.drawCentredString(bx + bw / 2, by + 8, f"{i + 1}. {title_of(f)}")
+        draw_title(c, bx + bw / 2, by + 8, f"{i + 1}. {title_of(f)}", 11)
         if k == per - 1 or i == len(grids) - 1:
             c.showPage()
     c.save()

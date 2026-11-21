@@ -1,4 +1,4 @@
-; Daruma (wishing doll)
+; Daruma だるま (wishing doll)
 ....#######....
 ..###########..
 .#############.

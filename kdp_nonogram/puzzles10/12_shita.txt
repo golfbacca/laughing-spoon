@@ -1,4 +1,4 @@
-; 下 (shita) - down, below
+; Shita 下 (down, below)
 ##########
 ##########
 ....##....

@@ -6,11 +6,11 @@ sys.path.insert(0, os.path.dirname(__file__))
 from nonogram import check
 
 N, S = 30, 20
-OUT = os.path.join(os.path.dirname(__file__), "..", "puzzles30")
 
 
 class Art:
-    def __init__(self):
+    def __init__(self, n=N):
+        self.n = n                        # 絵は常に30単位の座標で描き、n×n のマス目に落とす
         self.im = Image.new("L", (N * S, N * S), 255)
         self.d = ImageDraw.Draw(self.im)
 
@@ -39,9 +39,9 @@ class Art:
         self.im.paste(layer.im, (0, 0), mm); self.d = ImageDraw.Draw(self.im)
 
     def grid(self):
-        px = self.im.load()
-        return [[sum(px[x * S + i, y * S + j] < 128 for i in range(S) for j in range(S)) * 2 >= S * S
-                 for x in range(N)] for y in range(N)]
+        px = self.im.load(); n = self.n; c = N * S // n
+        return [[sum(px[x * c + i, y * c + j] < 128 for i in range(c) for j in range(c)) * 2 >= c * c
+                 for x in range(n)] for y in range(n)]
 
 
 def fuji(a):
@@ -108,6 +108,7 @@ def lantern(a):
 
 
 def sakura(a):
+    """15×15用。細かいしべは潰れるので、花びら5枚・切れ込み・中心の丸だけにする"""
     for k in range(5):
         t = math.radians(-90 + 72 * k)
         a.circle(15 + 8 * math.cos(t), 15.5 + 8 * math.sin(t), 5.6)
@@ -115,25 +116,39 @@ def sakura(a):
     for k in range(5):                                               # 花びらの切れ込み
         t = math.radians(-90 + 72 * k)
         ux, uy = math.cos(t), math.sin(t)
-        tip = (15 + 10.5 * ux, 15.5 + 10.5 * uy)
-        a.poly([tip, (15 + 14.5 * ux - 2.2 * uy, 15.5 + 14.5 * uy + 2.2 * ux),
-                (15 + 14.5 * ux + 2.2 * uy, 15.5 + 14.5 * uy - 2.2 * ux)], black=False)
-    a.circle(15, 15.5, 2.6, black=False); a.circle(15, 15.5, 1.1)    # しべ
-    for k in range(5):
-        t = math.radians(-90 + 72 * k)
-        a.circle(15 + 5.2 * math.cos(t), 15.5 + 5.2 * math.sin(t), 0.8, black=False)
+        tip = (15 + 9.5 * ux, 15.5 + 9.5 * uy)
+        a.poly([tip, (15 + 15 * ux - 3 * uy, 15.5 + 15 * uy + 3 * ux),
+                (15 + 15 * ux + 3 * uy, 15.5 + 15 * uy - 3 * ux)], black=False)
+    a.rect(13, 13, 17, 17, black=False); a.rect(14, 14, 16, 16)      # 中心
 
 
-ARTS = [("01_fuji", "Fuji-san (Mount Fuji)", fuji), ("02_torii", "Torii (shrine gate)", torii),
-        ("03_daruma", "Daruma (wishing doll)", daruma),
+def pagoda(a):
+    """五重塔。屋根5枚（下ほど広い）＋相輪。15×15では三重にしか描けなかった（本人指摘）"""
+    a.rect(14, 0, 16, 5)                                             # 相輪
+    a.rect(13, 1, 17, 2); a.rect(13, 3, 17, 4)
+    for i in range(5):
+        y = 5 + 5 * i; h = 6 + 2 * i                                 # h：屋根の半分の幅
+        a.rect(15 - h + 2, y, 15 + h - 2, y + 1)                     # 屋根の上の段
+        a.rect(15 - h - 1, y + 1, 15 + h + 1, y + 2)                 # 屋根の下の段（軒）
+        a.rect(15 - h - 1, y, 15 - h, y + 1); a.rect(15 + h, y, 15 + h + 1, y + 1)   # 反り上がった軒先（軒の真上に置く。離すと浮いた点になる）
+        w = round(2 + 1.5 * i)                                       # 壁は屋根よりずっと細く。近い幅だと木に見えた
+        a.rect(15 - w, y + 2, 15 + w, y + 5)                         # 各層の壁
+    a.rect(14, 27, 16, 30, black=False)                              # 入口
+
+
+# (ファイル名, 題, 描く関数, マス数, 出力フォルダ)
+ARTS = [("01_fuji", "Fuji-san 富士山 (Mount Fuji)", fuji, 30, "puzzles30"),
+        ("02_torii", "Torii 鳥居 (shrine gate)", torii, 30, "puzzles30"),
+        ("03_daruma", "Daruma だるま (wishing doll)", daruma, 30, "puzzles30"),
         # 04_maneki_neko は本人が手で直した絵（puzzles30/04_maneki_neko.txt）を使う。ここでは上書きしない
-       
-        ("05_lantern", "Chōchin (paper lantern)", lantern), ("06_cherry_blossom", "Sakura (cherry blossom)", sakura)]
+        ("05_chochin", "Chōchin 提灯 (paper lantern)", lantern, 30, "puzzles30"),
+        ("06_goju_no_to", "Gojū-no-tō 五重塔 (five-story pagoda)", pagoda, 30, "puzzles30")]
+# 15×15の桜は手描き（puzzles/06_sakura.txt）。図形から落とすと花びらがつながって塊になった
 
 if __name__ == "__main__":
-    os.makedirs(OUT, exist_ok=True)
-    for name, title, fn in ARTS:
-        a = Art(); fn(a); g = a.grid(); r = check(g)
-        with open(os.path.join(OUT, name + ".txt"), "w", encoding="utf-8") as f:
+    root = os.path.join(os.path.dirname(__file__), "..")
+    for name, title, fn, n, folder in ARTS:
+        a = Art(n); fn(a); g = a.grid(); r = check(g)
+        with open(os.path.join(root, folder, name + ".txt"), "w", encoding="utf-8") as f:
             f.write(f"; {title}\n" + "\n".join("".join("#" if c else "." for c in row) for row in g) + "\n")
-        print(f"{name:16s} 論理だけ={r['logic_only']} 解の数={r['solutions']} 残り={r['stuck_cells']} 黒率={r['fill']:.0%} 空行列={r['empty_lines']}")
+        print(f"{folder}/{name:16s} {n}x{n} 論理だけ={r['logic_only']} 解の数={r['solutions']} 残り={r['stuck_cells']} 黒率={r['fill']:.0%} 空行列={r['empty_lines']}")

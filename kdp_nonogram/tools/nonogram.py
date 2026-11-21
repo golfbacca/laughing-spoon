@@ -136,3 +136,19 @@ def check(grid):
     return {"logic_only": same, "solutions": n, "stuck_cells": unknown,
             "fill": sum(map(sum, grid)) / (len(grid) * len(grid[0])),
             "empty_lines": sum(not c for c in rows) + sum(not c for c in cols)}
+
+
+def title_of(path):
+    return open(path, encoding="utf-8").readline().lstrip("; ").strip()
+
+
+def title_runs(text):
+    """題を (日本語か, 文字列) の並びに分ける。日本語の文字と長音記号つきローマ字は別の書体で描くため"""
+    runs = []
+    for ch in text:
+        jp = ord(ch) >= 0x2E80
+        if runs and runs[-1][0] == jp:
+            runs[-1][1] += ch
+        else:
+            runs.append([jp, ch])
+    return [(j, t) for j, t in runs]
