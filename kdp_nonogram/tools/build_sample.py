@@ -30,10 +30,10 @@ def draw_puzzle(c, grid, no, solved=False, box=None):
         c.setFont("Helvetica-Bold", fs * (0.8 if v >= 10 else 1))
         c.drawCentredString(cx, by, str(v))
     for x, cl in enumerate(cols):         # 列の手がかり（下詰め）
-        for i, v in enumerate(reversed(cl)):
+        for i, v in enumerate(reversed(cl or [0])):  # 空の列は 0 と書く
             num(gx + x * cell + cell / 2, gy_top + i * cw + cw * 0.28, v)
     for y, rl in enumerate(rows):         # 行の手がかり（右詰め）
-        for i, v in enumerate(reversed(rl)):
+        for i, v in enumerate(reversed(rl or [0])):
             num(gx - i * cw - cw / 2 - cw * 0.08, gy_top - y * cell - cell / 2 - fs * 0.35, v)
     if solved:
         c.setFillGray(0.15)
