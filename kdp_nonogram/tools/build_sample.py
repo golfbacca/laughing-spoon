@@ -8,7 +8,7 @@ from reportlab.lib.units import inch
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 W, H = 8.5 * inch, 11 * inch
-MARGIN = 0.6 * inch
+MARGIN = 0.45 * inch   # KDPの下限は外側0.25・内側0.375インチ（150ページまで）
 
 
 def title_of(path):
@@ -24,11 +24,18 @@ def draw_puzzle(c, grid, no, solved=False, box=None):
     cw = cell * 0.62                      # 手がかり欄の1マス
     gx = x0 + (bw - (w * cell + kr * cw)) / 2 + kr * cw
     gy_top = y0 + bh - (bh - (h * cell + kc * cw)) / 2 - kc * cw
-    fs = cell * 0.46
+    fs = cell * 0.52
 
-    def num(cx, by, v):               # 2桁は欄からはみ出すので少し小さくする
-        c.setFont("Helvetica-Bold", fs * (0.8 if v >= 10 else 1))
-        c.drawCentredString(cx, by, str(v))
+    def num(cx, by, v):
+        # 2桁は欄からはみ出す。小さくすると読みにくい（本人指摘）ので、高さは1桁と同じまま横だけ詰める
+        t = c.beginText()
+        t.setFont("Helvetica-Bold", fs)
+        hs = 68 if v >= 10 else 100
+        t.setHorizScale(hs)
+        t.setTextOrigin(cx - c.stringWidth(str(v), "Helvetica-Bold", fs) * hs / 200, by)
+        t.textOut(str(v))
+        c.drawText(t)
+
     for x, cl in enumerate(cols):         # 列の手がかり（下詰め）
         for i, v in enumerate(reversed(cl or [0])):  # 空の列は 0 と書く
             num(gx + x * cell + cell / 2, gy_top + i * cw + cw * 0.28, v)
@@ -64,7 +71,7 @@ def main(out, folder="puzzles"):
         c.drawString(MARGIN, H - MARGIN - 14, f"Puzzle {n}")
         c.setFont("Helvetica", 12)
         c.drawRightString(W - MARGIN, H - MARGIN - 12, f"{len(g[0])} x {len(g)}")
-        cell = draw_puzzle(c, g, n, box=(MARGIN, MARGIN + 0.3 * inch, W - 2 * MARGIN, H - 2 * MARGIN - 0.9 * inch))
+        cell = draw_puzzle(c, g, n, box=(MARGIN, MARGIN + 0.3 * inch, W - 2 * MARGIN, H - 2 * MARGIN - 0.8 * inch))
         sizes.append(cell / inch)
         c.setFont("Helvetica", 10)
         c.drawCentredString(W / 2, MARGIN - 6, str(n))
@@ -85,7 +92,7 @@ def main(out, folder="puzzles"):
         if k == per - 1 or i == len(grids) - 1:
             c.showPage()
     c.save()
-    print(f"{out}: {len(grids)}問  マスの大きさ {min(sizes):.2f}〜{max(sizes):.2f} インチ（{min(sizes)*25.4:.1f}〜{max(sizes)*25.4:.1f} mm）")
+    print(f"{out}: {len(grids)}問  数字の高さ {min(sizes)*0.52*0.72*25.4:.1f}mm〜  マスの大きさ {min(sizes):.2f}〜{max(sizes):.2f} インチ（{min(sizes)*25.4:.1f}〜{max(sizes)*25.4:.1f} mm）")
 
 
 if __name__ == "__main__":

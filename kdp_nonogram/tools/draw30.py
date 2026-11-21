@@ -77,18 +77,22 @@ def daruma(a):
 
 
 def maneki(a):
-    a.poly([(5, 9), (5.5, 1), (12, 4.5)]); a.poly([(21, 9), (20.5, 1), (14, 4.5)])   # 耳
-    a.oval(3, 3.5, 23, 18.5)                                         # 頭
-    a.oval(4, 15, 22, 30)                                            # 体
-    a.oval(21.5, 1, 27.5, 9)                                         # 挙げた手
-    a.rect(22.5, 6, 26, 17); a.poly([(19, 14), (26, 12), (26, 17), (20, 19)])
-    a.oval(7, 8, 10, 12, black=False); a.oval(16, 8, 19, 12, black=False)            # 目
-    a.rect(8, 9, 9, 12); a.rect(17, 9, 18, 12)                       # 瞳
-    a.poly([(12, 12.5), (14, 12.5), (13, 13.8)], black=False)        # 鼻
-    a.rect(6, 17, 20, 18.3, black=False)                             # 首輪
-    a.circle(13, 19.5, 1.3, black=False)                             # 鈴
-    a.oval(9.5, 21.5, 16.5, 29, black=False)                         # 小判
-    a.oval(11, 23, 15, 27.5)
+    # 第1版は挙げた手が頭とくっついて「手」に見えなかった（本人指摘）。
+    # 頭を左へ寄せ、腕を頭から離して立て、先に丸い手をつけた。
+    a.poly([(3, 9), (3.5, 1.5), (10, 5)]); a.poly([(19, 9), (18.5, 1.5), (12, 5)])   # 耳
+    a.oval(1, 4, 21, 18.5)                                           # 頭
+    a.oval(2, 15, 21, 30)                                            # 体
+    a.poly([(18, 19), (24, 16), (27, 16), (27, 20), (20, 24)])       # 肩
+    a.rect(24, 7, 27, 18)                                            # 腕
+    a.oval(21, 1, 29, 8)                                             # 手
+    a.rect(23, 1, 24, 4, black=False); a.rect(26, 1, 27, 4, black=False)   # 指の切れ目
+    a.oval(5, 8.5, 8, 12.5, black=False); a.oval(14, 8.5, 17, 12.5, black=False)   # 目
+    a.rect(6, 9.5, 7, 12.5); a.rect(15, 9.5, 16, 12.5)               # 瞳
+    a.poly([(10, 13), (12, 13), (11, 14.3)], black=False)            # 鼻
+    a.rect(4, 17, 18, 18.3, black=False)                             # 首輪
+    a.circle(11, 19.6, 1.3, black=False)                             # 鈴
+    a.oval(7.5, 21.5, 14.5, 29, black=False)                         # 小判
+    a.oval(9, 23, 13, 27.5)
 
 
 def lantern(a):
@@ -122,7 +126,7 @@ def sakura(a):
 
 ARTS = [("01_fuji", "Mount Fuji", fuji), ("02_torii", "Torii gate", torii),
         ("03_daruma", "Daruma doll", daruma), ("04_maneki_neko", "Maneki-neko (lucky cat)", maneki),
-        ("05_lantern", "Paper lantern", lantern), ("06_sakura", "Cherry blossom", sakura)]
+        ("05_lantern", "Paper lantern", lantern), ("06_sakura_flower", "Cherry blossom", sakura)]
 
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
