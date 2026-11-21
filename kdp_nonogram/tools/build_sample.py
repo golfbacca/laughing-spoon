@@ -51,8 +51,8 @@ def draw_puzzle(c, grid, no, solved=False, box=None):
     return cell
 
 
-def main(out):
-    files = sorted(glob.glob(os.path.join(ROOT, "puzzles", "*.txt")))
+def main(out, folder="puzzles"):
+    files = sorted(glob.glob(os.path.join(ROOT, folder, "*.txt")))
     grids = [(f, load(f)) for f in files]
     bad = [os.path.basename(f) for f, g in grids if not check(g)["logic_only"]]
     if bad:
@@ -89,4 +89,4 @@ def main(out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(*sys.argv[1:3])
