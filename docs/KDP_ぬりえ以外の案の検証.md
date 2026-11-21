@@ -82,3 +82,75 @@ amazon.com で次の3語を検索し、**広告（Sponsored）を除いた上か
 - 広告の最低予算 https://advertising.amazon.com/resources/faq ／ 推奨予算 https://advertising.amazon.com/library/guides/sponsored-products-budget-best-practices
 - クリック単価の推定 https://www.supplykick.com/blog/how-much-does-it-cost-to-promote-a-product-on-amazon
 - Tuttle社の価格 https://www.barnesandnoble.com/s/9784805312278 ／ https://www.target.com/p/product/-/A-88276050
+
+## amazon.com の検索結果の実測（2026-11-21・本人のスクリーンショット3枚）
+
+条件: 未ログイン・配送先が日本の画面。広告（Sponsored）は除いた。**売れ行きの順位（Best Sellers Rank）は検索結果に出ないので未測定。**
+レビュー数は売れた数の目安でしかない。
+
+### hiragana workbook（414件）
+
+| 本 | 定価 | レビュー | 出版 |
+|---|---|---|---|
+| Learning Japanese Hiragana and Katakana（Tuttle） | $10.37 | 6,100 | 2014 |
+| The One and Only Japanese Workbook | $14.24 | 343 | 2024-04 |
+| Japanese Hiragana and Katakana Made Easy（Best Seller） | $13.89 | 632 | 2022-03 |
+| Kodansha's Hiragana Workbook | $14.95 | 243 | 2012 |
+| Hiragana And Katakana Workbook For Beginners（Gengo） | $14.99 | 131 | 2022-04 |
+| Hiragana & Katakana Practice Workbook（Hanabi Works） | $15.99 | 59 | **2025-01** |
+| Learning Japanese Workbook for Beginners（Just Reality） | $17.28 | 1,200 | 2021 |
+| Japanese Hiragana & Katakana for Beginners（Tuttle） | — | 1,600 | 2011 |
+| Forever Remember Japanese（Watashi Japanese） | $16.95 | 64 | **2026-01** |
+
+- 価格帯は **$10〜17、中心は$14〜16**。**前回の「無名の著者が$9.99より上を付けるのは難しい」は誤り。訂正する**
+- 2025年・2026年に出た本が1ページ目にいる（レビュー59・64）→ **新規でも入れる**
+- ただし上位は200ページ超・動画つき・ひらがなとカタカナの合本。**100ページの薄い練習帳では並べない**
+- 取り分の試算: 200ページ・大判・$14.99 → 印刷費 $1.00＋$0.017×200＝$4.40、取り分 $8.99−$4.40＝**約$4.59**
+
+### nonogram puzzle book（522件）
+
+| 本 | 定価 | レビュー |
+|---|---|---|
+| Nonogram Puzzle Book 150+（Gaggioli） | $10.99 | 26 |
+| 同 400（Riddle Rhapsodist） | $19.99 | 65 |
+| Murdograms | $14.99 | 26 |
+| 同 450+（Gaggioli） | $19.99 | 65（星3.8） |
+| 同 300+（Gaggioli） | $15.99 | 35（星3.8） |
+| 同 Travel-Size（Gaggioli） | $12.99 | 20 |
+| 80 Puzzles（Brainteaserz） | $7.99 | 93 |
+| Master Nonogram Vol.5 | $9.99 | 1 |
+| The Big Book of Picross Hanjie…（Djape） | $29.99 | 296 |
+| Nonograms for Everyone | $9.99 | 33 |
+| 100 Nonogram Puzzles for Beginners | $10.00 | 163 |
+| 80 Brain-Training（Siblee Quill） | $9.99 | 3 |
+
+- レビューの中央値は約30、最大296。**レビュー1〜3件の本が1ページ目にいる＝入る壁は低い**
+- 裏返すと、**市場そのものが小さい可能性**がある（順位が未測定なので断定できない）
+- 価格は$9.99〜$19.99。$9.99以上が普通
+- **日本の題材に絞った本は1ページ目に無い。** 絵柄は人物・動物・一般物
+- 上位の同一著者の本が星3.8 → 品質に不満がある層がいる
+- 他社は題名に Picross を使っているが、任天堂の登録商標なので真似しない
+
+### kakeibo（2,000件超）
+
+- 似た表紙の家計簿が大量。定価 **$3.99・$6.24・$7.99・$8.99** が並び、60%の線（$9.99）を割っている
+- 上位は出版社の読み物（レビュー660・503）。記入帳は同じ版元が何冊も出している
+- **見送りで確定**
+
+### 判定
+
+| 案 | 判定 | 根拠 |
+|---|---|---|
+| 日本語の書き取り帳 | **進める。仕様を上げる** | $14〜16で売れている。新規参入の実例2件。200ページ級が必要 |
+| 日本の題材のノノグラム | **進める** | 壁が低く、日本の題材は空いている。市場の大きさは未測定 |
+| Kakeibo | **見送り** | 飽和・安値 |
+
+### 順番の変更（前日の案を入れ替え）
+
+**先にノノグラム、次に書き取り帳。**
+- ノノグラムは生成・検査・組版がこちらで完結し、本人の時間をほとんど使わない
+- 書き取り帳は200ページ級と分かり、書き順データの使用条件の確認と英語の説明文が要る。準備に時間がかかる
+
+### まだ測っていないもの
+
+売れ行きの順位。商品ページ下部の Best Sellers Rank を見れば、1日の販売数のおおよその桁が分かる。
