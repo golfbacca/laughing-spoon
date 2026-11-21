@@ -19,5 +19,5 @@ for i, fn in enumerate(files):
             d.rectangle([ox + x * C, oy + y * C, ox + x * C + C, oy + y * C + C],
                         fill="black" if c else "white", outline="#bbb")
     ok = "OK" if r["logic_only"] else "NG"
-    d.text((ox, oy + len(g) * C + 4), f"{os.path.basename(fn)[:-4]}  {ok}", fill="black" if ok == "OK" else "red", font=f)
+    d.text((ox, oy + len(g) * C + 4), f"{open(fn, encoding='utf-8').readline().lstrip('; ').strip()}  {ok}", fill="black" if ok == "OK" else "red", font=f)
 im.save(sys.argv[1]); print(im.size)
