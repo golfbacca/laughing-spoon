@@ -57,7 +57,7 @@ def fuji(a):
 
 
 def torii(a):
-    a.circle(15, 19.5, 4)                                            # 奥の太陽
+    # 柱の間に太陽（黒い丸）を置いていたが、本人が「何か分からない」と指摘。宙に浮いた黒い塊に見えるので外した
     a.poly([(0.5, 3.5), (3, 5), (27, 5), (29.5, 3.5), (30, 6), (27.5, 8), (2.5, 8), (0, 6)])  # 笠木
     a.rect(4, 11, 26, 13.5)                                          # 貫
     a.rect(14, 8, 16, 11)                                            # 額束
@@ -120,7 +120,7 @@ def sakura(a):
         a.circle(15 + 5.2 * math.cos(t), 15.5 + 5.2 * math.sin(t), 0.8, black=False)
 
 
-ARTS = [("01_fuji", "Mount Fuji", fuji), ("02_torii", "Torii gate at sunrise", torii),
+ARTS = [("01_fuji", "Mount Fuji", fuji), ("02_torii", "Torii gate", torii),
         ("03_daruma", "Daruma doll", daruma), ("04_maneki_neko", "Maneki-neko (lucky cat)", maneki),
         ("05_lantern", "Paper lantern", lantern), ("06_sakura", "Cherry blossom", sakura)]
 
