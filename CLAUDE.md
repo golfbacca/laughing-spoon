@@ -53,7 +53,7 @@
 | zazzle.com | **egress proxy で 403**（WebFetch も失敗）。Zazzle の画面はこちらから見られない（2026-10-18 確認） |
 | x.photoscape.org | WebFetch で名前解決できず（2026-10-25）。本人にスクリーンショットをもらう |
 | jp.pinterest.com | WebFetch で名前解決できず（2026-11-21）。ピンの中身・出どころはこちらから見られない |
-| commons.wikimedia.org / upload.wikimedia.org | ✅ **写真をこちらで検索して見られる**（2026-11-23）。環境 Amazon-research の許可リストに追加（本人承認）＋ `.claude/settings.json` に curl の許可ルール（本人了承）。道具は `kdp_nonogram/tools/ref_photo.py`。縮小版のホスト thumb.wikimedia.org は未許可なので元ファイルを落として手元で縮小する。名乗り（User-Agent）なしだと「要求が多すぎる」と断られる。**写真は参考のみ・なぞらない・リポジトリに入れない** |
+| commons.wikimedia.org / upload.wikimedia.org | ✅ **写真をこちらで検索して見られる**（2026-11-23）。環境 Amazon-research の許可リストに追加（本人承認）＋ `.claude/settings.json` に curl の許可ルール（本人了承）。道具は `kdp_nonogram/tools/ref_photo.py`。**写真は縮小版（幅500・thumb.wikimedia.org。同日に許可リストへ追加）を使う。元ファイルを続けて落とすと「負荷が高い」と429で断られる。** 名乗り（User-Agent）なしでも断られる。検索の間は10秒ほど空ける。**写真は参考のみ・なぞらない・リポジトリに入れない** |
 | 本人のローカルディスク（`C:\...`） | **一切見えない**。ファイルは添付・Drive・リポジトリ経由で渡してもらう |
 | Google Drive / Gmail | **読める**（MCP経由）。過去資料の発掘に有効 |
 | Driveの**画像の実データ** | `download_file_content` はbase64で返る。**8MBのPNG1枚で膨大なトークンを消費**するので実用外。`read_file_content` は画像に対して空を返す |

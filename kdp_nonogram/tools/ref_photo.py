@@ -2,7 +2,7 @@
 使い方: python3 tools/ref_photo.py "Himeji Castle" 保存先フォルダ [枚数]
 - 保存先はリポジトリの外（スクラッチパッド）にすること。写真には撮影者の権利がある
 - 通信は curl で、環境の許可リストにある commons.wikimedia.org（検索）と upload.wikimedia.org（元ファイル）だけ
-- 縮小版（thumb.wikimedia.org）は許可リストに無いので、元ファイルを落として手元で縮小する
+- 写真は縮小版（幅500・thumb.wikimedia.org）を落とす。元ファイルを続けて落とすとサイト側に断られる
 - .claude/settings.json に、この2つのホスト宛ての curl を許すルールがある（2026-11-23 本人了承）"""
 import sys, os, json, subprocess, urllib.parse
 from PIL import Image
@@ -17,7 +17,7 @@ def curl(url, out=None):
 def search(query, n=4):
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": query + " filetype:bitmap",
                                 "gsrnamespace": 6, "gsrlimit": n, "prop": "imageinfo",
-                                "iiprop": "url|size|extmetadata", "format": "json"})
+                                "iiprop": "url|size|extmetadata", "iiurlwidth": 500, "format": "json"})
     import time
     for attempt in range(3):                      # たまに空の応答が返るので、少し待って取り直す
         txt = curl("https://commons.wikimedia.org/w/api.php?" + q)
@@ -31,7 +31,8 @@ def search(query, n=4):
     out = []
     for p in pages:
         ii = p["imageinfo"][0]; m = ii.get("extmetadata", {})
-        out.append({"title": p["title"], "url": ii["url"].split("?")[0], "size": ii.get("size", 0),
+        # 縮小版（幅500）を使う。元ファイルを続けて落とすと「負荷が高い」と断られた（429）
+        out.append({"title": p["title"], "url": (ii.get("thumburl") or ii["url"]).split("?")[0], "size": 0,
                     "license": m.get("LicenseShortName", {}).get("value", "?")})
     return out
 
