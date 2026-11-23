@@ -53,6 +53,7 @@
 | zazzle.com | **egress proxy で 403**（WebFetch も失敗）。Zazzle の画面はこちらから見られない（2026-10-18 確認） |
 | x.photoscape.org | WebFetch で名前解決できず（2026-10-25）。本人にスクリーンショットをもらう |
 | jp.pinterest.com | WebFetch で名前解決できず（2026-11-21）。ピンの中身・出どころはこちらから見られない |
+| commons.wikimedia.org / upload.wikimedia.org | **環境の許可リストには追加済み**（2026-11-23・本人承認。環境名 Amazon-research）。ただし **curl はオートモードの判定で拒否され、WebFetch は名前解決できず、まだ写真を取れていない**。`.claude/settings.json` に許可ルールを足す案を本人に確認中（`kdp_nonogram/docs/02` 末尾） |
 | 本人のローカルディスク（`C:\...`） | **一切見えない**。ファイルは添付・Drive・リポジトリ経由で渡してもらう |
 | Google Drive / Gmail | **読める**（MCP経由）。過去資料の発掘に有効 |
 | Driveの**画像の実データ** | `download_file_content` はbase64で返る。**8MBのPNG1枚で膨大なトークンを消費**するので実用外。`read_file_content` は画像に対して空を返す |
