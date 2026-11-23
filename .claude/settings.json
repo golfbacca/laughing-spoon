@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sS -L -m 60 https://commons.wikimedia.org/*)",
+      "Bash(curl -sS -L -m 60 -o * https://upload.wikimedia.org/*)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:upload.wikimedia.org)"
+    ]
+  }
+}
