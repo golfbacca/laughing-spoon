@@ -1,4 +1,4 @@
-; Kabuto 兜 (samurai helmet) 案B
+; Kabuto 兜 (samurai helmet)
 ##................##
 .###............###.
 ..####...##...####..
