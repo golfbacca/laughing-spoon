@@ -60,4 +60,4 @@ if __name__ == "__main__":
     fill, g, how = res[0]
     with open(out, "w", encoding="utf-8") as f:
         f.write(f"; {title}\n; import_art.py で作成（{how}）\n" + "\n".join("".join("#" if c else "." for c in r) for r in g) + "\n")
-    print(f"{out}: {how}  黒の割合 {fill:.0%}")
+    print(f"{out}: {how}  黒の割合 {sum(map(sum, g)) / (n * n):.0%}")
