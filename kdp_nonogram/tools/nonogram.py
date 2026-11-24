@@ -131,8 +131,9 @@ def check(grid):
     rows, cols = clues(grid)
     b, st = line_solve(rows, cols)
     same = st == "solved" and all((b[y][x] == 1) == grid[y][x] for y in range(len(grid)) for x in range(len(grid[0])))
-    n = 1 if same else count_solutions(rows, cols)
     unknown = sum(c is None for r in b for c in r)
+    # 決まらないマスが多い絵で解の数を数えると終わらない（30×30の細い線の絵で10分以上）。その場合は数えない（None）
+    n = 1 if same else (count_solutions(rows, cols) if unknown <= 60 else None)
     return {"logic_only": same, "solutions": n, "stuck_cells": unknown,
             "fill": sum(map(sum, grid)) / (len(grid) * len(grid[0])),
             "empty_lines": sum(not c for c in rows) + sum(not c for c in cols)}
