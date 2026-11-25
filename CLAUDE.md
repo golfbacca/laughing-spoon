@@ -74,7 +74,7 @@
 | `garden_flag/` | Etsy ガーデンフラッグ（米国向け・通年ゴルフ） | **5商品公開済み。Etsy Adsは停止（10/04決定。10/19に誤って再開→11/03に再停止）。Offsite Adsは参加中**（`garden_flag/docs/28`） |
 | `stickers/` `assets_charA/` `docs/` | LINEスタンプ（エモ文字・シリーズA/B） | 審査〜販売開始 |
 | `zazzle_calendar/` | Zazzle 妻籠宿の写真カレンダー（本人の父の写真・英語で米国向け）。**ブランド名 Kiso Valley Light**（10-25 決定）。Zazzle ストア `zazzle.com/store/kisovalleylight`・Pinterest `kisovalleylight` 開設済み | **13枚の並びと出品文言が確定（2026-10-14）。`zazzle_calendar/docs/02_出品文言_確定版.md`。**✅ Zazzle に Small・Medium・Large の3点を出品済み（11/01・11/14）。商品URL・次の作業は `docs/06_出品手順書.md` 末尾**。再開点は同ファイル末尾。Pinterest経由の取り分は `docs/04`** |
-| `kdp_nonogram/` | **Amazon KDP ノノグラム本**（米国 amazon.com 向け・日本の題材）。題名 `Japan Nonogram Puzzle Book: 120 Picture Logic Puzzles from Kanji to Mount Fuji` | **120問中81問が確定（2026-11-25）。題材の重複5組を外したので15×15は31。残りは15×15が5、20×20が21、25×25が13。** 絵は本人がGeminiで作り、こちらが `tools/import_art.py` で落として検査する。**再開点は `kdp_nonogram/docs/04_再開点.md`**。戦略の経緯は `docs/KDP戦略20案.md`・`docs/KDP_ぬりえ以外の案の検証.md` |
+| `kdp_nonogram/` | **Amazon KDP ノノグラム本**（米国 amazon.com 向け・日本の題材）。題名 `Japan Nonogram Puzzle Book: 120 Picture Logic Puzzles from Kanji to Mount Fuji` | **120問中84問が確定（2026-11-25）。残りは15×15が2、20×20が21、25×25が13。** 絵は本人がGeminiで作り、こちらが `tools/import_art.py` で落として検査する。**再開点は `kdp_nonogram/docs/04_再開点.md`**。戦略の経緯は `docs/KDP戦略20案.md`・`docs/KDP_ぬりえ以外の案の検証.md` |
 | `tapestry/` | Etsy タペストリー（Printify製造） | **✅ M01 4色を OnePureStrike で公開（2026-11-06）。30%OFF〜12/07。** 新しい店 StillValleyHome は Payoneer の口座の結び付きで保留（`tapestry/docs/12`・`13`） |
 
 **他ブランチに別案件がある**（KDP絵本、Amazonぬりえ、SUZURIスタンプ等）。
